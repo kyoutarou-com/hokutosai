@@ -1,0 +1,139 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: auto;
+}
+
+body{
+    color: #24292e;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 1.3rem;
+}
+img {
+    max-width: 100%;
+}
+li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.qa-006 {
+    max-width: 800px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #d6dde3;
+}
+
+.qa-006 summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em 2em 1em 4em;
+    color: #333333;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.qa-006 summary::before,
+.qa-006 p::before {
+    position: absolute;
+    left: 1em;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.qa-006 summary::before {
+    color: #aaa7ee;
+    content: "Q.";
+}
+
+.qa-006 summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin-left: 10px;
+    border-bottom: 3px solid #333333b3;
+    border-right: 3px solid #333333b3;
+    content: '';
+    transition: transform .5s;
+}
+
+.qa-006[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.qa-006 p {
+    position: relative;
+    transform: translateY(-10px);
+    opacity: 0;
+    margin: 0;
+    padding: .3em 3em 1.5em;
+    color: #333;
+    transition: transform .5s, opacity .5s;
+    font-size: 1rem;
+}
+
+.qa-006[open] p {
+    transform: none;
+    opacity: 1;
+}
+
+.qa-006 p::before {
+    color: #EEBBC2;
+    line-height: 1.2;
+    content: "A.";
+}
+
+/* 質問中央寄せ */
+.qa-006 {
+    margin: 0 auto;
+    margin: atuo;
+}
+
+
+/* ヘッダーデザイン */
+.heading {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 35px;
+	text-align: center;
+}
+
+.heading span {
+	position: relative;
+	z-index: 2;
+}
+
+.heading::before {
+	content: attr(data-en);
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgba(120, 79, 195, 0.371);
+	font-size: 80px;
+	font-style: italic;
+}
+
+.heading::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%) rotate(30deg);
+	width: 1px;
+	height: 40px;
+	background-color: rgba(120, 79, 195, 0.269);
+}
+/* ヘッダー文字装飾以上 */
+
+.qa-006 { 
+    font-family: "Sawarabi Gothic";
+}

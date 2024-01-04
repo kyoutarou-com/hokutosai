@@ -1,0 +1,268 @@
+@charset "UTF-8";
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: auto;
+}
+body{
+    color: #24292e;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 1.3rem;
+}
+img {
+    max-width: 100%;
+}
+li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+/* 以上定型文 */
+h1 {
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+/* 下線を追加　前半部分 */
+/* .explanation {
+    border-bottom: solid 3px #b0d5ff; 下線を引く
+    position: relataive; 相対配置
+} */
+
+/*explanationの直後に追加　下線後半部分*/
+/* .explanation:before { 
+    position: absolute; 絶対配置
+    content: " ";  見出し後ろに空白文字を入れる
+    display: block;
+    border-bottom: solid 3px #5472cd;
+    bottom: -3px;
+    width: 20%;
+    left: 0;
+    height: 5px;
+    background: #27acd9;
+} */
+
+.description {
+    padding-top: 0.5%;
+    font-size: 1.25rem;
+    line-height: 1.75;  /*行間*/
+    /* 以下　左線用 */
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 10px #aaabab;/*左線*/
+}
+
+.committee {
+    margin:auto 0;
+    font-size: 1.7rem;
+}
+
+.box {
+    padding: 1% 10% 2% 10%;
+    margin: 0 auto;  /*本文を中央によせる*/
+    border-radius: 30px;
+}
+
+/* ヘッダーデザイン */
+.heading {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 35px;
+	text-align: center;
+}
+
+.heading span {
+	position: relative;
+	z-index: 2;
+}
+
+.heading::before {
+	content: attr(data-en);
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgba(224,66,114,0.2);
+	font-size: 80px;
+	font-style: italic;
+}
+
+.heading::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%) rotate(30deg);
+	width: 1px;
+	height: 40px;
+	background-color: rgba(224,66,114,1);
+}
+
+.description {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 800; /*文字の太さ*/
+    line-height: 200%;  
+}
+.side {
+    font-size: 1.6rem;
+}
+/* 矢印アイコン */
+.side {
+	position: relative;
+	background: #fff;
+	padding: 0.5em 0.75em 0.5em 2.5em;
+}
+.side:before {
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f138";
+	font-weight: 900;
+	color: #27acd9;
+	padding: 0;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/*見出し下線２色*/
+h2 {
+	position: relative;
+	border-bottom: 5px solid #ddd;
+	padding: 10px 0;
+}
+h2:before {
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 20%;
+	height: 5px;
+	content: '';
+	background: #27acd9;
+}
+/*見出し　位置*/
+h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 2%;
+}
+.text {
+    margin: 1% 10% 2% 10%;
+}
+.explanation {
+    font-size: 2rem;
+}
+
+.table {
+    font-size: 1.4rem;
+    text-align: center; /*表のテキストの中央寄せ*/
+}
+
+.sub {
+    margin: 0 10% 0 10%;
+}
+/* 忘れ物表の設定 */
+table {
+    border-collapse: collapse;  /*隣接する線を重ねて表示*/
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px; 
+}
+/* 見出しの色 */
+th {
+    background-color: #aaabab;
+    color: rgb(31, 28, 28);
+}
+/* 表の大きさ指定 */
+th,td {
+    border-width: solid;
+    border-color: #ccc;
+    border-radius: 1px;
+    padding: 10px;
+    
+}
+/* 奇数の行を変更 */
+tr:nth-child(odd) {
+    background: #efefef;
+}
+/* マウスをのせた時の色を変更 */
+tr:hover {
+    background: #d1d1d1;
+}
+/*ベビールーム場所*/
+.baby-room-image {
+    width: 60%;
+    /* margin-left: -10%; */
+    aspect-ratio: 1/1;
+}
+/* ベビールーム */
+.baby-room {
+    display: flex;
+}
+
+/*== ボタン共通設定 */
+.btn {
+    /*アニメーションの起点とするためrelativeを指定*/
+    position: relative;
+    overflow: hidden;
+    /*ボタンの形状*/
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #555;/* ボーダーの色と太さ */
+    padding: 10px 30px;
+    text-align: center;
+    outline: none;
+    /*アニメーションの指定*/   
+    transition: ease .2s;
+}
+  
+  /*ボタン内spanの形状*/
+.btn span {
+  position: relative;
+  z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color:#333;
+}
+  
+.btn:hover span {
+  color:#fff;
+}
+  
+  /*== 背景が流れる（左から右） */
+.bgleft:before {
+  content: '';
+    /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+    /*色や形状*/
+  background:#333;/*背景色*/
+  width: 100%;
+  height: 100%;
+    /*アニメーション*/
+  transition: transform .6s cubic-bezier(1, 1, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
+}
+  
+  /*hoverした際の形状*/
+.bgleft:hover:before{
+    transform-origin:left top;
+    transform:scale(1, 1);
+}
+  /* ボタン設定ここまで */
+/* ボタンを中央よ寄せる */
+.twobtn {
+    text-align: center;
+}
+/* ボタンの間を開ける */
+.btnschool {
+    margin-right: 5%;
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.greeting {
+    font-family: "Sawarabi Mincho";
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1% 10% 2% 2%;
+    color: #666666;
+}
