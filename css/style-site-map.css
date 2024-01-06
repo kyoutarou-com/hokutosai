@@ -4,6 +4,8 @@
     position: relative;
     padding-left: 1.2em;/*アイコン分のスペース*/
     line-height: 1.4;
+    font-family: "Sawarabi Mincho";
+    font-weight: 450;
   }
   
 .check:before {
@@ -20,12 +22,23 @@
 
   ul {
     display: flex;
+    margin-left: 30px;
   }
 
   .content {
-    margin: 25px 15px;
+    margin: 20px 18px;
   }
 
   a {
-    color: blueviolet;
+    color: rgb(126, 120, 131);
+    font-family: "Sawarabi Mincho";
+  }
+
+  .large {
+    margin-left: 15%;
+  }
+
+  h2 {
+    margin-bottom: 1px;
+    margin-top: 30px; 
   }
