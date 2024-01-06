@@ -17,3 +17,15 @@
     color: #5ab9ff; /*アイコン色*/
     font-weight: 900;
   }
+
+  ul {
+    display: flex;
+  }
+
+  .content {
+    margin: 25px 15px;
+  }
+
+  a {
+    color: blueviolet;
+  }
