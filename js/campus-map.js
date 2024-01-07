@@ -8,7 +8,7 @@ class Image {
   }
 }
 
-const map1Image = new Image('./image/map1.png', 1024, 1024)
+const map1Image = new Image('./images/map1.png', 1024, 1024)
 
 function createMap (id, image) {
   var map = L.map(id, {
