@@ -16,22 +16,23 @@
     font-size: 1em;/*サイズ*/
     left: 0;/*アイコンの位置*/
     top: 0;/*アイコンの位置*/
-    color: #5ab9ff; /*アイコン色*/
+    color: #f178e7; /*アイコン色*/
     font-weight: 900;
   }
 
   ul {
     display: flex;
     margin-left: 30px;
+    grid-template-columns: 40px;
   }
 
   .content {
     margin: 20px 18px;
+    margin-bottom: 10px;
   }
 
   a {
-    color: rgb(126, 120, 131);
-    font-family: "Sawarabi Mincho";
+    color: rgb(104, 42, 99);
   }
 
   .large {
@@ -42,3 +43,110 @@
     margin-bottom: 1px;
     margin-top: 30px; 
   }
+
+/* テキスト変更設定開始 */
+  
+.gnavi li a{
+  /*テキストの基点とするためrelativeを指定*/
+position: relative;
+  /*はみ出る要素を隠す*/
+overflow: hidden;
+padding: 20px 60px;
+}
+
+.gnavi li span{
+  /*絶対配置でテキストの位置を決める*/
+/* position: absolute; */
+left: 50%;
+top:0;
+  /*アニメーションの指定*/
+transition: all .5s;
+transform: translate(-50%, 0);/*X方向に-50% ※中央寄せにするため*/
+/*ブロック要素にして透過なし、テキスト折り返しなし*/  
+display: inline-block;
+opacity:1;
+white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.gnavi li span:nth-child(2){
+opacity:0;/*透過0に*/
+  transform: translate(-50%,100%);/*X方向に-50% Y方向に100%*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.gnavi li:hover span:nth-child(1){
+opacity:0;/*透過0に*/
+  transform: translate(-50%,-100%);/*X方向に-50% Y方向に-100%*/
+}
+
+.gnavi li:hover span:nth-child(2){
+opacity:1;/*不透明に*/
+transform: translate(-50%, 0);/*X方向に-50% Y方向に0*/
+}
+
+/* リンク横並び配列 */
+.gnavi{
+  display: flex;
+  flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin:0 0 50px 0;
+  list-style: none;
+}
+
+.gnavi li a{
+  display: block;
+  text-decoration: none;
+  color: #333;
+  height: 40px;
+}
+
+.gnavi li{
+  margin-bottom:20px;
+  width: 200px;
+  height: 40px;
+}
+
+.show {
+  text-align: center;
+  font-family: "Sawarabi Mincho";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/* ヘッダーデザイン */
+.heading {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 35px;
+	text-align: center;
+}
+
+.heading span {
+	position: relative;
+	z-index: 2;
+}
+
+.heading::before {
+	content: attr(data-en);
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgba(120, 79, 195, 0.371);
+	font-size: 80px;
+	font-style: italic;
+}
+
+.heading::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%) rotate(30deg);
+	width: 1px;
+	height: 40px;
+	background-color: rgba(120, 79, 195, 0.269);
+}
+/* ヘッダー文字装飾以上 */
