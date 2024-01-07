@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <link rel="stylesheet" href="https://github.com/filipelinhares/ress/blob/master/ress.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="css/L.Control.SlideMenu.css">
+    <link rel="stylesheet" href="css/Control.FullScreen.css">
+    <link rel="stylesheet" href="css/L.Control.Zoomslider.css">
+    <link rel="stylesheet" href="css/L.VisualClick.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/L.Control.ZoomLabel.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="tab">
+            <li><a href="#tab1" id="tab-start">全体MAP</a></li>
+            <li><a href="#tab2">建物</a></li>
+            <li><a href="#tab3">マップ3</a></li>
+            <li><a href="#tab4" id="tab-end">マップ4</a></li>
+        </ul>
+        <div id="tab1" class="area">
+            <h2>全体MAP</h2>
+            <div id="map1"></div>
+        </div>
+        <div id="tab2" class="area">
+            <h2>建物</h2>
+            <div id="map2"></div>
+        </div>
+        <div id="tab3" class="area">
+            <h2>ディナー</h2>
+            <div id="map3"></div>
+        </div>
+        <div id="tab4" class="area">
+            <h2>地図4</h2>
+            <div id="map4"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/a08d932259.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/Control.FullScreen.js"></script>
+    <script src="js/L.Control.SlideMenu.js"></script>
+    <script src="js/L.Control.Zoomslider.js"></script>
+    <script src="js/L.VisualClick.js"></script>
+    <script src="js/L.Control.ZoomLabel.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>
