@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/*tabの形状*/
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab li a {
+  display: block;
+  background: #fff;
+  /* margin: 0 2px; */
+  padding: 10px 20px;
+  border-top: solid 2px #41465c;
+  border-bottom: solid 2px #41465c;
+  border-right: solid 1px #41465c;
+  border-left: solid 1px #41465c;
+}
+
+#tab-start {
+  border-left: solid 2px #41465c;
+}
+
+#tab-end {
+  border-right: solid 2px #41465c;
+}
+
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a {
+  background-color: #41465c;
+  color: #f2f2eb;
+}
+
+
+/*エリアの表示非表示と形状*/
+.area {
+  display: none;
+  /*はじめは非表示*/
+  opacity: 0;
+  /*透過0*/
+  background: #fff;
+  padding: 50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+  display: block;
+  /*表示*/
+  animation-name: displayAnime;
+  /*ふわっと表示させるためのアニメーション*/
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+  background: #eee;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #41465c;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 30px auto;
+  background: #fefefe;
+}
+
+.area h2 {
+  font-size: 1.3rem;
+  margin: 0 0 20px 10px;
+}
+
+/* .area li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+} */
+
+#map1,
+#map2,
+#map3,
+#map4 {
+  height: 500px;
+}
+
+
+
+.leaflet-menu {
+  background-color: #fafafa;
+}
+
+.cstm-slidmenu-header {
+  margin: 0;
+  background-color: #5cc8ea;
+  color: #fff;
+  padding: 5px;
+}
+
+.cstm-slidmenu-content {
+  padding: 0;
+  margin: 0;
+}
+
+.cstm-slidmenu-content li {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+i {
+  padding-left: 5px;
+}
+
+.leaflet-menu {
+  background-color: #fafafa;
+}
+
+.cstm-slidmenu-header {
+  margin: 0;
+  background-color: #5cc8ea;
+  color: #fff;
+  padding: 5px;
+}
+
+.cstm-slidmenu-content {
+  padding: 0;
+  margin: 0;
+}
+
+.cstm-slidmenu-content li {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+i {
+  padding-left: 5px;
+}
