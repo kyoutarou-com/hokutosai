@@ -15,8 +15,10 @@ const mapImages = [
   new Image('専門棟２階', 'images/campus-map-2-2.png', 1024, 1024),
   new Image('専門棟３階', 'images/campus-map-2-3.png', 1024, 1024),
   new Image('専門棟４階', 'images/campus-map-2-4.png', 1024, 1024),
-  new Image('hoge', 'images/campus-map-2-4.png', 1024, 1024),
-  new Image('hogehoge', 'images/campus-map-2-4.png', 1024, 1024)
+  new Image('第一体育館', 'images/campus-map-2-4.png', 1024, 1024),
+  new Image('図書館情報センター', 'images/campus-map-2-4.png', 1024, 1024),
+  new Image('奈呉の浦会館１F', 'images/campus-map-2-4.png', 1024, 1024),
+  new Image('奈呉の浦会館２F', 'images/campus-map-2-4.png', 1024, 1024)
 ]
 
 function createMap (id, images) {
@@ -56,7 +58,7 @@ function createMap (id, images) {
     }
     var iconLayersControl = new L.Control.IconLayers(iconLayers, {
       position: 'bottomleft',
-      maxLayersInRow: 4
+      maxLayersInRow: 3
     })
   }
   iconLayersControl.addTo(map)
@@ -78,6 +80,14 @@ function createMap (id, images) {
   L.control.slideMenu(header + contents, options).addTo(map)
   L.control.zoomslider({ position: 'bottomright' }).addTo(map)
   L.control.zoomLabel({ position: 'bottomright' }).addTo(map)
+
+  // we can modify layers list
+  //  iconLayersControl.setLayers(layers[5])
+
+  iconLayersControl.on('activelayerchange', function (event) {
+    const image = images.find(e => e.url === event.layer._url)
+    $('#map-name').text(image.name)
+  })
 }
 
 //任意のタブにURLからリンクするための設定
@@ -97,13 +107,6 @@ function GethashID (hashIDName) {
       })
   }
 }
-
-//タブをクリックしたら
-$('.tab a').on('click', function () {
-  const idName = $(this).attr('href')
-  GethashID(idName)
-  return false //aタグを無効にする
-})
 
 // 上記の動きをページが読み込まれたらすぐに動かす
 $(window).on('load', function () {
