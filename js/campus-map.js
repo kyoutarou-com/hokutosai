@@ -8,9 +8,15 @@ class Image {
   }
 }
 
-const map1Image = new Image('./images/campus-map-1.png', 1024, 1024)
+const map1Images = [new Image('images/campus-map-1.png', 1024, 1024)]
+const map2Images = [
+  new Image('images/campus-map-2-1.png', 1024, 1024),
+  new Image('images/campus-map-2-2.png', 1024, 1024),
+  new Image('images/campus-map-2-3.png', 1024, 1024),
+  new Image('images/campus-map-2-4.png', 1024, 1024)
+]
 
-function createMap (id, image) {
+function createMap (id, images) {
   var map = L.map(id, {
     crs: L.CRS.Simple,
     minZoom: 0,
@@ -25,14 +31,31 @@ function createMap (id, image) {
   })
 
   var imageBounds = L.latLngBounds([
-    map.unproject([0, image.height], 3),
-    map.unproject([image.width, 0], 3)
+    map.unproject([0, images[0].height], 3),
+    map.unproject([images[0].width, 0], 3)
   ])
 
+  //var center = imageBounds.getCenter() // 画像範囲の中央を取得
+  //map.setView(center, 3) // 地図の中央を画像範囲の中央に設定
   map.fitBounds(imageBounds)
   map.setMaxBounds(imageBounds.pad(0.5))
 
-  L.imageOverlay(image.url, imageBounds).addTo(map)
+  switch (images.length) {
+    case 1:
+      L.imageOverlay(images[0].url, imageBounds).addTo(map)
+      break
+    case 4:
+      L.control
+        .layers({
+          専門棟１階: L.imageOverlay(images[0].url, imageBounds).addTo(map),
+          専門棟２階: L.imageOverlay(images[1].url, imageBounds),
+          専門棟３階: L.imageOverlay(images[2].url, imageBounds),
+          専門棟４階: L.imageOverlay(images[3].url, imageBounds)
+        })
+        .addTo(map)
+    default:
+      break
+  }
 
   var header = '<h1 class="cstm-slidmenu-header">Slide Menu</h1>'
   var contents = '<ul class="cstm-slidmenu-content">'
@@ -83,8 +106,8 @@ $(window).on('load', function () {
   $('.area:first-of-type').addClass('is-active')
   var hashName = location.hash
   GethashID(hashName)
-  createMap('map1', map1Image)
-  createMap('map2', map1Image)
-  createMap('map3', map1Image)
-  createMap('map4', map1Image)
+  createMap('map1', map1Images)
+  createMap('map2', map2Images)
+  createMap('map3', map1Images)
+  createMap('map4', map1Images)
 })
