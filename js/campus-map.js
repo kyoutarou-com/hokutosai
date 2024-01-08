@@ -1,19 +1,22 @@
 'use strict'
 
 class Image {
-  constructor (url, width, height) {
+  constructor (name, url, width, height) {
+    Object.defineProperty(this, 'name', { value: name })
     Object.defineProperty(this, 'url', { value: url })
     Object.defineProperty(this, 'width', { value: width })
     Object.defineProperty(this, 'height', { value: height })
   }
 }
 
-const map1Images = [new Image('images/campus-map-1.png', 1024, 1024)]
-const map2Images = [
-  new Image('images/campus-map-2-1.png', 1024, 1024),
-  new Image('images/campus-map-2-2.png', 1024, 1024),
-  new Image('images/campus-map-2-3.png', 1024, 1024),
-  new Image('images/campus-map-2-4.png', 1024, 1024)
+const mapImages = [
+  new Image('全体', 'images/campus-map-1.png', 1024, 1024),
+  new Image('専門棟１階', 'images/campus-map-2-1.png', 1024, 1024),
+  new Image('専門棟２階', 'images/campus-map-2-2.png', 1024, 1024),
+  new Image('専門棟３階', 'images/campus-map-2-3.png', 1024, 1024),
+  new Image('専門棟４階', 'images/campus-map-2-4.png', 1024, 1024),
+  new Image('hoge', 'images/campus-map-2-4.png', 1024, 1024),
+  new Image('hogehoge', 'images/campus-map-2-4.png', 1024, 1024)
 ]
 
 function createMap (id, images) {
@@ -31,31 +34,19 @@ function createMap (id, images) {
   })
 
   var imageBounds = L.latLngBounds([
-    map.unproject([0, images[0].height], 3),
-    map.unproject([images[0].width, 0], 3)
+    map.unproject([0, images[0].height], 2),
+    map.unproject([images[0].width, 0], 2)
   ])
 
-  //var center = imageBounds.getCenter() // 画像範囲の中央を取得
-  //map.setView(center, 3) // 地図の中央を画像範囲の中央に設定
   map.fitBounds(imageBounds)
   map.setMaxBounds(imageBounds.pad(0.5))
 
-  switch (images.length) {
-    case 1:
-      L.imageOverlay(images[0].url, imageBounds).addTo(map)
-      break
-    case 4:
-      L.control
-        .layers({
-          専門棟１階: L.imageOverlay(images[0].url, imageBounds).addTo(map),
-          専門棟２階: L.imageOverlay(images[1].url, imageBounds),
-          専門棟３階: L.imageOverlay(images[2].url, imageBounds),
-          専門棟４階: L.imageOverlay(images[3].url, imageBounds)
-        })
-        .addTo(map)
-    default:
-      break
+  let buf = {}
+  buf[images[0].name] = L.imageOverlay(images[0].url, imageBounds).addTo(map)
+  for (let i = 1; i < images.length; i++) {
+    buf[images[i].name] = L.imageOverlay(images[i].url, imageBounds)
   }
+  L.control.layers(buf).addTo(map)
 
   var header = '<h1 class="cstm-slidmenu-header">Slide Menu</h1>'
   var contents = '<ul class="cstm-slidmenu-content">'
@@ -106,9 +97,9 @@ $(window).on('load', function () {
   $('.area:first-of-type').addClass('is-active')
   var hashName = location.hash
   GethashID(hashName)
-  createMap('map1', map1Images)
-  createMap('map2', map2Images)
-  createMap('map3', map1Images)
-  createMap('map4', map1Images)
-  createMap('a', map2Images)
+  createMap('map1', mapImages)
+  createMap('map2', mapImages)
+  createMap('map3', mapImages)
+  createMap('map4', mapImages)
+  createMap('a', mapImages)
 })
