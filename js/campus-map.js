@@ -55,8 +55,8 @@ function createMap (id, images) {
       icon: images[i].url
     }
     var iconLayersControl = new L.Control.IconLayers(iconLayers, {
-      position: 'topright',
-      maxLayersInRow: 2
+      position: 'bottomleft',
+      maxLayersInRow: 4
     })
   }
   iconLayersControl.addTo(map)
@@ -65,6 +65,7 @@ function createMap (id, images) {
   var contents = '<ul class="cstm-slidmenu-content">'
   contents += '<li>模擬店</li>'
   contents += '<li>展示</li>'
+  contents += '<li>ナビ</li>'
   contents +=
     '<li><i class="fab fa-github"></i> <a href="https://github.com/unbam/Leaflet.SlideMenu" target="_blank">GitHub</a></li>'
   contents += '</ul>'
@@ -110,8 +111,5 @@ $(window).on('load', function () {
   $('.area:first-of-type').addClass('is-active')
   var hashName = location.hash
   GethashID(hashName)
-  createMap('map1', mapImages)
-  createMap('map2', mapImages)
-  createMap('map3', mapImages)
-  createMap('map4', mapImages)
+  createMap('map', mapImages)
 })

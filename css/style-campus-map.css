@@ -1,36 +1,5 @@
 @charset "UTF-8";
 
-/*tabの形状*/
-.tab {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tab li a {
-  display: block;
-  background: #fff;
-  /* margin: 0 2px; */
-  padding: 10px 20px;
-  border-top: solid 2px #41465c;
-  border-bottom: solid 2px #41465c;
-  border-right: solid 1px #41465c;
-  border-left: solid 1px #41465c;
-}
-
-#tab-start {
-  border-left: solid 2px #41465c;
-}
-
-#tab-end {
-  border-right: solid 2px #41465c;
-}
-
-/*liにactiveクラスがついた時の形状*/
-.tab li.active a {
-  background-color: #41465c;
-  color: #f2f2eb;
-}
-
 /*エリアの表示非表示と形状*/
 .area {
   display: none;
@@ -67,15 +36,6 @@ body {
   background: #eee;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  color: #41465c;
-  text-decoration: none;
-}
-
 .wrapper {
   width: 100%;
   max-width: 960px;
@@ -88,11 +48,8 @@ a {
   margin: 0 0 20px 10px;
 }
 
-#map1,
-#map2,
-#map3,
-#map4 {
-  height: 512px;
+#map {
+  height: 70vh;
 }
 
 .leaflet-menu {
