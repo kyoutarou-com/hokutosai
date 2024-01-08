@@ -24,12 +24,12 @@ L.Control.SlideMenu = L.Control.extend({
     this._innerHTML = innerHTML
     this._isLeftPosition =
       this.options.menuposition == 'topleft' ||
-      this.options.menuposition == 'bottomleft'
+        this.options.menuposition == 'bottomleft'
         ? true
         : false
     this._isTopPosition =
       this.options.menuposition == 'topleft' ||
-      this.options.menuposition == 'topright'
+        this.options.menuposition == 'topright'
         ? true
         : false
     this._isHorizontal = this.options.direction == 'horizontal' ? true : false

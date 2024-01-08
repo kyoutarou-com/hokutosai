@@ -6,9 +6,6 @@
   flex-wrap: wrap;
 }
 
-
-
-
 .tab li a {
   display: block;
   background: #fff;
@@ -33,7 +30,6 @@
   background-color: #41465c;
   color: #f2f2eb;
 }
-
 
 /*エリアの表示非表示と形状*/
 .area {
@@ -64,10 +60,6 @@
     opacity: 1;
   }
 }
-
-
-
-
 
 /*========= レイアウトのためのCSS ===============*/
 
@@ -107,8 +99,6 @@ a {
 #map4 {
   height: 500px;
 }
-
-
 
 .leaflet-menu {
   background-color: #fafafa;

@@ -8,7 +8,7 @@
 
 L.Map.VisualClick = L.Handler.extend({
 
-    _makeVisualIcon: function(){
+    _makeVisualIcon: function () {
 
         var touchMode = this._map.options.visualClickMode === 'touch' ? true : false;
 
@@ -21,7 +21,7 @@ L.Map.VisualClick = L.Handler.extend({
 
     _visualIcon: null,
 
-    _onClick: function(e) {
+    _onClick: function (e) {
 
         var map = this._map;
 
@@ -32,8 +32,8 @@ L.Map.VisualClick = L.Handler.extend({
             interactive: false
         }).addTo(map);
 
-        window.setTimeout(function(){
-            if(map){
+        window.setTimeout(function () {
+            if (map) {
                 map.removeLayer(marker);
             }
         }.bind(this), map.options.visualClick.removeTimeout || 450);    // Should somewhat match the css animation to prevent loops
@@ -42,7 +42,7 @@ L.Map.VisualClick = L.Handler.extend({
     },
 
     addHooks: function () {
-        if(this._visualIcon === null){
+        if (this._visualIcon === null) {
             this._visualIcon = this._makeVisualIcon();
         }
 
