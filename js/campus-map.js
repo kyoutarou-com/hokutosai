@@ -88,6 +88,10 @@ function createMap (id, images) {
     const image = images.find(e => e.url === event.layer._url)
     $('#map-name').text(image.name)
   })
+
+  $('#test').on('click', function () {
+    iconLayersControl.setActiveLayer(layers[0])
+  })
 }
 
 //任意のタブにURLからリンクするための設定
