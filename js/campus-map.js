@@ -26,9 +26,9 @@ function createMap (id, images) {
     maxZoom: 5,
     fullscreenControl: true,
     fullscreenControlOptions: {
-      position: 'bottomright',
-      title: 'フルスクリーン表示',
-      titleCancel: '通常表示に戻す'
+      position: 'bottomright'
+      //    title: 'Full-screen mode',
+      //  titleCancel: 'windowed'
     },
     zoomControl: false
   })
@@ -41,12 +41,25 @@ function createMap (id, images) {
   map.fitBounds(imageBounds)
   map.setMaxBounds(imageBounds.pad(0.5))
 
-  let buf = {}
-  buf[images[0].name] = L.imageOverlay(images[0].url, imageBounds).addTo(map)
+  let layers = []
+  layers[0] = L.imageOverlay(images[0].url, imageBounds).addTo(map)
   for (let i = 1; i < images.length; i++) {
-    buf[images[i].name] = L.imageOverlay(images[i].url, imageBounds)
+    layers[i] = L.imageOverlay(images[i].url, imageBounds)
   }
-  L.control.layers(buf).addTo(map)
+
+  let iconLayers = []
+  for (let i = 0; i < images.length; i++) {
+    iconLayers[i] = {
+      title: images[i].name,
+      layer: layers[i],
+      icon: images[i].url
+    }
+    var iconLayersControl = new L.Control.IconLayers(iconLayers, {
+      position: 'topright',
+      maxLayersInRow: 2
+    })
+  }
+  iconLayersControl.addTo(map)
 
   var header = '<h1 class="cstm-slidmenu-header">Slide Menu</h1>'
   var contents = '<ul class="cstm-slidmenu-content">'
@@ -101,5 +114,4 @@ $(window).on('load', function () {
   createMap('map2', mapImages)
   createMap('map3', mapImages)
   createMap('map4', mapImages)
-  createMap('a', mapImages)
 })
