@@ -81,6 +81,13 @@ function createMap (id, images) {
   L.control.zoomslider({ position: 'bottomright' }).addTo(map)
   L.control.zoomLabel({ position: 'bottomright' }).addTo(map)
 
+  var permMk = L.marker([-50, 50], {
+    highlight: 'temporary',
+    bounceOnAdd: true
+  }).addTo(map)
+  permMk.enablePermanentHighlight()
+  permMk.bindPopup('<p>popup1</p><p>地図表示時に一緒に表示されます。</p>')
+
   // we can modify layers list
   //  iconLayersControl.setLayers(layers[5])
 
