@@ -110,4 +110,5 @@ $(window).on('load', function () {
   createMap('map2', map2Images)
   createMap('map3', map1Images)
   createMap('map4', map1Images)
+  createMap('a', map2Images)
 })
