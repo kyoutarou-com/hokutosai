@@ -58,7 +58,7 @@ function createMap (id, images) {
     }
     var iconLayersControl = new L.Control.IconLayers(iconLayers, {
       position: 'bottomleft',
-      maxLayersInRow: 3
+      maxLayersInRow: 2
     })
   }
   iconLayersControl.addTo(map)
