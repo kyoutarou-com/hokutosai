@@ -198,9 +198,10 @@ tr:hover {
 }
 /*ベビールーム場所*/
 .baby-room-image {
-    width: 60%;
+    width: 80%;
     /* margin-left: -10%; */
     aspect-ratio: 1/1;
+    margin:0 auto;
 }
 /* ベビールーム */
 .baby-room {
