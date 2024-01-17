@@ -219,16 +219,16 @@ li {
     top: 10px;
     right: 10px;
     display: flex;
-    height: 60px;
+    height: 60px; /*ボタンサイズ*/
     width: 60px;
     justify-content: center;
     align-items: center;
     z-index: 90;
     background-color: #3584bb;
-}
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
+  }
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
     content: '';
     display: block;
     height: 3px;
@@ -236,31 +236,31 @@ li {
     border-radius: 3px;
     background-color: #ffffff;
     position: absolute;
-}
-.menu-btn span:before {
+  }
+  .menu-btn span:before {
     bottom: 8px;
-}
-.menu-btn span:after {
+  }
+  .menu-btn span:after {
     top: 8px;
-}
-/* 要素1 */
-#menu-btn-check:checked ~ .menu-btn span {
+  }
+  /* 要素1 */
+  #menu-btn-check:checked ~ .menu-btn span {
     background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
-}
-#menu-btn-check:checked ~ .menu-btn span::before {
+  }
+  #menu-btn-check:checked ~ .menu-btn span::before {
     bottom: 0;
     transform: rotate(45deg);
-}
-#menu-btn-check:checked ~ .menu-btn span::after {
+  }
+  #menu-btn-check:checked ~ .menu-btn span::after {
     top: 0;
     transform: rotate(-45deg);
-}
-/*チェックボックス隠す*/
-#menu-btn-check {
+  }
+  /*チェックボックス隠す*/
+  #menu-btn-check {
     display: none;
-}
-/*メニュー内容*/
-.menu-content {
+  }
+  /*メニュー内容*/
+  .menu-content {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -268,25 +268,25 @@ li {
     left: 0;
     z-index: 80;
     background-color: #3584bb;
-}
-.menu-content ul {
+  }
+  .menu-content ul {
     padding: 70px 10px 0;
-}
-.menu-content ul li {
+  }
+  .menu-content ul li {
     border-bottom: solid 1px #ffffff;
     list-style: none;
-}
-.menu-content ul li a {
+  }
+  .menu-content ul li a {
     display: block;
     width: 100%;
-    font-size: 15px;
+    font-size: 30px;  /*メニュー内のフォントサイズ*/
     box-sizing: border-box;
     color:#ffffff;
     text-decoration: none;
     padding: 9px 15px 10px 0;
     position: relative;
-}
-.menu-content ul li a::before {
+  }
+  .menu-content ul li a::before {
     content: "";
     width: 7px;
     height: 7px;
@@ -296,9 +296,9 @@ li {
     position: absolute;
     right: 11px;
     top: 16px;
-}
-
-.menu-content {
+  }
+  
+  .menu-content {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -307,8 +307,8 @@ li {
     z-index: 80;
     background-color: #3584bb;
     transition: all 0.5s;/*アニメーション設定*/
-}
-
-#menu-btn-check:checked ~ .menu-content {
+  }
+  
+  #menu-btn-check:checked ~ .menu-content {
     left: 0;/*メニューを画面内へ*/
-}
+  }
