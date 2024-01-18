@@ -1,81 +1,97 @@
 @charset "UTF-8";
-html{
-    font-size: 100%;
-    /*font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
-}
-body{
-    color: #24292e;
-}
-a {
-    text-decoration: none;
-}
-p {
-    font-size: 1.3rem;
-}
-img {
-    max-width: 100%;
-}
-li{
-    list-style: none;
-    font-size: 1.2rem;
-}
-/*header*/
-h1 {
-    font-size: 3rem;
-    margin: auto;
-    white-space: nowrap;
-    text-align: center;
-}
-header {
-    max-width: 2100px;  /*横幅最大値*/
-    display: flex;  /*booksを使用し要素を並べる*/
-    align-items: center;
-    justify-content: space-between;  /*水平方向*/
-    /*margin: 0 auto;*/
-    /* padding: 0% 10%; */
-    height: 150px;
-    width: 100%; /*ヘッダー横幅100%に設定*/
-    /* position: sticky; */
-    /* top: 0; 上部に固定 */
-    /* background-color:rgb(255, 255, 255); */
-}
-header ul {
-    display: flex;
-    padding: 10px 0;
-    align-items: center;
-    margin-right: 10px;
-}
-header ul li {
-    font-size: 1.25rem;
-    margin-left: 5px;
+
+html {
+  font-size: 100%;
+  /*font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
 }
 
-header ul li a{
-    color: #24252e; 
+body {
+  color: #24292e;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+/*header*/
+h1 {
+  font-size: 3rem;
+  margin: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+header {
+  max-width: 2100px;
+  /*横幅最大値*/
+  display: flex;
+  /*booksを使用し要素を並べる*/
+  align-items: center;
+  justify-content: space-between;
+  /*水平方向*/
+  /*margin: 0 auto;*/
+  /* padding: 0% 10%; */
+  height: 150px;
+  width: 100%;
+  /*ヘッダー横幅100%に設定*/
+  /* position: sticky; */
+  /* top: 0; 上部に固定 */
+  /* background-color:rgb(255, 255, 255); */
+}
+
+header ul {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  margin-right: 10px;
+}
+
+header ul li {
+  font-size: 1.25rem;
+  margin-left: 5px;
+}
+
+header ul li a {
+  color: #24252e;
 }
 
 #header {
-    border-bottom: 4px solid;
-    border-collapse: separate;
-} 
-.css-header{
-    font-weight: 900;
-    font-size: 1rem;
-    white-space: nowrap;
-    padding: 20px 10% 20px 6  0%; /*90％でヘッダー　informationと右端の値を設定　重要！！*/
+  border-bottom: 4px solid;
+  border-collapse: separate;
+}
+
+.css-header {
+  font-weight: 900;
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 20px 10% 20px 6 0%;
+  /*90％でヘッダー　informationと右端の値を設定　重要！！*/
 }
 
 /*以下　マウスhover　下線*/
 header ul li a {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    letter-spacing: 3px;
-    background: white;
-    padding: 10px 20px;
-    position: relative;
-  }
-  
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 3px;
+  background: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
 header ul li a::after,
 header ul li a::before {
   content: '';
@@ -88,10 +104,12 @@ header ul li a::before {
   bottom: 0;
   transition: .5s;
 }
+
 /* 中心から線がスタートするので始点を50%の位置に移動する */
 header ul li a::after {
   left: 50%;
 }
+
 header ul li a::before {
   right: 50%;
 }
@@ -101,8 +119,9 @@ header ul li a:hover::before,
 header ul li a:hover::after {
   width: 50%;
 }
+
 /* ヘッダースクロール */
- /* header {
+/* header {
     z-index: 999;
     top: 0;
     left: 0;
@@ -122,19 +141,25 @@ header ul li a:hover::after {
     }
     100% {
         opacity: 1;
-    }}*/ 
+    }}*/
 /*header {
   position: fixed;
 }*/
- header {
-    /* position: fixed; ヘッダーを固定する */
-    top: 5%; /*上部から配置の基準位置を決める */
-    /* left: 0; 左から配置の基準位置を決める */
-    width: 100%; /*ヘッダーの横幅を指定する */
-    padding-top: 3%; /*ヘッダーの高さを指定する */
-    padding: 10px; /*ヘッダー内側の余白を指定する(上下左右) */
-    background-color: white; /*ヘッダーの背景色を指定する */
-    } 
+header {
+  /* position: fixed; ヘッダーを固定する */
+  top: 5%;
+  /*上部から配置の基準位置を決める */
+  /* left: 0; 左から配置の基準位置を決める */
+  width: 100%;
+  /*ヘッダーの横幅を指定する */
+  padding-top: 3%;
+  /*ヘッダーの高さを指定する */
+  padding: 10px;
+  /*ヘッダー内側の余白を指定する(上下左右) */
+  background-color: white;
+  /*ヘッダーの背景色を指定する */
+}
+
 /*フッター　*/
 /* footer {
     width: 100%;
@@ -158,123 +183,160 @@ footer p {
 }
 .copyright {
     font-size: 1.15rem;
-} */ */
+} */
+*/
+
 /*独立部分*/
 .menu {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
 }
+
 /* comceptとabout */
 .second {
-    font-size: 3rem;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 1em;
+  font-size: 3rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
 }
+
 /*説明文章*/
 .sentence {
-    padding: 1% 10% 2% 10%;
-    margin: 0 auto;  /*本文を中央によせる*/
-    border-radius: 30px;
+  padding: 1% 10% 2% 10%;
+  margin: 0 auto;
+  /*本文を中央によせる*/
+  border-radius: 30px;
 }
+
 /*以下線を表示*/
 .second:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -5px;/*線の上下位置*/
-    display: inline-block;
-    width: 80px;/*線の長さ*/
-    height: 5px;/*線の太さ*/
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);/*位置調整*/
-    background-color: #4d4d4d;/*線の色*/
-    border-radius: 2px;/*線の丸み*/
-  }  
-  /*囲み枠*/ 
-  .square {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 5px;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 35px 30px;
-    margin:  5% 15%; /*囲み外枠*/
-    border-radius: 30px;
-  }
-  /*囲み枠内の文章pダグ*/
-  .ex {
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 1.05rem; /*文字の大きさ*/
-    font-weight: 900; /*文字の太さ*/
-    line-height: 200%;
-  }
-  /* ヘッダー日時 */
-  /* 年 */
-  .year {
-    font-size: 2.25rem; /*2024文字拡大*/
-    line-height: 60%; /*行間詰め*/
-    padding-left: 0.2%;
-  }
-  /* 月日 */
-  .day1 , .day2 {
-    font-size: 3.5rem;
-  }
-  /* 曜日 */
-  .sun , .sat{
-    font-size: 1.25rem;
-    writing-mode: vertical-rl;
-    margin: 0% -1%;
-  }
-  /* 曜日の左寄せ（失敗） */
-  /* .youbi { */
-    /* left: -10%; */
-  /* } */
-  /* 時間 */
-  .time {
-    font-size: 1.55rem;
-    line-height: 80%;
-  }
-  /* 日時全体 */
-  .youkou {
-    font-family: futura-pt, heavy;
-    /* position: absolute; */
-    /* color: rgb(255, 255, 255); */
-    font-weight: 700;
-    margin-top: 45vh;  /*日時の場所の上部空白*/
-    margin-left: 17.5%;
-  }
-  /* 下矢印 */
-  .navigation {
-    padding-left: 2.5%;
-  }
-  /*バナーサイズ*/
-  .banner{
-    .resizeimage img { width: 100%;}
-  }
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 80px;
+  /*線の長さ*/
+  height: 5px;
+  /*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #4d4d4d;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
+}
+
+/*囲み枠*/
+.square {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 5px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 35px 30px;
+  margin: 5% 15%;
+  /*囲み外枠*/
+  border-radius: 30px;
+}
+
+/*囲み枠内の文章pダグ*/
+.ex {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.05rem;
+  /*文字の大きさ*/
+  font-weight: 900;
+  /*文字の太さ*/
+  line-height: 200%;
+}
+
+/* ヘッダー日時 */
+/* 年 */
+.year {
+  font-size: 2.25rem;
+  /*2024文字拡大*/
+  line-height: 60%;
+  /*行間詰め*/
+  padding-left: 0.2%;
+}
+
+/* 月日 */
+.day1,
+.day2 {
+  font-size: 3.5rem;
+}
+
+/* 曜日 */
+.sun,
+.sat {
+  font-size: 1.25rem;
+  writing-mode: vertical-rl;
+  margin: 0% -1%;
+}
+
+/* 曜日の左寄せ（失敗） */
+/* .youbi { */
+/* left: -10%; */
+/* } */
+/* 時間 */
+.time {
+  font-size: 1.55rem;
+  line-height: 80%;
+}
+
+/* 日時全体 */
+.youkou {
+  font-family: futura-pt, heavy;
+  /* position: absolute; */
+  /* color: rgb(255, 255, 255); */
+  font-weight: 700;
+  margin-top: 45vh;
+  /*日時の場所の上部空白*/
+  margin-left: 17.5%;
+}
+
+/* 下矢印 */
+.navigation {
+  padding-left: 2.5%;
+}
+
+/*バナーサイズ*/
+.banner img {
+  width: 60%;
+}
+.banner a{
+  margin-left: 20%;
+}
+
+
 
 .map {
   width: 55%;
   margin-left: 5%;
 }
+
 .place {
   display: flex;
   margin: 2%;
   align-items: flex-start;
 }
+
 .school {
   font-size: 1.7rem;
   padding-bottom: 20px;
   padding-top: -40px;
-} 
+}
 
 .blok {
   margin: auto;
   margin-top: 0%;
 }
+
 .address {
   font-weight: 600;
   font-size: 1.4rem;
@@ -284,55 +346,59 @@ footer p {
 
 
 /*== ボタン共通設定 */
-.btn{
+.btn {
   /*アニメーションの起点とするためrelativeを指定*/
   position: relative;
   overflow: hidden;
   /*ボタンの形状*/
   text-decoration: none;
   display: inline-block;
-  border: 1px solid #555;/* ボーダーの色と太さ */
+  border: 1px solid #555;
+  /* ボーダーの色と太さ */
   padding: 10px 30px;
   text-align: center;
   outline: none;
-  /*アニメーションの指定*/   
+  /*アニメーションの指定*/
   transition: ease .2s;
 }
 
 /*ボタン内spanの形状*/
 .btn span {
-position: relative;
-z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
-color:#333;
+  position: relative;
+  z-index: 3;
+  /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color: #333;
 }
 
-.btn:hover span{
-color:#fff;
+.btn:hover span {
+  color: #fff;
 }
 
 /*== 背景が流れる（左から右） */
 .bgleft:before {
-content: '';
+  content: '';
   /*絶対配置で位置を指定*/
-position: absolute;
-top: 0;
-left: 0;
-z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   /*色や形状*/
-background:#333;/*背景色*/
-width: 100%;
-height: 100%;
+  background: #333;
+  /*背景色*/
+  width: 100%;
+  height: 100%;
   /*アニメーション*/
-transition: transform .6s cubic-bezier(1, 1, 0.2, 1) 0s;
-transform: scale(0, 1);
-transform-origin: right top;
+  transition: transform .6s cubic-bezier(1, 1, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
 }
 
 /*hoverした際の形状*/
-.bgleft:hover:before{
-  transform-origin:left top;
-  transform:scale(1, 1);
+.bgleft:hover:before {
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
+
 /*以上*/
 /* placeボタンの配置 */
 .btnplace {
@@ -341,6 +407,7 @@ transform-origin: right top;
   margin-top: 35px;
   margin-left: 60px;
 }
+
 /* Sponsorの文字と左揃えの中央揃え */
 .sponsor {
   line-height: 40px;
@@ -348,14 +415,16 @@ transform-origin: right top;
 
 .blok {
   width: fit-content;
-	margin: 0 auto;
+  margin: 0 auto;
 }
+
 .btnspon {
   font-size: 1.5rem;
   font-weight: 500;
   display: flex;
   margin-top: 30px;
 }
+
 span {
   text-align: center;
 }
@@ -371,24 +440,24 @@ span {
 
 #splash {
   /*fixedで全面に固定*/
-position: fixed;
-z-index: 999;
-width: 100%;
-height: 100%;
-background:#333;
-text-align:center;
-color:#fff;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+  color: #fff;
 }
 
 /* Loadingバー中央配置　*/
 #splash_text {
-position: absolute;
-top: 50%;
-left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   z-index: 999;
-width: 100%;
-transform: translate(-50%, -50%);
-color: #fff;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 
@@ -401,29 +470,36 @@ color: #fff;
   margin-top: 40px;
   color: #fff;
 }
+
 #footer a {
   text-decoration: none;
   color: #fff;
 }
+
 #footer a:hover {
   text-decoration: underline;
 }
+
 #footer .primary {
   padding: 40px 20px;
   background: #333;
 }
+
 #footer .primary .flex {
   display: flex;
   margin: 3%;
 }
-#footer .primary .flex .left{
+
+#footer .primary .flex .left {
   width: 40%;
 }
-#footer .primary .flex .right{
+
+#footer .primary .flex .right {
   display: flex;
   width: 60%;
   justify-content: flex-end;
 }
+
 #footer .secondary {
   display: flex;
   padding: 40px 20px;
@@ -435,16 +511,20 @@ color: #fff;
     padding: 20px 20px;
     background: #333;
   }
+
   #footer .primary .flex {
     display: block;
   }
-  #footer .primary .flex .left{
+
+  #footer .primary .flex .left {
     width: 100%;
   }
-  #footer .primary .flex .right{
+
+  #footer .primary .flex .right {
     width: 100%;
     display: block;
   }
+
   #footer .secondary {
     display: block;
     padding: 20px 20px;
@@ -461,6 +541,7 @@ color: #fff;
   font-size: 36px;
   font-weight: bold;
 }
+
 @media screen and (max-width: 767px) {
   #footer .logo {
     font-size: 16px;
@@ -488,39 +569,46 @@ color: #fff;
   width: 25%;
   margin-left: 20px;
 }
+
 #footer .parent {
   margin: 0 0 16px 0;
   padding: 0;
   font-weight: bold;
 }
+
 #footer .navi {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 #footer .navi li {
   margin: 8px 0 0 0;
   padding: 0;
 }
+
 #footer .navi li:first-child {
   margin: 0;
 }
 
 @media screen and (max-width: 767px) {
   .navi-section {
-  display: block;
-  width: 100%;
-  margin: 40px 0 0;
-}
-#footer .parent {
-  font-size: 12px;
-  margin: 0 0 10px;
-}
+    display: block;
+    width: 100%;
+    margin: 40px 0 0;
+  }
+
+  #footer .parent {
+    font-size: 12px;
+    margin: 0 0 10px;
+  }
+
   #footer .navi {
     font-size: 12px;
     padding-bottom: 10px;
     border-bottom: 1px solid #444;
   }
+
   #footer .navi li {
     border-top: 1px solid #444;
     padding-top: 10px;
@@ -535,12 +623,14 @@ color: #fff;
   margin: 20px 0 0;
   padding: 0;
 }
+
 #footer .sns-navi li {
   display: inline-block;
   margin: 0 20px 0 0;
   padding: 0;
   font-size: 20px;
 }
+
 #footer .sns-navi li:last-child {
   margin-right: 0;
 }
@@ -550,6 +640,7 @@ color: #fff;
     margin: 20px 0 0;
     padding: 0;
   }
+
   #footer .sns-navi li {
     margin: 0 20px 0 0;
     padding: 0;
@@ -565,12 +656,14 @@ color: #fff;
   padding: 0;
   list-style: none;
 }
+
 #footer .sitenavi li {
   display: inline-block;
   margin: 0 0 0 20px;
   padding: 0;
   font-size: 1.2rem;
 }
+
 #footer .sitenavi li:first-child {
   margin-left: 0;
 }
@@ -592,6 +685,7 @@ color: #fff;
   text-align: right;
   font-size: 1.2rem;
 }
+
 @media screen and (max-width: 767px) {
   #footer .copyright {
     width: 100%;
@@ -605,6 +699,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /*バーガーメニュー */
 /*参考>> https://www.asobou.co.jp/blog/web/css-menu */
 .menu-btn {
@@ -612,13 +707,15 @@ body {
   top: 10px;
   right: 10px;
   display: flex;
-  height: 60px; /*ボタンサイズ*/
+  height: 60px;
+  /*ボタンサイズ*/
   width: 60px;
   justify-content: center;
   align-items: center;
   z-index: 90;
   background-color: #3584bb;
 }
+
 .menu-btn span,
 .menu-btn span:before,
 .menu-btn span:after {
@@ -630,28 +727,36 @@ body {
   background-color: #ffffff;
   position: absolute;
 }
+
 .menu-btn span:before {
   bottom: 8px;
 }
+
 .menu-btn span:after {
   top: 8px;
 }
+
 /* 要素1 */
-#menu-btn-check:checked ~ .menu-btn span {
-  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+#menu-btn-check:checked~.menu-btn span {
+  background-color: rgba(255, 255, 255, 0);
+  /*メニューオープン時は真ん中の線を透明にする*/
 }
-#menu-btn-check:checked ~ .menu-btn span::before {
+
+#menu-btn-check:checked~.menu-btn span::before {
   bottom: 0;
   transform: rotate(45deg);
 }
-#menu-btn-check:checked ~ .menu-btn span::after {
+
+#menu-btn-check:checked~.menu-btn span::after {
   top: 0;
   transform: rotate(-45deg);
 }
+
 /*チェックボックス隠す*/
 #menu-btn-check {
   display: none;
 }
+
 /*メニュー内容*/
 .menu-content {
   width: 100%;
@@ -662,23 +767,28 @@ body {
   z-index: 80;
   background-color: #3584bb;
 }
+
 .menu-content ul {
   padding: 70px 10px 0;
 }
+
 .menu-content ul li {
   border-bottom: solid 1px #ffffff;
   list-style: none;
 }
+
 .menu-content ul li a {
   display: block;
   width: 100%;
-  font-size: 30px;  /*メニュー内のフォントサイズ*/
+  font-size: 30px;
+  /*メニュー内のフォントサイズ*/
   box-sizing: border-box;
-  color:#ffffff;
+  color: #ffffff;
   text-decoration: none;
   padding: 9px 15px 10px 0;
   position: relative;
 }
+
 .menu-content ul li a::before {
   content: "";
   width: 7px;
@@ -696,12 +806,15 @@ body {
   height: 100%;
   position: fixed;
   top: 0;
-  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  left: 100%;
+  /*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
   background-color: #3584bb;
-  transition: all 0.5s;/*アニメーション設定*/
+  transition: all 0.5s;
+  /*アニメーション設定*/
 }
 
-#menu-btn-check:checked ~ .menu-content {
-  left: 0;/*メニューを画面内へ*/
+#menu-btn-check:checked~.menu-content {
+  left: 0;
+  /*メニューを画面内へ*/
 }
