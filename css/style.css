@@ -251,6 +251,10 @@ footer p {
   .navigation {
     padding-left: 2.5%;
   }
+  /*バナーサイズ*/
+  .banner{
+    .resizeimage img { width: 100%;}
+  }
 
 .map {
   width: 55%;
