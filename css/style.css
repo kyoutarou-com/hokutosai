@@ -204,7 +204,7 @@ footer p {
 
 /*説明文章*/
 .sentence {
-  padding: 1% 10% 2% 10%;
+  padding: 1% 5% 2% 5%;
   margin: 0 auto;
   /*本文を中央によせる*/
   border-radius: 30px;
@@ -239,8 +239,8 @@ footer p {
   -webkit-box-align: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  padding: 35px 30px;
-  margin: 5% 15%;
+  padding: 35px 2%;
+  margin: 5% 5%;
   /*囲み外枠*/
   border-radius: 30px;
 }
