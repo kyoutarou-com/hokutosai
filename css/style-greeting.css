@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+    font-family: "Sawarabi Gothic", serif;
+    font-size: 50px;
+    font-style: normal;
+    color: #121212;
+}
+
+.innerWrap {
+    border: 4px solid lightblue;
+    width: 1240px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+header .innerWrap {
+    height: 350px;
+}
+
+header h1 {
+    padding-top: 120px;
+    font-size: 100px;
+}
+
+
+
+main h2 {
+    font-size: 100px;
+}
