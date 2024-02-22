@@ -1,13 +1,28 @@
 @charset "utf-8";
 
-body {
-    font-family: "Sawarabi Gothic", serif;
-    font-size: 50px;
-    font-style: normal;
-    color: #121212;
+html{
+    font-size: 100%;
+    /*font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
 }
 
-.innerWrap {
+body {
+    font-size: 50px;
+    font-style: normal;
+    color: #24292e;
+}
+
+header  {
+    height: 325px;
+    width: 1250px;
+    border-bottom: 10px solid #24292e;
+}
+
+header h1 {
+    padding: 80px 50px;
+    font-size:120px;
+}
+
+main .innerWrap {
     border: 4px solid lightblue;
     width: 1240px;
     text-align: center;
@@ -15,17 +30,49 @@ body {
     padding: 80px 20px;
 }
 
-header .innerWrap {
-    height: 350px;
-}
-
-header h1 {
-    padding-top: 120px;
-    font-size: 100px;
-}
-
-
-
 main h2 {
     font-size: 100px;
+}
+
+footer {
+    height: 400px;
+    width: 1250px;
+    background-color:#333;
+    color:#fff;
+}
+
+footer p {
+    font-size: 35px;
+}
+
+footer .flex{
+    display: flex;
+}
+footer .left {
+    padding: 40px 0px 0px 50px;
+}
+
+footer .right {
+    margin-right:0;
+    margin-left:auto;
+    width:50%;
+    padding: 40px 80px;
+    text-align: right;
+}
+
+footer .copyright {
+    text-align:center;
+    margin-top: 30px;
+}
+
+footer .sns-navi {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+footer .sns-navi li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 20px;
 }
