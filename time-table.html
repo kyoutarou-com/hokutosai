@@ -6,15 +6,24 @@
     <title>北斗祭-2024</title>
     <meta name="description" content="本サイトは富山高等専門学校射水キャンパスで開催予定の北斗祭ホームページです。">
     <link rel="icon" type="image/x-ico" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/jquery.skeduler.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-time-table.css">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet"> <!--Googleフォント設定-->
     <script src="https://kit.fontawesome.com/bb687c5ed0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <h1 class="heading" data-en="Time table">タイムテーブル</h1>
+
+    <button onclick="generate()">Generate</button>
+    <div id="skeduler-container"></div>
+
+    <script src="js/jquery.skeduler.js"></script>
+    <script src="js/time-table.js"></script>
 </body>
 
 </html>
