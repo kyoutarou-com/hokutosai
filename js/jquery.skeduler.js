@@ -1,28 +1,28 @@
 (function ($) {
   var defaultSettings = {
     // Data attributes
-    headers: [],  // String[] - Array of column headers
-    tasks: [],    // Task[] - Array of tasks. Required fields: 
+    headers: [], // String[] - Array of column headers
+    tasks: [], // Task[] - Array of tasks. Required fields:
     // id: number, startTime: number, duration: number, column: number
 
-    // Card template - Inner content of task card. 
+    // Card template - Inner content of task card.
     // You're able to use ${key} inside template, where key is any property from task.
-    cardTemplate: '<div>${id}</div>',
+    cardTemplate: "<div>${id}</div>",
 
     // OnClick event handler
-    onClick: function (e, task) { },
+    onClick: function (e, task) {},
 
     // Css classes
-    containerCssClass: 'skeduler-container',
-    headerContainerCssClass: 'skeduler-headers',
-    schedulerContainerCssClass: 'skeduler-main',
-    taskPlaceholderCssClass: 'skeduler-task-placeholder',
-    cellCssClass: 'skeduler-cell',
+    containerCssClass: "skeduler-container",
+    headerContainerCssClass: "skeduler-headers",
+    schedulerContainerCssClass: "skeduler-main",
+    taskPlaceholderCssClass: "skeduler-task-placeholder",
+    cellCssClass: "skeduler-cell",
 
-    lineHeight: 30,      // height of one half-hour line in grid
-    borderWidth: 1,      // width of board of grid cell
+    lineHeight: 30, // height of one half-hour line in grid
+    borderWidth: 1, // width of board of grid cell
 
-    debug: false
+    debug: false,
   };
   var settings = {};
 
@@ -30,7 +30,11 @@
    * Convert double value of hours to zero-preposited string with 30 or 00 value of minutes
    */
   function toTimeString(value) {
-    return (value < 10 ? '0' : '') + Math.floor(value) + (Math.ceil(value) > Math.floor(value) ? ':30' : ':00');
+    return (
+      (value < 10 ? "0" : "") +
+      Math.floor(value) +
+      (Math.ceil(value) > Math.floor(value) ? ":30" : ":00")
+    );
   }
 
   /**
@@ -50,14 +54,14 @@
   }
 
   /**
-  * Render card template
-  */
+   * Render card template
+   */
   function renderInnerCardContent(task) {
     var result = settings.cardTemplate;
     for (var key in task) {
       if (task.hasOwnProperty(key)) {
         // TODO: replace all
-        result = result.replace('${' + key + '}', task[key]);
+        result = result.replace("${" + key + "}", task[key]);
       }
     }
 
@@ -73,8 +77,11 @@
       for (var i = 0; i < tasks.length - 1; i++) {
         var k = 0;
         var j = i + 1;
-        while (j < tasks.length && tasks[i].startTime < tasks[j].startTime
-          && tasks[i].startTime + tasks[i].duration > tasks[j].startTime) {
+        while (
+          j < tasks.length &&
+          tasks[i].startTime < tasks[j].startTime &&
+          tasks[i].startTime + tasks[i].duration > tasks[j].startTime
+        ) {
           k++;
           j++;
         }
@@ -107,19 +114,16 @@
         }
       }
 
-      return {args: args, indexes: indexes};
+      return { args: args, indexes: indexes };
     };
 
-    var args =
-      normalize(
-        findCoefficients()
-      );
+    var args = normalize(findCoefficients());
 
     for (var i = 0; i < args.args.length; i++) {
       var width = 194 / (args.args[i] || 1);
 
       tasks[i].width = width;
-      tasks[i].left = (args.indexes[i] * width) || 4;
+      tasks[i].left = args.indexes[i] * width || 4;
     }
 
     tasks.forEach(function (task, index) {
@@ -129,33 +133,46 @@
       var width = task.width || 194;
       var left = task.left || 4;
 
-      var card = $('<div></div>')
-        .attr({
-          style: 'top: ' + top + 'px; height: ' + (height - 4) + 'px; ' + 'width: ' + (width - 8) + 'px; left: ' + left + 'px',
-          title: toTimeString(task.startTime) + ' - ' + toTimeString(task.startTime + task.duration)
-        });
-      card.on('click', function (e) { settings.onClick && settings.onClick(e, task) });
-      card.append(innerContent)
-        .appendTo(placeholder);
+      var card = $("<div></div>").attr({
+        style:
+          "top: " +
+          top +
+          "px; height: " +
+          (height - 4) +
+          "px; " +
+          "width: " +
+          (width - 8) +
+          "px; left: " +
+          left +
+          "px",
+        title:
+          toTimeString(task.startTime) +
+          " - " +
+          toTimeString(task.startTime + task.duration),
+      });
+      card.on("click", function (e) {
+        settings.onClick && settings.onClick(e, task);
+      });
+      card.append(innerContent).appendTo(placeholder);
     }, this);
   }
 
   /**
-  * Generate scheduler grid with task cards
-  * options:
-  * - headers: string[] - array of headers
-  * - tasks: Task[] - array of tasks
-  * - containerCssClass: string - css class of main container
-  * - headerContainerCssClass: string - css class of header container
-  * - schedulerContainerCssClass: string - css class of scheduler
-  * - lineHeight - height of one half-hour cell in grid
-  * - borderWidth - width of border of cell in grid
-  */
+   * Generate scheduler grid with task cards
+   * options:
+   * - headers: string[] - array of headers
+   * - tasks: Task[] - array of tasks
+   * - containerCssClass: string - css class of main container
+   * - headerContainerCssClass: string - css class of header container
+   * - schedulerContainerCssClass: string - css class of scheduler
+   * - lineHeight - height of one half-hour cell in grid
+   * - borderWidth - width of border of cell in grid
+   */
   $.fn.skeduler = function (options) {
     settings = $.extend(defaultSettings, options);
 
     if (settings.debug) {
-      console.time('skeduler');
+      console.time("skeduler");
     }
 
     var skedulerEl = $(this);
@@ -163,10 +180,12 @@
     skedulerEl.empty();
     skedulerEl.addClass(settings.containerCssClass);
 
-    var div = $('<div></div>');
+    var div = $("<div></div>");
 
     // Add headers
-    var headerContainer = div.clone().addClass(settings.headerContainerCssClass);
+    var headerContainer = div
+      .clone()
+      .addClass(settings.headerContainerCssClass);
     settings.headers.forEach(function (element) {
       div.clone().text(element).appendTo(headerContainer);
     }, this);
@@ -174,16 +193,18 @@
 
     // Add schedule
     var scheduleEl = div.clone().addClass(settings.schedulerContainerCssClass);
-    var scheduleTimelineEl = div.clone().addClass(settings.schedulerContainerCssClass + '-timeline');
-    var scheduleBodyEl = div.clone().addClass(settings.schedulerContainerCssClass + '-body');
+    var scheduleTimelineEl = div
+      .clone()
+      .addClass(settings.schedulerContainerCssClass + "-timeline");
+    var scheduleBodyEl = div
+      .clone()
+      .addClass(settings.schedulerContainerCssClass + "-body");
 
     var gridColumnElement = div.clone();
 
     for (var i = 0; i < 24; i++) {
       // Populate timeline
-      div.clone()
-        .text(toTimeString(i))
-        .appendTo(scheduleTimelineEl);
+      div.clone().text(toTimeString(i)).appendTo(scheduleTimelineEl);
       div.clone().appendTo(scheduleTimelineEl);
 
       gridColumnElement.append(div.clone().addClass(settings.cellCssClass));
@@ -195,7 +216,12 @@
       var el = gridColumnElement.clone();
 
       var placeholder = div.clone().addClass(settings.taskPlaceholderCssClass);
-      appendTasks(placeholder, settings.tasks.filter(function (t) { return t.column == j }));
+      appendTasks(
+        placeholder,
+        settings.tasks.filter(function (t) {
+          return t.column == j;
+        })
+      );
 
       el.prepend(placeholder);
       el.appendTo(scheduleBodyEl);
@@ -207,9 +233,9 @@
     skedulerEl.append(scheduleEl);
 
     if (settings.debug) {
-      console.timeEnd('skeduler');
+      console.timeEnd("skeduler");
     }
 
     return skedulerEl;
   };
-}(jQuery));
+})(jQuery);

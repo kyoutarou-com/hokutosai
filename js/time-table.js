@@ -1,5 +1,5 @@
 function generate() {
-  var tasks = [];
+  const tasks = [];
   for (var i = 0; i < 20; i++) {
     var startTime = -1;
     var duration = 0.5;
@@ -37,23 +37,10 @@ function generate() {
     }
   }
 
-  console.log("tasks count: " + tasks.length);
-
   console.log(JSON.stringify(tasks));
 
   $("#skeduler-container").skeduler({
-    headers: [
-      "Specialist 1",
-      "Specialist 2",
-      "Specialist 3",
-      "Specialist 4",
-      "Specialist 5",
-      "Specialist 6",
-      "Specialist 7",
-      "Specialist 8",
-      "Specialist 9",
-      "Specialist 10",
-    ],
+    headers: ["1日目", "2日目"],
     tasks: tasks,
     cardTemplate: "<div>${id}</div><div>${title}</div>",
     onClick: function (e, t) {
