@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+.time_tables {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
 .time_table_image {
-  /* width: 400px; */
+  margin: 64px;
+  width: 300px;
 }
