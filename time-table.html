@@ -7,24 +7,29 @@
     <meta name="description" content="本サイトは富山高等専門学校射水キャンパスで開催予定の北斗祭ホームページです。">
     <link rel="icon" type="image/x-ico" href="images/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="css/jquery.skeduler.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet"> <!--Googleフォント設定-->
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-access.css">
     <link rel="stylesheet" href="css/style-time-table.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet"> <!--Googleフォント設定-->
     <script src="https://kit.fontawesome.com/bb687c5ed0.js" crossorigin="anonymous"></script>
 </head>
+
+
 
 <body>
     <h1 class="heading" data-en="Time table">タイムテーブル</h1>
 
-    <button onclick="generate()">Generate</button>
-    <div id="skeduler-container"></div>
+    <div time-tables>
+        <a href="images/campus-map-1.png" data-lightbox="time-table" data-title="タイムテーブル1日目" data-alt="タイムテーブル1">
+            <p>タイムテーブル1日目</p>
+        </a>
+        <a href="images/campus-map-2-1.png" data-lightbox="time-table" data-title="タイムテーブル2日目" data-alt="タイムテーブル2">
+            <p>タイムテーブル2日目</p>
+        </a>
+    </div>
 
-    <script src="js/jquery.skeduler.js"></script>
-    <script src="js/time-table.js"></script>
+    <script src=" js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
