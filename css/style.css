@@ -61,7 +61,7 @@ header ul li a{
     font-weight: 900;
     font-size: 1rem;
     white-space: nowrap;
-    padding: 20px 10% 20px 6  0%; /*90％でヘッダー　informationと右端の値を設定　重要！！*/
+    padding: 20px 10% 20px 60%; /*90％でヘッダー　informationと右端の値を設定　重要！！*/
 }
 
 /*以下　マウスhover　下線*/
