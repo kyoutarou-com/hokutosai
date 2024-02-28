@@ -61,7 +61,7 @@ header ul li a{
     font-weight: 900;
     font-size: 1rem;
     white-space: nowrap;
-    padding: 20px 10% 20px 60%; /*90％でヘッダー　informationと右端の値を設定　重要！！*/
+    padding: 20px 10% 20px 10%; /*90％でヘッダー　informationと右端の値を設定　重要！！*/
 }
 
 /*以下　マウスhover　下線*/
@@ -125,11 +125,11 @@ header ul li a:hover::after {
 /*header {
   position: fixed;
 }*/
- header {
+header {
     /* position: fixed; ヘッダーを固定する */
     top: 5%; /*上部から配置の基準位置を決める */
     /* left: 0; 左から配置の基準位置を決める */
-    width: 100%; /*ヘッダーの横幅を指定する */
+     width: 100%; /*ヘッダーの横幅を指定する */
     padding-top: 3%; /*ヘッダーの高さを指定する */
     padding: 10px; /*ヘッダー内側の余白を指定する(上下左右) */
     background-color: white; /*ヘッダーの背景色を指定する */
