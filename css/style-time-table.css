@@ -1,10 +1,30 @@
 @charset "UTF-8";
 
-.time_tables {
-  display: flex;
+h2 {
+  margin-bottom: 32px;
 }
 
-.time_table_image {
-  margin: 64px;
-  width: 300px;
+.time-tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.time-table {
+  margin-bottom: 64px;
+}
+
+.time-table-image {
+  max-width: 500px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 450px) {
+  .time-table-image {
+    width: 80vw;
+    padding: 0;
+  }
 }
