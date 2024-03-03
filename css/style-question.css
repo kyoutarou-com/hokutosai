@@ -23,6 +23,11 @@ li {
   font-size: 1.2rem;
 }
 
+.all {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .qa-006 {
   max-width: 800px;
   margin-bottom: 5px;
