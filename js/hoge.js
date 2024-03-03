@@ -1,3 +1,16 @@
+//head
+function head() {
+  $.ajax({
+    url: "../head.html",
+    cache: false,
+    async: false,
+    dataType: "html",
+    success: function (html) {
+      document.write(html);
+    },
+  });
+}
+
 //ヘッダー
 function header() {
   $.ajax({
@@ -10,6 +23,7 @@ function header() {
     },
   });
 }
+
 //フッター
 function footer() {
   $.ajax({
