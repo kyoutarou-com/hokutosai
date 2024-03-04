@@ -386,7 +386,7 @@ body {
 
 /* 　！フッター　終了！　 */
 
-/* スマホサイズのときのみフローティングアクションボタンを表示 */
+/* スマホサイズのときのみアプリバーを表示 */
 @media screen and (width>450px) {
   #fixed-footer-menu > ul {
     display: none;
