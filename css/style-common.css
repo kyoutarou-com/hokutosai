@@ -2,103 +2,100 @@
 
 /* 基本設定 */
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
-body{
-    color: #24292e;
+body {
+  color: #24292e;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-li{
-    list-style: none;
-    font-size: 1.2rem;
+li {
+  list-style: none;
+  font-size: 1.2rem;
 }
 
 /* 　！ヘッダー　開始！ 　*/
-
-
 
 /* h2　ページ名 */
 
 /* 　！ボタン設定　開始！　 */
 
 /*ボタン共通設定 */
-.btn{
-    /*アニメーションの起点とするためrelativeを指定*/
-    position: relative;
-    overflow: hidden;
-    /*ボタンの形状*/
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid #555;/* ボーダーの色と太さ */
-    padding: 10px 30px;
-    text-align: center;
-    outline: none;
-    /*アニメーションの指定*/   
-    transition: ease .2s;
+.btn {
+  /*アニメーションの起点とするためrelativeを指定*/
+  position: relative;
+  overflow: hidden;
+  /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #555; /* ボーダーの色と太さ */
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: ease 0.2s;
 }
 
-    /*ボタン内spanの形状*/
+/*ボタン内spanの形状*/
 .btn span {
-    position: relative;
-    z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
-    color:#333;
+  position: relative;
+  z-index: 3; /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color: #333;
 }
 
-.btn:hover span{
-    color:#fff;
+.btn:hover span {
+  color: #fff;
 }
 
-  /*== 背景が流れる（左から右） */
+/*== 背景が流れる（左から右） */
 .bgleft:before {
-    content: '';
-    /*絶対配置で位置を指定*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    /*色や形状*/
-    background:#333;/*背景色*/
-    width: 100%;
-    height: 100%;
-    /*アニメーション*/
-    transition: transform .6s cubic-bezier(1, 1, 0.2, 1) 0s;
-    transform: scale(0, 1);
-    transform-origin: right top;
+  content: "";
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /*色や形状*/
+  background: #333; /*背景色*/
+  width: 100%;
+  height: 100%;
+  /*アニメーション*/
+  transition: transform 0.6s cubic-bezier(1, 1, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
 }
 
 /*hoverした際の形状*/
-.bgleft:hover:before{
-    transform-origin:left top;
-    transform:scale(1, 1);
+.bgleft:hover:before {
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
 
 /*　！ボタン設定　終了！　*/
-
 
 /*  ！メニューバー　開始！ */
 
 /* footer用にレイアウト調整 */
 body {
-margin: 0;
-padding: 0;
-list-style: none;
-background: #eee;
-color: #333;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #eee;
+  color: #333;
 }
 
-.main-title{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.main-title {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ------------------ */
@@ -106,286 +103,292 @@ color: #333;
 /* ------------------ */
 /* メニューをページ下部に固定 */
 #fixed-footer-menu {
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    opacity: 1;
-    z-index: 100;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  opacity: 1;
+  z-index: 100;
 }
 
 /* メニューを横並びにする */
 #fixed-footer-menu ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background: #fff;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff;
 }
 
 /* メニューの要素 */
 #fixed-footer-menu li {
-    justify-content: center;
-    align-items: center;
-    width: 20%; /* 要素が5つの場合（100/5） */
-    padding: 0;
-    margin: 0;
+  justify-content: center;
+  align-items: center;
+  width: 20%; /* 要素が5つの場合（100/5） */
+  padding: 0;
+  margin: 0;
 }
 
 /* メニューのボタン */
 #fixed-footer-menu li a {
-    color: #333;
-    text-align: center;
-    display: block;
-    width: 100%;
-    padding: 10px 0px 0px 0px;
-    font-size: 8px;
-    text-decoration: none;
+  color: #333;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  font-size: 8px;
+  text-decoration: none;
 }
 
 /* メニュータイトル */
 #fixed-footer-menu li p {
-    font-size: 8px; /* メニュータイトルのフォントサイズ */
+  font-size: 8px; /* メニュータイトルのフォントサイズ */
 }
 
 /* アイコンのサイズを調整 */
 .footer-icon {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* 　！メニューバー　終了！ */
 
-
 /*　！フッター　開始！　 */
 
 #footer {
-    position: relative;
-    margin-top: 40px;
-    color: #fff;
+  position: relative;
+  margin-top: 40px;
+  color: #fff;
 }
 
 #footer a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 #footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #footer .primary {
-    padding: 40px 20px;
-    background: #333;
+  padding: 40px 20px;
+  background: #333;
 }
 
 #footer .primary .flex {
-    display: flex;
-    margin: 3%;
+  display: flex;
+  margin: 3%;
 }
 
 #footer .primary .flex .left {
-    width: 40%;
+  width: 40%;
 }
 
 #footer .primary .flex .right {
-    display: flex;
-    width: 60%;
-    justify-content: flex-end;
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
 }
 
 #footer .secondary {
-    display: flex;
-    padding: 40px 20px;
-    background: #222;
+  display: flex;
+  padding: 40px 20px;
+  background: #222;
 }
 
 @media screen and (max-width: 767px) {
-#footer .primary {
+  #footer .primary {
     padding: 20px 20px;
     background: #333;
-    }
+  }
 
-#footer .primary .flex {
+  #footer .primary .flex {
     display: block;
-    }
+  }
 
-    #footer .primary .flex .left {
+  #footer .primary .flex .left {
     width: 100%;
-    }
+  }
 
-    #footer .primary .flex .right {
+  #footer .primary .flex .right {
     width: 100%;
     display: block;
-    }
+  }
 
-    #footer .secondary {
+  #footer .secondary {
     display: block;
     padding: 20px 20px;
-    }
+  }
 }
 
-  /* logo */
+/* logo */
 
 #footer .logo {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    font-size: 36px;
-    font-weight: bold;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
-#footer .logo {
+  #footer .logo {
     font-size: 16px;
-}
+  }
 }
 
-  /* address */
+/* address */
 
 .address {
-    margin: 10px 0 0;
-    padding: 0;
+  margin: 10px 0 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 767px) {
-    .address {
+  .address {
     font-size: 12px;
-    }
+  }
 }
 
-  /* navi */
+/* navi */
 
 .navi-section {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-left: 20px;
 }
 
 #footer .parent {
-    margin: 0 0 16px 0;
-    padding: 0;
-    font-weight: bold;
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-weight: bold;
 }
 
 #footer .navi {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #footer .navi li {
-    margin: 8px 0 0 0;
-    padding: 0;
+  margin: 8px 0 0 0;
+  padding: 0;
 }
 
 #footer .navi li:first-child {
-    margin: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
-    .navi-section {
+  .navi-section {
     display: block;
     width: 100%;
     margin: 40px 0 0;
-    }
+  }
 
-    #footer .parent {
+  #footer .parent {
     font-size: 12px;
     margin: 0 0 10px;
-    }
+  }
 
-    #footer .navi {
+  #footer .navi {
     font-size: 12px;
     padding-bottom: 10px;
     border-bottom: 1px solid #444;
-    }
+  }
 
-    #footer .navi li {
+  #footer .navi li {
     border-top: 1px solid #444;
     padding-top: 10px;
     margin-top: 10px;
     font-size: 12px;
-    }
+  }
 }
 
-  /* sns-navi */
+/* sns-navi */
 
 #footer .sns-navi {
-    margin: 20px 0 0;
-    padding: 0;
+  margin: 20px 0 0;
+  padding: 0;
 }
 
 #footer .sns-navi li {
-    display: inline-block;
-    margin: 0 20px 0 0;
-    padding: 0;
-    font-size: 20px;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 20px;
 }
 
 #footer .sns-navi li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 767px) {
-    #footer .sns-navi {
+  #footer .sns-navi {
     margin: 20px 0 0;
     padding: 0;
-    }
+  }
 
-    #footer .sns-navi li {
+  #footer .sns-navi li {
     margin: 0 20px 0 0;
     padding: 0;
     font-size: 18px;
-    }
+  }
 }
 
-  /* sitenavi */
+/* sitenavi */
 
 #footer .sitenavi {
-    width: 40%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #footer .sitenavi li {
-    display: inline-block;
-    margin: 0 0 0 20px;
-    padding: 0;
-    font-size: 1.2rem;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-size: 1.2rem;
 }
 
 #footer .sitenavi li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 @media screen and (max-width: 767px) {
-    #footer .sitenavi {
+  #footer .sitenavi {
     width: 100%;
     text-align: center;
     font-size: 12px;
-    }
+  }
 }
 
-  /* copyright */
+/* copyright */
 
 #footer .copyright {
-    width: 55%;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    font-size: 1.2rem;
+  width: 55%;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 767px) {
-    #footer .copyright {
+  #footer .copyright {
     width: 100%;
     margin: 20px 0 0;
     text-align: center;
     font-size: 12px;
-    }
+  }
 }
 
 /* 　！フッター　終了！　 */
+
+/* スマホサイズのときのみフローティングアクションボタンを表示 */
+@media screen and (width>450px) {
+  #fixed-footer-menu > ul {
+    display: none;
+  }
+}
