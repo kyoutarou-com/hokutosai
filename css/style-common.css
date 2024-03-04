@@ -116,7 +116,7 @@ body {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	background: #f8edf8;
+	background: #bc77f5;
 }
 
 /* メニューの要素 */
@@ -143,6 +143,7 @@ body {
 #fixed-footer-menu li p {
 	font-size: 11px; /* メニュータイトルのフォントサイズ */
 	padding-bottom: 14px;
+	color: #fff;
 }
 
 /* アイコンのサイズを調整 */
