@@ -1,5 +1,7 @@
 {
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"extensions.ignoreRecommendations": false
+	"extensions.ignoreRecommendations": false,
+	"editor.insertSpaces": false,
+	"task.autoDetect": "off"
 }
