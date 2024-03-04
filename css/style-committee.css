@@ -1,56 +1,56 @@
 @charset "UTF-8";
 html {
-    font-size: 100%;
+	font-size: 100%;
 }
 
 body {
-    margin: auto;
+	margin: auto;
 }
 
-body{
-    color: #24292e;
+body {
+	color: #24292e;
 }
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 p {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
 }
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
-li{
-    list-style: none;
-    font-size: 1.2rem;
+li {
+	list-style: none;
+	font-size: 1.2rem;
 }
 
 .description {
-    padding-top: 0.5%;
-    font-size: 1.2rem;
-    line-height: 1.5;  /*行間*/
-    /* 以下左線 */
-    padding: 0.25em 0.5em;/*上下 左右の余白*/
-    color: #494949;/*文字色*/
-    background: transparent;/*背景透明に*/
-    border-left: solid 10px #aaabab;/*左線*/
+	padding-top: 0.5%;
+	font-size: 1.2rem;
+	line-height: 1.5; /*行間*/
+	/* 以下左線 */
+	padding: 0.25em 0.5em; /*上下 左右の余白*/
+	color: #494949; /*文字色*/
+	background: transparent; /*背景透明に*/
+	border-left: solid 10px #aaabab; /*左線*/
 }
 
 /* 本文文字装飾 */
 .description {
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 800; /*文字の太さ*/
-    line-height: 200%;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 800; /*文字の太さ*/
+	line-height: 200%;
 }
 
 .committee {
-    margin:auto 0;
-    font-size: 1.7rem;
+	margin: auto 0;
+	font-size: 1.7rem;
 }
 
 .box {
-    padding: 1% 10% 2% 10%;
-    margin: 0 auto;  /*本文を中央によせる*/
-    border-radius: 30px;
+	padding: 1% 10% 2% 10%;
+	margin: 0 auto; /*本文を中央によせる*/
+	border-radius: 30px;
 }
 
 /* ヘッダーデザイン */
@@ -79,7 +79,7 @@ li{
 }
 
 .heading::after {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -91,52 +91,59 @@ li{
 
 /* 両端線 */
 .committee {
-    position: relative;
-    display: inline-block;
-    padding: 10px 55px;
+	position: relative;
+	display: inline-block;
+	padding: 10px 55px;
 }
-  
-.committee:before, .committee:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    width: 45px;
-    height: 3px;
-    background-color: #aaabab;
+
+.committee:before,
+.committee:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 45px;
+	height: 3px;
+	background-color: #aaabab;
 }
-  
+
 .committee:before {
-    left:0;
+	left: 0;
 }
 .committee:after {
-    right: 0;
+	right: 0;
 }
 /* 両端線ここまで */
 
 /* 点線　区切り線 */
 article {
-    height: 2px;
-    position: relative;
-    margin: 0 5%;
+	height: 2px;
+	position: relative;
+	margin: 0 5%;
 }
 article::before {
-    content: "";
-    background-image: linear-gradient(to right, #ccc, #ccc 5px, transparent 5px, transparent 12px);
-    background-size: 8px 2px;
-    background-repeat: repeat-x;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+	content: "";
+	background-image: linear-gradient(
+		to right,
+		#ccc,
+		#ccc 5px,
+		transparent 5px,
+		transparent 12px
+	);
+	background-size: 8px 2px;
+	background-repeat: repeat-x;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 /* 実行委員会とは本文 */
 .text {
-    position: relative;
-    padding: 1.5em 2em;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+	position: relative;
+	padding: 1.5em 2em;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
 }
 /* 文字装飾左右の縦線（なし） */
 /* .text:before, .text:after {
@@ -149,155 +156,161 @@ article::before {
     background-color: black;
 } */
 .text:before {
-    left: 7px;
+	left: 7px;
 }
 .text:after {
-    right: 7px;
+	right: 7px;
 }
 /* 実行委員会とは文字装飾 */
 .text {
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 800; /*文字の太さ*/
-    line-height: 200%;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 800; /*文字の太さ*/
+	line-height: 200%;
 }
 .text {
-    margin-top: 5%;
+	margin-top: 5%;
 }
 .philosophy {
-    font-family: 'Alex Brush', cursive;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 600;
-    color: rgb(182, 155, 4);
+	font-family: "Alex Brush", cursive;
+	font-size: 3rem;
+	text-align: center;
+	font-weight: 600;
+	color: rgb(182, 155, 4);
 }
-.clause { 
-    font-family: "Sawarabi Gothic"; /*フォント設定*/
-    /* font-weight: 590; 太字 */
-    padding: 2% 0;
-    font-size: 2rem;
-    color: 8b8b8b;
-    font-style: oblique;
-    color: #494544;
+.clause {
+	font-family: "Sawarabi Gothic"; /*フォント設定*/
+	/* font-weight: 590; 太字 */
+	padding: 2% 0;
+	font-size: 2rem;
+	color: 8b8b8b;
+	font-style: oblique;
+	color: #494544;
 }
-.mission, .vision {
-    text-align: center; /*中央寄せ*/
+.mission,
+.vision {
+	text-align: center; /*中央寄せ*/
 }
 /* VALUEの左揃えしつつ中央揃え */
 .value {
-    width: fit-content;
+	width: fit-content;
 	margin: 0 auto;
 }
 
 .value {
-    line-height: 3rem;
-    font-style: italic;
+	line-height: 3rem;
+	font-style: italic;
 }
 
 /* 「青春」の色変更 */
 em {
-    color: #0054a7a9;
+	color: #0054a7a9;
 }
 /* 実行委員長の上線の余白 */
 .firstline {
-    margin-top: 25px;
+	margin-top: 25px;
 }
 /*バーガーメニュー */
 /*参考>> https://www.asobou.co.jp/blog/web/css-menu */
 .menu-btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    height: 60px;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    z-index: 90;
-    background-color: #3584bb;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	height: 60px;
+	width: 60px;
+	justify-content: center;
+	align-items: center;
+	z-index: 90;
+	background-color: #3584bb;
 }
 .menu-btn span,
 .menu-btn span:before,
 .menu-btn span:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    position: absolute;
+	content: "";
+	display: block;
+	height: 3px;
+	width: 25px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	position: absolute;
 }
 .menu-btn span:before {
-    bottom: 8px;
+	bottom: 8px;
 }
 .menu-btn span:after {
-    top: 8px;
+	top: 8px;
 }
 /* 要素1 */
 #menu-btn-check:checked ~ .menu-btn span {
-    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0
+	); /*メニューオープン時は真ん中の線を透明にする*/
 }
 #menu-btn-check:checked ~ .menu-btn span::before {
-    bottom: 0;
-    transform: rotate(45deg);
+	bottom: 0;
+	transform: rotate(45deg);
 }
 #menu-btn-check:checked ~ .menu-btn span::after {
-    top: 0;
-    transform: rotate(-45deg);
+	top: 0;
+	transform: rotate(-45deg);
 }
 /*チェックボックス隠す*/
 #menu-btn-check {
-    display: none;
+	display: none;
 }
 /*メニュー内容*/
 .menu-content {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 80;
-    background-color: #3584bb;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 80;
+	background-color: #3584bb;
 }
 .menu-content ul {
-    padding: 70px 10px 0;
+	padding: 70px 10px 0;
 }
 .menu-content ul li {
-    border-bottom: solid 1px #ffffff;
-    list-style: none;
+	border-bottom: solid 1px #ffffff;
+	list-style: none;
 }
 .menu-content ul li a {
-    display: block;
-    width: 100%;
-    font-size: 15px;
-    box-sizing: border-box;
-    color:#ffffff;
-    text-decoration: none;
-    padding: 9px 15px 10px 0;
-    position: relative;
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	box-sizing: border-box;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 9px 15px 10px 0;
+	position: relative;
 }
 .menu-content ul li a::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-top: solid 2px #ffffff;
-    border-right: solid 2px #ffffff;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 11px;
-    top: 16px;
+	content: "";
+	width: 7px;
+	height: 7px;
+	border-top: solid 2px #ffffff;
+	border-right: solid 2px #ffffff;
+	transform: rotate(45deg);
+	position: absolute;
+	right: 11px;
+	top: 16px;
 }
 
 .menu-content {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 100%;/*leftの値を変更してメニューを画面外へ*/
-    z-index: 80;
-    background-color: #3584bb;
-    transition: all 0.5s;/*アニメーション設定*/
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 100%; /*leftの値を変更してメニューを画面外へ*/
+	z-index: 80;
+	background-color: #3584bb;
+	transition: all 0.5s; /*アニメーション設定*/
 }
 
 #menu-btn-check:checked ~ .menu-content {
-    left: 0;/*メニューを画面内へ*/
+	left: 0; /*メニューを画面内へ*/
 }

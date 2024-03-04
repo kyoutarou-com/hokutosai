@@ -1,27 +1,27 @@
 @charset "UTF-8";
 
 .tabs {
-  display: flex;
-  justify-content: space-between;
-  margin: 32px auto;
-  width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin: 32px auto;
+	width: 80%;
 }
 
 .tab {
-  width: 31%;
-  height: 36px;
+	width: 31%;
+	height: 36px;
 }
 
 h3 {
-  text-align: center;
+	text-align: center;
 }
 
 .tab-on {
-  border-bottom: solid 2px;
-  font-weight: bold;
+	border-bottom: solid 2px;
+	font-weight: bold;
 }
 
 .tab-off {
-  border-bottom: solid 1px;
-  font-weight: lighter;
+	border-bottom: solid 1px;
+	font-weight: lighter;
 }

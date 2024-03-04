@@ -39,7 +39,9 @@
 .leaflet-dragging .leaflet-control-zoomslider-wrap,
 .leaflet-dragging .leaflet-control-zoomslider-body,
 .leaflet-dragging .leaflet-control-zoomslider a,
-.leaflet-dragging .leaflet-control-zoomslider a.leaflet-control-zoomslider-disabled,
+.leaflet-dragging
+	.leaflet-control-zoomslider
+	a.leaflet-control-zoomslider-disabled,
 .leaflet-dragging .leaflet-control-zoomslider-knob:hover {
 	cursor: move;
 	cursor: -webkit-grabbing;
@@ -66,19 +68,19 @@
 }
 
 .leaflet-control-zoomslider-in {
-	font: bold 18px 'Lucida Console', Monaco, monospace;
+	font: bold 18px "Lucida Console", Monaco, monospace;
 }
 
 .leaflet-control-zoomslider-in:after {
-	content: "\002B"
+	content: "\002B";
 }
 
 .leaflet-control-zoomslider-out {
-	font: bold 22px 'Lucida Console', Monaco, monospace;
+	font: bold 22px "Lucida Console", Monaco, monospace;
 }
 
 .leaflet-control-zoomslider-out:after {
-	content: "\2212"
+	content: "\2212";
 }
 
 .leaflet-control-zoomslider a.leaflet-control-zoomslider-disabled {
@@ -132,9 +134,15 @@
 }
 
 .leaflet-oldie .leaflet-control-zoomslider-in {
-	*zoom: expression(this.runtimeStyle['zoom']='1', this.innerHTML='\u002B');
+	*zoom: expression(
+		this.runtimeStyle[ "zoom"]= "1",
+		this.innerHTML= "\u002B"
+	);
 }
 
 .leaflet-oldie .leaflet-control-zoomslider-out {
-	*zoom: expression(this.runtimeStyle['zoom']='1', this.innerHTML='\u2212');
+	*zoom: expression(
+		this.runtimeStyle[ "zoom"]= "1",
+		this.innerHTML= "\u2212"
+	);
 }
