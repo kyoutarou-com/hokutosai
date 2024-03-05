@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
-@hamburger-menu-size: 75px;
+@hamburger-menu-size-x: 20vw;
 @hamburger-menu-size-y: 87px;
 @hamburger-menu-border-radius: 0.12em;
 @hamburger-menu-bg-color: fade(#2196f3, 0%);
 @hamburger-menu-line-height: 2px;
 @hover-line-height: @hamburger-menu-line-height;
-@hover-color: darken(@main-color, 10%);
-@content-bg-color: fade(#2962ff, 97%);
-@main-color: #fefefe;
+@hover-color: darken(@main-color, 0%);
+@content-bg-color: fade(#bc77f5, 97%);
+@main-color: #ffffff;
 @anim-duration: 0.4s;
 
 .flex-center {
@@ -21,13 +21,14 @@ a:visited,
 a:hover,
 a:active {
 	color: inherit;
+	text-decoration: none;
 }
 
 .outer-menu {
 	position: fixed;
-	bottom: 87px;
-	right: 75px;
-	z-index: 1000;
+	bottom: @hamburger-menu-size-y;
+	right: @hamburger-menu-size-x;
+	z-index: 101;
 
 	.checkbox-toggle {
 		position: absolute;
@@ -35,7 +36,7 @@ a:active {
 		left: 0;
 		z-index: 2;
 		cursor: pointer;
-		width: @hamburger-menu-size;
+		width: @hamburger-menu-size-x;
 		height: @hamburger-menu-size-y;
 		opacity: 0;
 
@@ -82,8 +83,8 @@ a:active {
 		top: 0;
 		left: 0;
 		z-index: 1;
-		width: @hamburger-menu-size;
-		height: @hamburger-menu-size;
+		width: @hamburger-menu-size-x;
+		height: @hamburger-menu-size-y;
 		padding: 0.5em 1em;
 		background: @hamburger-menu-bg-color;
 		border-radius: 0 @hamburger-menu-border-radius @hamburger-menu-border-radius 0;
@@ -106,7 +107,7 @@ a:active {
 				content: "";
 				position: absolute;
 				z-index: 1;
-				top: -@hamburger-menu-size / 6;
+				top: -@hamburger-menu-size-x / 6;
 				left: 0;
 				width: 100%;
 				height: @hamburger-menu-line-height;
@@ -115,7 +116,7 @@ a:active {
 			}
 
 			&:after {
-				top: @hamburger-menu-size / 6;
+				top: @hamburger-menu-size-x / 6;
 			}
 		}
 	}
