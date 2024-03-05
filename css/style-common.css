@@ -160,6 +160,7 @@ body {
 #footer {
 	position: relative;
 	margin-top: 40px;
+	margin-bottom: 82.59px;
 	color: #fff;
 }
 
@@ -393,5 +394,8 @@ body {
 @media screen and (width>450px) {
 	#fixed-footer-menu > ul {
 		display: none;
+	}
+	#footer {
+		margin-bottom: 0px;
 	}
 }
