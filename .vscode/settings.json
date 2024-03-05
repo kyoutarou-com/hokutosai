@@ -3,5 +3,6 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"extensions.ignoreRecommendations": false,
 	"editor.insertSpaces": false,
-	"task.autoDetect": "off"
+	"task.autoDetect": "off",
+	"files.insertFinalNewline": true
 }
