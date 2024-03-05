@@ -21,6 +21,31 @@ li {
 	font-size: 1.2rem;
 }
 
+.space {
+	margin-top: 30px;
+}
+
+table {
+	width: 85%;
+	border-collapse: collapse;
+}
+
+table th {
+	color: white;
+	border: solid 2px white;
+	text-align: center;
+	padding: 10px 0;
+	background: #27acd9;
+}
+
+table td {
+	color: #494949;
+	border: solid 2px white;
+	text-align: center;
+	padding: 10px 0;
+	background: #e1f7ff;
+}
+
 /* ヘッダーデザイン */
 .heading {
 	position: relative;
@@ -228,12 +253,7 @@ iframe {
 }
 /* 要素1 */
 #menu-btn-check:checked ~ .menu-btn span {
-	background-color: rgba(
-		255,
-		255,
-		255,
-		0
-	); /*メニューオープン時は真ん中の線を透明にする*/
+	background-color: rgba(255, 255, 255, 0); /*メニューオープン時は真ん中の線を透明にする*/
 }
 #menu-btn-check:checked ~ .menu-btn span::before {
 	bottom: 0;
