@@ -21,6 +21,11 @@ li {
 	font-size: 1.2rem;
 }
 
+.button {
+	width: 200px;
+	margin: 1% auto;
+}
+
 .space {
 	margin-top: 30px;
 }
