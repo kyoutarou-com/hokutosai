@@ -20,6 +20,7 @@
 		"@types/jquery": "^3.5.29",
 		"@types/leaflet": "^1.9.8",
 		"@types/progressbar.js": "^1.1.7",
+		"clean-webpack-plugin": "^4.0.0",
 		"css-loader": "^6.10.0",
 		"style-loader": "^3.3.4",
 		"webpack": "^5.90.3",
