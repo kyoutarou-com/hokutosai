@@ -10,7 +10,7 @@ module.exports = {
 		"campus-map": "./js/campus-map.js",
 	},
 	output: {
-		filename: "[name].js",
+		filename: "js/[name].js",
 		path: path.resolve(__dirname, "dist"),
 	},
 	module: {
@@ -38,7 +38,7 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
-		new MiniCssExtractPlugin(),
+		new MiniCssExtractPlugin({ filename: "css/style.css" }),
 		new HtmlWebpackPlugin({
 			template: "./index.html",
 		}),
