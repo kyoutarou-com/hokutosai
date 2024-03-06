@@ -3,7 +3,6 @@ const path = require("path");
 module.exports = {
 	entry: {
 		index: "./js/index.js",
-		hamburger: "./js/hamburger-menu.js",
 		map: "./js/campus-map.js",
 	},
 	output: {
