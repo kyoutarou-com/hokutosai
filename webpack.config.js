@@ -4,10 +4,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
 	entry: {
 		index: "./js/index.js",
-		map: "./js/campus-map.js",
+		"campus-map": "./js/campus-map.js",
 	},
 	output: {
-		filename: "[name].min.js",
+		filename: "[name].js",
 		path: path.resolve(__dirname, "dist"),
 	},
 	module: {
