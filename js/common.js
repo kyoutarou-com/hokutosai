@@ -3,7 +3,7 @@
 import $ from "jquery";
 
 $(function () {
-	$("#head").load("../head.html");
-	$("#header").load("../header.html");
-	$("#footer").load("../footer.html");
+	$("#head").load("../_head.html");
+	$("#header").load("../_header.html");
+	$("#footer").load("../_footer.html");
 });
