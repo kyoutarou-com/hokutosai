@@ -1,5 +1,7 @@
 "use strict";
 
-$(".checkbox").on("change", function () {
-	console.log("hello");
+$(".hoge").on("change", function () {
+	console.log(100);
 });
+
+console.log(200);

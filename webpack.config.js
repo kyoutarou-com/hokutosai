@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = {
 	entry: {
 		index: "./js/index.js",
+		hamburger: "./js/hamburger-menu.js",
 		map: "./js/campus-map.js",
 	},
 	output: {
@@ -21,5 +22,8 @@ module.exports = {
 		static: {
 			directory: path.join(__dirname, "dist"),
 		},
+	},
+	watchOptions: {
+		ignored: /node_modules/,
 	},
 };

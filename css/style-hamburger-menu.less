@@ -5,7 +5,7 @@
 @hamburger-menu-bg-color: fade(#2196f3, 0%);
 @hamburger-menu-line-height: 2px;
 @hover-line-height: @hamburger-menu-line-height;
-@hover-color: darken(@main-color, 0%);
+@hover-color: darken(@main-color, 10%);
 @content-bg-color: fade(#000000, 97%);
 @main-color: #ffffff;
 @anim-duration: 0.4s;
@@ -44,6 +44,7 @@ a:active {
 			& + .hamburger {
 				> div {
 					transform: rotate(135deg);
+					background: @main-color;
 
 					&:before,
 					&:after {
