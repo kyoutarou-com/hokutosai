@@ -1,9 +1,13 @@
 const path = require("path");
 
 module.exports = {
-	entry: "./js/index.js",
+	mode: "production",
+	entry: {
+		index: "./js/index.js",
+		map: "./js/campus-map.js",
+	},
 	output: {
-		filename: "index.min.js",
+		filename: "[name].min.js",
 		path: path.resolve(__dirname, "dist"),
 	},
 	module: {
