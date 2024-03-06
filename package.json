@@ -1,23 +1,25 @@
 {
-  "name": "hokutosai",
-  "version": "1.0.0",
-  "description": "北斗祭2024の公式HP",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jquery": "^3.7.1"
-  },
-  "devDependencies": {
-    "@types/jquery": "^3.5.29",
-    "css-loader": "^6.10.0",
-    "style-loader": "^3.3.4",
-    "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.2"
-  }
+	"name": "hokutosai",
+	"version": "1.0.0",
+	"description": "北斗祭2024の公式HP",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"jquery": "^3.7.1",
+		"progressbar.js": "^1.1.1"
+	},
+	"devDependencies": {
+		"@types/jquery": "^3.5.29",
+		"@types/progressbar.js": "^1.1.7",
+		"css-loader": "^6.10.0",
+		"style-loader": "^3.3.4",
+		"webpack": "^5.90.3",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^5.0.2"
+	}
 }

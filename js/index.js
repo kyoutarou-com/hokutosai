@@ -1,3 +1,6 @@
+import $ from "jquery";
+import ProgressBar from "progressbar.js";
+
 $(function () {
 	var $header = $("#header");
 	var scrollSize = 800; //超えると表示
