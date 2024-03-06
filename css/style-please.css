@@ -183,7 +183,7 @@ th {
 /* 表の大きさ指定 */
 th,
 td {
-	border-width: solid;
+	border-style: solid;
 	border-color: #ccc;
 	border-radius: 1px;
 	padding: 10px;
@@ -299,12 +299,7 @@ tr:hover {
 }
 /* 要素1 */
 #menu-btn-check:checked ~ .menu-btn span {
-	background-color: rgba(
-		255,
-		255,
-		255,
-		0
-	); /*メニューオープン時は真ん中の線を透明にする*/
+	background-color: rgba(255, 255, 255, 0); /*メニューオープン時は真ん中の線を透明にする*/
 }
 #menu-btn-check:checked ~ .menu-btn span::before {
 	bottom: 0;
