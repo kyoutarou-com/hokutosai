@@ -5,8 +5,8 @@
 @hamburger-menu-bg-color: fade(#2196f3, 0%);
 @hamburger-menu-line-height: 2px;
 @hover-line-height: @hamburger-menu-line-height;
-@hover-color: darken(@main-color, 0%);
-@content-bg-color: fade(#bc77f5, 97%);
+@hover-color: darken(@main-color, 10%);
+@content-bg-color: fade(#bc77f5, 90%);
 @main-color: #ffffff;
 @anim-duration: 0.4s;
 
@@ -22,6 +22,10 @@ a:hover,
 a:active {
 	color: inherit;
 	text-decoration: none;
+}
+
+.menu-text {
+	font-size: 1rem;
 }
 
 .outer-menu {
@@ -44,6 +48,7 @@ a:active {
 			& + .hamburger {
 				> div {
 					transform: rotate(135deg);
+					background: @main-color;
 
 					&:before,
 					&:after {
@@ -62,7 +67,7 @@ a:active {
 				visibility: visible;
 
 				> div {
-					transform: scale(1);
+					transform: scale(2);
 					transition-duration: 0.75s;
 
 					> div {
@@ -111,7 +116,7 @@ a:active {
 				width: 100%;
 				height: @hamburger-menu-line-height;
 				background: inherit;
-				transition: all @anim-duration ease;
+				transition: all 0 ease;
 			}
 
 			&:after {

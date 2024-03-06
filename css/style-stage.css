@@ -1,19 +1,18 @@
 @charset "UTF-8";
+
 html {
 	font-size: 100%;
-}
-
-body {
-	margin: auto;
+	/*font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
 }
 body {
 	color: #24292e;
 }
+
 a {
 	text-decoration: none;
 }
 p {
-	font-size: 1.3rem;
+	font-size: 0.8rem;
 }
 img {
 	max-width: 100%;
@@ -21,54 +20,6 @@ img {
 li {
 	list-style: none;
 	font-size: 1.2rem;
-}
-
-/* 以上定型文 */
-h1 {
-	text-align: center;
-	padding-top: 60px;
-	margin-bottom: 30px;
-}
-
-/* 下線を追加　前半部分 */
-/* .explanation {
-    border-bottom: solid 3px #b0d5ff; 下線を引く
-    position: relataive; 相対配置
-} */
-
-/*explanationの直後に追加　下線後半部分*/
-/* .explanation:before { 
-    position: absolute; 絶対配置
-    content: " ";  見出し後ろに空白文字を入れる
-    display: block;
-    border-bottom: solid 3px #5472cd;
-    bottom: -3px;
-    width: 20%;
-    left: 0;
-    height: 5px;
-    background: #27acd9;
-} */
-
-.description {
-	padding-top: 0.5%;
-	font-size: 1.25rem;
-	line-height: 1.75; /*行間*/
-	/* 以下　左線用 */
-	padding: 0.25em 0.5em; /*上下 左右の余白*/
-	color: #494949; /*文字色*/
-	background: transparent; /*背景透明に*/
-	border-left: solid 10px #aaabab; /*左線*/
-}
-
-.committee {
-	margin: auto 0;
-	font-size: 1.7rem;
-}
-
-.box {
-	padding: 1% 10% 2% 10%;
-	margin: 0 auto; /*本文を中央によせる*/
-	border-radius: 30px;
 }
 
 /* ヘッダーデザイン */
@@ -91,7 +42,7 @@ h1 {
 	top: -20px;
 	left: 50%;
 	transform: translateX(-50%);
-	color: rgba(224, 66, 114, 0.2);
+	color: rgba(120, 79, 195, 0.371);
 	font-size: 80px;
 	font-style: italic;
 }
@@ -104,14 +55,32 @@ h1 {
 	transform: translate(-50%) rotate(30deg);
 	width: 1px;
 	height: 40px;
-	background-color: rgba(224, 66, 114, 1);
+	background-color: rgba(120, 79, 195, 0.269);
+}
+/* ヘッダー文字装飾以上 */
+/*h2　下線表示*/
+h2 {
+	position: relative;
+	border-bottom: 5px solid #ddd;
+	padding: 10px 0;
+}
+h2:before {
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 20%;
+	height: 5px;
+	content: "";
+	background: #27acd9;
 }
 
-.description {
-	font-family: "Noto Sans JP", sans-serif;
-	font-weight: 800; /*文字の太さ*/
-	line-height: 200%;
+/*見出し　位置*/
+h2 {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 2%;
 }
+
 .side {
 	font-size: 1.6rem;
 }
@@ -132,81 +101,32 @@ h1 {
 	top: 50%;
 	transform: translateY(-50%);
 }
-/*見出し下線２色*/
-h2 {
-	position: relative;
-	border-bottom: 5px solid #ddd;
-	padding: 10px 0;
+/* 本文 */
+
+.site-policy
+privacy-policy {
+	margin: auto 0;
+	font-size: 1.7rem;
 }
-h2:before {
-	position: absolute;
-	left: 0;
-	bottom: -5px;
-	width: 20%;
-	height: 5px;
-	content: "";
-	background: #27acd9;
+
+.box {
+	padding: 1% 10% 1% 10%;
+	margin: 0 auto; /*本文を中央によせる*/
+	border-radius: 30px;
+	
 }
-/*見出し　位置*/
-h2 {
-	margin-left: 10%;
-	margin-right: 10%;
-	padding-left: 2%;
-}
-.text {
+
+.text2 {
 	margin: 1% 10% 2% 10%;
 }
-.explanation {
-	font-size: 2rem;
+
+.text {
+	margin: 1% 10% 2% 2%;
 }
 
-.table {
-	font-size: 1.4rem;
-	text-align: center; /*表のテキストの中央寄せ*/
+h2 {
+	font-size: 1.8rem;
 }
-
-.sub {
-	margin: 0 10% 0 10%;
-}
-/* 忘れ物表の設定 */
-table {
-	border-collapse: collapse; /*隣接する線を重ねて表示*/
-	margin: auto;
-	width: 80%;
-	margin-bottom: 50px;
-}
-/* 見出しの色 */
-th {
-	background-color: #aaabab;
-	color: rgb(31, 28, 28);
-}
-/* 表の大きさ指定 */
-th,
-td {
-	border-style: solid;
-	border-color: #ccc;
-	border-radius: 1px;
-	padding: 10px;
-}
-/* 奇数の行を変更 */
-tr:nth-child(odd) {
-	background: #efefef;
-}
-/* マウスをのせた時の色を変更 */
-tr:hover {
-	background: #d1d1d1;
-}
-/*ベビールーム場所*/
-.baby-room-image {
-	width: 80%;
-	/* margin-left: -10%; */
-	aspect-ratio: 1/1;
-}
-/* ベビールーム */
-.baby-room {
-	display: flex;
-}
-
 /*== ボタン共通設定 */
 .btn {
 	/*アニメーションの起点とするためrelativeを指定*/
@@ -258,13 +178,32 @@ tr:hover {
 	transform: scale(1, 1);
 }
 /* ボタン設定ここまで */
-/* ボタンを中央よ寄せる */
-.twobtn {
+
+/* ボタン中央設置 */
+
+.btnconta {
 	text-align: center;
+	margin-top: 10px;
 }
-/* ボタンの間を開ける */
-.btnschool {
-	margin-right: 5%;
+
+/* リスト番号0をつける */
+li {
+	list-style-type: decimal-leading-zero;
+	list-style-position: inside;
+}
+
+.service {
+	font-size: 1rem;
+	padding-left: 3%;
+}
+
+.menu {
+	font-size: 1.25rem;
+	padding-top: 20px;
+}
+
+.text {
+	font-size: 1rem;
 }
 /*バーガーメニュー */
 /*参考>> https://www.asobou.co.jp/blog/web/css-menu */
@@ -299,7 +238,12 @@ tr:hover {
 }
 /* 要素1 */
 #menu-btn-check:checked ~ .menu-btn span {
-	background-color: rgba(255, 255, 255, 0); /*メニューオープン時は真ん中の線を透明にする*/
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0
+	); /*メニューオープン時は真ん中の線を透明にする*/
 }
 #menu-btn-check:checked ~ .menu-btn span::before {
 	bottom: 0;
@@ -366,3 +310,4 @@ tr:hover {
 #menu-btn-check:checked ~ .menu-content {
 	left: 0; /*メニューを画面内へ*/
 }
+

@@ -1,5 +1,7 @@
 "use strict";
 
+import L from "leaflet";
+
 class Image {
 	constructor(name, url, width, height) {
 		Object.defineProperty(this, "name", { value: name });
@@ -35,10 +37,7 @@ function createMap(id, images) {
 		zoomControl: false,
 	});
 
-	var imageBounds = L.latLngBounds([
-		map.unproject([0, images[0].height], 2),
-		map.unproject([images[0].width, 0], 2),
-	]);
+	var imageBounds = L.latLngBounds([map.unproject([0, images[0].height], 2), map.unproject([images[0].width, 0], 2)]);
 
 	map.fitBounds(imageBounds);
 	map.setMaxBounds(imageBounds.pad(0.5));
@@ -68,8 +67,7 @@ function createMap(id, images) {
 	contents += "<li>模擬店</li>";
 	contents += "<li>展示</li>";
 	contents += "<li>ナビ</li>";
-	contents +=
-		'<li><i class="fab fa-github"></i> <a href="https://github.com/unbam/Leaflet.SlideMenu" target="_blank">GitHub</a></li>';
+	contents += '<li><i class="fab fa-github"></i> <a href="https://github.com/unbam/Leaflet.SlideMenu" target="_blank">GitHub</a></li>';
 	contents += "</ul>";
 
 	// SlideMenu

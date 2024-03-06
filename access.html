@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src="js/common.js"></script>
-		<script>
-			head();
-		</script>
-
 		<title>アクセス｜北斗祭</title>
 		<link rel="stylesheet" href="css/style-access.css" />
 	</head>
 
 	<body>
-		<script>
-			header();
-		</script>
+		<div id="head"></div>
+		<div id="header"></div>
+
 		<h1 class="heading" data-en="Access"><span>アクセス</span></h1>
 		<h2>富山高等専門学校　射水キャンパス</h2>
 		<p class="address">
@@ -22,18 +16,16 @@
 			<br />
 			富山県射水市海老江練合１番２
 		</p>
-
-		<div class="map">
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.9181197335893!2d137.15643106888334!3d36.7587784583858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff79ea9182a709d%3A0x9d311ac5104b9c23!2z5a-M5bGx6auY562J5bCC6ZaA5a2m5qChIOWwhOawtOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1709734768552!5m2!1sja!2sjp"
-				width="600"
-				height="450"
-				style="border: 0"
-				allowfullscreen=""
-				loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"
-			></iframe>
-		</div>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.487683555813!2d137.1588609!3d36.758866499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff79ea9182a709d%3A0x9d311ac5104b9c23!2z5a-M5bGx6auY562J5bCC6ZaA5a2m5qChIOWwhOawtOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1692007589960!5m2!1sja!2sjp"
+			width="600"
+			height="450"
+			style="border: 0"
+			allowfullscreen=""
+			loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"
+		>
+		</iframe>
 
 		<!-- 経路出す用のボタン -->
 		<div class="button">
@@ -107,8 +99,8 @@
 		<div class="box">
 			<h3 class="side">公共交通機関でお越しの皆様</h3>
 		</div>
-		<script>
-			footer();
-		</script>
+
+		<div id="footer"></div>
+		<script src="dist/common.js"></script>
 	</body>
 </html>

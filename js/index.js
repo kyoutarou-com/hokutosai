@@ -1,3 +1,9 @@
+"use strict";
+
+import $ from "jquery";
+import ProgressBar from "progressbar.js";
+import "../css/style.css";
+
 $(function () {
 	var $header = $("#header");
 	var scrollSize = 800; //超えると表示
