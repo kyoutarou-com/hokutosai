@@ -1,7 +1,6 @@
 const path = require("path");
 
 module.exports = {
-	mode: "production",
 	entry: {
 		index: "./js/index.js",
 		map: "./js/campus-map.js",
