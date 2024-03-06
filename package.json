@@ -9,7 +9,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "2024祭実行委員会",
 	"license": "ISC",
 	"dependencies": {
 		"jquery": "^3.7.1",
