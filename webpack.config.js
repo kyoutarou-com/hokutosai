@@ -1,5 +1,6 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
 	entry: {
@@ -16,7 +17,7 @@ module.exports = {
 				test: /\.css/,
 				use: [
 					{
-						loader: "style-loader",
+						loader: MiniCssExtractPlugin.loader,
 					},
 					{
 						loader: "css-loader",
@@ -33,5 +34,5 @@ module.exports = {
 	watchOptions: {
 		ignored: /node_modules/,
 	},
-	plugins: [new CleanWebpackPlugin()],
+	plugins: [new CleanWebpackPlugin(), new MiniCssExtractPlugin()],
 };
