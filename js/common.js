@@ -1,35 +1,9 @@
-function head() {
-	$.ajax({
-		url: "../head.html",
-		cache: false,
-		async: false,
-		dataType: "html",
-		success: function (html) {
-			document.write(html);
-		},
-	});
-}
+"use strict";
 
-function header() {
-	$.ajax({
-		url: "../header.html",
-		cache: false,
-		async: false,
-		dataType: "html",
-		success: function (html) {
-			document.write(html);
-		},
-	});
-}
+import $ from "jquery";
 
-function footer() {
-	$.ajax({
-		url: "../footer.html",
-		cache: false,
-		async: false,
-		dataType: "html",
-		success: function (html) {
-			document.write(html);
-		},
-	});
-}
+$(function () {
+	$("#head").load("../head.html");
+	$("#header").load("../header.html");
+	$("#footer").load("../footer.html");
+});

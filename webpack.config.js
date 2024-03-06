@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: {
+		common: "./js/common.js",
 		index: "./js/index.js",
 		"campus-map": "./js/campus-map.js",
 	},
