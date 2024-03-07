@@ -144,7 +144,9 @@ a:active {
 			color: @main-color;
 			background: @content-bg-color;
 			border-radius: 50%;
-			transition: all @anim-duration ease;
+			//TODO: バグの原因を特定したら戻す
+			// transition: all @anim-duration ease;
+			transition: all 0 ease;
 			flex: none;
 			transform: scale(0);
 			backface-visibility: hidden;
