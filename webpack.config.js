@@ -5,12 +5,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: {
-		common: "./src/js/common.js",
-		index: "./src/js/index.js",
-		"campus-map": "./src/js/campus-map.js",
+		common: "./src/assets/js/common.js",
+		index: "./src/assets/js/index.js",
+		"campus-map": "./src/assets//js/campus-map.js",
 	},
 	output: {
-		filename: "js/[name].js",
+		filename: "assets/js/[name].js",
 		path: path.resolve(__dirname, "dist"),
 	},
 	module: {
@@ -38,9 +38,9 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
-		new MiniCssExtractPlugin({ filename: "css/style.css" }),
+		new MiniCssExtractPlugin({ filename: "assets/css/style.css" }),
 		new HtmlWebpackPlugin({
-			template: "./src/index.html",
+			template: "src/index.html",
 		}),
 	],
 };
