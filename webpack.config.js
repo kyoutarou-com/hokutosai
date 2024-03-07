@@ -16,13 +16,16 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.css$/i,
+				test: /\.less$/,
 				use: [
 					{
 						loader: MiniCssExtractPlugin.loader,
 					},
 					{
 						loader: "css-loader",
+					},
+					{
+						loader: "less-loader",
 					},
 				],
 			},
@@ -38,7 +41,7 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
-		new MiniCssExtractPlugin({ filename: "assets/css/style.css" }),
+		new MiniCssExtractPlugin({ filename: "assets/css/style-hamburger-menu.css" }),
 		new HtmlWebpackPlugin({
 			template: "src/index.html",
 		}),
