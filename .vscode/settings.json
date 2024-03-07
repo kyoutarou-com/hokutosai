@@ -4,5 +4,6 @@
 	"extensions.ignoreRecommendations": false,
 	"editor.insertSpaces": false,
 	"task.autoDetect": "off",
-	"files.insertFinalNewline": true
+	"files.insertFinalNewline": true,
+	"cSpell.words": ["hokutofes", "hokutosai"]
 }

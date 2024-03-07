@@ -7,7 +7,9 @@
 		"start": "npx webpack-dev-server --mode development --open",
 		"build": "npx webpack --mode production",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"hoge": "git log | grep '^commit' | wc -l ; git log | grep 'Author' | cut -d ' ' -f 1,2 | sort | uniq -c | sort -nr"
+		"prehoge":"git pull origin main",
+		"hoge": "git log | grep '^commit' | wc -l",
+		"posthoge": "git log | grep 'Author' | cut -d ' ' -f 1,2 | sort | uniq -c | sort -nr"
 	},
 	"keywords": [],
 	"author": "2024祭実行委員会",
