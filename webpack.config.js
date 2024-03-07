@@ -5,9 +5,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: {
-		common: "./js/common.js",
-		index: "./js/index.js",
-		"campus-map": "./js/campus-map.js",
+		common: "./src/js/common.js",
+		index: "./src/js/index.js",
+		"campus-map": "./src/js/campus-map.js",
 	},
 	output: {
 		filename: "js/[name].js",
@@ -40,7 +40,7 @@ module.exports = {
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({ filename: "css/style.css" }),
 		new HtmlWebpackPlugin({
-			template: "./index.html",
+			template: "./src/index.html",
 		}),
 	],
 };
