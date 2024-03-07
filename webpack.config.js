@@ -2,12 +2,13 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
 	entry: {
 		common: "./src/assets/js/common.js",
 		index: "./src/assets/js/index.js",
-		"campus-map": "./src/assets//js/campus-map.js",
+		"campus-map": "./src/assets/js/campus-map.js",
 	},
 	output: {
 		filename: "assets/js/[name].js",
@@ -30,6 +31,9 @@ module.exports = {
 				],
 			},
 		],
+	},
+	optimization: {
+		minimizer: [`...`, new CssMinimizerPlugin()],
 	},
 	devServer: {
 		static: {

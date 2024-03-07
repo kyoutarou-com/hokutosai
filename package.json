@@ -7,7 +7,7 @@
 		"start": "npx webpack-dev-server --mode development --open",
 		"build": "npx webpack --mode production",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"prehoge":"git pull origin main",
+		"prehoge": "git pull origin main",
 		"hoge": "git log | grep '^commit' | wc -l",
 		"posthoge": "git log | grep 'Author' | cut -d ' ' -f 1,2 | sort | uniq -c | sort -nr"
 	},
@@ -28,6 +28,7 @@
 		"@types/progressbar.js": "^1.1.7",
 		"clean-webpack-plugin": "^4.0.0",
 		"css-loader": "^6.10.0",
+		"css-minimizer-webpack-plugin": "^6.0.0",
 		"html-webpack-plugin": "^5.6.0",
 		"less-loader": "^12.2.0",
 		"mini-css-extract-plugin": "^2.8.1",
