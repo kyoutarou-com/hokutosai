@@ -123,6 +123,17 @@ h3 {
 	}
 }
 
+.store-name {
+	margin: 16px auto;
+}
+
+.store-name + p,
+ul {
+	margin-bottom: 4px;
+	margin-left: 32px;
+	list-style-image: url(../img/navigation.png);
+}
+
 @media screen and (max-width: 450px) {
 	.section-blue,
 	.section-orange {
