@@ -1,6 +1,7 @@
 "use strict";
 
 import $ from "jquery";
+import "../css/style-hamburger-menu.less";
 
 $(function () {
 	$("#head").load("../src/_head.html");

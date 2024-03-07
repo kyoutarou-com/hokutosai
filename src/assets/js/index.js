@@ -2,7 +2,6 @@
 
 import $ from "jquery";
 import ProgressBar from "progressbar.js";
-import "../css/style-hamburger-menu.less";
 
 $(function () {
 	var $header = $("#header");
