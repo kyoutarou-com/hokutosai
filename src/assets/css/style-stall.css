@@ -30,11 +30,12 @@
 }
 
 .menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 24%;
 	height: 56px;
 	margin: 4px 1px;
-	text-align: center;
-	padding-top: 10px;
 }
 
 .menu-on,
