@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 .tabs,
-.menus,
-.sections {
+.menus {
 	display: flex;
 	justify-content: space-around;
 	margin: 32px auto;
@@ -47,7 +46,8 @@
 }
 
 .menu:hover,
-.tab:hover {
+.tab:hover,
+section:hover {
 	opacity: 0.5;
 }
 
@@ -66,8 +66,66 @@ h3 {
 	text-align: center;
 }
 
-@media screen and (max-width: 450px) {
+.sections {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 32px auto;
+	width: 80%;
+}
+
+.section-blue,
+.section-orange {
+	display: flex;
+}
+
+.section-blue {
+	width: 48%;
+	height: 256px;
+	margin-top: 32px;
+	background-color: #bde0f9;
+}
+
+.section-orange {
+	width: 48%;
+	height: 256px;
+	margin-top: 32px;
+	background-color: #f7db87;
+}
+
+.stall-image {
+	width: 50%;
+	height: 100%;
+	background-color: gray;
+}
+
+@media screen and (max-width: 850px) {
+	.section-blue,
+	.section-orange {
+		display: flex;
+		width: 48%;
+	}
 	.menu {
-		width: 46%;
+		width: 48%;
+	}
+	.stall-image {
+		width: 100%;
+		height: 50%;
+	}
+	.section-blue,
+	.section-orange {
+		flex-direction: column;
+	}
+
+	.section-blue,
+	.section-orange {
+		height: 512px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.section-blue,
+	.section-orange {
+		width: 100%;
 	}
 }
