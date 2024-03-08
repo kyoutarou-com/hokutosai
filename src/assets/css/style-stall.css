@@ -53,11 +53,13 @@ section:hover {
 
 .menu-on,
 .menu:hover {
+	/* TODO: 色編集 */
 	background-color: #09719d;
 	color: white;
 }
 
 .menu-off {
+	/* TODO: 色編集 */
 	background-color: #d9d9d9;
 	color: black;
 }
@@ -83,6 +85,8 @@ h3 {
 	width: 48%;
 	height: 256px;
 	margin-top: 32px;
+
+	/* TODO: 色編集 */
 	background-color: #bde0f9;
 }
 
@@ -90,12 +94,16 @@ h3 {
 	width: 48%;
 	height: 256px;
 	margin-top: 32px;
+
+	/* TODO: 色編集 */
 	background-color: #f7db87;
 }
 
 .stall-image {
 	width: 50%;
 	height: 100%;
+
+	/* TODO: 色編集 */
 	background-color: gray;
 }
 
