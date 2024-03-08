@@ -5,5 +5,5 @@
 	"editor.insertSpaces": false,
 	"task.autoDetect": "off",
 	"files.insertFinalNewline": true,
-	"cSpell.words": ["hokutofes", "hokutosai"]
+	"cSpell.words": ["hokutofes", "hokutosai", "progressbar"]
 }
