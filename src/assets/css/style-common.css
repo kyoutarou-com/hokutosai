@@ -22,6 +22,10 @@ li {
 	font-size: 1.2rem;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 /* 　！ヘッダー　開始！ 　*/
 
 /* h2　ページ名 */
