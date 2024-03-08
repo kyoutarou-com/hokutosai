@@ -3,6 +3,7 @@
 /* 基本設定 */
 html {
 	font-size: 100%;
+	font-family: "Sawarabi Gothic";
 }
 body {
 	color: #24292e;
@@ -158,7 +159,7 @@ body {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	background: #bc77f5;
+	background: #a9d9ea; /*色編集*/
 }
 
 /* メニューの要素 */
@@ -440,4 +441,87 @@ body {
 	#footer {
 		margin-bottom: 0px;
 	}
+}
+
+/* ！見出しバー装飾　開始！ */
+
+/* ！見出しバー装飾　終了！ */
+/* ヘッダーデザイン */
+.heading {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 35px;
+	text-align: center;
+}
+
+.heading span {
+	position: relative;
+	z-index: 2;
+}
+
+.heading::before {
+	content: attr(data-en);
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #ff9f1a; /*色編集*/
+	font-size: 80px;
+	font-style: italic;
+}
+
+.heading::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%) rotate(30deg);
+	width: 1px;
+	height: 40px;
+	background-color: #ff9f1a; /*色編集*/
+}
+/* ヘッダー文字装飾以上 */
+/*h2　下線表示*/
+h2 {
+	position: relative;
+	border-bottom: 5px solid #ddd;
+	padding: 10px 0;
+}
+h2:before {
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 20%;
+	height: 5px;
+	content: "";
+	background: #ff9f1a; /*色編集*/
+}
+
+/*見出し　位置*/
+h2 {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 2%;
+}
+
+.side {
+	font-size: 1.6rem;
+}
+/* 矢印アイコン */
+.side {
+	position: relative;
+	background: #fff;
+	padding: 0.5em 0.75em 0.5em 2.5em;
+}
+.side:before {
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f138";
+	font-weight: 900;
+	color: #ff9f1a;
+	padding: 0;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
 }
