@@ -15,7 +15,9 @@ p {
 }
 img {
 	max-width: 100%;
+	margin: 5%;
 }
+
 li {
 	list-style: none;
 	font-size: 1.2rem;
