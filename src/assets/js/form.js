@@ -1,1 +1,0 @@
-var submitted = false;
