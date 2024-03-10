@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "npx webpack-dev-server --mode development --open",
+		"json": "npx csvtojson config/hoge.csv > config/hoge.json",
 		"build": "npx webpack --mode production",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prehoge": "git pull origin main",
@@ -18,6 +19,7 @@
 		"@babel/core": "^7.24.0",
 		"@babel/preset-env": "^7.24.0",
 		"babel-loader": "^9.1.3",
+		"csvtojson": "^2.0.10",
 		"jquery": "^3.7.1",
 		"leaflet": "^1.9.4",
 		"progressbar.js": "^1.1.1"
