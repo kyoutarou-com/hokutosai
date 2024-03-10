@@ -304,3 +304,15 @@ label input:checked + span {
 		align-items: block;
 	}
 }
+
+/* プライバシーポリシー注意書き */
+.privacy {
+	font-size: 0.8rem;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10px;
+}
+
+.privacy-policy {
+	text-decoration: underline solid #000000;
+}
