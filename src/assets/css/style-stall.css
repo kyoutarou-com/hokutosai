@@ -47,7 +47,7 @@
 
 .menu:hover,
 .tab:hover,
-section:hover {
+.sections section:hover {
 	opacity: 0.5;
 }
 
