@@ -294,3 +294,13 @@ label input:checked + span {
 		margin-top: 15px;
 	}
 }
+
+@media screen and (min-width: 450px) {
+	.spacer {
+		width: 100%;
+	}
+	.kinds {
+		margin: 0 auto;
+		align-items: block;
+	}
+}
