@@ -8,11 +8,9 @@
 	<body>
 		<div id="head"></div>
 		<div id="header"></div>
-
 		<form action="https://docs.google.com/forms/d/e/1FAIpQLSfiJSoawDF38pWfNCvc-_lJ-HWNthXdZUSGgMlYowrchiimwA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted = true;" class="c-form">
 			<h2>お問い合わせ</h2>
 			<div class="form">
-				.
 				<div class="input">
 					<label class="item">名前<span class="form-item-label-required">必須</span></label
 					><br />
@@ -32,20 +30,20 @@
 				<div class="input">
 					<label class="item">種別<span class="form-item-label-required">必須</span></label
 					><br />
-					<input type="radio" name="entry.1031232859" value="北斗祭全般" required />北斗祭全般<br />
-					<input type="radio" name="entry.1031232859" value="協賛" required />協賛<br />
-					<input type="radio" name="entry.1031232859" value="忘れ物" required />忘れ物<br />
-					<input type="radio" name="entry.1031232859" value="実行委員会" required />実行委員会<br />
-					<input type="radio" name="entry.1031232859" value="その他" required />その他<br />
+					<input type="radio" name="entry.1031232859" value="北斗祭全般" />北斗祭全般<br />
+					<input type="radio" name="entry.1031232859" value="協賛" />協賛<br />
+					<input type="radio" name="entry.1031232859" value="忘れ物" />忘れ物<br />
+					<input type="radio" name="entry.1031232859" value="実行委員会" />実行委員会<br />
+					<input type="radio" name="entry.1031232859" value="その他" />その他<br />
 				</div>
 
 				<div class="input">
 					<label class="item isMsg">問い合わせ内容<span class="form-item-label-required">必須</span></label>
-					<textarea class="Form-Item-Textarea" name="entry.591505100"></textarea>
+					<textarea class="Form-Item-Textarea" name="entry.321659602" rows="3" cols="50"></textarea>
 				</div>
 
 				<label class="ECM_CheckboxInput">
-					<input class="ECM_CheckboxInput-Input" type="checkbox" name="entry.245961903" />
+					<input class="ECM_CheckboxInput-Input" type="checkbox" name="entry.245961903" value="同意する" />
 					<span class="ECM_CheckboxInput-DummyInput"></span>
 					<span class="ECM_CheckboxInput-LabelText">個人情報の取扱に同意する</span>
 				</label>
@@ -58,7 +56,7 @@
 		<script type="text/javascript">
 			var submitted = false;
 		</script>
-		<iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {window.location='answer_reception.html';}"></iframe>
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {window.location='sending.html';}"></iframe>
 
 		<div id="footer"></div>
 		<script src="../dist/assets/js/common.js"></script>
