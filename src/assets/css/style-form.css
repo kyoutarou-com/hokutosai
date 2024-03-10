@@ -17,253 +17,280 @@ img {
 	max-width: 100%;
 }
 
-
 /* フォーム全体 */
 .form {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 720px;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
 }
 @media screen and (max-width: 480px) {
-    .form {
-        margin-top: 40px;
-    }
+	.form {
+		margin-top: 40px;
+	}
 }
-
 
 /* 必須項目 */
 .form-item-label-required {
-    border-radius: 6px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 48px;
-    display: inline-block;
-    text-align: center;
-    background: #5bc8ac;
-    color: #fff;
-    font-size: 16px;
+	border-radius: 6px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 48px;
+	display: inline-block;
+	text-align: center;
+	background: #5bc8ac;
+	color: #fff;
+	font-size: 16px;
 }
 @media screen and (max-width: 450px) {
-    .form-item-label-required {
-        border-radius: 4px;
-        padding-top: 2.5px;
-        padding-bottom: 2.5px;
-        width: 32px;
-        font-size: 12px;
-    }
+	.form-item-label-required {
+		border-radius: 4px;
+		padding-top: 2.5px;
+		padding-bottom: 2.5px;
+		width: 32px;
+		font-size: 12px;
+	}
 }
 
 /* フォームと文字のブロック */
 .input {
-    border-top: 1px solid #ddd;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+	border-top: 1px solid #ddd;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
 @media screen and (max-width: 450px) {
-.input {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    flex-wrap: wrap;
-}
+	.input {
+		padding-left: 14px;
+		padding-right: 14px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		flex-wrap: wrap;
+	}
 }
 
 .item {
-    width: 100%;
-    max-width: 248px;
-    letter-spacing: 0.05em;
-    font-weight: bold;
-    font-size: 1.35rem;
+	width: 100%;
+	max-width: 248px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	font-size: 1.35rem;
 }
 
 @media screen and (max-width: 450px) {
-.item {
-    max-width: inherit;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
+	.item {
+		max-width: inherit;
+		display: flex;
+		align-items: center;
+		font-size: 20px;
+	}
 }
 
 /* ボタン枠線 */
 .input:nth-child(5) {
-    border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 }
 
 /* 長いテキスト入力欄 */
 .item .isMsg {
-    margin-top: 8px;
-    margin-bottom: auto;
+	margin-top: 8px;
+	margin-bottom: auto;
 }
 @media screen and (max-width: 450px) {
-    .item .isMsg {
-    margin-top: 0;
-    }
+	.item .isMsg {
+		margin-top: 0;
+	}
 }
-
 
 /* 入力欄 */
 .box {
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    margin-left: 40px;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 48px;
-    flex: 1;
-    width: 100%;
-    max-width: 410px;
-    background: #eaedf2;
-    font-size: 18px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 48px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	background: #eaedf2;
+	font-size: 18px;
 }
 @media screen and (max-width: 480px) {
-    .box {
-    margin-left: 0;
-    margin-top: 18px;
-    height: 40px;
-    flex: inherit;
-    font-size: 15px;
-    }
+	.box {
+		margin-left: 0;
+		margin-top: 18px;
+		height: 40px;
+		flex: inherit;
+		font-size: 15px;
+	}
 }
 
 /* 長文　入力欄 */
 .Form-Item-Textarea {
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    margin-left: 40px;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 216px;
-    flex: 1;
-    width: 100%;
-    max-width: 410px;
-    background: #eaedf2;
-    font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 216px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	background: #eaedf2;
+	font-size: 16px;
 }
 @media screen and (max-width: 450px) {
-    .Form-Item-Textarea {
-    margin-top: 18px;
-    margin-left: 0;
-    height: 200px;
-    flex: inherit;
-    font-size: 15px;
-    }
+	.Form-Item-Textarea {
+		margin-top: 18px;
+		margin-left: 0;
+		height: 200px;
+		flex: inherit;
+		font-size: 15px;
+	}
 }
 
 /* 送信ボタン */
 
 .bt-sending {
-    border-radius: 6px;
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 280px;
-    display: block;
-    letter-spacing: 0.05em;
-    background: #5bc8ac;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
+	border-radius: 6px;
+	margin-top: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 280px;
+	display: block;
+	letter-spacing: 0.05em;
+	background: #5bc8ac;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
 }
 @media screen and (max-width: 450px) {
-    .bt-sending {
-    margin-top: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 160px;
-    font-size: 16px;
-    }
+	.bt-sending {
+		margin-top: 24px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		width: 160px;
+		font-size: 16px;
+	}
 }
-
 
 /* 同意ボタン */
 .ECM_CheckboxInput {
-    padding: 12px 8px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+	padding: 12px 8px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
-    .ECM_CheckboxInput {
-        margin-left: 12px;
-    }
+	.ECM_CheckboxInput {
+		margin-left: 12px;
+	}
 }
 .ECM_CheckboxInput-Input {
-    margin: 0;
-    width: 0;
-    opacity: 0;
+	margin: 0;
+	width: 0;
+	opacity: 0;
 }
-.ECM_CheckboxInput:hover{
-    background: rgba(0,0,0,.05) !important;
+.ECM_CheckboxInput:hover {
+	background: rgba(0, 0, 0, 0.05) !important;
 }
-.ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput{
-    transform: scale(1.1);
+.ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput {
+	transform: scale(1.1);
 }
-.ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput{
-    transform: scale(1.1);
+.ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput {
+	transform: scale(1.1);
 }
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
-    background: rgb(39, 250, 162);
+	background: rgb(39, 250, 162);
 }
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 35%;
-    height: 4px;
-    border-radius: 2px;
-    transform: translate(-6px, 5px) rotateZ(-135deg);
-    transform-origin: 2px 2px;
-    background: #FFFFFF;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 35%;
+	height: 4px;
+	border-radius: 2px;
+	transform: translate(-6px, 5px) rotateZ(-135deg);
+	transform-origin: 2px 2px;
+	background: #ffffff;
 }
 
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70%;
-    height: 4px;
-    border-radius: 2px;
-    transform: translate(-6px, 5px) rotateZ(-45deg);
-    transform-origin: 2px 2px;
-    background: #FFFFFF;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	height: 4px;
+	border-radius: 2px;
+	transform: translate(-6px, 5px) rotateZ(-45deg);
+	transform-origin: 2px 2px;
+	background: #ffffff;
 }
 
 .ECM_CheckboxInput-DummyInput {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 32px;
-    height: 32px;
-    border: solid 2px transparent;
-    background: rgba(0, 0, 0, .15);
-    border-radius: 50%;
-    transition: all .15s linear;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 32px;
+	height: 32px;
+	border: solid 2px transparent;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 50%;
+	transition: all 0.15s linear;
 }
 
 .ECM_CheckboxInput-LabelText {
-    margin-left: 12px;
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
+	margin-left: 12px;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
 }
 
+h2,
+h1 {
+	text-align: center;
+}
 
-h2,h1{
-    text-align: center;
+/* ラジオボタン装飾 */
+
+input[type="radio"] {
+	display: none;
+}
+
+.kinds span {
+	display: inline-block;
+	color: #5bc0de;
+	border: 1px solid #5bc0de;
+	border-radius: 34px;
+	padding: 5px 20px;
+	width: 130px;
+	text-align: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	margin: 0 5px;
+}
+
+label input:checked + span {
+	color: #fff;
+	background: #5bc0de;
+}
+
+@media screen and (max-width: 450px) {
+	.kinds {
+		margin: 0 auto;
+		margin-top: 15px;
+	}
 }
