@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.company {
+	max-width: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	border: 2px solid #2589d0;
+	border-radius: 3px;
+}
+/* スマホ版制御 */
+@media screen and (width<450px) {
+	.company {
+		display: block;
+	}
+}
+/* PC版制御 */
+@media screen and (width>450px) {
+	.company {
+		display: inline-block;
+		width: 400px;
+		margin: 3%;
+	}
+}
+
+.company span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em 0;
+	color: #333;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.company p {
+	margin: 0;
+	padding: 1em 0.5em;
+	font-weight: 600;
+	background-color: #2589d0;
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.company span p {
+	font-family: "Sawarabi Mincho";
+}
+
+.main {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/* 下部　敬称略 */
+.attention {
+	font-size: 0.8rem;
+	text-align: center;
+}
