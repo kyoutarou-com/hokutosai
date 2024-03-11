@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "npx webpack-dev-server --mode development --open",
-		"json": "npx csvtojson config/hoge.csv > config/hoge.json",
+		"prejson": "mkdir -p dist/assets/config",
+		"json": "npx csvtojson src/assets/config/hoge.csv > dist/assets/config/hoge.json",
 		"build": "npx webpack --mode production",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prehoge": "git pull origin main",
