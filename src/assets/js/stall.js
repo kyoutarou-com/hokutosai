@@ -31,8 +31,6 @@ $(".tabs a").on("click", function () {
 
 // 上記の動きをページが読み込まれたらすぐに動かす
 $(window).on("load", function () {
-	$(".tabs li:first-of-type").addClass("active"); //最初のliにactiveクラスを追加
-	$(".area:first-of-type").addClass("is-active"); //最初の.areaにis-activeクラスを追加
 	var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
 	GethashID(hashName); //設定したタブの読み込み
 });
