@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 .sentence {
-	padding: 1% 10% 1% 10%;
 	margin: 0 auto; /*本文を中央によせる*/
 	border-radius: 30px;
 }
@@ -9,4 +8,51 @@
 .ex {
 	line-height: 1.75; /*行間*/
 	font-size: 1.1rem;
+}
+
+.square-img {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.square-img img {
+	width: 80%;
+	max-width: 600px;
+}
+/* スマホ版 */
+@media screen and (width<450px) {
+	.sentence {
+		padding: 1% 10% 1% 10%;
+	}
+}
+
+/* PC版 */
+@media screen and (width>450px) {
+	.square-img img {
+		display: flex;
+		justify-content: space-around;
+	}
+	.img-center {
+		display: flex;
+		justify-content: space-around;
+		align-content: space-between;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.square-img img {
+		width: 100%;
+		margin-left: 20px;
+	}
+
+	.sentence-about {
+		padding: 1% 10% 1% 10%;
+	}
+	.sentence {
+		margin-top: 20px;
+	}
+	.sentence-history {
+		padding-left: 5%;
+	}
 }
