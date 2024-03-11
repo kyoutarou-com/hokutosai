@@ -21,5 +21,13 @@
 	"editor.insertSpaces": false,
 	"task.autoDetect": "off",
 	"files.insertFinalNewline": true,
-	"cSpell.words": ["hokutofes", "hokutosai", "progressbar"]
+	"cSpell.words": ["hokutofes", "hokutosai", "progressbar"],
+
+	"css.validate": false,
+	"scss.validate": false,
+	"stylelint.validate": ["css", "scss"],
+	"stylelint.stylelintPath": "node_modules/stylelint",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.stylelint": "always"
+	}
 }
