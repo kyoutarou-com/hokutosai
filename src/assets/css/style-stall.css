@@ -13,23 +13,49 @@
 	margin-top: 88px;
 }
 
-.tab {
+.tabs li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 31%;
 	height: 56px;
+	border-bottom: solid 1px;
 }
 
-.tab-on,
-.tab:hover {
-	font-weight: bold;
+.tabs li a {
+	font-weight: lighter;
+}
+
+.tabs li.active,
+.tabs li:hover {
 	border-bottom: solid 3px;
 }
 
-.tab-off {
-	font-weight: lighter;
-	border-bottom: solid 1px;
+.tabs li.active a,
+.tabs li:hover a {
+	font-weight: bold;
+}
+
+.area {
+	display: none;
+	opacity: 0;
+}
+
+.area.is-active {
+	display: block;
+	animation-name: display-anime;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes display-anime {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 .menus {
@@ -46,7 +72,7 @@
 	text-align: center;
 }
 
-.tab:hover,
+.tabs li:hover,
 .menu:hover,
 .stalls section:hover {
 	opacity: 0.5;
