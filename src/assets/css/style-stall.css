@@ -14,16 +14,15 @@
 }
 
 .tabs li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 31%;
-	height: 56px;
 	border-bottom: solid 1px;
 }
 
 .tabs li a {
+	display: block;
+	padding-bottom: 8px;
 	font-weight: lighter;
+	text-align: center;
 }
 
 .tabs li.active,
@@ -38,6 +37,7 @@
 
 .area {
 	display: none;
+	padding: 16px 32px;
 	opacity: 0;
 }
 
