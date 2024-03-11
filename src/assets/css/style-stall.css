@@ -21,7 +21,6 @@
 .tabs li a {
 	display: block;
 	padding-bottom: 8px;
-	font-weight: lighter;
 	text-align: center;
 }
 
@@ -35,14 +34,18 @@
 	font-weight: bold;
 }
 
+.menus {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: flex-start;
+}
+
 .area {
 	display: none;
-	padding: 16px 32px;
-	opacity: 0;
 }
 
 .area.is-active {
-	display: block;
+	display: flex;
 	animation-name: display-anime;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
@@ -58,16 +61,9 @@
 	}
 }
 
-.menus {
-	flex-wrap: wrap;
-}
-
 .menu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 24%;
-	height: 56px;
+	width: 300px;
+	padding: 16px 32px;
 	margin: 4px 1px;
 	text-align: center;
 }
@@ -135,10 +131,6 @@ ul {
 		flex-direction: column;
 		width: 48%;
 		height: 512px;
-	}
-
-	.menu {
-		width: 48%;
 	}
 
 	.stall-image {
