@@ -52,6 +52,7 @@
 
 .location a {
 	margin-top: 16px;
+	font-size: 0.8rem;
 }
 
 .location::before {
