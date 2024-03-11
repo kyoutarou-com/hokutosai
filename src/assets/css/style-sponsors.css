@@ -7,3 +7,50 @@
 	font-weight: 600;
 	color: #666;
 }
+
+.company {
+	max-width: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	border: 2px solid #2589d0;
+	/* 丸み作成 */
+	border-radius: 10px;
+	padding-bottom: ;
+}
+/* スマホ版制御 */
+@media screen and (width<450px) {
+	.company {
+		display: block;
+	}
+}
+/* PC版制御 */
+@media screen and (width>450px) {
+	.company {
+		display: inline-block;
+		width: 400px;
+		margin: 3%;
+	}
+}
+
+.company span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5em 0;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #333;
+}
+
+.company img {
+	padding: 1em 0.5em 0.5rem 0.5rem;
+	text-align: center;
+	background-color: #2589d0;
+	margin-bottom: -3%;
+	border-radius: 0 0 10px 10px;
+}
+
+.company span p {
+	font-family: "Sawarabi Mincho";
+}
