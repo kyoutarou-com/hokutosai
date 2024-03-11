@@ -70,6 +70,8 @@ h2 {
 }
 /* リストマーカー */
 .list {
-	list-style-type: square; /*リストスタイル黒四角*/
+	list-style-type: disc; /*リストスタイル黒四角*/
 	list-style-position: inside; /*リストボックスの内側*/
+	margin-left: 20px;
+	font-size: 1rem;
 }
