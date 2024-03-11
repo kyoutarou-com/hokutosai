@@ -2,23 +2,28 @@
 
 html {
 	font-size: 100%;
-	/*font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
+	/* font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
 }
+
 body {
 	color: #24292e;
 }
+
 a {
 	text-decoration: none;
 }
+
 p {
 	font-size: 1rem;
 }
+
 img {
 	max-width: 100%;
 }
+
 li {
-	list-style: none;
 	font-size: 1rem;
+	list-style: none;
 }
 
 /* レスポンシブ対応 */
@@ -35,14 +40,14 @@ li {
 
 /* 本文 */
 .description {
+	/* 以下　左線用 */
+	padding: 0.25em 0.5em; /* 上下 左右の余白 */
 	padding-top: 0.5%;
 	font-size: 1rem;
-	line-height: 1.75; /*行間*/
-	/* 以下　左線用 */
-	padding: 0.25em 0.5em; /*上下 左右の余白*/
-	color: #494949; /*文字色*/
-	background: transparent; /*背景透明に*/
-	border-left: solid 10px #aaabab; /*左線*/
+	line-height: 1.75; /* 行間 */
+	color: #494949; /* 文字色 */
+	background: transparent; /* 背景透明に */
+	border-left: solid 10px #aaabab; /* 左線 */
 }
 
 .site-policy,
@@ -52,13 +57,13 @@ privacy-policy {
 }
 
 .box {
-	padding: 1% 10% 1% 10%;
-	margin: 0 auto; /*本文を中央によせる*/
+	padding: 1% 10%;
+	margin: 0 auto; /* 本文を中央によせる */
 	border-radius: 30px;
 }
 
 .text {
-	margin: 1% 10% 2% 10%;
+	margin: 1% 10% 2%;
 }
 
 h2 {
@@ -70,8 +75,8 @@ h2 {
 }
 /* リストマーカー */
 .list {
-	list-style-type: disc; /*リストスタイル黒四角*/
-	list-style-position: inside; /*リストボックスの内側*/
 	margin-left: 20px;
 	font-size: 1rem;
+	list-style-position: inside; /* リストボックスの内側 */
+	list-style-type: disc; /* リストスタイル黒四角 */
 }

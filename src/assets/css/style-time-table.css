@@ -17,8 +17,8 @@ h2 {
 
 .time-table-image {
 	max-width: 500px;
-	padding-left: 8%;
 	padding-right: 8%;
+	padding-left: 8%;
 }
 
 /* スマホ用 */
@@ -30,6 +30,6 @@ h2 {
 }
 
 .attention {
-	font-size: 0.8rem;
 	padding: 2% 10%;
+	font-size: 0.8rem;
 }

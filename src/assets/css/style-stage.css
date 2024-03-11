@@ -2,8 +2,9 @@
 
 html {
 	font-size: 100%;
-	/*font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
+	/* font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
 }
+
 body {
 	color: #24292e;
 }
@@ -11,15 +12,18 @@ body {
 a {
 	text-decoration: none;
 }
+
 p {
 	font-size: 0.8rem;
 }
+
 img {
 	max-width: 100%;
 }
+
 li {
-	list-style: none;
 	font-size: 1.2rem;
+	list-style: none;
 }
 
 /* 本文 */
@@ -30,13 +34,13 @@ li {
 }
 
 .box {
-	padding: 1% 10% 1% 10%;
-	margin: 0 auto; /*本文を中央によせる*/
+	padding: 1% 10%;
+	margin: 0 auto; /* 本文を中央によせる */
 	border-radius: 30px;
 }
 
 .text2 {
-	margin: 1% 10% 2% 10%;
+	margin: 1% 10% 2%;
 }
 
 .text {
@@ -50,24 +54,24 @@ h2 {
 /* ボタン中央設置 */
 
 .btnconta {
-	text-align: center;
 	margin-top: 10px;
+	text-align: center;
 }
 
 /* リスト番号0をつける */
 li {
-	list-style-type: decimal-leading-zero;
 	list-style-position: inside;
+	list-style-type: decimal-leading-zero;
 }
 
 .service {
-	font-size: 1rem;
 	padding-left: 3%;
+	font-size: 1rem;
 }
 
 .menu {
-	font-size: 1.25rem;
 	padding-top: 20px;
+	font-size: 1.25rem;
 }
 
 .text {

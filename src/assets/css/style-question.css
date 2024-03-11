@@ -9,23 +9,27 @@ body {
 body {
 	color: #24292e;
 }
+
 a {
 	text-decoration: none;
 }
+
 p {
 	font-size: 1.3rem;
 }
+
 img {
 	max-width: 100%;
 }
+
 li {
-	list-style: none;
 	font-size: 1.2rem;
+	list-style: none;
 }
 
 .all {
-	margin-left: 5%;
 	margin-right: 5%;
+	margin-left: 5%;
 }
 
 .qa-006 {
@@ -35,13 +39,13 @@ li {
 }
 
 .qa-006 summary {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	padding: 1em 2em 1em 4em;
-	color: #333333;
 	font-weight: 400;
+	color: #333;
 	cursor: pointer;
 }
 
@@ -49,8 +53,8 @@ li {
 .qa-006 p::before {
 	position: absolute;
 	left: 1em;
-	font-weight: 600;
 	font-size: 1em;
+	font-weight: 600;
 }
 
 .qa-006 summary::before {
@@ -59,14 +63,14 @@ li {
 }
 
 .qa-006 summary::after {
-	transform: translateY(-25%) rotate(45deg);
 	width: 7px;
 	height: 7px;
 	margin-left: 10px;
-	border-bottom: 3px solid #333333b3;
-	border-right: 3px solid #333333b3;
 	content: "";
+	border-right: 3px solid #333333b3;
+	border-bottom: 3px solid #333333b3;
 	transition: transform 0.5s;
+	transform: translateY(-25%) rotate(45deg);
 }
 
 .qa-006[open] summary::after {
@@ -75,23 +79,23 @@ li {
 
 .qa-006 p {
 	position: relative;
-	transform: translateY(-10px);
-	opacity: 0;
-	margin: 0;
 	padding: 0.3em 3em 1.5em;
-	color: #333;
-	transition: transform 0.5s, opacity 0.5s;
+	margin: 0;
 	font-size: 1rem;
+	color: #333;
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.5s;
+	transform: translateY(-10px);
 }
 
 .qa-006[open] p {
-	transform: none;
 	opacity: 1;
+	transform: none;
 }
 
 .qa-006 p::before {
-	color: #eebbc2;
 	line-height: 1.2;
+	color: #eebbc2;
 	content: "A.";
 }
 
@@ -116,133 +120,137 @@ li {
 }
 
 .heading::before {
-	content: attr(data-en);
 	position: absolute;
 	top: -20px;
 	left: 50%;
-	transform: translateX(-50%);
-	color: rgba(120, 79, 195, 0.371);
 	font-size: 80px;
 	font-style: italic;
+	color: rgb(120 79 195 / 37.1%);
+	content: attr(data-en);
+	transform: translateX(-50%);
 }
 
 .heading::after {
-	content: "";
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: translate(-50%) rotate(30deg);
 	width: 1px;
 	height: 40px;
-	background-color: rgba(120, 79, 195, 0.269);
+	content: "";
+	background-color: rgb(120 79 195 / 26.9%);
+	transform: translate(-50%) rotate(30deg);
 }
 /* ヘッダー文字装飾以上 */
 
 .qa-006 {
 	font-family: "Sawarabi Gothic";
 }
-/*バーガーメニュー */
-/*参考>> https://www.asobou.co.jp/blog/web/css-menu */
+/* バーガーメニュー */
+/* 参考>> https://www.asobou.co.jp/blog/web/css-menu */
 .menu-btn {
 	position: fixed;
 	top: 10px;
 	right: 10px;
-	display: flex;
-	height: 60px;
-	width: 60px;
-	justify-content: center;
-	align-items: center;
 	z-index: 90;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
 	background-color: #3584bb;
 }
+
 .menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-	content: "";
-	display: block;
-	height: 3px;
-	width: 25px;
-	border-radius: 3px;
-	background-color: #ffffff;
+.menu-btn span::before,
+.menu-btn span::after {
 	position: absolute;
+	display: block;
+	width: 25px;
+	height: 3px;
+	content: "";
+	background-color: #fff;
+	border-radius: 3px;
 }
-.menu-btn span:before {
+
+.menu-btn span::before {
 	bottom: 8px;
 }
-.menu-btn span:after {
+
+.menu-btn span::after {
 	top: 8px;
 }
 /* 要素1 */
 #menu-btn-check:checked ~ .menu-btn span {
-	background-color: rgba(
-		255,
-		255,
-		255,
-		0
-	); /*メニューオープン時は真ん中の線を透明にする*/
+	background-color: rgb(255 255 255 / 0%); /* メニューオープン時は真ん中の線を透明にする */
 }
+
 #menu-btn-check:checked ~ .menu-btn span::before {
 	bottom: 0;
 	transform: rotate(45deg);
 }
+
 #menu-btn-check:checked ~ .menu-btn span::after {
 	top: 0;
 	transform: rotate(-45deg);
 }
-/*チェックボックス隠す*/
+/* チェックボックス隠す */
 #menu-btn-check {
 	display: none;
 }
-/*メニュー内容*/
+/* メニュー内容 */
 .menu-content {
-	width: 100%;
-	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 80;
+	width: 100%;
+	height: 100%;
 	background-color: #3584bb;
 }
+
 .menu-content ul {
 	padding: 70px 10px 0;
 }
+
 .menu-content ul li {
-	border-bottom: solid 1px #ffffff;
 	list-style: none;
+	border-bottom: solid 1px #fff;
 }
+
 .menu-content ul li a {
+	position: relative;
+	box-sizing: border-box;
 	display: block;
 	width: 100%;
-	font-size: 15px;
-	box-sizing: border-box;
-	color: #ffffff;
-	text-decoration: none;
 	padding: 9px 15px 10px 0;
-	position: relative;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
 }
+
 .menu-content ul li a::before {
-	content: "";
+	position: absolute;
+	top: 16px;
+	right: 11px;
 	width: 7px;
 	height: 7px;
-	border-top: solid 2px #ffffff;
-	border-right: solid 2px #ffffff;
+	content: "";
+	border-top: solid 2px #fff;
+	border-right: solid 2px #fff;
 	transform: rotate(45deg);
-	position: absolute;
-	right: 11px;
-	top: 16px;
 }
 
 .menu-content {
-	width: 100%;
-	height: 100%;
 	position: fixed;
 	top: 0;
-	left: 100%; /*leftの値を変更してメニューを画面外へ*/
+	left: 100%; /* leftの値を変更してメニューを画面外へ */
 	z-index: 80;
+	width: 100%;
+	height: 100%;
 	background-color: #3584bb;
-	transition: all 0.5s; /*アニメーション設定*/
+	transition: all 0.5s; /* アニメーション設定 */
 }
 
 #menu-btn-check:checked ~ .menu-content {
-	left: 0; /*メニューを画面内へ*/
+	left: 0; /* メニューを画面内へ */
 }

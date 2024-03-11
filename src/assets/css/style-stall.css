@@ -4,8 +4,8 @@
 .menus {
 	display: flex;
 	justify-content: space-around;
-	margin: 32px auto;
 	width: 80%;
+	margin: 32px auto;
 }
 
 .tabs {
@@ -18,31 +18,31 @@
 
 .tab {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	width: 31%;
 	height: 56px;
 }
 
 .tab-on,
 .tab:hover {
-	border-bottom: solid 3px;
 	font-weight: bold;
+	border-bottom: solid 3px;
 }
 
 .tab-off {
-	border-bottom: solid 1px;
 	font-weight: lighter;
+	border-bottom: solid 1px;
 }
 
 .menu {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	text-align: center;
+	justify-content: center;
 	width: 24%;
 	height: 56px;
 	margin: 4px 1px;
+	text-align: center;
 }
 
 .menu:hover,
@@ -53,15 +53,15 @@
 
 .menu-on,
 .menu:hover {
+	color: white;
 	/* TODO: 色編集 */
 	background-color: #09719d;
-	color: white;
 }
 
 .menu-off {
+	color: black;
 	/* TODO: 色編集 */
 	background-color: #d9d9d9;
-	color: black;
 }
 
 h3 {
@@ -72,8 +72,8 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 32px auto;
 	width: 80%;
+	margin: 32px auto;
 }
 
 .section-blue,
@@ -113,13 +113,16 @@ h3 {
 		display: flex;
 		width: 48%;
 	}
+
 	.menu {
 		width: 48%;
 	}
+
 	.stall-image {
 		width: 100%;
 		height: 50%;
 	}
+
 	.section-blue,
 	.section-orange {
 		flex-direction: column;
@@ -139,7 +142,7 @@ h3 {
 ul {
 	margin-bottom: 4px;
 	margin-left: 32px;
-	list-style-image: url(../img/navigation.png);
+	list-style-image: url("../img/navigation.png");
 }
 
 @media screen and (max-width: 450px) {

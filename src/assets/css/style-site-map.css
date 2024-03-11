@@ -2,28 +2,27 @@
 
 .check {
 	position: relative;
-	padding-left: 1.2em; /*アイコン分のスペース*/
-	line-height: 1.4;
+	padding-left: 1.2em; /* アイコン分のスペース */
 	font-family: "Sawarabi Mincho";
 	font-weight: 450;
+	line-height: 1.4;
 }
 
-.check:before {
+.check::before {
+	position: absolute; /* 絶対位置 */
+	top: 0; /* アイコンの位置 */
+	left: 0; /* アイコンの位置 */
 	font-family: "Font Awesome 5 Free";
-	content: "\f00c"; /*アイコンのユニコード*/
+	font-size: 1em; /* サイズ */
 	font-weight: 900;
-	position: absolute; /*絶対位置*/
-	font-size: 1em; /*サイズ*/
-	left: 0; /*アイコンの位置*/
-	top: 0; /*アイコンの位置*/
-	color: #f178e7; /*アイコン色*/
-	font-weight: 900;
+	color: #f178e7; /* アイコン色 */
+	content: "\f00c"; /* アイコンのユニコード */
 }
 
 ul {
 	display: flex;
-	margin-left: 30px;
 	grid-template-columns: 40px;
+	margin-left: 30px;
 }
 
 .content {
@@ -32,7 +31,7 @@ ul {
 }
 
 a {
-	color: rgb(104, 42, 99);
+	color: rgb(104 42 99);
 }
 
 .large {
@@ -40,77 +39,77 @@ a {
 }
 
 h2 {
-	margin-bottom: 1px;
 	margin-top: 30px;
+	margin-bottom: 1px;
 }
 
 /* テキスト変更設定開始 */
 
 .gnavi li a {
-	/*テキストの基点とするためrelativeを指定*/
+	/* テキストの基点とするためrelativeを指定 */
 	position: relative;
-	/*はみ出る要素を隠す*/
-	overflow: hidden;
 	padding: 20px 60px;
+	/* はみ出る要素を隠す */
+	overflow: hidden;
 }
 
 .gnavi li span {
-	/*絶対配置でテキストの位置を決める*/
+	top: 0;
+	/* 絶対配置でテキストの位置を決める */
 	/* position: absolute; */
 	left: 50%;
-	top: 0;
-	/*アニメーションの指定*/
-	transition: all 0.5s;
-	transform: translate(-50%, 0); /*X方向に-50% ※中央寄せにするため*/
-	/*ブロック要素にして透過なし、テキスト折り返しなし*/
+	/* ブロック要素にして透過なし、テキスト折り返しなし */
 	display: inline-block;
-	opacity: 1;
 	white-space: nowrap;
+	opacity: 1;
+	/* アニメーションの指定 */
+	transition: all 0.5s;
+	transform: translate(-50%, 0); /* X方向に-50% ※中央寄せにするため */
 }
 
-/*差し替わるテキストの設定*/
+/* 差し替わるテキストの設定 */
 .gnavi li span:nth-child(2) {
-	opacity: 0; /*透過0に*/
-	transform: translate(-50%, 100%); /*X方向に-50% Y方向に100%*/
+	opacity: 0; /* 透過0に */
+	transform: translate(-50%, 100%); /* X方向に-50% Y方向に100% */
 }
 
-/*hoverするとテキストが入れ替わる設定*/
+/* hoverするとテキストが入れ替わる設定 */
 .gnavi li:hover span:nth-child(1) {
-	opacity: 0; /*透過0に*/
-	transform: translate(-50%, -100%); /*X方向に-50% Y方向に-100%*/
+	opacity: 0; /* 透過0に */
+	transform: translate(-50%, -100%); /* X方向に-50% Y方向に-100% */
 }
 
 .gnavi li:hover span:nth-child(2) {
-	opacity: 1; /*不透明に*/
-	transform: translate(-50%, 0); /*X方向に-50% Y方向に0*/
+	opacity: 1; /* 不透明に */
+	transform: translate(-50%, 0); /* X方向に-50% Y方向に0 */
 }
 
 /* リンク横並び配列 */
 .gnavi {
 	display: flex;
-	flex-wrap: wrap; /*スマホ表示折り返し用なのでPCのみなら不要*/
-	margin: 0 0 50px 0;
+	flex-wrap: wrap; /* スマホ表示折り返し用なのでPCのみなら不要 */
+	margin: 0 0 50px;
 	list-style: none;
 }
 
 .gnavi li a {
 	display: block;
-	text-decoration: none;
-	color: #333;
 	height: 40px;
+	color: #333;
+	text-decoration: none;
 }
 
 .gnavi li {
-	margin-bottom: 20px;
 	width: 200px;
 	height: 40px;
+	margin-bottom: 20px;
 }
 
 .show {
-	text-align: center;
 	font-family: "Sawarabi Mincho";
 	font-size: 20px;
 	font-weight: 600;
+	text-align: center;
 }
 
 /* ヘッダーデザイン */
@@ -128,129 +127,133 @@ h2 {
 }
 
 .heading::before {
-	content: attr(data-en);
 	position: absolute;
 	top: -20px;
 	left: 50%;
-	transform: translateX(-50%);
-	color: rgba(120, 79, 195, 0.371);
 	font-size: 80px;
 	font-style: italic;
+	color: rgb(120 79 195 / 37.1%);
+	content: attr(data-en);
+	transform: translateX(-50%);
 }
 
 .heading::after {
-	content: "";
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: translate(-50%) rotate(30deg);
 	width: 1px;
 	height: 40px;
-	background-color: rgba(120, 79, 195, 0.269);
+	content: "";
+	background-color: rgb(120 79 195 / 26.9%);
+	transform: translate(-50%) rotate(30deg);
 }
 /* ヘッダー文字装飾以上 */
-/*バーガーメニュー */
-/*参考>> https://www.asobou.co.jp/blog/web/css-menu */
+/* バーガーメニュー */
+/* 参考>> https://www.asobou.co.jp/blog/web/css-menu */
 .menu-btn {
 	position: fixed;
 	top: 10px;
 	right: 10px;
-	display: flex;
-	height: 60px;
-	width: 60px;
-	justify-content: center;
-	align-items: center;
 	z-index: 90;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
 	background-color: #3584bb;
 }
+
 .menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-	content: "";
-	display: block;
-	height: 3px;
-	width: 25px;
-	border-radius: 3px;
-	background-color: #ffffff;
+.menu-btn span::before,
+.menu-btn span::after {
 	position: absolute;
+	display: block;
+	width: 25px;
+	height: 3px;
+	content: "";
+	background-color: #fff;
+	border-radius: 3px;
 }
-.menu-btn span:before {
+
+.menu-btn span::before {
 	bottom: 8px;
 }
-.menu-btn span:after {
+
+.menu-btn span::after {
 	top: 8px;
 }
 /* 要素1 */
 #menu-btn-check:checked ~ .menu-btn span {
-	background-color: rgba(
-		255,
-		255,
-		255,
-		0
-	); /*メニューオープン時は真ん中の線を透明にする*/
+	background-color: rgb(255 255 255 / 0%); /* メニューオープン時は真ん中の線を透明にする */
 }
+
 #menu-btn-check:checked ~ .menu-btn span::before {
 	bottom: 0;
 	transform: rotate(45deg);
 }
+
 #menu-btn-check:checked ~ .menu-btn span::after {
 	top: 0;
 	transform: rotate(-45deg);
 }
-/*チェックボックス隠す*/
+/* チェックボックス隠す */
 #menu-btn-check {
 	display: none;
 }
-/*メニュー内容*/
+/* メニュー内容 */
 .menu-content {
-	width: 100%;
-	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 80;
+	width: 100%;
+	height: 100%;
 	background-color: #3584bb;
 }
+
 .menu-content ul {
 	padding: 70px 10px 0;
 }
+
 .menu-content ul li {
-	border-bottom: solid 1px #ffffff;
 	list-style: none;
+	border-bottom: solid 1px #fff;
 }
+
 .menu-content ul li a {
+	position: relative;
+	box-sizing: border-box;
 	display: block;
 	width: 100%;
-	font-size: 15px;
-	box-sizing: border-box;
-	color: #ffffff;
-	text-decoration: none;
 	padding: 9px 15px 10px 0;
-	position: relative;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
 }
+
 .menu-content ul li a::before {
-	content: "";
+	position: absolute;
+	top: 16px;
+	right: 11px;
 	width: 7px;
 	height: 7px;
-	border-top: solid 2px #ffffff;
-	border-right: solid 2px #ffffff;
+	content: "";
+	border-top: solid 2px #fff;
+	border-right: solid 2px #fff;
 	transform: rotate(45deg);
-	position: absolute;
-	right: 11px;
-	top: 16px;
 }
 
 .menu-content {
-	width: 100%;
-	height: 100%;
 	position: fixed;
 	top: 0;
-	left: 100%; /*leftの値を変更してメニューを画面外へ*/
+	left: 100%; /* leftの値を変更してメニューを画面外へ */
 	z-index: 80;
+	width: 100%;
+	height: 100%;
 	background-color: #3584bb;
-	transition: all 0.5s; /*アニメーション設定*/
+	transition: all 0.5s; /* アニメーション設定 */
 }
 
 #menu-btn-check:checked ~ .menu-content {
-	left: 0; /*メニューを画面内へ*/
+	left: 0; /* メニューを画面内へ */
 }

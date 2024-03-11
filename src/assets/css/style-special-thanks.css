@@ -25,22 +25,22 @@
 
 .company span {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	padding: 0.5em 0;
-	color: #333;
 	font-size: 1.25rem;
 	font-weight: 700;
+	color: #333;
 }
 
 .company p {
-	margin: 0;
 	padding: 1em 0.5em;
-	font-weight: 600;
-	background-color: #2589d0;
-	color: #fff;
+	margin: 0;
 	font-size: 1.5rem;
+	font-weight: 600;
+	color: #fff;
 	text-align: center;
+	background-color: #2589d0;
 }
 
 .company span p {
@@ -48,8 +48,8 @@
 }
 
 .main {
-	margin-left: 10%;
 	margin-right: 10%;
+	margin-left: 10%;
 }
 
 /* 下部　敬称略 */

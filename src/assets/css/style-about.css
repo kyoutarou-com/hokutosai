@@ -1,20 +1,20 @@
 @charset "UTF-8";
 
 .sentence {
-	margin: 0 auto; /*本文を中央によせる*/
+	margin: 0 auto; /* 本文を中央によせる */
 	border-radius: 30px;
 }
 
 .ex {
-	line-height: 1.75; /*行間*/
 	font-size: 1.1rem;
+	line-height: 1.75; /* 行間 */
 }
 
 .square-img {
 	display: flex;
+	justify-content: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	justify-content: center;
 }
 
 .square-img img {
@@ -24,7 +24,7 @@
 /* スマホ版 */
 @media screen and (width<450px) {
 	.sentence {
-		padding: 1% 10% 1% 10%;
+		padding: 1% 10%;
 	}
 }
 
@@ -34,24 +34,27 @@
 		display: flex;
 		justify-content: space-around;
 	}
+
 	.img-center {
 		display: flex;
-		justify-content: space-around;
-		align-content: space-between;
-		padding-left: 10%;
+		place-content: space-between space-around;
 		padding-right: 10%;
+		padding-left: 10%;
 	}
+
 	.square-img img {
 		width: 100%;
 		margin-left: 20px;
 	}
 
 	.sentence-about {
-		padding: 1% 10% 1% 10%;
+		padding: 1% 10%;
 	}
+
 	.sentence {
 		margin-top: 20px;
 	}
+
 	.sentence-history {
 		padding-left: 5%;
 	}

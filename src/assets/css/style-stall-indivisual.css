@@ -6,44 +6,44 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 64px auto;
 	width: 80%;
+	margin: 64px auto;
 }
 
 .stall-wrapper {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
 	width: 100%;
 }
 
 .stall-image {
-	margin-left: 32px;
-	margin-right: 16px;
 	width: 400px;
 	height: 400px;
+	margin-right: 16px;
+	margin-left: 32px;
 	background-color: gray;
 }
 
 .stall-description {
-	margin-left: 16px;
-	margin-right: 32px;
 	width: 30%;
+	margin-right: 32px;
+	margin-left: 16px;
 }
 
 .stall-description li {
 	position: relative;
-	margin-top: 32px;
 	padding-left: 32px;
+	margin-top: 32px;
 }
 
 .stall-description li::before {
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
 	position: absolute;
 	top: 4px;
 	left: 0;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 .organization::before {
@@ -51,9 +51,9 @@
 }
 
 .location a {
-	margin-top: 16px;
-	padding-left: 12px;
 	padding-right: 12px;
+	padding-left: 12px;
+	margin-top: 16px;
 }
 
 .location::before {
@@ -70,41 +70,41 @@
 
 .stall-comment {
 	position: relative;
-	background: #fff0cd;
-	box-shadow: 0px 0px 0px 5px #fff0cd;
-	border: dashed 2px white;
-	padding: 0.2em 0.5em;
-	color: #454545;
-	margin-top: 64px;
 	width: 90%;
+	padding: 0.2em 0.5em;
+	margin-top: 64px;
+	color: #454545;
+	background: #fff0cd;
+	border: dashed 2px white;
+	box-shadow: 0 0 0 5px #fff0cd;
 }
 
-.stall-comment:after {
+.stall-comment::after {
 	position: absolute;
-	content: "";
-	right: -7px;
 	top: -7px;
-	border-width: 0 15px 15px 0;
+	right: -7px;
+	content: "";
+	border-color: #ffdb88 #fff;
 	border-style: solid;
-	border-color: #ffdb88 #fff #ffdb88;
-	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+	border-width: 0 15px 15px 0;
+	box-shadow: -1px 1px 1px rgb(0 0 0 / 15%);
 }
 
 .stall-comment p {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
 
 @media (max-width: 885px) {
 	.stall-image {
-		margin: 0;
 		width: 54vw;
 		height: 54vw;
+		margin: 0;
 	}
 
 	.stall-description {
-		margin: 0;
 		width: 90%;
+		margin: 0;
 	}
 }
 

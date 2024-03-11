@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html {
 	font-size: 100%;
 }
@@ -6,28 +7,33 @@ html {
 body {
 	margin: auto;
 }
+
 body {
 	color: #24292e;
 }
+
 a {
 	text-decoration: none;
 }
+
 p {
 	font-size: 1.3rem;
 }
+
 img {
 	max-width: 100%;
 }
+
 li {
-	list-style: none;
 	font-size: 1.2rem;
+	list-style: none;
 }
 
 /* 以上定型文 */
 h1 {
-	text-align: center;
 	padding-top: 60px;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 /* 下線を追加　前半部分 */
@@ -36,7 +42,7 @@ h1 {
     position: relataive; 相対配置
 } */
 
-/*explanationの直後に追加　下線後半部分*/
+/* explanationの直後に追加　下線後半部分 */
 /* .explanation:before { 
     position: absolute; 絶対配置
     content: " ";  見出し後ろに空白文字を入れる
@@ -50,14 +56,14 @@ h1 {
 } */
 
 .description {
+	/* 以下　左線用 */
+	padding: 0.25em 0.5em; /* 上下 左右の余白 */
 	padding-top: 0.5%;
 	font-size: 1.25rem;
-	line-height: 1.75; /*行間*/
-	/* 以下　左線用 */
-	padding: 0.25em 0.5em; /*上下 左右の余白*/
-	color: #494949; /*文字色*/
-	background: transparent; /*背景透明に*/
-	border-left: solid 10px #aaabab; /*左線*/
+	line-height: 1.75; /* 行間 */
+	color: #494949; /* 文字色 */
+	background: transparent; /* 背景透明に */
+	border-left: solid 10px #aaabab; /* 左線 */
 }
 
 .committee {
@@ -66,60 +72,63 @@ h1 {
 }
 
 .box {
-	padding: 1% 10% 2% 10%;
-	margin: 0 auto; /*本文を中央によせる*/
+	padding: 1% 10% 2%;
+	margin: 0 auto; /* 本文を中央によせる */
 	border-radius: 30px;
 }
 
 .description {
 	font-family: "Noto Sans JP", sans-serif;
-	font-weight: 800; /*文字の太さ*/
+	font-weight: 800; /* 文字の太さ */
 	line-height: 200%;
 }
+
 .side {
 	font-size: 1.6rem;
 }
 
-/*見出し　位置*/
+/* 見出し　位置 */
 h2 {
-	margin-left: 10%;
-	margin-right: 10%;
 	padding-left: 2%;
+	margin-right: 10%;
+	margin-left: 10%;
 }
+
 .text {
-	margin: 1% 10% 2% 10%;
+	margin: 1% 10% 2%;
 }
+
 .explanation {
 	font-size: 2rem;
 }
 
 .table {
 	font-size: 1.4rem;
-	text-align: center; /*表のテキストの中央寄せ*/
+	text-align: center; /* 表のテキストの中央寄せ */
 }
 
 .sub {
-	margin: 0 10% 0 10%;
+	margin: 0 10%;
 }
 /* 忘れ物表の設定 */
 table {
-	border-collapse: collapse; /*隣接する線を重ねて表示*/
-	margin: auto;
 	width: 80%;
+	margin: auto;
 	margin-bottom: 50px;
+	border-collapse: collapse; /* 隣接する線を重ねて表示 */
 }
 /* 見出しの色 */
 th {
+	color: rgb(31 28 28);
 	background-color: #aaabab;
-	color: rgb(31, 28, 28);
 }
 /* 表の大きさ指定 */
 th,
 td {
-	border-style: solid;
-	border-color: #ccc;
-	border-radius: 1px;
 	padding: 10px;
+	border-color: #ccc;
+	border-style: solid;
+	border-radius: 1px;
 }
 /* 奇数の行を変更 */
 tr:nth-child(odd) {
@@ -129,7 +138,7 @@ tr:nth-child(odd) {
 tr:hover {
 	background: #d1d1d1;
 }
-/*ベビールーム場所*/
+/* ベビールーム場所 */
 .baby-room-image {
 	width: 80%;
 	/* margin-left: -10%; */

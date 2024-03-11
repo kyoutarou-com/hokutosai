@@ -1,11 +1,11 @@
-.bt-header{
-    background-color: #f02828e1;
-    color: #fff;
-    padding: 10px 13px;
-    border-radius: 6px;
-    text-align: center;
+.bt-header {
+	padding: 10px 13px;
+	color: #fff;
+	text-align: center;
+	background-color: #f02828e1;
+	border-radius: 6px;
 }
 
 a {
-    color: #fff;
+	color: #fff;
 }

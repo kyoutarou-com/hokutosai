@@ -2,27 +2,31 @@
 
 html {
 	font-size: 100%;
-	/*font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
+	/* font-family: "Sawarabi Gothic";  Googleフォント設定(必要なし) */
 }
+
 body {
 	color: #24292e;
 }
+
 a {
 	text-decoration: none;
 }
+
 p {
 	font-size: 1.3rem;
 }
+
 img {
 	max-width: 100%;
 }
 
 /* フォーム全体 */
 .form {
-	margin-top: 80px;
-	margin-left: auto;
-	margin-right: auto;
 	max-width: 720px;
+	margin-top: 80px;
+	margin-right: auto;
+	margin-left: auto;
 }
 @media screen and (max-width: 480px) {
 	.form {
@@ -32,60 +36,57 @@ img {
 
 /* 必須項目 */
 .form-item-label-required {
-	border-radius: 6px;
-	margin-right: 20px;
-	margin-left: 20px;
+	display: inline-block;
+	width: 48px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: 48px;
-	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
 	text-align: center;
 	background: #5bc8ac;
-	color: #fff;
-	font-size: 16px;
+	border-radius: 6px;
 }
 @media screen and (max-width: 450px) {
 	.form-item-label-required {
-		border-radius: 4px;
+		width: 32px;
 		padding-top: 2.5px;
 		padding-bottom: 2.5px;
-		width: 32px;
 		font-size: 12px;
+		border-radius: 4px;
 	}
 }
 
 /* フォームと文字のブロック */
 .input {
-	border-top: 1px solid #ddd;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	width: 100%;
 	display: flex;
 	align-items: center;
+	width: 100%;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	border-top: 1px solid #ddd;
 }
 @media screen and (max-width: 450px) {
 	.input {
-		padding-left: 14px;
-		padding-right: 14px;
-		padding-top: 16px;
-		padding-bottom: 16px;
 		flex-wrap: wrap;
+		padding: 16px 14px;
 	}
 }
 
 .item {
 	width: 100%;
 	max-width: 248px;
-	letter-spacing: 0.05em;
-	font-weight: bold;
 	font-size: 1.35rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
 }
 
 @media screen and (max-width: 450px) {
 	.item {
-		max-width: inherit;
 		display: flex;
 		align-items: center;
+		max-width: inherit;
 		font-size: 20px;
 	}
 }
@@ -108,48 +109,48 @@ img {
 
 /* 入力欄 */
 .box {
-	border: 1px solid #ddd;
-	border-radius: 6px;
-	margin-left: 40px;
-	padding-left: 1em;
-	padding-right: 1em;
-	height: 48px;
 	flex: 1;
 	width: 100%;
 	max-width: 410px;
-	background: #eaedf2;
+	height: 48px;
+	padding-right: 1em;
+	padding-left: 1em;
+	margin-left: 40px;
 	font-size: 18px;
+	background: #eaedf2;
+	border: 1px solid #ddd;
+	border-radius: 6px;
 }
 @media screen and (max-width: 480px) {
 	.box {
-		margin-left: 0;
-		margin-top: 18px;
-		height: 40px;
 		flex: inherit;
+		height: 40px;
+		margin-top: 18px;
+		margin-left: 0;
 		font-size: 15px;
 	}
 }
 
 /* 長文　入力欄 */
 .Form-Item-Textarea {
-	border: 1px solid #ddd;
-	border-radius: 6px;
-	margin-left: 40px;
-	padding-left: 1em;
-	padding-right: 1em;
-	height: 216px;
 	flex: 1;
 	width: 100%;
 	max-width: 410px;
-	background: #eaedf2;
+	height: 216px;
+	padding-right: 1em;
+	padding-left: 1em;
+	margin-left: 40px;
 	font-size: 16px;
+	background: #eaedf2;
+	border: 1px solid #ddd;
+	border-radius: 6px;
 }
 @media screen and (max-width: 450px) {
 	.Form-Item-Textarea {
+		flex: inherit;
+		height: 200px;
 		margin-top: 18px;
 		margin-left: 0;
-		height: 200px;
-		flex: inherit;
 		font-size: 15px;
 	}
 }
@@ -157,35 +158,35 @@ img {
 /* 送信ボタン */
 
 .bt-sending {
-	border-radius: 6px;
-	margin-top: 32px;
-	margin-left: auto;
-	margin-right: auto;
+	display: block;
+	width: 280px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	width: 280px;
-	display: block;
+	margin-top: 32px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
 	letter-spacing: 0.05em;
 	background: #5bc8ac;
-	color: #fff;
-	font-weight: bold;
-	font-size: 20px;
+	border-radius: 6px;
 }
 @media screen and (max-width: 450px) {
 	.bt-sending {
-		margin-top: 24px;
+		width: 160px;
 		padding-top: 8px;
 		padding-bottom: 8px;
-		width: 160px;
+		margin-top: 24px;
 		font-size: 16px;
 	}
 }
 
 /* 同意ボタン */
 .ECM_CheckboxInput {
-	padding: 12px 8px;
 	display: flex;
 	align-items: center;
+	padding: 12px 8px;
 	cursor: pointer;
 }
 
@@ -194,49 +195,55 @@ img {
 		margin-left: 12px;
 	}
 }
+
 .ECM_CheckboxInput-Input {
-	margin: 0;
 	width: 0;
+	margin: 0;
 	opacity: 0;
 }
+
 .ECM_CheckboxInput:hover {
-	background: rgba(0, 0, 0, 0.05) !important;
+	background: rgb(0 0 0 / 5%) !important;
 }
+
 .ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput {
 	transform: scale(1.1);
 }
+
 .ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput {
 	transform: scale(1.1);
 }
+
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
-	background: rgb(39, 250, 162);
+	background: rgb(39 250 162);
 }
+
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
-	content: "";
-	display: block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	display: block;
 	width: 35%;
 	height: 4px;
+	content: "";
+	background: #fff;
 	border-radius: 2px;
 	transform: translate(-6px, 5px) rotateZ(-135deg);
 	transform-origin: 2px 2px;
-	background: #ffffff;
 }
 
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::after {
-	content: "";
-	display: block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	display: block;
 	width: 70%;
 	height: 4px;
+	content: "";
+	background: #fff;
 	border-radius: 2px;
 	transform: translate(-6px, 5px) rotateZ(-45deg);
 	transform-origin: 2px 2px;
-	background: #ffffff;
 }
 
 .ECM_CheckboxInput-DummyInput {
@@ -246,15 +253,15 @@ img {
 	display: block;
 	width: 32px;
 	height: 32px;
+	background: rgb(0 0 0 / 15%);
 	border: solid 2px transparent;
-	background: rgba(0, 0, 0, 0.15);
 	border-radius: 50%;
 	transition: all 0.15s linear;
 }
 
 .ECM_CheckboxInput-LabelText {
-	margin-left: 12px;
 	display: block;
+	margin-left: 12px;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -271,16 +278,16 @@ input[type="radio"] {
 }
 
 .kinds span {
+	box-sizing: border-box;
 	display: inline-block;
-	color: #5bc0de;
-	border: 1px solid #5bc0de;
-	border-radius: 34px;
-	padding: 5px 20px;
 	width: 130px;
+	padding: 5px 20px;
+	margin: 0 5px;
+	color: #5bc0de;
 	text-align: center;
 	cursor: pointer;
-	box-sizing: border-box;
-	margin: 0 5px;
+	border: 1px solid #5bc0de;
+	border-radius: 34px;
 }
 
 label input:checked + span {
@@ -299,20 +306,21 @@ label input:checked + span {
 	.spacer {
 		width: 100%;
 	}
+
 	.kinds {
-		margin: 0 auto;
 		align-items: block;
+		margin: 0 auto;
 	}
 }
 
 /* プライバシーポリシー注意書き */
 .privacy {
-	font-size: 0.8rem;
-	margin-left: 10%;
-	margin-right: 10%;
 	margin-top: 10px;
+	margin-right: 10%;
+	margin-left: 10%;
+	font-size: 0.8rem;
 }
 
 .privacy-policy {
-	text-decoration: underline solid #000000;
+	text-decoration: underline solid #000;
 }
