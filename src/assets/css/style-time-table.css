@@ -28,3 +28,8 @@ h2 {
 		padding: 0;
 	}
 }
+
+.attention {
+	font-size: 0.8rem;
+	padding: 2% 10%;
+}
