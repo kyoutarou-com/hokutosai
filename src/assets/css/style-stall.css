@@ -24,6 +24,16 @@
 	text-align: center;
 }
 
+.menus li {
+	width: 300px;
+	padding: 16px 32px;
+	margin: 4px 1px;
+	color: black;
+	text-align: center;
+	/* TODO: 色編集 */
+	background-color: #d9d9d9;
+}
+
 .tabs li.active,
 .tabs li:hover {
 	border-bottom: solid 3px;
@@ -61,30 +71,17 @@
 	}
 }
 
-.menu {
-	width: 300px;
-	padding: 16px 32px;
-	margin: 4px 1px;
-	text-align: center;
-}
-
 .tabs li:hover,
-.menu:hover,
+.menus li:hover,
 .stalls section:hover {
 	opacity: 0.5;
 }
 
-.menu:hover,
-.menu-on {
+.menus li.active,
+.menus li:hover {
 	color: white;
 	/* TODO: 色編集 */
 	background-color: #09719d;
-}
-
-.menu-off {
-	color: black;
-	/* TODO: 色編集 */
-	background-color: #d9d9d9;
 }
 
 .stalls {
