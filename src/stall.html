@@ -12,35 +12,59 @@
 		<h1 class="heading" data-en="Stall">模擬店</h1>
 		<h2>模擬店一覧</h2>
 
+		<!-- タブ -->
 		<ul class="tabs">
 			<li class="active"><a href="#product">販売品から探す</a></li>
 			<li><a href="#location">場所から探す</a></li>
 			<li><a href="#organization">団体から探す</a></li>
 		</ul>
 
-		<ul class="menus area is-active" id="product">
-			<li class="active"><a>軽食</a></li>
-			<li><a>スイーツ・ドリンク</a></li>
-			<li><a>カフェ</a></li>
-			<li><a>似顔絵</a></li>
+		<!-- メニュー -->
+		<ul class="menus area-tab is-active" id="product">
+			<li class="active"><a href="#food">軽食</a></li>
+			<li><a href="#drink">スイーツ・ドリンク</a></li>
+			<li><a href="#cafe">カフェ</a></li>
+			<li><a href="#art">似顔絵</a></li>
 		</ul>
 
-		<ul class="menus area" id="location">
-			<li class="active"><a>まるまる</a></li>
-			<li><a>まるまる</a></li>
-			<li><a>まるまる</a></li>
-			<li><a>まるまる</a></li>
+		<ul class="menus area-tab" id="location">
+			<li class="active"><a href="#area1">まるまる</a></li>
+			<li><a href="#area2">まるまる</a></li>
+			<li><a href="#area3">まるまる</a></li>
+			<li><a href="#area4">まるまる</a></li>
 		</ul>
 
-		<ul class="menus area" id="organization">
-			<li class="active"><a>ほげほげ</a></li>
-			<li><a>ほげほげ</a></li>
-			<li><a>ほげほげ</a></li>
-			<li><a>ほげほげ</a></li>
+		<ul class="menus area-tab" id="organization">
+			<li class="active"><a href="#organization1">ほげほげ</a></li>
+			<li><a href="#organization2">ほげほげ</a></li>
+			<li><a href="#organization3">ほげほげ</a></li>
+			<li><a href="#organization4">ほげほげ</a></li>
 		</ul>
 
-		<div class="stalls">
-			<section class="stall">
+		<!-- 模擬店紹介 -->
+		<div class="stalls area-menu is-active" id="food">軽食</div>
+		<div class="stalls area-menu" id="drink">スイーツ・ドリンク</div>
+		<div class="stalls area-menu" id="cafe">カフェ</div>
+		<div class="stalls area-menu" id="art">似顔絵</div>
+
+		<div class="stalls area-menu is-active" id="area1">area1</div>
+		<div class="stalls area-menu" id="area2">area2</div>
+		<div class="stalls area-menu" id="area3">area3</div>
+		<div class="stalls area-menu" id="area4">area4</div>
+
+		<div class="stalls area-menu is-active" id="organization1">organization1</div>
+		<div class="stalls area-menu" id="organization2">organization2</div>
+		<div class="stalls area-menu" id="organization3">organization3</div>
+		<div class="stalls area-menu" id="organization4">organization4</div>
+
+		<div id="footer"></div>
+		<script src="../dist/assets/js/common.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script src="assets/js/stall.js"></script>
+	</body>
+</html>
+
+<!-- <section class="stall">
 				<img class="stall-image" src="#" alt="画像" />
 				<div class="box2-10">
 					<h3 class="store-name">店名</h3>
@@ -52,9 +76,9 @@
 						<li>･hoge</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
-			<section class="stall">
+<!-- <section class="stall">
 				<img class="stall-image" src="#" alt="画像" />
 				<div class="box2-10">
 					<h3 class="store-name">hoge</h3>
@@ -66,40 +90,4 @@
 						<li>･hoge</li>
 					</ul>
 				</div>
-			</section>
-
-			<section class="stall">
-				<img class="stall-image" src="#" alt="画像" />
-				<div class="box2-10">
-					<h3 class="store-name">hoge</h3>
-					<p>メニュー</p>
-					<ul>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="stall">
-				<img class="stall-image" src="#" alt="画像" />
-				<div class="box2-10">
-					<h3 class="store-name">hoge</h3>
-					<p>メニュー</p>
-					<ul>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-
-		<div id="footer"></div>
-		<script src="../dist/assets/js/common.js"></script>
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-		<script src="assets/js/stall.js"></script>
-	</body>
-</html>
+			</section> -->

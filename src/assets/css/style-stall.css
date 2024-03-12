@@ -34,6 +34,11 @@
 	background-color: #d9d9d9;
 }
 
+.menus li a {
+	display: block;
+	color: white;
+}
+
 .tabs li.active,
 .tabs li:hover {
 	border-bottom: solid 3px;
@@ -50,11 +55,21 @@
 	justify-content: flex-start;
 }
 
-.area {
+.stalls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: 32px auto;
+}
+
+.area-tab,
+.area-menu {
 	display: none;
 }
 
-.area.is-active {
+.area-tab.is-active,
+.area-menu.is-active {
 	display: flex;
 	animation-name: display-anime;
 	animation-duration: 2s;
@@ -82,14 +97,6 @@
 	color: white;
 	/* TODO: 色編集 */
 	background-color: #09719d;
-}
-
-.stalls {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 80%;
-	margin: 32px auto;
 }
 
 .stall {
