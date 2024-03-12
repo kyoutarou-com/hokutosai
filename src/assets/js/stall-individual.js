@@ -38,4 +38,4 @@ $.ajax({
 	url: "../../../dist/assets/config/stall-individual.json",
 	dataType: "json",
 	async: false,
-}).then(onSuccess, onerror);
+}).then(onSuccess, onError);
