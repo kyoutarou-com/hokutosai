@@ -33,3 +33,29 @@ h2 {
 	padding: 2% 10%;
 	font-size: 0.8rem;
 }
+
+.fas-image-expansioncircle {
+	position: relative;
+	display: inline-block;
+}
+
+.fas-image-expansioncircle::after {
+	position: absolute;
+	right: 48px;
+	bottom: 8px;
+	width: 30px;
+	height: 30px;
+	font-family: "Font Awesome 5 Free";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 900;
+	font-variant: normal;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	content: "\f00e";
+	background: rgb(51 102 204 / 80%);
+	border-radius: 15px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
