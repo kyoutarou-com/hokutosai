@@ -5,5 +5,6 @@ module.exports = {
 		"property-no-vendor-prefix": null,
 		"comment-empty-line-before": null,
 		"media-feature-range-notation": "prefix",
+		"font-family-no-missing-generic-family-keyword": null,
 	},
 };
