@@ -1,0 +1,6 @@
+image,organization,location,time,attention
+/path/to/image1.jpg,サンプル団体A,東京都渋谷区,特になし
+/path/to/image2.jpg,サンプル団体B,大阪府大阪市,入場時に身分証明書を提示
+/path/to/image3.jpg,サンプル団体C,福岡県福岡市,写真撮影禁止
+/path/to/image4.jpg,サンプル団体D,北海道札幌市,会場内禁煙
+/path/to/image5.jpg,サンプル団体E,京都府京都市,飲食物の持ち込み禁止

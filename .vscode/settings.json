@@ -21,7 +21,7 @@
 	"editor.insertSpaces": false,
 	"task.autoDetect": "off",
 	"files.insertFinalNewline": true,
-	"cSpell.words": ["hokutofes", "hokutosai", "progressbar"],
+	"cSpell.words": ["hokutofes", "hokutosai", "prejson", "progressbar"],
 
 	"css.validate": false,
 	"scss.validate": false,

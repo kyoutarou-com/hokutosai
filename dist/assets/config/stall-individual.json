@@ -1,0 +1,12 @@
+[
+{"image":"/path/to/image1.jpg","organization":"サンプル団体A","location":"東京都渋谷区","time":"特になし"}
+,
+{"image":"/path/to/image2.jpg","organization":"サンプル団体B","location":"大阪府大阪市","time":"入場時に身分証明書を提示"}
+,
+{"image":"/path/to/image3.jpg","organization":"サンプル団体C","location":"福岡県福岡市","time":"写真撮影禁止"}
+,
+{"image":"/path/to/image4.jpg","organization":"サンプル団体D","location":"北海道札幌市","time":"会場内禁煙"}
+,
+{"image":"/path/to/image5.jpg","organization":"サンプル団体E","location":"京都府京都市","time":"飲食物の持ち込み禁止"}
+
+]
