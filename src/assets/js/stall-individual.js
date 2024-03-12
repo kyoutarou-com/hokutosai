@@ -11,13 +11,17 @@ const insertTextIntoElement = (id, text) => {
 	$(id).text(text);
 };
 
+const insertValueIntoElement = (id, attribute, value) => {
+	$(id).attr(attribute, value);
+};
+
 const onSuccess = (json) => {
 	console.log(json);
 	const hash = getHash();
 	const index = parseInt(hash);
 
 	insertTextIntoElement("#stall-name", json[index]["stall-name"]);
-	insertTextIntoElement("#stall-image", json[index]["image"]);
+	insertValueIntoElement(".stall-image", "src", json[index]["image"]);
 	insertTextIntoElement("#organization", json[index]["organization"]);
 	insertTextIntoElement("#location", json[index]["location"]);
 	insertTextIntoElement("#time", json[index]["time"]);
