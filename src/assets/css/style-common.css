@@ -38,7 +38,8 @@ a:hover {
 .header {
 	box-sizing: border-box;
 	width: 100%;
-	height: 120px;
+	height: 150px;
+	background-color: #c9e5ef;
 }
 
 .boxes {
@@ -97,13 +98,17 @@ a:hover {
 	opacity: 0.7;
 }
 
+.header-menu a {
+	color: #fff;
+}
+
 /* ========== sp ========== */
 @media screen and (max-width: 480px) {
 	.header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 60px;
+		height: 75px;
 		padding: 0 0.8em;
 	}
 
