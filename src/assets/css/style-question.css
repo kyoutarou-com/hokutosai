@@ -1,32 +1,3 @@
-html {
-	font-size: 100%;
-}
-
-body {
-	margin: auto;
-}
-
-body {
-	color: #24292e;
-}
-
-a {
-	text-decoration: none;
-}
-
-p {
-	font-size: 1.3rem;
-}
-
-img {
-	max-width: 100%;
-}
-
-li {
-	font-size: 1.2rem;
-	list-style: none;
-}
-
 .all {
 	margin-right: 5%;
 	margin-left: 5%;

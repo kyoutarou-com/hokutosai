@@ -1,34 +1,5 @@
 @charset "UTF-8";
 
-html {
-	font-size: 100%;
-}
-
-body {
-	margin: auto;
-}
-
-body {
-	color: #24292e;
-}
-
-a {
-	text-decoration: none;
-}
-
-p {
-	font-size: 1.3rem;
-}
-
-img {
-	max-width: 100%;
-}
-
-li {
-	font-size: 1.2rem;
-	list-style: none;
-}
-
 .description {
 	/* 以下左線 */
 	padding: 0.25em 0.5em; /* 上下 左右の余白 */

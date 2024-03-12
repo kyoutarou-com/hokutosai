@@ -1,35 +1,5 @@
 @charset "UTF-8";
 
-html {
-	font-size: 100%;
-}
-
-body {
-	margin: auto;
-}
-
-body {
-	color: #24292e;
-}
-
-a {
-	text-decoration: none;
-}
-
-p {
-	font-size: 1.3rem;
-}
-
-img {
-	max-width: 100%;
-}
-
-li {
-	font-size: 1.2rem;
-	list-style: none;
-}
-
-/* 以上定型文 */
 h1 {
 	padding-top: 60px;
 	margin-bottom: 30px;
