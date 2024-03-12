@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.tabs,
+.tab,
 .menus,
 .stalls {
 	display: flex;
@@ -9,16 +9,16 @@
 	margin: 32px auto;
 }
 
-.tabs {
+.tab {
 	margin-top: 88px;
 }
 
-.tabs li {
+.tab li {
 	width: 31%;
 	border-bottom: solid 1px;
 }
 
-.tabs li a {
+.tab li a {
 	display: block;
 	padding-bottom: 8px;
 	text-align: center;
@@ -39,13 +39,13 @@
 	color: white;
 }
 
-.tabs li.active,
-.tabs li:hover {
+.tab li.active,
+.tab li:hover {
 	border-bottom: solid 3px;
 }
 
-.tabs li.active a,
-.tabs li:hover a {
+.tab li.active a,
+.tab li:hover a {
 	font-weight: bold;
 }
 
@@ -86,7 +86,7 @@
 	}
 }
 
-.tabs li:hover,
+.tab li:hover,
 .menus li:hover,
 .stalls section:hover {
 	opacity: 0.5;

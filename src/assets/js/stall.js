@@ -4,7 +4,7 @@
 function getHashID_tab(hashIDName) {
 	if (hashIDName) {
 		//タブ設定
-		$(".tabs li")
+		$(".tab li")
 			.find("a")
 			.each(function () {
 				//タブ内のaタグ全てを取得
@@ -12,7 +12,7 @@ function getHashID_tab(hashIDName) {
 				if (idName == hashIDName) {
 					//リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
 					var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
-					$(".tabs li").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
+					$(".tab li").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
 					$(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
 					//表示させるエリア設定
 					$(".area-tab").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
@@ -44,7 +44,7 @@ function getHashID_menu(hashIDName) {
 }
 
 //タブをクリックしたら
-$(".tabs li a").on("click", function () {
+$(".tab li a").on("click", function () {
 	var idName = $(this).attr("href"); //タブ内のリンク名を取得
 	getHashID_tab(idName); //設定したタブの読み込みと
 	return false; //aタグを無効にする
