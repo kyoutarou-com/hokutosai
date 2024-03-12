@@ -1,12 +1,10 @@
 [
-{"image":"/path/to/image1.jpg","organization":"サンプル団体A","location":"東京都渋谷区","time":"特になし"}
+{"stall-name":"カフェA","image":"https://example.com/image1.jpg","organization":"イベントX","location":"東京店舗","time":"2024-04-01 19:00","attention":"入場時にマスク着用をお願いします","stall-comment":"美味しいコーヒーと素敵な雰囲気をお楽しみください！"}
 ,
-{"image":"/path/to/image2.jpg","organization":"サンプル団体B","location":"大阪府大阪市","time":"入場時に身分証明書を提示"}
+{"stall-name":"レストランB","image":"https://example.com/image2.jpg","organization":"フェスティバルY","location":"大阪レストラン","time":"2024-05-15 17:30","attention":"イベント中の写真撮影は歓迎です","stall-comment":"おいしい料理と音楽で最高のひとときを過ごしましょう！"}
 ,
-{"image":"/path/to/image3.jpg","organization":"サンプル団体C","location":"福岡県福岡市","time":"写真撮影禁止"}
+{"stall-name":"ショップC","image":"https://example.com/image3.jpg","organization":"カンファレンスZ","location":"名古屋モール","time":"2024-06-20 10:30","attention":"予約不要、無料でご参加いただけます","stall-comment":"業界のリーダーとの交流のチャンスです。お見逃しなく！"}
 ,
-{"image":"/path/to/image4.jpg","organization":"サンプル団体D","location":"北海道札幌市","time":"会場内禁煙"}
-,
-{"image":"/path/to/image5.jpg","organization":"サンプル団体E","location":"京都府京都市","time":"飲食物の持ち込み禁止"}
+{"stall-name":"ワークショップD","image":"https://example.com/image4.jpg","organization":"ワークショップW","location":"札幌ワークスペース","time":"2024-07-10 15:15","attention":"事前に資料をダウンロードしておくと便利です","stall-comment":"新しいスキルを学び、仕事に役立てましょう！"}
 
 ]
