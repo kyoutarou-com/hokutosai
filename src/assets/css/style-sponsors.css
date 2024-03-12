@@ -40,10 +40,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #2589d0;
 	padding: 0.5em 0;
 	font-size: 1.25rem;
 	font-weight: 700;
-	color: #333;
+	color: #ffff;
 }
 
 .company img {
@@ -59,16 +60,4 @@
 
 .company span p {
 	font-family: "Sawarabi Mincho";
-}
-
-@media screen and (width>450px) {
-	.img {
-		height: 100px;
-	}
-	.main {
-		align-items: flex-start;
-	}
-}
-.mian {
-	align-itesms: flex-start;
 }
