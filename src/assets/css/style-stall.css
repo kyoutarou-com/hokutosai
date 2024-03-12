@@ -70,7 +70,7 @@
 
 .area-tab.is-active,
 .area-menu.is-active {
-	display: flex;
+	display: block;
 	animation-name: display-anime;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;

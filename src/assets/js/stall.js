@@ -1,7 +1,7 @@
 "use strict";
 
 //任意のタブにURLからリンクするための設定
-function GethashID_tab(hashIDName) {
+function getHashID_tab(hashIDName) {
 	if (hashIDName) {
 		//タブ設定
 		$(".tabs li")
@@ -22,7 +22,7 @@ function GethashID_tab(hashIDName) {
 	}
 }
 
-function GethashID_menu(hashIDName) {
+function getHashID_menu(hashIDName) {
 	if (hashIDName) {
 		//タブ設定
 		$(".menus li")
@@ -46,19 +46,19 @@ function GethashID_menu(hashIDName) {
 //タブをクリックしたら
 $(".tabs li a").on("click", function () {
 	var idName = $(this).attr("href"); //タブ内のリンク名を取得
-	GethashID_tab(idName); //設定したタブの読み込みと
+	getHashID_tab(idName); //設定したタブの読み込みと
 	return false; //aタグを無効にする
 });
 
 $(".menus li a").on("click", function () {
 	var idName = $(this).attr("href"); //タブ内のリンク名を取得
-	GethashID_menu(idName); //設定したタブの読み込みと
+	getHashID_menu(idName); //設定したタブの読み込みと
 	return false; //aタグを無効にする
 });
 
 // 上記の動きをページが読み込まれたらすぐに動かす
 $(window).on("load", function () {
 	var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-	GethashID_tab(hashName); //設定したタブの読み込み
-	GethashID_menu(hashName);
+	getHashID_tab(hashName); //設定したタブの読み込み
+	getHashID_menu(hashName);
 });
