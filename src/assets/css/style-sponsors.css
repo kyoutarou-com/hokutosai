@@ -28,8 +28,11 @@
 @media screen and (width>450px) {
 	.company {
 		display: inline-block;
-		width: 400px;
+		width: 300px;
 		margin: 3%;
+	}
+	.img {
+		width: 40%;
 	}
 }
 
@@ -37,18 +40,22 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #2589d0;
 	padding: 0.5em 0;
 	font-size: 1.25rem;
 	font-weight: 700;
-	color: #333;
+	color: #ffff;
 }
 
 .company img {
 	padding: 1em 0.5em 0.5rem 0.5rem;
 	text-align: center;
-	background-color: #2589d0;
-	margin-bottom: -3%;
+	background-color: #ffff;
+	margin-bottom: 0%;
 	border-radius: 0 0 10px 10px;
+	width: 95%;
+	align-items: flex-start;
+	display: flex;
 }
 
 .company span p {
