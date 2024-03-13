@@ -32,45 +32,24 @@
 }
 
 .menus li {
-	background-color: #d9d9d9;
+	background-color: #c1c1c1;
 }
 
 .menus li a {
 	display: block;
 	padding: 16px 32px;
-	color: white;
+	color: #fff;
 }
 
 .stalls {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.tabs li:hover,
-.menus li:hover,
-.stalls section:hover {
-	opacity: 0.5;
-}
-
-.tabs li.active,
-.tabs li:hover {
-	font-weight: bold;
-	border-color: #333;
-	border-width: 2px;
-}
-
-.menus li.active,
-.menus li:hover {
-	/* TODO: 色編集 */
-	background-color: #09719d;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 16px;
 }
 
 .stall {
 	display: flex;
-	width: 48%;
 	height: 256px;
-	margin-top: 32px;
 
 	/* TODO: 色編集 */
 	background-color: azure;
@@ -81,7 +60,7 @@
 	height: 100%;
 
 	/* TODO: 色編集 */
-	background-color: gray;
+	background-color: #ddd;
 }
 
 .store-name {
@@ -103,10 +82,8 @@ ul {
 
 .tab-area.is-active,
 .menu-area.is-active {
-	display: block;
-	animation-name: display-anime;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+	display: grid;
+	animation: display-anime 1s forwards;
 }
 
 @keyframes display-anime {
@@ -117,6 +94,25 @@ ul {
 	to {
 		opacity: 1;
 	}
+}
+
+.tabs li:hover,
+.menus li:hover,
+.stall:hover {
+	opacity: 0.5;
+}
+
+.tabs li.active,
+.tabs li:hover {
+	font-weight: bold;
+	border-color: #333;
+	border-width: 2px;
+}
+
+.menus li.active,
+.menus li:hover {
+	/* TODO: 色編集 */
+	background-color: #09719d;
 }
 
 @media (max-width: 850px) {
@@ -138,9 +134,18 @@ ul {
 }
 
 @media (max-width: 721px) {
+	.tabs li a {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
 	.menus li a {
 		padding-top: 8px;
 		padding-bottom: 8px;
+	}
+
+	.stalls {
+		grid-template-columns: 1fr;
 	}
 }
 
