@@ -1,10 +1,10 @@
 "use strict";
 
 //任意のタブにURLからリンクするための設定
-function getHashID_tab(hashIDName) {
+function getHashID_tabs(hashIDName) {
 	if (hashIDName) {
 		//タブ設定
-		$(".tab li")
+		$(".tabs li")
 			.find("a")
 			.each(function () {
 				//タブ内のaタグ全てを取得
@@ -12,17 +12,17 @@ function getHashID_tab(hashIDName) {
 				if (idName == hashIDName) {
 					//リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
 					var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
-					$(".tab li").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
+					$(".tabs li").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
 					$(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
 					//表示させるエリア設定
-					$(".area-tab").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+					$(".area-tabs").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
 					$(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加
 				}
 			});
 	}
 }
 
-function getHashID_menu(hashIDName) {
+function getHashID_menus(hashIDName) {
 	if (hashIDName) {
 		//タブ設定
 		$(".menus li")
@@ -36,7 +36,7 @@ function getHashID_menu(hashIDName) {
 					$(".menus li").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
 					$(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
 					//表示させるエリア設定
-					$(".area-menu").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+					$(".area-menus").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
 					$(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加
 				}
 			});
@@ -44,21 +44,21 @@ function getHashID_menu(hashIDName) {
 }
 
 //タブをクリックしたら
-$(".tab li a").on("click", function () {
+$(".tabs li a").on("click", function () {
 	var idName = $(this).attr("href"); //タブ内のリンク名を取得
-	getHashID_tab(idName); //設定したタブの読み込みと
+	getHashID_tabs(idName); //設定したタブの読み込みと
 	return false; //aタグを無効にする
 });
 
 $(".menus li a").on("click", function () {
 	var idName = $(this).attr("href"); //タブ内のリンク名を取得
-	getHashID_menu(idName); //設定したタブの読み込みと
+	getHashID_menus(idName); //設定したタブの読み込みと
 	return false; //aタグを無効にする
 });
 
 // 上記の動きをページが読み込まれたらすぐに動かす
 $(window).on("load", function () {
 	var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-	getHashID_tab(hashName); //設定したタブの読み込み
-	getHashID_menu(hashName);
+	getHashID_tabs(hashName); //設定したタブの読み込み
+	getHashID_menus(hashName);
 });

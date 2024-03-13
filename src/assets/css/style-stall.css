@@ -1,75 +1,58 @@
 @charset "UTF-8";
 
-.tab,
+.tabs,
 .menus,
 .stalls {
-	display: flex;
-	justify-content: space-around;
 	width: 80%;
 	margin: 32px auto;
 }
 
-.tab {
-	margin-top: 88px;
+.tabs {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 72px;
 }
 
-.tab li {
-	width: 31%;
+.tabs li {
+	width: 32%;
 	border-bottom: solid 1px;
 }
 
-.tab li a {
+.tabs li a {
 	display: block;
-	padding-bottom: 8px;
+	padding: 16px 8px;
 	text-align: center;
 }
 
+.menus {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 8px;
+}
+
 .menus li {
-	width: 300px;
-	padding: 16px 32px;
-	margin: 4px 1px;
-	color: black;
-	text-align: center;
-	/* TODO: 色編集 */
 	background-color: #d9d9d9;
 }
 
 .menus li a {
 	display: block;
+	padding: 16px 32px;
 	color: white;
-}
-
-.tab li.active,
-.tab li:hover {
-	border-bottom: solid 3px;
-}
-
-.tab li.active a,
-.tab li:hover a {
-	font-weight: bold;
-}
-
-.menus {
-	display: flex;
-	flex-flow: wrap;
-	justify-content: flex-start;
 }
 
 .stalls {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 80%;
-	margin: 32px auto;
 }
 
-.area-tab,
-.area-menu {
+.area-tabs,
+.area-menus {
 	display: none;
 }
 
-.area-tab.is-active,
-.area-menu.is-active {
+.area-tabs.is-active,
+.area-menus.is-active {
 	display: block;
 	animation-name: display-anime;
 	animation-duration: 2s;
@@ -86,7 +69,7 @@
 	}
 }
 
-.tab li:hover,
+.tabs li:hover,
 .menus li:hover,
 .stalls section:hover {
 	opacity: 0.5;
@@ -148,6 +131,10 @@ ul {
 }
 
 @media screen and (max-width: 450px) {
+	.menus {
+		grid-template-columns: 1fr;
+	}
+
 	.stall {
 		width: 100%;
 	}
