@@ -21,6 +21,7 @@
 .tabs li a {
 	display: block;
 	padding: 16px 8px;
+	color: #333;
 	text-align: center;
 }
 
@@ -54,6 +55,7 @@
 
 .tabs li.active,
 .tabs li:hover {
+	font-weight: bold;
 	border-color: #333;
 	border-width: 2px;
 }
