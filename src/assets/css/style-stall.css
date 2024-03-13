@@ -103,7 +103,7 @@ ul {
 .menu-area.is-active {
 	display: block;
 	animation-name: display-anime;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
