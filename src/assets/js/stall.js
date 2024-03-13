@@ -15,7 +15,7 @@ function getHashID_tabs(hashIDName) {
 					$(".tabs li").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
 					$(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
 					//表示させるエリア設定
-					$(".area-tabs").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+					$(".tab-area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
 					$(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加
 				}
 			});
@@ -36,7 +36,7 @@ function getHashID_menus(hashIDName) {
 					$(".menus li").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
 					$(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
 					//表示させるエリア設定
-					$(".area-menus").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+					$(".menu-area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
 					$(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加
 				}
 			});

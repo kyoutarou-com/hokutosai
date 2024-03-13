@@ -3,7 +3,7 @@
 .tabs,
 .menus,
 .stalls {
-	width: 80%;
+	width: 76%;
 	margin: 32px auto;
 }
 
@@ -15,7 +15,7 @@
 
 .tabs li {
 	width: 32%;
-	border-bottom: solid 1px;
+	border-bottom: solid #ddd 2px;
 }
 
 .tabs li a {
@@ -26,7 +26,7 @@
 
 .menus {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 	gap: 8px;
 }
 
@@ -46,38 +46,20 @@
 	justify-content: space-between;
 }
 
-.area-tabs,
-.area-menus {
-	display: none;
-}
-
-.area-tabs.is-active,
-.area-menus.is-active {
-	display: block;
-	animation-name: display-anime;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes display-anime {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
 .tabs li:hover,
 .menus li:hover,
 .stalls section:hover {
 	opacity: 0.5;
 }
 
+.tabs li.active,
+.tabs li:hover {
+	border-color: #333;
+	border-width: 2px;
+}
+
 .menus li.active,
 .menus li:hover {
-	color: white;
 	/* TODO: 色編集 */
 	background-color: #09719d;
 }
@@ -112,7 +94,30 @@ ul {
 	list-style-image: url("../img/navigation.png");
 }
 
-@media screen and (max-width: 850px) {
+.tab-area,
+.menu-area {
+	display: none;
+}
+
+.tab-area.is-active,
+.menu-area.is-active {
+	display: block;
+	animation-name: display-anime;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes display-anime {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 850px) {
 	.stall {
 		display: flex;
 		flex-direction: column;
@@ -130,7 +135,14 @@ ul {
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 721px) {
+	.menus li a {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+}
+
+@media (max-width: 450px) {
 	.menus {
 		grid-template-columns: 1fr;
 	}
