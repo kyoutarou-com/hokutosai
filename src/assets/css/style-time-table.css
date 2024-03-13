@@ -21,14 +21,6 @@ h2 {
 	padding-left: 8%;
 }
 
-/* スマホ用 */
-@media screen and (max-width: 450px) {
-	.time-table-image {
-		width: 80vw;
-		padding: 0;
-	}
-}
-
 .attention {
 	padding: 2% 10%;
 	font-size: 0.8rem;
@@ -58,4 +50,16 @@ h2 {
 	border-radius: 15px;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 450px) {
+	.time-table-image {
+		width: 80vw;
+		padding: 0;
+	}
+
+	.fas-image-expansioncircle::after {
+		right: 10px;
+	}
 }
