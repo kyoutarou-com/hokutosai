@@ -32,7 +32,7 @@ a:hover {
 	text-decoration: none;
 }
 
-/* 　！ヘッダー　開始！ 　*/
+/* ！ヘッダー　開始！ */
 
 /* FontAwesomeを使用しています。 */
 .header {
@@ -632,4 +632,30 @@ h2 {
 	color: #ff9f1a;
 	content: "\f138";
 	transform: translateY(-50%);
+}
+
+/* ボックス */
+.box {
+	position: relative;
+	padding: 2rem;
+}
+
+.box::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: "";
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid #c6d4c6;
+}
+
+.box::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+	content: "";
+	border-bottom: 30px solid #c6d4c6;
+	border-left: 30px solid transparent;
 }
