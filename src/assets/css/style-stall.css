@@ -47,18 +47,12 @@
 /* 模擬店 */
 .stalls {
 	display: grid;
-<<<<<<< HEAD
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	gap: 32px;
-=======
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	gap: 16px;
->>>>>>> f61535b821a0940a17aced1a30a54d997a344053
 }
 
 .stall {
 	display: flex;
-<<<<<<< HEAD
 	flex-wrap: wrap;
 	padding: 32px;
 	border: solid #ddd 2px;
@@ -68,19 +62,6 @@
 	width: 250px;
 	height: 250px;
 	margin-right: 32px;
-=======
-	height: 256px;
-
-	/* TODO: 色編集 */
-	background-color: azure;
-}
-
-.stall-image {
-	width: 50%;
-	height: 100%;
-
-	/* TODO: 色編集 */
->>>>>>> f61535b821a0940a17aced1a30a54d997a344053
 	background-color: #ddd;
 }
 
@@ -99,15 +80,8 @@
 	margin-bottom: 1rem;
 }
 
-<<<<<<< HEAD
 .stall-name {
 	font-size: 1.5rem;
-=======
-.tab-area.is-active,
-.menu-area.is-active {
-	display: grid;
-	animation: display-anime 1s forwards;
->>>>>>> f61535b821a0940a17aced1a30a54d997a344053
 }
 
 /* タブ・メニューの切り替え */
@@ -121,7 +95,6 @@
 	}
 }
 
-<<<<<<< HEAD
 .tab-area,
 .menu-area {
 	display: none;
@@ -137,32 +110,6 @@
 @keyframes hover-animation {
 	from {
 		opacity: 1;
-=======
-.tabs li:hover,
-.menus li:hover,
-.stall:hover {
-	opacity: 0.5;
-}
-
-.tabs li.active,
-.tabs li:hover {
-	font-weight: bold;
-	border-color: #333;
-	border-width: 2px;
-}
-
-.menus li.active,
-.menus li:hover {
-	/* TODO: 色編集 */
-	background-color: #09719d;
-}
-
-@media (max-width: 850px) {
-	.stall {
-		display: flex;
-		flex-direction: column;
-		height: 512px;
->>>>>>> f61535b821a0940a17aced1a30a54d997a344053
 	}
 
 	to {
@@ -198,14 +145,6 @@
 		padding-top: 8px;
 		padding-bottom: 8px;
 	}
-<<<<<<< HEAD
-=======
-
-	.stalls {
-		grid-template-columns: 1fr;
-	}
-}
->>>>>>> f61535b821a0940a17aced1a30a54d997a344053
 
 	.menus,
 	.stalls {
