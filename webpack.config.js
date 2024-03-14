@@ -9,6 +9,7 @@ module.exports = {
 		common: "./src/assets/js/common.js",
 		index: "./src/assets/js/index.js",
 		"campus-map": "./src/assets/js/campus-map.js",
+		"stall-individual.js": "./src/assets/js/stall-individual.js",
 	},
 	output: {
 		filename: "assets/js/[name].js",

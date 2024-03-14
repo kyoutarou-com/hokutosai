@@ -1,41 +1,21 @@
 "use strict";
 
-const getHash = () => {
-	const hash = location.hash;
-
-	// #記号を含まないハッシュを返す．
-	return hash.substring(1);
-};
-
-const insertTextIntoElement = (id, text) => {
-	$(id).text(text);
-};
-
-const insertValueIntoElement = (id, attribute, value) => {
-	$(id).attr(attribute, value);
-};
+import { loadJson, onError } from "./module/json.js";
+import { getStallIndex } from "./module/hash.js";
+import { insertTextIntoElement, insertValueIntoElement } from "./module/dom.js";
 
 const onSuccess = (json) => {
-	console.log(json);
-	const hash = getHash();
-	const index = parseInt(hash);
+	const stallIndex = getStallIndex;
 
-	insertTextIntoElement("#stall-name", json[index]["stall-name"]);
-	insertValueIntoElement(".stall-image", "src", json[index]["image"]);
-	insertTextIntoElement("#organization", json[index]["organization"]);
-	insertTextIntoElement("#location", json[index]["location"]);
-	insertTextIntoElement("#time", json[index]["time"]);
-	insertTextIntoElement("#attention", json[index]["attention"]);
-	insertTextIntoElement("#stall-comment", json[index]["stall-comment"]);
+	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
+	insertValueIntoElement(".stall-image", "src", json[stallIndex]["image"]);
+	insertTextIntoElement("#organization", json[stallIndex]["organization"]);
+	insertTextIntoElement("#location", json[stallIndex]["location"]);
+	insertTextIntoElement("#time", json[stallIndex]["time"]);
+	insertTextIntoElement("#attention", json[stallIndex]["attention"]);
+	insertTextIntoElement("#stall-comment", json[stallIndex]["stall-comment"]);
 };
 
-const onError = (error) => {
-	console.error("Error occurred while fetching data:", error);
-};
-
-$.ajax({
-	type: "GET",
-	url: "../../../dist/assets/config/stall-individual.json",
-	dataType: "json",
-	async: false,
-}).then(onSuccess, onError);
+loadJson("../../../dist/assets/config/stall-individual.json", onSuccess, onError);
+// TODO: エラーが出るんであとで修正
+// ほげほげ
