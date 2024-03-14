@@ -1,3 +1,4 @@
+/* お詫びと訂正の付箋 */
 .sticky-box {
 	padding: 1em 1.5em;
 	margin: 2em 10%;
@@ -9,4 +10,10 @@
 .sticky-box li {
 	margin: 0;
 	padding: 0;
+}
+
+/* PDFボタン */
+.bt-pdf {
+	text-align: center;
+	margin: 1rem;
 }
