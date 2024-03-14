@@ -1,0 +1,19 @@
+/* お詫びと訂正の付箋 */
+.sticky-box {
+	padding: 1em 1.5em;
+	margin: 2em 10%;
+	background-color: #eef9fa; /*背景色*/
+	border-left: solid 10px #82acc9; /*左ライン*/
+	color: #000000; /*文字色*/
+	font-size: 0.8rem;
+}
+.sticky-box li {
+	margin: 0;
+	padding: 0;
+}
+
+/* PDFボタン */
+.bt-pdf {
+	text-align: center;
+	margin: 1rem;
+}

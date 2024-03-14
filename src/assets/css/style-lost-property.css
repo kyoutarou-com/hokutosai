@@ -1,0 +1,36 @@
+/* 本文中央寄せ */
+.bunn {
+	margin: 1rem 10%;
+	font-size: 1.1rem;
+}
+/* ボタン　中央寄せ */
+.bt-form {
+	text-align: center;
+}
+/* 一覧付箋 */
+.box5-3 {
+	margin: 2em auto; /* ボックスの余白 */
+	padding: 3em 2em 1em; /* ボックス内側余白 */
+	position: relative; /* 配置(ここを基準に)*/
+	border: 1px solid #909792; /* ボックスの線 (太さ　種類　色)*/
+}
+.box5-3 .box-title {
+	background-color: #909792; /* タイトル背景色 */
+	font-size: 1em; /* タイトル文字の大きさ */
+	color: #fff; /* タイトル文字色 */
+	padding: 7px 10px; /*タイトルの余白*/
+	line-height: 1; /*タイトルの行の高さ*/
+	position: absolute; /* 配置(ここを動かす) */
+	top: 0; /*上から（0px）移動*/
+	left: 0; /*左から(0px)移動*/
+}
+
+.big {
+	margin: 1rem 10%;
+}
+
+.attention {
+	font-size: 0.8rem;
+	margin-top: 3%;
+	text-align: right;
+}
