@@ -43,7 +43,6 @@
 	color: #fff;
 }
 
-/* TODO: 後でレスポンシブ化する */
 /* 模擬店 */
 .stalls {
 	display: grid;
@@ -67,9 +66,7 @@
 }
 
 .stall-info {
-	/* 模擬店の画像サイズ+右のマージン分引いている */
-	width: calc(100% - 282px);
-	min-width: 200px;
+	width: calc(100% - 282px); /* 模擬店の画像サイズ+右のマージン分引いている */
 }
 
 .stall-info ul {
@@ -83,28 +80,6 @@
 
 .stall-name {
 	font-size: 1.5rem;
-}
-
-/* タブ・メニューの切り替え */
-@keyframes select-animation {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-.tab-area,
-.menu-area {
-	display: none;
-}
-
-.tab-area.is-active,
-.menu-area.is-active {
-	display: grid;
-	animation: select-animation 1s forwards;
 }
 
 /* ホバー */
@@ -135,6 +110,28 @@
 	background-color: #c9e5ef;
 }
 
+/* タブ・メニューの切り替え */
+@keyframes select-animation {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.tab-area,
+.menu-area {
+	display: none;
+}
+
+.tab-area.is-active,
+.menu-area.is-active {
+	display: grid;
+	animation: select-animation 1s forwards;
+}
+
 /* モバイル */
 @media (max-width: 721px) {
 	.tabs li a,
@@ -149,16 +146,23 @@
 	}
 
 	.stall-image {
-		width: 100%;
-		min-width: 100%;
-
-		/* widthと同じ大きさ */
-		height: calc(80vw - 64px);
+		width: 70%;
+		min-width: 70%;
+		height: calc(56vw - 64px); /* widthと同じ大きさ */
+		margin: 0 auto;
 	}
 
 	.stall-info {
 		width: 100%;
 		min-width: 100%;
 		margin-top: 32px;
+	}
+}
+
+@media (max-width: 450px) {
+	.stall-image {
+		width: 100%;
+		min-width: 100%;
+		height: calc(80vw - 64px); /* widthと同じ大きさ */
 	}
 }
