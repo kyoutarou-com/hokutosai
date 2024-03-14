@@ -49,6 +49,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	gap: 32px;
+	margin-bottom: 72px;
 }
 
 .stall {
@@ -145,5 +146,19 @@
 	.menus,
 	.stalls {
 		grid-template-columns: 1fr;
+	}
+
+	.stall-image {
+		width: 100%;
+		min-width: 100%;
+
+		/* widthと同じ大きさ */
+		height: calc(80vw - 64px);
+	}
+
+	.stall-info {
+		width: 100%;
+		min-width: 100%;
+		margin-top: 32px;
 	}
 }
