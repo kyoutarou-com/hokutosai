@@ -8,13 +8,13 @@
 	text-align: center;
 }
 /* 一覧付箋 */
-.box5-3 {
-	margin: 2em auto; /* ボックスの余白 */
+.box-sub {
 	padding: 3em 2em 1em; /* ボックス内側余白 */
 	position: relative; /* 配置(ここを基準に)*/
 	border: 1px solid #909792; /* ボックスの線 (太さ　種類　色)*/
+	max-width: 330px;
 }
-.box5-3 .box-title {
+.box-sub .box-title {
 	background-color: #909792; /* タイトル背景色 */
 	font-size: 1em; /* タイトル文字の大きさ */
 	color: #fff; /* タイトル文字色 */
@@ -33,4 +33,26 @@
 	font-size: 0.8rem;
 	margin-top: 3%;
 	text-align: right;
+}
+/* PC版表示 */
+@media screen and (width>750px) {
+	.big {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.box-sub {
+		margin: 2rem 3% 2rem 3%; /* ボックスの余白 */
+	}
+}
+
+/* スマホ版表示 */
+@media screen and (width<750px) {
+	.big {
+		margin-left: 5%;
+		margin-right: 5%;
+		justify-content: space-around;
+	}
+	.box-sub {
+		margin: 2em auto; /* ボックスの余白 */
+	}
 }
