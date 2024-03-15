@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* 基本設定 */
+/* 　！基本設定！　 */
 html {
 	font-family: "Sawarabi Gothic";
 	font-size: 100%;
@@ -31,6 +31,17 @@ li {
 a:hover {
 	text-decoration: none;
 }
+/* 　！基本設定　終了！　 */
+
+/* ！カラー共通設定　開始！　 */
+
+:root {
+	--main-color: #7117ea;
+	--sub-color: #ea6060;
+	--accent-color: rgb(56, 50, 139);
+}
+
+/* 　！カラー共通設定 終了！　 */
 
 /* ！ヘッダー　開始！ */
 
