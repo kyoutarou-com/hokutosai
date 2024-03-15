@@ -8,105 +8,69 @@
 	<body>
 		<div id="head"></div>
 		<div id="header"></div>
-
-		<h1 class="heading" data-en="exhibition">展示</h1>
+		<h1 class="heading" data-en="Exhibition">展示</h1>
 		<h2>展示一覧</h2>
 
-		<div class="tabs">
-			<div class="tab tab-on">
-				<a href="#">
-					<h3>展示物から探す</h3>
-				</a>
-			</div>
-			<div class="tab tab-off">
-				<a href="#">
-					<h3>エリアから探す</h3>
-				</a>
-			</div>
-			<div class="tab tab-off">
-				<a href="#">
-					<h3>団体から探す</h3>
-				</a>
-			</div>
+		<!-- タブ -->
+		<ul class="tabs">
+			<li><a href="#product1">学科から探す</a></li>
+			<li><a href="#location1">場所から探す</a></li>
+			<li><a href="#organization1">内容から探す</a></li>
+		</ul>
+
+		<!-- タブ1のエリア -->
+		<div id="tab1" class="tab-area">
+			<!-- メニュー -->
+			<ul class="menus">
+				<li><a href="#product1">学科展示</a></li>
+				<li><a href="#product2">クラス展示</a></li>
+				<li><a href="#product3">部活動展示</a></li>
+				<li><a href="#product4">特別展示</a></li>
+			</ul>
+
+			<!-- メニュー1から4のエリア -->
+			<div id="product1" class="menu-area stalls"></div>
+			<div id="product2" class="menu-area stalls"></div>
+			<div id="product3" class="menu-area stalls"></div>
+			<div id="product4" class="menu-area stalls"></div>
 		</div>
 
-		<div class="menus">
-			<div class="menu menu-on">学科展示</div>
-			<div class="menu menu-off">クラス展示</div>
-			<div class="menu menu-off">部活動展示</div>
-			<div class="menu menu-off">特別展示</div>
+		<!-- タブ2のエリア -->
+		<div id="tab2" class="tab-area">
+			<!-- メニュー -->
+			<ul class="menus">
+				<li><a href="#location1">まるまる</a></li>
+				<li><a href="#location2">まるまる</a></li>
+				<li><a href="#location3">まるまる</a></li>
+				<li><a href="#location4">まるまる</a></li>
+			</ul>
+
+			<!-- メニュー1から4のエリア -->
+			<div id="location1" class="menu-area stalls"></div>
+			<div id="location2" class="menu-area stalls"></div>
+			<div id="location3" class="menu-area stalls"></div>
+			<div id="location4" class="menu-area stalls"></div>
 		</div>
 
-		<div class="sections">
-			<section class="section-blue">
-				<img class="stall-image" src="" alt="画像" />
-				<div>
-					<h3 class="store-name">展示名</h3>
-					<p>団体名</p>
-					<p>説明</p>
-				</div>
-			</section>
+		<!-- タブ3のエリア -->
+		<div id="tab3" class="tab-area">
+			<!-- メニュー -->
+			<ul class="menus">
+				<li><a href="#organization1">ほげほげ</a></li>
+				<li><a href="#organization2">ほげほげ</a></li>
+				<li><a href="#organization3">ほげほげ</a></li>
+				<li><a href="#organization4">ほげほげ</a></li>
+			</ul>
 
-			<section class="section-orange">
-				<img class="stall-image" src="" alt="画像" />
-				<div>
-					<h3 class="store-name">hoge</h3>
-					<p>メニュー</p>
-					<ul>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="section-blue">
-				<img class="stall-image" src="" alt="画像" />
-				<div>
-					<h3 class="store-name">hoge</h3>
-					<p>メニュー</p>
-					<ul>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="section-orange">
-				<img class="stall-image" src="" alt="画像" />
-				<div>
-					<h3 class="store-name">hoge</h3>
-					<p>メニュー</p>
-					<ul>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="section-blue">
-				<img class="stall-image" src="" alt="画像" />
-				<div>
-					<h3 class="store-name">hoge</h3>
-					<p>メニュー</p>
-					<ul>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-						<li>･hoge</li>
-					</ul>
-				</div>
-			</section>
+			<!-- メニュー1から4のエリア -->
+			<div id="organization1" class="menu-area stalls"></div>
+			<div id="organization2" class="menu-area stalls"></div>
+			<div id="organization3" class="menu-area stalls"></div>
+			<div id="organization4" class="menu-area stalls"></div>
 		</div>
 
 		<div id="footer"></div>
 		<script src="../dist/assets/js/common.js"></script>
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-		<script src="assets/js/stall.js"></script>
+		<script type="module" src="../dist/assets/js/stall.js"></script>
 	</body>
 </html>
