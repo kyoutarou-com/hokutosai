@@ -1,11 +1,11 @@
 "use strict";
 
 import { loadJson, onError } from "./module/json.js";
-import { getStallIndex } from "./module/hash.js";
+import { getPageIndex } from "./module/hash.js";
 import { insertTextIntoElement, insertValueIntoElement } from "./module/dom.js";
 
 const onSuccess = (json) => {
-	const stallIndex = getStallIndex;
+	const stallIndex = getPageIndex();
 
 	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
 	insertValueIntoElement(".stall-image", "src", json[stallIndex]["image"]);
@@ -17,5 +17,3 @@ const onSuccess = (json) => {
 };
 
 loadJson("../../../dist/assets/config/stall-individual.json", onSuccess, onError);
-// TODO: エラーが出るんであとで修正
-// ほげほげ

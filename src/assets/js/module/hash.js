@@ -1,7 +1,7 @@
 "use strict";
 
-export const getStallIndex = () => {
-	hash = location.hash;
+export const getPageIndex = () => {
+	const hash = location.hash;
 	const stallIndex = parseInt(hash.substring(1));
 	return stallIndex;
 };
