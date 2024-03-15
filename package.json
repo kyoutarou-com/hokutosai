@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "npx webpack-dev-server --mode development --open",
-		"json": "./scripts/csv-to-json.sh",
+		"csv-to-json": "./scripts/csv-to-json.sh",
 		"build": "./scripts/build.sh",
 		"prehoge": "git pull origin main",
 		"hoge": "git log | grep '^commit' | wc -l",
