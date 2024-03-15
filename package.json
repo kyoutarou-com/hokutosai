@@ -4,7 +4,7 @@
 	"description": "北斗祭2024の公式HP",
 	"main": "index.js",
 	"scripts": {
-		"start": "npx webpack-dev-server --mode development --open",
+		"start": "./scripts/start.sh",
 		"csv-to-json": "./scripts/csv-to-json.sh",
 		"build": "./scripts/build.sh",
 		"prehoge": "git pull origin main",
