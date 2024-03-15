@@ -1,8 +1,12 @@
 #!/bin/bash
 
-TARGET_FILES=("stall.csv" "stall-individual.csv")
+TARGET_FILES=("stall.csv" "stall-individual.csv" "exhibition.csv" "exhibition-individual.csv")
 INPUT_DIRECTORY="src/assets/config"
 OUTPUT_DIRECTORY="dist/assets/config"
+
+remove_file_extension() {
+
+}
 
 # 前回の出力結果を削除
 if [ -e ${OUTPUT_DIRECTORY} ]; then
