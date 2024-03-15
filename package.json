@@ -7,7 +7,6 @@
 		"start": "npx webpack-dev-server --mode development --open",
 		"json": "./scripts/csv-to-json.sh",
 		"build": "./scripts/build.sh",
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"prehoge": "git pull origin main",
 		"hoge": "git log | grep '^commit' | wc -l",
 		"posthoge": "git log | grep 'Author' | cut -d ' ' -f 1,2 | sort | uniq -c | sort -nr"
