@@ -1,12 +1,10 @@
 #!/bin/bash
+#
+# Convert csv file to json file.
 
-TARGET_FILES=("stall.csv" "stall-individual.csv" "exhibition.csv" "exhibition-individual.csv")
+TARGET_FILENAMES=("stall.csv" "stall-individual.csv" "exhibition.csv" "exhibition-individual.csv")
 INPUT_DIRECTORY="src/assets/config"
 OUTPUT_DIRECTORY="dist/assets/config"
-
-remove_file_extension() {
-	echo "${1%.*}"
-}
 
 # Delete previous output results.
 if [ -e ${OUTPUT_DIRECTORY} ]; then
@@ -15,8 +13,9 @@ fi
 
 mkdir -p ${OUTPUT_DIRECTORY}
 
-for target_file in "${TARGET_FILES[@]}"; do
-	target_file_without_extension="$(remove_file_extension "${target_file}")"
-	npx csvtojson "${INPUT_DIRECTORY}/${target_file}" \
-		>"${OUTPUT_DIRECTORY}/${target_file_without_extension}.json"
+for target_filename in "${TARGET_FILENAMES[@]}"; do
+	target_filename_without_extension=$(basename "${target_filename}" .csv)
+	input_file_path="${INPUT_DIRECTORY}/${target_filename}"
+	output_file_path="${OUTPUT_DIRECTORY}/${target_filename_without_extension}.json"
+	npx csvtojson "${input_file_path}" >"${output_file_path}"
 done
