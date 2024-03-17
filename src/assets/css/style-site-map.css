@@ -15,8 +15,9 @@
 	font-family: "Font Awesome 5 Free";
 	font-size: 1em; /* サイズ */
 	font-weight: 900;
-	color: #f178e7; /* アイコン色 */
+	color: #9bb9ca; /* アイコン色 */
 	content: "\f00c"; /* アイコンのユニコード */
+	border-radius: 100px;
 }
 
 .gnavi {
