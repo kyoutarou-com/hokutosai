@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "./scripts/start.sh",
-		"csv-to-json": "./scripts/csv-to-json.sh",
+		"csv-to-json": "node scripts/csv-to-json.js",
 		"build": "./scripts/build.sh",
 		"prehoge": "git pull origin main",
 		"hoge": "git log | grep '^commit' | wc -l",
@@ -30,6 +30,7 @@
 		"clean-webpack-plugin": "^4.0.0",
 		"css-loader": "^6.10.0",
 		"css-minimizer-webpack-plugin": "^6.0.0",
+		"fs-extra": "^11.2.0",
 		"html-webpack-plugin": "^5.6.0",
 		"less-loader": "^12.2.0",
 		"mini-css-extract-plugin": "^2.8.1",
