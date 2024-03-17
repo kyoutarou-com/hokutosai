@@ -1,6 +1,6 @@
 /**
- * @fileoverview
- * Define a command to convert a csv file to a json file
+ * @fileoverview Define a command to convert a csv file to a json file
+ * @example node ./csv-to-json.js
  */
 
 "use strict";
