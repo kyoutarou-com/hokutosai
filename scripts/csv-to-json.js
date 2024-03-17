@@ -7,7 +7,7 @@ const TARGET_FILENAMES = Object.freeze(["stall.csv", "stall-individual.csv", "ex
 const INPUT_DIRECTORY = "src/assets/config";
 const OUTPUT_DIRECTORY = "dist/assets/config";
 
-fs.remove(OUTPUT_DIRECTORY, () => {
+const onRemove = () => {
 	fs.mkdirs(OUTPUT_DIRECTORY);
 
 	for (const targetFilename of TARGET_FILENAMES) {
@@ -22,4 +22,6 @@ fs.remove(OUTPUT_DIRECTORY, () => {
 				fs.writeFile(outputFilePath, jsonStr);
 			});
 	}
-});
+};
+
+fs.remove(OUTPUT_DIRECTORY, onRemove);
