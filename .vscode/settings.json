@@ -1,9 +1,8 @@
 {
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"[html]": {
+	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"[css]": {
+	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[javascript]": {
@@ -15,19 +14,18 @@
 	"[less]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-
-	"editor.formatOnSave": true,
-	"extensions.ignoreRecommendations": false,
-	"editor.insertSpaces": false,
-	"task.autoDetect": "off",
-	"files.insertFinalNewline": true,
 	"cSpell.words": ["hokutofes", "hokutosai", "prejson", "progressbar"],
-
 	"css.validate": false,
-	"scss.validate": false,
-	"stylelint.validate": ["css", "scss"],
-	"stylelint.stylelintPath": "node_modules/stylelint",
 	"editor.codeActionsOnSave": {
 		"source.fixAll.stylelint": "always"
-	}
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"extensions.ignoreRecommendations": false,
+	"files.insertFinalNewline": true,
+	"scss.validate": false,
+	"stylelint.stylelintPath": "node_modules/stylelint",
+	"stylelint.validate": ["css", "scss"],
+	"task.autoDetect": "off"
 }
