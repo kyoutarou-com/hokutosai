@@ -1,3 +1,8 @@
+/**
+ * @fileoverview
+ * Define a command to convert a csv file to a json file
+ */
+
 "use strict";
 
 const csvtojson = require("csvtojson/v2");
@@ -7,7 +12,11 @@ const TARGET_FILENAMES = Object.freeze(["stall.csv", "stall-individual.csv", "ex
 const INPUT_DIRECTORY = "src/assets/config";
 const OUTPUT_DIRECTORY = "dist/assets/config";
 
-const onRemove = () => {
+/**
+ * Convert csv file to json file.
+ * @returns {void}
+ */
+const csvFileToJsonFile = () => {
 	fs.mkdirs(OUTPUT_DIRECTORY);
 
 	for (const targetFilename of TARGET_FILENAMES) {
@@ -24,4 +33,4 @@ const onRemove = () => {
 	}
 };
 
-fs.remove(OUTPUT_DIRECTORY, onRemove);
+fs.remove(OUTPUT_DIRECTORY, csvFileToJsonFile);
