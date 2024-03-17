@@ -2,7 +2,7 @@
 #
 # Convert csv file to json file.
 
-TARGET_FILENAMES=("stall.csv" "stall-individual.csv" "exhibition.csv" "exhibition-individual.csv")
+TARGET_FILENAMES=("stall.csv" "stall-individual.csv" "exhibition.csv" "exhibition-individual.csv" "stage.csv" "stage-individual.csv")
 INPUT_DIRECTORY="src/assets/config"
 OUTPUT_DIRECTORY="dist/assets/config"
 
