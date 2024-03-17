@@ -6,6 +6,7 @@
 	"scripts": {
 		"start": "./scripts/start.sh",
 		"csv-to-json": "node scripts/csv-to-json.js",
+		"docs":"./scripts/docs.sh",
 		"build": "./scripts/build.sh",
 		"prehoge": "git pull origin main",
 		"hoge": "git log | grep '^commit' | wc -l",
