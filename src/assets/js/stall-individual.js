@@ -8,12 +8,12 @@ const onSuccess = (json) => {
 	const stallIndex = getPageIndex();
 
 	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
-	insertValueIntoElement(".stall-image", "src", json[stallIndex]["image"]);
-	insertTextIntoElement("#organization", json[stallIndex]["organization"]);
-	insertTextIntoElement("#location", json[stallIndex]["location"]);
+	insertValueIntoElement(".stall-image", "src", json[stallIndex]["stall-image"]);
+	insertTextIntoElement("#organization", json[stallIndex]["stall-organization"]);
+	insertTextIntoElement("#location", json[stallIndex]["stall-location"]);
 	insertTextIntoElement("#time", json[stallIndex]["time"]);
 	insertTextIntoElement("#attention", json[stallIndex]["attention"]);
 	insertTextIntoElement("#stall-comment", json[stallIndex]["stall-comment"]);
 };
 
-loadJson("../../../dist/assets/config/stall-individual.json", onSuccess, onError);
+loadJson("../../../dist/assets/config/stall.json", onSuccess, onError);

@@ -1,8 +1,8 @@
-stall-link,stall-image,stall-name,stall-organization,stall-place,tab1,tab2,tab3
-#,../src/assets/img/logo.png,チュロス,バレーボール部,テント番号 ９,1,1,1
-#,../src/assets/img/logo.png,ポテト＆唐揚げ,ラグビー同好会,テント番号 ７,2,2,1
-#,../src/assets/img/logo.png,アイスクリーム,剣道部,テント番号 13,3,3,1
-#,../src/assets/img/logo.png,たこ焼き,漕艇部,テント番号 ８,4,4,1
+stall-link,stall-image,stall-name,stall-organization,stall-location,tab1,tab2,tab3,time,attention,stall-comment
+#,../src/assets/img/logo.png,チュロス,バレーボール部,テント番号 ９,1,1,1 ,2024-04-01 19:00,入場時にマスク着用をお願いします,美味しいコーヒーと素敵な雰囲気をお楽しみください！
+#,../src/assets/img/logo.png,ポテト＆唐揚げ,ラグビー同好会,テント番号 ７,2,2,1 ,2024-05-15 17:30,イベント中の写真撮影は歓迎です,おいしい料理と音楽で最高のひとときを過ごしましょう！
+#,../src/assets/img/logo.png,アイスクリーム,剣道部,テント番号 13,3,3,1 ,2024-06-20 10:30,予約不要、無料でご参加いただけます,業界のリーダーとの交流のチャンスです。お見逃しなく！
+#,../src/assets/img/logo.png,たこ焼き,漕艇部,テント番号 ８,4,4,1 ,2024-07-10 15:15,事前に資料をダウンロードしておくと便利です,新しいスキルを学び、仕事に役立てましょう！
 #,../src/assets/img/logo.png,お茶、和菓子,茶道同好会,奈古の浦会館 ２階 和室,1,1,2
 #,../src/assets/img/logo.png,ワッフル,バドミントン部,テント番号 15,2,2,2
 #,../src/assets/img/logo.png,和風カフェ,国際ビジネス学科４年,電子情報工学科５年　教室,3,3,2

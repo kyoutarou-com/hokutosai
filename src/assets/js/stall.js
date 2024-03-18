@@ -2,18 +2,7 @@
 
 import $ from "jquery";
 import { loadJson, onError } from "./module/json.js";
-import { selectMenu } from "./module/tab.js";
-
-$(".tabs li a , .menus li a").on("click", function () {
-	const menuId = $(this).attr("href");
-	selectMenu(menuId);
-	return false;
-});
-
-$(window).on("load", () => {
-	const hash = location.hash;
-	selectMenu(hash);
-});
+import { tabInit } from "./module/tab.js";
 
 const createStall = (id, json) => {
 	const stall = `
@@ -24,7 +13,7 @@ const createStall = (id, json) => {
 				<h3 class="stall-name angle-2-box">${json["stall-name"]}</h3>
 				<ul>
 					<li class="stall-organization">${json["stall-organization"]}</li>
-					<li class="stall-category">${json["stall-place"]}</li>
+					<li class="stall-category">${json["stall-location"]}</li>
 				</ul>
 			</div>
 		</div>
@@ -94,4 +83,5 @@ const onSuccess = (json) => {
 	}
 };
 
+tabInit();
 loadJson("../../../dist/assets/config/stall.json", onSuccess, onError);

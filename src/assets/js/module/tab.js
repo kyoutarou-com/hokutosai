@@ -60,3 +60,16 @@ export const selectMenu = (menuId) => {
 			}
 		});
 };
+
+export const tabInit = () => {
+	$(".tabs li a , .menus li a").on("click", function () {
+		const menuId = $(this).attr("href");
+		selectMenu(menuId);
+		return false;
+	});
+
+	$(window).on("load", () => {
+		const hash = location.hash;
+		selectMenu(hash);
+	});
+};
