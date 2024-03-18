@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.stall-information,
+.stall-wrapper,
 .menus,
 #map {
 	display: flex;
@@ -10,7 +10,7 @@
 	margin: 64px auto;
 }
 
-.stall-wrapper {
+.stall-info {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -46,25 +46,25 @@
 	font-weight: 900;
 }
 
-.organization::before {
+.stall-organization::before {
 	content: "\f007";
 }
 
-.location a {
+.stall-location a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	margin-top: 8px;
 }
 
-.location::before {
+.stall-location::before {
 	content: "\f3c5";
 }
 
-.time::before {
+.stall-time::before {
 	content: "\f017";
 }
 
-.attention::before {
+.stall-attention::before {
 	content: "\f06a";
 }
 
