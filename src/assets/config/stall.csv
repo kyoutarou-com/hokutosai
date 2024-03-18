@@ -1,21 +1,21 @@
-stall-link,stall-image,stall-name,stall-organization,stall-category,stall-place,tab1,tab2,tab3
-#,../src/assets/img/logo.png,チュロス,バレーボール部,テント番号 ９,メニュー1,1,1,1
-#,../src/assets/img/logo.png,ポテト＆唐揚げ,ラグビー同好会,テント番号 ７,メニュー2,2,2,1
-#,../src/assets/img/logo.png,アイスクリーム,剣道部,テント番号 13,メニュー3,3,3,1
-#,../src/assets/img/logo.png,たこ焼き,漕艇部,テント番号 ８,メニュー4,4,4,1
-#,../src/assets/img/logo.png,お茶、和菓子,茶道同好会,奈古の浦会館 ２階 和室,メニュー5,1,1,2
-#,../src/assets/img/logo.png,ワッフル,バドミントン部,テント番号 15,メニュー6,2,2,2
-#,../src/assets/img/logo.png,和風カフェ,国際ビジネス学科４年,電子情報工学科５年　教室,メニュー7,3,3,2
-#,../src/assets/img/logo.png,ドリンク,北斗祭実行委員会,テント番号　１＆２,メニュー8,4,4,2
-#,../src/assets/img/logo.png,焼きそば,テニス部,テント番号 ６,メニュー9,1,1,2
-#,../src/assets/img/logo.png,ベビーカステラ,バスケットボール部,テント番号 11,メニュー10,1,1,1
-#,../src/assets/img/logo.png,焼き肉,叙情苑（有志）,テント番号 19,メニュー11,2,2,3
-#,../src/assets/img/logo.png,コンセプトカフェ,国際ビジネス学科５年,共通講義室Ⅰ,メニュー12,3,3,3
-#,../src/assets/img/logo.png,焼き鳥、フランクフルト,機関学同好会,テント番号 10,メニュー13,4,4,3
-#,../src/assets/img/logo.png,クレープ,電子情報工学科４年,テント番号 18,メニュー14,1,1,3
-#,../src/assets/img/logo.png,ポップコーン,ヨット部,テント番号 14,メニュー15,2,2,3
-#,../src/assets/img/logo.png,あんばやし,野球部,テント番号 12,メニュー16,3,3,1
-#,../src/assets/img/logo.png,揚げパン,フリースタイルダンス部,テント番号 16＆17,メニュー17,4,4,4
-#,../src/assets/img/logo.png,似顔絵,美術同好会,学生昇降口,メニュー18,1,1,4
-#,../src/assets/img/logo.png,焼き餃子,サッカー部,テント番号 20,メニュー19,2,2,4
-#,../src/assets/img/logo.png,イカ焼き、どんどん焼き、アイスクレープ、おにぎり,後援会,テント番号 ３＆４＆５,メニュー20,3,3,4
+stall-link,stall-image,stall-name,stall-organization,stall-place,tab1,tab2,tab3
+#,../src/assets/img/logo.png,チュロス,バレーボール部,テント番号 ９,1,1,1
+#,../src/assets/img/logo.png,ポテト＆唐揚げ,ラグビー同好会,テント番号 ７,2,2,1
+#,../src/assets/img/logo.png,アイスクリーム,剣道部,テント番号 13,3,3,1
+#,../src/assets/img/logo.png,たこ焼き,漕艇部,テント番号 ８,4,4,1
+#,../src/assets/img/logo.png,お茶、和菓子,茶道同好会,奈古の浦会館 ２階 和室,1,1,2
+#,../src/assets/img/logo.png,ワッフル,バドミントン部,テント番号 15,2,2,2
+#,../src/assets/img/logo.png,和風カフェ,国際ビジネス学科４年,電子情報工学科５年　教室,3,3,2
+#,../src/assets/img/logo.png,ドリンク,北斗祭実行委員会,テント番号　１＆２,4,4,2
+#,../src/assets/img/logo.png,焼きそば,テニス部,テント番号 ６,1,1,2
+#,../src/assets/img/logo.png,ベビーカステラ,バスケットボール部,テント番号 11,1,1,1
+#,../src/assets/img/logo.png,焼き肉,叙情苑（有志）,テント番号 19,2,2,3
+#,../src/assets/img/logo.png,コンセプトカフェ,国際ビジネス学科５年,共通講義室Ⅰ,3,3,3
+#,../src/assets/img/logo.png,焼き鳥、フランクフルト,機関学同好会,テント番号 10,4,4,3
+#,../src/assets/img/logo.png,クレープ,電子情報工学科４年,テント番号 18,1,1,3
+#,../src/assets/img/logo.png,ポップコーン,ヨット部,テント番号 14,2,2,3
+#,../src/assets/img/logo.png,あんばやし,野球部,テント番号 12,3,3,1
+#,../src/assets/img/logo.png,揚げパン,フリースタイルダンス部,テント番号 16＆17,4,4,4
+#,../src/assets/img/logo.png,似顔絵,美術同好会,学生昇降口,1,1,4
+#,../src/assets/img/logo.png,焼き餃子,サッカー部,テント番号 20,2,2,4
+#,../src/assets/img/logo.png,イカ焼き、どんどん焼き、アイスクレープ、おにぎり,後援会,テント番号 ３＆４＆５,3,3,4
