@@ -164,9 +164,13 @@
 }
 
 @media (max-width: 450px) {
+	.stall {
+		padding: 0;
+	}
+
 	.stall-image {
 		width: 100%;
 		min-width: 100%;
-		height: calc(80vw - 64px); /* widthと同じ大きさ */
+		height: calc(80vw); /* widthと同じ大きさ */
 	}
 }
