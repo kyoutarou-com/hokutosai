@@ -3,34 +3,52 @@
 	<head>
 		<title>テーマ｜北斗祭</title>
 		<link rel="stylesheet" href="assets/css/style-theme.css" />
+		<script src="assets/js/theme.js"></script>
 	</head>
 
 	<body>
 		<div id="head"></div>
 		<div id="header"></div>
-		<img src="./assets/img/theme.jpg" />
-		<p>
-			北の夜空にひときわ輝く7つの美しい星
-			<br />
-			北斗七星
-			<br />
-			そんな北斗七星のように
-			<br />
-			輝くため。
-			<br />
-			個性豊かで、多種多彩な仲間たち
-			<br />
-			10代の今しかできない最高の青春を
-			<br />
-			最高の仲間とともに。
-			<br />
-			全員が主役となる北斗祭になるこを願って。
-		</p>
-		<h3>第16回 北斗祭</h3>
 
-		<h3>テーマに寄せて</h3>
+		<div id="wrapper">
+			<div id="fixed-area">
+				<!--左固定エリア-->
+				<img src="./assets/img/theme.jpg" />
+			</div>
+			<!--右エリア-->
+			<div id="container">
+				<p clss="poem">
+					<span class="blurTrigger"> 北の夜空にひときわ輝く7つの美しい星</span>
+					<br />
+					<span class="blurTrigger">北斗七星</span>
+					<br />
+					<span class="blurTrigger">そんな北斗七星のように</span>
+					<br />
+					<span class="blurTrigger">輝くため。</span>
+					<br />
+					<span class="blurTrigger">個性豊かで、多種多彩な仲間たち</span>
+					<br />
+					<span class="blurTrigger">10代の今しかできない最高の青春を</span>
+					<br />
+					<span class="blurTrigger">最高の仲間とともに。</span>
+					<br />
+					<span class="blurTrigger">全員が主役となる北斗祭になるこを願って。</span>
+				</p>
+				<br />
+
+				<h3>第16回 北斗祭</h3>
+
+				<h3>テーマに寄せて</h3>
+			</div>
+			<!--/wrapper-->
+		</div>
+
 		<p></p>
 		<div id="footer"></div>
 		<script src="../dist/assets/js/common.js"></script>
+		<!-- 左表示固定、文字出現（jquearyのみ） -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"></script>
+		<script src="assets/js/theme.js"></script>
 	</body>
 </html>
