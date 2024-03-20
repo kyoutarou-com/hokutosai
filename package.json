@@ -6,11 +6,8 @@
 	"scripts": {
 		"start": "./scripts/start.sh",
 		"csv-to-json": "node scripts/csv-to-json.js",
-		"docs":"./scripts/docs.sh",
-		"build": "./scripts/build.sh",
-		"prehoge": "git pull origin main",
-		"hoge": "git log | grep '^commit' | wc -l",
-		"posthoge": "git log | grep 'Author' | cut -d ' ' -f 1,2 | sort | uniq -c | sort -nr"
+		"docs": "./scripts/docs.sh",
+		"build": "./scripts/build.sh"
 	},
 	"keywords": [],
 	"author": "2024祭実行委員会",
