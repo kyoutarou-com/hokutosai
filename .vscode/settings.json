@@ -14,7 +14,7 @@
 	"[less]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"cSpell.words": ["fileoverview", "hokutofes", "hokutosai", "mkdirs", "prejson", "progressbar"],
+	"cSpell.words": ["fileoverview", "hokutofes", "hokutosai", "mkdirs", "prejson", "progressbar", "stylelint"],
 	"css.validate": false,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.stylelint": "always"
