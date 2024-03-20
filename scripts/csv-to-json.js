@@ -13,6 +13,16 @@ const INPUT_DIRECTORY = "src/assets/config";
 const OUTPUT_DIRECTORY = "dist/assets/config";
 
 /**
+ * Remove an extension from a filename
+ * @param {string} filename Target filename
+ * @param {string} extension Extension to be removed
+ * @returns {string} Filename with extension removed
+ */
+const getFilenameWithoutExtension = (filename, extension) => {
+	return filename.replace(RegExp(`${extension}\$`), "");
+};
+
+/**
  * Convert csv file to json file.
  * @returns {void}
  */
@@ -20,7 +30,7 @@ const csvFileToJsonFile = () => {
 	fs.mkdirs(OUTPUT_DIRECTORY);
 
 	for (const targetFilename of TARGET_FILENAMES) {
-		const targetFilenameWithoutExtension = targetFilename.replace(/\.csv$/, "");
+		const targetFilenameWithoutExtension = getFilenameWithoutExtension(targetFilename, ".csv");
 		const inputFilePath = `${INPUT_DIRECTORY}/${targetFilename}`;
 		const outputFilePath = `${OUTPUT_DIRECTORY}/${targetFilenameWithoutExtension}.json`;
 
