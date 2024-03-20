@@ -9,13 +9,13 @@
 
 /* タブ */
 .tabs {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+	gap: 8px;
 	margin-top: 64px;
 }
 
 .tabs li {
-	width: 32%;
 	border-bottom: solid #ddd 2px;
 }
 
