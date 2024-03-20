@@ -4,19 +4,19 @@ import $ from "jquery";
 import { loadJson, onError } from "./module/json.js";
 import { tabInit } from "./module/tab.js";
 
-const createStall = (id, json) => {
+const insertStallSection = (id, stallDescription) => {
 	const stall = `
-	<a href="${json["stall-link"]}">
-		<div class="stall">
-			<img class="stall-image" src="${json["stall-image"]}" alt="店の画像" />
+	<a href="${stallDescription["stall-link"]}">
+		<section class="stall">
+			<img class="stall-image" src="${stallDescription["stall-image"]}" alt="店の画像" />
 			<div class="stall-info">
-				<h3 class="stall-name angle-2-box">${json["stall-name"]}</h3>
+				<h3 class="stall-name angle-2-box">${stallDescription["stall-name"]}</h3>
 				<ul>
-					<li class="stall-organization">${json["stall-organization"]}</li>
-					<li class="stall-category">${json["stall-location"]}</li>
+					<li class="stall-organization">${stallDescription["stall-organization"]}</li>
+					<li class="stall-category">${stallDescription["stall-location"]}</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 	</a>
 	`;
 	$(id).append(stall);
@@ -41,7 +41,7 @@ const onSuccess = (json) => {
 			default:
 				break;
 		}
-		createStall(tab1, iterator);
+		insertStallSection(tab1, iterator);
 
 		let tab2;
 		switch (iterator["tab2"]) {
@@ -60,7 +60,7 @@ const onSuccess = (json) => {
 			default:
 				break;
 		}
-		createStall(tab2, iterator);
+		insertStallSection(tab2, iterator);
 
 		let tab3;
 		switch (iterator["tab3"]) {
@@ -79,7 +79,7 @@ const onSuccess = (json) => {
 			default:
 				break;
 		}
-		createStall(tab3, iterator);
+		insertStallSection(tab3, iterator);
 	}
 };
 
