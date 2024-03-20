@@ -20,7 +20,7 @@ const csvFileToJsonFile = () => {
 	fs.mkdirs(OUTPUT_DIRECTORY);
 
 	for (const targetFilename of TARGET_FILENAMES) {
-		const targetFilenameWithoutExtension = targetFilename.slice(0, -4);
+		const targetFilenameWithoutExtension = targetFilename.replace(/\.csv$/, "");
 		const inputFilePath = `${INPUT_DIRECTORY}/${targetFilename}`;
 		const outputFilePath = `${OUTPUT_DIRECTORY}/${targetFilenameWithoutExtension}.json`;
 
