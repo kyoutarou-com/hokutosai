@@ -16,9 +16,9 @@ img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 90%;
+	width: 110%;
 	height: 100%;
-	margin: 0;
+	margin: auto;
 }
 
 .button {
@@ -215,18 +215,11 @@ h2 {
 }
 /* ボタン設定ここまで */
 
-.address {
-	padding-top: 2%;
-	padding-bottom: 3%;
-	margin-left: 10%;
+.address_access {
+	font-size: 100%;
+	margin: 4% 10% 1%;
 }
 
-/* Google map 比率 */
-iframe {
-	/* width: 100%; */
-	/* aspect-ratio: 16/9; */
-	margin: 0 10%;
-}
 /* バーガーメニュー */
 /* 参考>> https://www.asobou.co.jp/blog/web/css-menu */
 .menu-btn {
