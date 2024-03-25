@@ -22,8 +22,9 @@ img {
 }
 
 .button {
-	width: 200px;
-	margin: 1% auto;
+	width: 250px;
+	margin: 5% auto 1%;
+	padding-left: 7%;
 }
 
 .space {
