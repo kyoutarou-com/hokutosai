@@ -38,7 +38,7 @@ a:hover {
 :root {
 	--main-color: #7117ea;
 	--sub-color: #ea6060;
-	--accent-color: rgb(56, 50, 139);
+	--accent-color: rgb(56 50 139);
 }
 
 /* 　！カラー共通設定 終了！　 */
@@ -145,7 +145,7 @@ a:hover {
 
 /* 　！ボタン設定　開始！　 */
 
-/* 　！版ズレ囲み枠　開始！　*/
+/* ！版ズレ囲み枠　開始！ */
 
 .frame {
 	position: relative;
@@ -241,7 +241,7 @@ a:hover {
 	transform-origin: left top;
 }
 
-/*　！ボタン設定　終了！　*/
+/* ！ボタン設定　終了！ */
 
 /*  ！メニューバー　開始！ */
 
@@ -318,7 +318,7 @@ body {
 
 /* 　！メニューバー　終了！ */
 
-/*　！フッター　開始！　 */
+/* ！フッター　開始！ */
 
 #footer {
 	position: relative;
