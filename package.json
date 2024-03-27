@@ -20,6 +20,7 @@
 		"express": "^4.19.2",
 		"jquery": "^3.7.1",
 		"leaflet": "^1.9.4",
+		"mysql": "^2.18.1",
 		"progressbar.js": "^1.1.1"
 	},
 	"devDependencies": {
