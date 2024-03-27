@@ -52,6 +52,11 @@ table td {
 	border: solid 2px white;
 }
 
+.textbox {
+	margin-bottom: 10%;
+}
+
+
 /* ヘッダーデザイン */
 .heading {
 	position: relative;
