@@ -10,6 +10,7 @@ module.exports = {
 		stall: "./src/assets/js/stall.js",
 		"stall-individual": "./src/assets/js/stall-individual.js",
 		stage: "./src/assets/js/stage.js",
+		theme: "./src/assets/js/theme.js",
 	},
 	output: {
 		filename: "assets/js/[name].js",
