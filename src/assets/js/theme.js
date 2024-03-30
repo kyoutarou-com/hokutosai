@@ -49,7 +49,7 @@ function BlurTextAnimeControl() {
 		if (scroll >= elemPos - windowHeight) {
 			setTimeout(function () {
 				$element.addClass("blur"); // 画面内に入ってから3秒後にblurクラスを追加
-			}, 3000);
+			}, 500);
 		} else {
 			$element.removeClass("blur"); // 画面外に出たらblurというクラス名を外す
 		}
