@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 // 画面分割
 $(window).on("load resize", function () {
 	var windowWidth = window.innerWidth;
