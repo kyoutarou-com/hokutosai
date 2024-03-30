@@ -32,7 +32,7 @@
 	#fixed-area {
 		position: relative !important; /*position stickyを解除*/
 		width: 100%; /*横幅を100%にして1列に見せる*/
-		height: 40vh; /*縦幅を100vh⇒40vh　※任意の高さに設定可能*/
+		height: 100vh; /*縦幅を100vh⇒40vh　※任意の高さに設定可能*/
 	}
 	#container {
 		width: 100%; /*横幅を100%にして1列に見せる*/
@@ -67,4 +67,19 @@
 
 .poem {
 	line-height: 10rem;
+}
+
+@media screen and (width<450px) {
+	.main-logo {
+		margin-top: 30vh;
+	}
+	.blurTrigger {
+		margin-left: 10%;
+	}
+}
+
+/* テーマに寄せて */
+.the-theme {
+	margin: 2% 10%;
+	font-size: 1.15rem;
 }
