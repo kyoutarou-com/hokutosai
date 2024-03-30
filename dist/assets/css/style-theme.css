@@ -83,3 +83,11 @@
 	margin: 2% 10%;
 	font-size: 1.15rem;
 }
+
+.blurTrigger {
+	opacity: 0;
+	transition: opacity 0.8s ease; /* アニメーションの時間とイージングを設定 */
+}
+.blur {
+	opacity: 1;
+}
