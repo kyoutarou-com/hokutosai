@@ -37,7 +37,7 @@ $(window).scroll(function () {
 });
 
 // PROTEENのメインロゴ
-function BlurTextAnimeControl() {
+function BlurTextAnimeControl_hoge() {
 	$(".blurTrigger-logo").each(function () {
 		var elemPos = $(this).offset().top - 50; // 要素より、50px上の
 		var scroll = $(window).scrollTop();
@@ -55,7 +55,7 @@ function BlurTextAnimeControl() {
 
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
-	BlurTextAnimeControl(); /* アニメーション用の関数を呼ぶ*/
+	BlurTextAnimeControl_hoge(); /* アニメーション用の関数を呼ぶ*/
 });
 
 // 画面が読み込まれたらすぐに動かしたい場合の記述
