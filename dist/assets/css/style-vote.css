@@ -22,9 +22,12 @@
 		margin: 5%;
 		padding: 2%;
 		width: 140px;
+
+		display: grid;
 	}
 	.item-box-img {
-		width: 80px;
+		max-width: 80px;
+		max-height: 100px;
 	}
 }
 
@@ -32,4 +35,5 @@
 	overflow: auto;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
