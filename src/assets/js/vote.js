@@ -31,6 +31,12 @@ const vote = (name) => {
 
 $("#vote-button").on("click", (event) => {
 	event.preventDefault();
+
 	const name = getVoteData();
+	if (!name) {
+		window.alert("選択されていません");
+		return;
+	}
+
 	vote(name);
 });
