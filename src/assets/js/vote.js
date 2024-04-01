@@ -1,9 +1,18 @@
 "use strict";
 
 import $ from "jquery";
+import Cookies from "js-cookie";
 
 const onSuccess = (data) => {
 	console.log(data);
+
+	if (Cookies.get("isVoted")) {
+		window.alert("投票は1回だけだぞ");
+		return;
+	}
+
+	Cookies.set("isVoted", true, { expires: 7 });
+
 	location.href = $("#vote-button").attr("href");
 };
 
