@@ -11,6 +11,7 @@ module.exports = {
 		"stall-individual": "./src/assets/js/stall-individual.js",
 		stage: "./src/assets/js/stage.js",
 		theme: "./src/assets/js/theme.js",
+		vote: "./src/assets/js/vote.js",
 	},
 	output: {
 		filename: "assets/js/[name].js",
