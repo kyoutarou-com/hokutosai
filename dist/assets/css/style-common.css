@@ -177,7 +177,7 @@ a:hover {
 	top: 5px;
 	left: 5px;
 	z-index: -2;
-	background-color: #ffffc6; /* ズレている方の背景色 */
+	background-color: #d9f6f9; /* ズレている方の背景色 */
 }
 
 .blank {
@@ -279,7 +279,7 @@ body {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	background: #a9d9ea; /* 色編集 */
+	background: #040404; /* 色編集 */
 }
 
 /* メニューの要素 */
