@@ -50,7 +50,7 @@ a:hover {
 	box-sizing: border-box;
 	width: 100%;
 	height: 150px;
-	background-color: #c9e5ef;
+	background-color: #81c7e1;
 }
 
 .boxes {
@@ -138,6 +138,45 @@ a:hover {
 	.logo-img {
 		width: 200px;
 	}
+}
+
+/* 以下　マウスhover　下線 */
+
+header ul li a {
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 3px;
+	background: none;
+}
+
+header ul li a::after,
+header ul li a::before {
+	position: absolute;
+	bottom: 0;
+	display: #f5f5f5;
+	/* 初期状態でのwidthは0 */
+	width: 0;
+	height: 3px;
+	content: "";
+	background: #f5f5f5;
+	transition: 0.5s;
+}
+/* 中心から線がスタートするので始点を50%の位置に移動する */
+header ul li a::after {
+	left: 50%;
+}
+
+header ul li a::before {
+	right: 50%;
+}
+
+/* マウスカーソルが乗っかると中心からwidthが50%ずつ伸びて100%の線になる */
+header ul li a:hover::before,
+header ul li a:hover::after {
+	width: 50%;
 }
 
 /* 　！ヘッダー終了！　 */
