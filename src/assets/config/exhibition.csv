@@ -1,11 +1,11 @@
 exhibition-link,exhibition-image,group-name,store-name,menu,introduction,caution
-個別ページのurl,画像パス,団体名,模擬店名,販売予定のメニュー,紹介文,注意事項
-#tea-party,写像,茶道同好会,皐月茶会,お茶会参加券（お茶＋和菓子）400円、茶道体験券（お茶＋かりんとう饅頭）300円,,当日券を忘れずに持ってきてください。
-#illustration,写像,美術同好会,似顔絵,一枚　500円,,
+個別ページのurl,画像パス,団体名,模擬店名,販売予定のメニュー,紹介文,注意事項,サブ画像パス1
+#tea-party,../../../dist/assets/img/exhibition/tea-party.png,茶道同好会,皐月茶会,お茶会参加券（お茶＋和菓子）400円、茶道体験券（お茶＋かりんとう饅頭）300円,,当日券を忘れずに持ってきてください。
+#illustration,../../../dist/assets/img/exhibition/art-club1.jpg,美術同好会,似顔絵,一枚　500円,,../../../dist/assets/img/exhibition/art-club2.jpg
 #yakitori-Frankfurt,写像,幾何学同好会,焼き鳥・フランクフルト,・焼き鳥 100円  ・フランクフルト 120円,,
-#baby-castella,写像,男女バスケットボール部,ベビーカステラさん,ベビーカステラ　400円,,
+#baby-castella,../../../dist/assets/img/exhibition/castella.jpeg,男女バスケットボール部,ベビーカステラさん,ベビーカステラ　400円,,
 #drink,写像,執行部,ドリンクワンダーランド（未定）,ドリンク100〜150円,,
-#waffle,写像,バドミントン部,わっふる,ワッフル(プレーン)250円　ワッフル(メープルシロップ)300円　ワッフル(チョコ)300円　ワッフル(いちごソース)300円,,
+#waffle,../../../dist/assets/img/exhibition/waffle.png,バドミントン部,わっふる,ワッフル(プレーン)250円　ワッフル(メープルシロップ)300円　ワッフル(チョコ)300円　ワッフル(いちごソース)300円,,
 #takoyaki,写像,カッター部,たこ焼きかった郎, ノーマル 450    明太マヨ  500    チーズ  500,,
 #fried noodles,写像,テニス部,焼きそば,焼きそば　300円,,
 #ice-cream,写像,剣道部,剣道部アイス屋始めました,アイス　400円（予定）,,
