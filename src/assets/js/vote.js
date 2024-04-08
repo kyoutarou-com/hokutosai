@@ -7,13 +7,13 @@ const transitionToVoteCompletePage = () => {
 	location.href = $("#vote-button").attr("href");
 };
 
-const onVoteSuccess = (data) => {
+const onVoteSuccess = () => {
 	Cookies.set("isVoted", true, { expires: 2 });
 	transitionToVoteCompletePage();
 };
 
-const onVoteError = (data) => {
-	throw new data();
+const onVoteError = (error) => {
+	throw error;
 };
 
 const vote = (selectedVote) => {
@@ -37,8 +37,8 @@ const isSmartphone = () => {
 
 const isVoteTime = () => {
 	const currentTime = new Date();
-	const firstTime = new Date(2024, 4, 25, 14);
-	const lastTime = new Date(2024, 4, 26, 10);
+	const firstTime = new Date(2024, 5 - 1, 25, 14);
+	const lastTime = new Date(2024, 5 - 1, 26, 10);
 
 	const isVoteTime = currentTime < firstTime || currentTime > lastTime;
 	if (isVoteTime) {
@@ -56,7 +56,7 @@ const isVoted = () => {
 };
 
 const selectVote = () => {
-	const selectedVote = $(":checked").data("name");
+	const selectedVote = $(":checked").data("vote");
 	return selectedVote;
 };
 
@@ -71,15 +71,15 @@ $(window).on("load", () => {
 $("#vote-button").on("click", (event) => {
 	event.preventDefault();
 
-	// if (!isSmartphone()) {
-	// 	window.alert("スマホにしろ");
-	// 	return;
-	// }
+	if (!isSmartphone()) {
+		window.alert("スマホにしろ");
+		return;
+	}
 
-	// if (!isVoteTime()) {
-	// 	window.alert("投票時間外だぞ");
-	// 	return;
-	// }
+	if (!isVoteTime()) {
+		window.alert("投票時間外だぞ");
+		return;
+	}
 
 	const selectedVote = selectVote();
 	if (!selectedVote) {
