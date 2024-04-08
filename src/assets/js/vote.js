@@ -3,9 +3,13 @@
 import $ from "jquery";
 import Cookies from "js-cookie";
 
+const transitionToVoteCompletePage = () => {
+	location.href = $("#vote-button").attr("href");
+};
+
 const onVoteSuccess = (data) => {
 	Cookies.set("isVoted", true, { expires: 2 });
-	location.href = $("#vote-button").attr("href");
+	transitionToVoteCompletePage();
 };
 
 const onVoteError = (data) => {
@@ -56,23 +60,26 @@ const selectVote = () => {
 	return selectedVote;
 };
 
+$(window).on("load", () => {
+	if (isVoted()) {
+		window.alert("投票は1回だけだぞ");
+		transitionToVoteCompletePage();
+		return;
+	}
+});
+
 $("#vote-button").on("click", (event) => {
 	event.preventDefault();
 
-	if (!isSmartphone()) {
-		window.alert("スマホにしろ");
-		return;
-	}
+	// if (!isSmartphone()) {
+	// 	window.alert("スマホにしろ");
+	// 	return;
+	// }
 
-	if (!isVoteTime()) {
-		window.alert("投票時間外だぞ");
-		return;
-	}
-
-	if (isVoted()) {
-		window.alert("投票は1回だけだぞ");
-		return;
-	}
+	// if (!isVoteTime()) {
+	// 	window.alert("投票時間外だぞ");
+	// 	return;
+	// }
 
 	const selectedVote = selectVote();
 	if (!selectedVote) {
