@@ -18,3 +18,15 @@
 	margin: 1rem;
 	text-align: center;
 }
+
+.pdf-viewer-wrapper {
+	width: 80%;
+	height: 70vh;
+	margin: 0 auto;
+	margin-top: 32px;
+}
+
+.pdf-viewer {
+	width: 100%;
+	height: 100%;
+}
