@@ -13,6 +13,7 @@ module.exports = {
 		theme: "./src/assets/js/theme.js",
 		vote: "./src/assets/js/vote.js",
 		"vote-thanks": "./src/assets/js/vote-thanks.js",
+		exhibition: "./src/assets/js/exhibition.js",
 	},
 	output: {
 		filename: "assets/js/[name].js",
