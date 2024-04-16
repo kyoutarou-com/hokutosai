@@ -72,18 +72,18 @@ $("#vote-button").on("click", (event) => {
 	event.preventDefault();
 
 	if (!isSmartphone()) {
-		window.alert("スマホにしろ");
+		window.alert("モバイル端末で投票してください．");
 		return;
 	}
 
 	if (!isVoteTime()) {
-		window.alert("投票時間外だぞ");
+		window.alert("投票可能時間をご確認ください．");
 		return;
 	}
 
 	const selectedVote = selectVote();
 	if (!selectedVote) {
-		window.alert("選択されていません");
+		window.alert("回答を選択してください.");
 		return;
 	}
 
