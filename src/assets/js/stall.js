@@ -51,12 +51,6 @@ const onSuccess = (json) => {
 			case "2":
 				tab2 = "#location2";
 				break;
-			case "3":
-				tab2 = "#location3";
-				break;
-			case "4":
-				tab2 = "#location4";
-				break;
 			default:
 				break;
 		}
