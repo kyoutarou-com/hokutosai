@@ -8,6 +8,7 @@ const onSuccess = (json) => {
 	const stallIndex = getPageIndex();
 	console.log(json);
 
+	insertTextIntoElement("#stall-name-pan", json[stallIndex]["stall-name"]);
 	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
 	insertValueIntoElement("#stall-image", "src", json[stallIndex]["stall-image"]);
 	insertTextIntoElement("#stall-organization", json[stallIndex]["stall-organization"]);
