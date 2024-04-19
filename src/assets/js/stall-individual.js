@@ -7,6 +7,7 @@ import { insertTextIntoElement, insertValueIntoElement } from "./module/dom.js";
 const onSuccess = (json) => {
 	const stallIndex = getPageIndex();
 
+	insertTextIntoElement("#stall-name-pan", json[stallIndex]["stall-name"]);
 	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
 	insertValueIntoElement("#stall-image", "src", json[stallIndex]["stall-image"]);
 	insertTextIntoElement("#stall-organization", json[stallIndex]["stall-organization"]);
