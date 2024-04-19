@@ -6,13 +6,13 @@ import { tabInit } from "./module/tab";
 
 const insertStageSection = (id, stageDescription) => {
 	const stageSection = `
-	<a href="${stageDescription["stage-link"]}">
+	<a href="${stageDescription["stall-link"]}">
 		<section class="stall">
-			<img class="stall-image" src="${stageDescription["stage-image"]}" alt="店の画像" />
+			<img class="stall-image" src="${stageDescription["stall-image"]}" alt="店の画像" />
 			<div class="stall-info">
-				<h3 class="stall-name angle-2-box">${stageDescription["stage-name"]}</h3>
+				<h3 class="stall-name angle-2-box">${stageDescription["stall-name"]}</h3>
 				<ul>
-					<li class="stall-category">${stageDescription["stage-time"]}</li>
+					<li class="stall-category">${stageDescription["stall-time"]}</li>
 				</ul>
 			</div>
 		</section>
@@ -24,11 +24,11 @@ const insertStageSection = (id, stageDescription) => {
 const onSuccess = (stageDescriptions) => {
 	for (const stageDescription of stageDescriptions) {
 		let tab;
-		switch (stageDescription["date"]) {
-			case "１日目":
+		switch (stageDescription["tab"]) {
+			case "1":
 				tab = "#tab1";
 				break;
-			case "２日目":
+			case "2":
 				tab = "#tab2";
 				break;
 			default:
@@ -39,4 +39,4 @@ const onSuccess = (stageDescriptions) => {
 };
 
 tabInit();
-loadJson("../../../dist/assets/config/stage.json", onSuccess, onError);
+loadJson("assets/config/stage.json", onSuccess, onError);
