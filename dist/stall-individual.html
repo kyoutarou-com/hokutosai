@@ -3,8 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>模擬店｜北斗祭</title>
-		<link rel="stylesheet" href="assets/css/style-stall-indivisual.css" />
 		<link rel="canonical" href="https://hokutosai.net/stall-individual.html/" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<link rel="stylesheet" href="assets/css/style-stall-indivisual.css" />
+
+		<script>
+			$(document).ready(function () {
+				$(".slider").bxSlider({
+					auto: true,
+					pause: 5000,
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -20,7 +32,10 @@
 
 		<div class="stall-wrapper">
 			<div class="stall-info">
-				<img src="#" alt="店の画像" class="stall-image" id="stall-image" />
+				<div class="slider">
+					<img src="#" alt="店の画像" class="stall-image" id="stall-image" />
+					<img src="#" alt="店の画像" class="stall-image" id="stall-image" />
+				</div>
 
 				<ul class="stall-description">
 					<li class="stall-organization">
