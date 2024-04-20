@@ -1,21 +1,21 @@
-stall-link,stall-image,stall-name,stall-organization,stall-location,tab1,tab2,tab3,time,attention,stall-comment
-./stall-individual.html#0,./assets/img/logo.png,チュロス,バレーボール部,テント番号 ９,2,2,1,2024-04-01 19:00,入場時にマスク着用をお願いします,美味しいコーヒーと素敵な雰囲気をお楽しみください！
-./stall-individual.html#1,./assets/img/logo.png,ポテト＆唐揚げ,ラグビー同好会,テント番号 ７,1,2,1,2024-05-15 17:30,イベント中の写真撮影は歓迎です,おいしい料理と音楽で最高のひとときを過ごしましょう！
-./stall-individual.html#2,./assets/img/logo.png,アイスクリーム,剣道部,テント番号 13,2,2,"1 ",2024-06-20 10:30,予約不要、無料でご参加いただけます,業界のリーダーとの交流のチャンスです。お見逃しなく！
-./stall-individual.html#3,./assets/img/logo.png,たこ焼き,漕艇部,テント番号 ８,1,2,"1 ",2024-07-10 15:15,事前に資料をダウンロードしておくと便利です,新しいスキルを学び、仕事に役立てましょう！
-./stall-individual.html#4,./assets/img/logo.png,お茶、和菓子,茶道同好会,奈古の浦会館 ２階 和室,2,1,2,,,
-./stall-individual.html#5,./assets/img/logo.png,ワッフル,バドミントン部,テント番号 15,2,2,1,,,
-./stall-individual.html#6,./assets/img/logo.png,和風カフェ,国際ビジネス学科４年,電子情報工学科５年　教室,3,1,3,,,
-./stall-individual.html#7,./assets/img/logo.png,ドリンク,北斗祭実行委員会,テント番号　１＆２,2,2,4,,,
-./stall-individual.html#8,./assets/img/logo.png,焼きそば,テニス部,テント番号 ６,1,2,1,,,
-./stall-individual.html#9,./assets/img/logo.png,ベビーカステラ,バスケットボール部,テント番号 11,2,2,1,,,
-./stall-individual.html#10,./assets/img/logo.png,焼き肉,叙情苑（有志）,テント番号 19,1,2,4,,,
-./stall-individual.html#11,./assets/img/logo.png,コンセプトカフェ,国際ビジネス学科５年,共通講義室Ⅰ,3,1,3,,,
-./stall-individual.html#12,./assets/img/logo.png,焼き鳥、フランクフルト,機関学同好会,テント番号 10,1,2,2,,,
-./stall-individual.html#13,./assets/img/logo.png,クレープ,電子情報工学科４年,テント番号 18,2,2,3,,,
-./stall-individual.html#14,./assets/img/logo.png,ポップコーン,ヨット部,テント番号 14,1,2,1,,,
-./stall-individual.html#15,./assets/img/logo.png,あんばやし,野球部,テント番号 12,1,2,1,,,
-./stall-individual.html#16,./assets/img/logo.png,揚げパン,フリースタイルダンス部,テント番号 16＆17,1,2,1,,,
-./stall-individual.html#17,./assets/img/logo.png,似顔絵,美術同好会,学生昇降口,4,1,2,,,
-./stall-individual.html#18,./assets/img/logo.png,焼き餃子,サッカー部,テント番号 20,1,2,1,,,
-./stall-individual.html#19,./assets/img/logo.png,イカ焼き、どんどん焼き、アイスクレープ、おにぎり,後援会,テント番号 ３＆４＆５,1,2,4,,,
+stall-link,stall-image,stall-name,stall-organization,stall-menu,stall-location,tab1,tab2,tab3,time,attention,stall-comment
+./stall-individual.html#0,./assets/img/stall/logo.png,チュチュチュロス,バレーボール部,シナモン　300円　ミルク　200円　チョコ　300円,テント番号 ９,2,2,1,2024-04-01 19:00,,バレー部の愛がこもったチュロスです。食べに来ないと損するよ
+./stall-individual.html#1,./assets/img/stall/logo.png,ポテト＆唐揚げ,ラグビー同好会,ポテト300円,テント番号 ７,1,2,1,2024-05-15 17:30,イベント中の写真撮影は歓迎です,おいしい料理と音楽で最高のひとときを過ごしましょう！
+./stall-individual.html#2,./assets/img/stall/logo.png,剣道部アイス屋始めました,剣道部,アイス　400円（予定）,テント番号 13,2,2,"1 ",2024-06-20 10:30,,
+./stall-individual.html#3,./assets/img/stall/logo.png,たこ焼きかった郎,漕艇部,ノーマル 450    明太マヨ  500    チーズ  500,テント番号 ８,1,2,"1 ",2024-07-10 15:15,,
+./stall-individual.html#4,./assets/img/stall/tea-party.png,皐月茶会,茶道同好会,お茶会参加券（お茶＋和菓子）400円、茶道体験券（お茶＋かりんとう饅頭）300円,奈古の浦会館 ２階 和室,2,1,2,,当日券を忘れずに持ってきてください。,
+./stall-individual.html#5,./assets/img/stall/waffle.png,わっふる,バドミントン部,ワッフル(プレーン)250円　ワッフル(メープルシロップ)300円　ワッフル(チョコ)300円　ワッフル(いちごソース)300円,テント番号 15,2,2,1,,,
+./stall-individual.html#6,./assets/img/stall/logo.png,命短シ食セヨ乙女,国際ビジネス学科４年,・団子300円　・パフェ500円　・ぜんざい300円　・どらやき300円,電子情報工学科５年　教室,3,1,3,,,
+./stall-individual.html#7,./assets/img/stall/logo.png,ドリンクワンダーランド（未定）,北斗祭実行委員会,ドリンク100〜150円,テント番号　１＆２,2,2,4,,,
+./stall-individual.html#8,./assets/img/stall/logo.png,焼きそば,テニス部,焼きそば　300円,テント番号 ６,1,2,1,,,
+./stall-individual.html#9,./assets/img/stall/castella.jpeg,ベビーカステラさん,バスケットボール部,ベビーカステラ　400円,テント番号 11,2,2,1,,,
+./stall-individual.html#10,./assets/img/stall/logo.png,叙情苑,I4有志,現状だとどんな種類の肉を仕入れることが可能なのか全く分からないのでメニュー、価格ともに決めれていません。,テント番号 19,1,2,4,,,
+./stall-individual.html#11,./assets/img/stall/logo.png,ぎゃるまみれ43,国際ビジネス学科５年,・愛情たあ〜っぷりぱんけ〜き♡ 　500円　・おいちいタルト♡　350円　・あなたのハートもしゅわしゅわ！クリームソーダ♡　500円　(予定),共通講義室Ⅰ,3,1,3,,♡店内の撮影はOKです　♡メイドさんと写真、メイドさんの写真を撮りたい場合は許可をとってください,
+./stall-individual.html#12,./assets/img/stall/logo.png,焼き鳥、フランクフルト,機関学同好会,・焼き鳥 100円  ・フランクフルト 120円,テント番号 10,1,2,2,,,
+./stall-individual.html#13,./assets/img/stall/logo.png,クレープ,電子情報工学科４年,テント番号 18,2,2,3,,,
+./stall-individual.html#14,./assets/img/stall/logo.png,ポップコーン,ヨット部,テント番号 14,1,2,1,,,
+./stall-individual.html#15,./assets/img/stall/logo.png,あんばやし,野球部,テント番号 12,1,2,1,,,
+./stall-individual.html#16,./assets/img/stall/logo.png,君にパンを揚げる,フリースタイルダンス部,フレーバー未定のため後日送信させてください。,テント番号 16＆17,1,2,1,,購入の際にでたゴミは校内に設置してあるゴミ箱へお願いします！,フレーバーについて書きたいので後日送信させてください。
+./stall-individual.html#17,./assets/img/stall/art-club1.jpg,似顔絵,美術同好会,一枚　500円,学生昇降口,4,1,2,,,
+./stall-individual.html#18,./assets/img/stall/logo.png,焼き餃子,サッカー部,焼き餃子　予定価格300円,テント番号 20,1,2,1,,,パリパリの餃子焼いて待ってます！ぜひ来てください！
+./stall-individual.html#19,./assets/img/stall/logo.png,イカ焼き、どんどん焼き、アイスクレープ、おにぎり,後援会,テント番号 ３＆４＆５,1,2,4,,,
