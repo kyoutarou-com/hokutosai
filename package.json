@@ -7,7 +7,9 @@
 		"start": "./scripts/start.sh",
 		"csv-to-json": "node scripts/csv-to-json.js",
 		"docs": "./scripts/docs.sh",
-		"build": "./scripts/build.sh"
+		"build": "./scripts/build.sh",
+		"clean": "ssh hokutofes rm -r hokutofes.com/public_html/*",
+		"deploy": "scp -r dist/* hokutofes:/home/hokutofes/hokutofes.com/public_html"
 	},
 	"keywords": [],
 	"author": "2024祭実行委員会",
