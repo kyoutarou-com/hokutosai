@@ -17,4 +17,4 @@ const onSuccess = (json) => {
 	insertTextIntoElement("#stall-comment", json[stallIndex]["stall-comment"]);
 };
 
-loadJson("../../../dist/assets/config/stall.json", onSuccess, onError);
+loadJson("assets/config/stall.json", onSuccess, onError);
