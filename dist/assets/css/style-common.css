@@ -39,6 +39,7 @@ a:hover {
 	--main-color: #c0e4f2;
 	--sub-color: #fffcd7;
 	--accent-color: #ded3d6;
+	--black-color: #4d4d4d;
 }
 
 /* 　！カラー共通設定 終了！　 */
@@ -603,40 +604,29 @@ body {
 
 /* ！見出しバー装飾　終了！ */
 /* ヘッダーデザイン */
+
 .heading {
 	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-size: 35px;
+	margin-top: 40px;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #828282;
 	text-align: center;
-}
-
-.heading span {
-	position: relative;
-	z-index: 2;
+	letter-spacing: 0.04em;
 }
 
 .heading::before {
 	position: absolute;
-	top: -20px;
-	left: 50%;
-	font-size: 80px;
-	font-style: italic;
-	color: var(--main-color); /* 色編集 */
+	top: -40px;
+	display: block;
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: 1.5;
+	color: var(--main-color);
+	letter-spacing: 0.02em;
 	content: attr(data-en);
-	transform: translateX(-50%);
 }
 
-.heading::after {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 1px;
-	height: 40px;
-	content: "";
-	background-color: var(--main-color); /* 色編集 */
-	transform: translate(-50%) rotate(30deg);
-}
 /* ヘッダー文字装飾以上 */
 /* h2　下線表示 */
 h2 {
