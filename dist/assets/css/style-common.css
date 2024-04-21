@@ -603,31 +603,6 @@ body {
 /* ！見出しバー装飾　開始！ */
 
 /* ！見出しバー装飾　終了！ */
-/* ヘッダーデザイン */
-
-.heading {
-	position: relative;
-	margin-top: 40px;
-	font-size: 1.8rem;
-	font-weight: 400;
-	color: #828282;
-	text-align: center;
-	letter-spacing: 0.04em;
-}
-
-.heading::before {
-	position: absolute;
-	top: -40px;
-	display: block;
-	font-size: 5rem;
-	font-weight: 700;
-	line-height: 1.5;
-	color: var(--main-color);
-	letter-spacing: 0.02em;
-	content: attr(data-en);
-}
-
-/* ヘッダー文字装飾以上 */
 /* h2　下線表示 */
 h2 {
 	position: relative;
@@ -738,3 +713,57 @@ h2 {
 	text-decoration: none;
 }
 /* パンくずリスト 終了 */
+
+/* ヘッダーデザイン */
+.heading {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 35px;
+	text-align: center;
+}
+
+.heading::before {
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	font-size: 80px;
+	color: rgb(120 79 195 / 37.1%);
+	content: attr(data-en);
+	transform: translateX(-50%);
+}
+
+.heading::after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 1px;
+	height: 40px;
+	content: "";
+	background-color: rgb(120 79 195 / 26.9%);
+	transform: translate(-50%) rotate(30deg);
+}
+
+.heading {
+	position: relative;
+	margin-top: 32px;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #828282;
+	text-align: center;
+	letter-spacing: 0.04em;
+}
+
+.heading::before {
+	position: absolute;
+	top: -32px;
+	display: block;
+	font-size: 4rem;
+	font-weight: 1;
+	line-height: 1.5;
+	color: var(--main-color);
+	letter-spacing: 0.02em;
+	content: attr(data-en);
+}
+
+/* ヘッダー文字装飾以上 */

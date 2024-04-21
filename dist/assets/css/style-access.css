@@ -23,8 +23,8 @@ img {
 
 .button {
 	width: 250px;
-	margin: 5% auto 1%;
 	padding-left: 7%;
+	margin: 5% auto 1%;
 }
 
 .space {
@@ -56,43 +56,6 @@ table td {
 	margin-bottom: 10%;
 }
 
-
-/* ヘッダーデザイン */
-.heading {
-	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-size: 35px;
-	text-align: center;
-}
-
-.heading span {
-	position: relative;
-	z-index: 2;
-}
-
-.heading::before {
-	position: absolute;
-	top: -20px;
-	left: 50%;
-	font-size: 80px;
-	font-style: italic;
-	color: rgb(120 79 195 / 37.1%);
-	content: attr(data-en);
-	transform: translateX(-50%);
-}
-
-.heading::after {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 1px;
-	height: 40px;
-	content: "";
-	background-color: rgb(120 79 195 / 26.9%);
-	transform: translate(-50%) rotate(30deg);
-}
-/* ヘッダー文字装飾以上 */
 /* h2　下線表示 */
 h2 {
 	position: relative;
@@ -222,8 +185,8 @@ h2 {
 /* ボタン設定ここまで */
 
 .address_access {
+	margin: 4% 10%;
 	font-size: 100%;
-	margin: 4% 10% 4%;
 }
 
 /* バーガーメニュー */
