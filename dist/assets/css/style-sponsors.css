@@ -21,7 +21,11 @@
 /* スマホ版制御 */
 @media screen and (width<450px) {
 	.company {
-		display: block;
+		display: ;
+	}
+	.box {
+		margin-left: 3%;
+		margin-right: 3%;
 	}
 }
 /* PC版制御 */
@@ -33,6 +37,10 @@
 	}
 	.img {
 		width: 40%;
+	}
+	.box {
+		margin-left: 10%;
+		margin-right: 5%;
 	}
 }
 
