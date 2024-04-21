@@ -24,8 +24,8 @@
 }
 
 .stall-image {
-	margin-right: 16px;
-	margin-left: 32px;
+	width: 400px !important;
+	height: 392px !important;
 	background-color: gray;
 }
 
@@ -83,6 +83,11 @@
 		margin: 0;
 	}
 
+	.stall-image {
+		width: 54vw !important;
+		height: 52vw !important;
+	}
+
 	.stall-description {
 		width: 90%;
 		margin: 0;
@@ -92,6 +97,11 @@
 @media (max-width: 500px) {
 	.bx-wrapper {
 		width: 72vw;
-		height: 72vw;
+		height: 70vw;
+	}
+
+	.stall-image {
+		width: 72vw !important;
+		height: 68vw !important;
 	}
 }
