@@ -36,9 +36,9 @@ a:hover {
 /* ！カラー共通設定　開始！　 */
 
 :root {
-	--main-color: #7117ea;
-	--sub-color: #ea6060;
-	--accent-color: rgb(56 50 139);
+	--main-color: #c0e4f2;
+	--sub-color: #fffcd7;
+	--accent-color: #ded3d6;
 }
 
 /* 　！カラー共通設定 終了！　 */
@@ -709,15 +709,15 @@ h2 {
 	border-left: 30px solid transparent;
 }
 
-/* パンくずリスト 開始*/
+/* パンくずリスト 開始 */
 .breadcrumb {
 	display: flex;
 	gap: 0 15px;
-	list-style: none;
 	padding: 0;
-	font-size: 0.6em;
-	margin-left: 10%;
 	margin-top: 1%;
+	margin-left: 10%;
+	font-size: 0.6em;
+	list-style: none;
 }
 
 .breadcrumb li {
@@ -731,15 +731,15 @@ h2 {
 	width: 1em;
 	height: 1em;
 	margin-right: 4px;
+	content: "";
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM11 13V19H13V13H11Z' fill='%23333333'%3E%3C/path%3E%3C/svg%3E");
 	background-repeat: no-repeat;
-	content: "";
 }
 
 .breadcrumb li:not(:last-child)::after {
 	display: inline-block;
 	margin-left: 15px;
-	color: #333333;
+	color: #333;
 	content: "/";
 }
 
@@ -747,4 +747,4 @@ h2 {
 	color: #3c3939;
 	text-decoration: none;
 }
-/* パンくずリスト 終了*/
+/* パンくずリスト 終了 */
