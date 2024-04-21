@@ -152,15 +152,15 @@ header {
 }
 
 /* 左から右へ出現　開始 */
-/*全共通*/
+/* 全共通 */
 
 .bgextend {
-	animation-name: bgextendAnimeBase;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
 	position: relative;
 	overflow: hidden; /*　はみ出た色要素を隠す　*/
 	opacity: 0;
+	animation-name: bgextendAnimeBase;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes bgextendAnimeBase {
@@ -173,50 +173,54 @@ header {
 	}
 }
 
-/*中の要素*/
+/* 中の要素 */
 .bgappear {
+	opacity: 0;
 	animation-name: bgextendAnimeSecond;
 	animation-duration: 1s;
 	animation-delay: 0.6s;
 	animation-fill-mode: forwards;
-	opacity: 0;
 }
 
 @keyframes bgextendAnimeSecond {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
 
-/*左から右*/
+/* 左から右 */
 .bgLRextend::before {
-	animation-name: bgLRextendAnime;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	content: "";
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #666; /*伸びる背景色の設定*/
+	content: "";
+	background-color: #666; /* 伸びる背景色の設定 */
+	animation-name: bgLRextendAnime;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 @keyframes bgLRextendAnime {
 	0% {
-		transform-origin: left;
 		transform: scaleX(0);
-	}
-	50% {
 		transform-origin: left;
-		transform: scaleX(1);
 	}
+
+	50% {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+
 	50.001% {
 		transform-origin: right;
 	}
+
 	100% {
-		transform-origin: right;
 		transform: scaleX(0);
+		transform-origin: right;
 	}
 }
 
