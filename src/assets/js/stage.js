@@ -8,7 +8,7 @@ const insertStageSection = (id, stageDescription) => {
 	const stageSection = `
 	<a href="${stageDescription["stall-link"]}">
 		<section class="stall">
-			<img class="stall-image" src="${stageDescription["stall-image"]}" alt="店の画像" />
+			<img class="stall-image" src="${stageDescription["stall-image1"]}" alt="店の画像" />
 			<div class="stall-info">
 				<h3 class="stall-name angle-2-box">${stageDescription["stall-name"]}</h3>
 				<ul>
