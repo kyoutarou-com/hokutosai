@@ -13,7 +13,7 @@ h1 {
 } */
 
 /* explanationの直後に追加　下線後半部分 */
-/* .explanation:before { 
+/* .explanation:before {
     position: absolute; 絶対配置
     content: " ";  見出し後ろに空白文字を入れる
     display: block;
@@ -111,14 +111,10 @@ tr:hover {
 /* ベビールーム場所 */
 .baby-room-image {
 	width: 80%;
+	margin: 0 auto;
 	/* margin-left: -10%; */
-	aspect-ratio: 1/1;
 }
 /* ベビールーム */
-.baby-room {
-	display: flex;
-}
-
 /* ボタンを中央よ寄せる */
 .twobtn {
 	text-align: center;
@@ -126,4 +122,9 @@ tr:hover {
 /* ボタンの間を開ける */
 .btnschool {
 	margin-right: 5%;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
 }
