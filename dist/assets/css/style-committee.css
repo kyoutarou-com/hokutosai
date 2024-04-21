@@ -21,6 +21,7 @@
 .committee {
 	margin: auto 0;
 	font-size: 1.7rem;
+	border-bottom: none;
 }
 
 .box {
