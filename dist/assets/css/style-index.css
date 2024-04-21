@@ -1,3 +1,31 @@
+.heading-31 {
+	position: relative;
+	padding: 0.3em 0 0.2em 1em;
+	border-bottom: 3px solid #4db5ff;
+	color: #333333;
+}
+
+.heading-31::before {
+	position: absolute;
+	top: 0;
+	left: 0.3em;
+	transform: rotate(55deg);
+	height: 11px;
+	width: 12px;
+	background: #4db5ff;
+	content: "";
+}
+
+.heading-31::after {
+	position: absolute;
+	transform: rotate(15deg);
+	top: 0.6em;
+	left: 0;
+	height: 8px;
+	width: 8px;
+	background: #4db5ff;
+	content: "";
+}
 @charset "UTF-8";
 
 header {
@@ -228,4 +256,70 @@ header {
 .bgappearTrigger,
 .bgLRextendTrigger {
 	opacity: 0;
+}
+
+/* 見出しデザイン */
+.heading-31 {
+	position: relative;
+	padding: 0.3em 0 0.2em 1em;
+	border-bottom: 3px solid var(--main-color);
+	color: #4d4d4d;
+}
+
+.heading-31::before {
+	position: absolute;
+	top: 0;
+	left: 0.3em;
+	transform: rotate(55deg);
+	height: 11px;
+	width: 12px;
+	background: var(--main-color);
+	content: "";
+}
+
+.heading-31::after {
+	position: absolute;
+	transform: rotate(15deg);
+	top: 0.6em;
+	left: 0;
+	height: 8px;
+	width: 8px;
+	background: var(--main-color);
+	content: "";
+}
+
+#menyu {
+	/* background-color: var(--sub-color); */
+	padding-top: 40px;
+}
+.heading-31 {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.top-bt {
+	display: grid;
+
+	/* 横方向の余白 */
+	column-gap: 20px;
+	/* 縦方向の余白 */
+	row-gap: 30px;
+	align-content: center;
+	justify-content: center;
+}
+
+/* スマホ版制御 */
+@media screen and (width<450px) {
+	.top-bt {
+		grid-template-columns: 150px 150px;
+		margin: 10%;
+	}
+}
+@media screen and (width>900px) {
+	.top-bt {
+		grid-template-columns: 200px 200px 200px 200px 200px;
+		margin-top: 4%;
+	}
+	.heading-31 {
+		font-size: 2rem;
+	}
 }
