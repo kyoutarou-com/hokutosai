@@ -78,4 +78,4 @@ const onSuccess = (json) => {
 };
 
 tabInit();
-loadJson("../../../dist/assets/config/stall.json", onSuccess, onError);
+loadJson("assets/config/stall.json", onSuccess, onError);
