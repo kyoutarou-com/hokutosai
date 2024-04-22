@@ -12,7 +12,7 @@ const insertStageSection = (id, stageDescription) => {
 			<div class="stall-info">
 				<h3 class="stall-name angle-2-box">${stageDescription["stall-name"]}</h3>
 				<ul>
-					<li class="stall-category">${stageDescription["stall-time"]}</li>
+					<li class="stall-category">${stageDescription["time"]}</li>
 				</ul>
 			</div>
 		</section>
