@@ -314,3 +314,9 @@ h4 + p {
 h3 {
 	margin-bottom: 16px;
 }
+
+@media (max-width: 900px) {
+	.map {
+		height: 350px;
+	}
+}
