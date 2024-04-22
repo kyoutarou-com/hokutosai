@@ -40,6 +40,7 @@ a:hover {
 	--sub-color: #fffcd7;
 	--accent-color: #ded3d6;
 	--black-color: #4d4d4d;
+	--dark-color: #87aac3;
 }
 
 /* 　！カラー共通設定 終了！　 */
@@ -51,7 +52,7 @@ a:hover {
 	box-sizing: border-box;
 	width: 100%;
 	height: 150px;
-	background-color: var(--main-color);
+	background-color: var(--dark-color);
 }
 
 .boxes {

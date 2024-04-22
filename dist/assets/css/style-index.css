@@ -46,7 +46,6 @@ header ul li a {
 
 #header {
 	border-collapse: separate;
-	border-bottom: 4px solid;
 }
 
 .css-header {
@@ -298,6 +297,13 @@ header ul li a:hover::after {
 		margin-top: 10%;
 		padding-top: 5%;
 	}
+	.top-news-h3 {
+		font-size: 2rem;
+	}
+	.news-bt {
+		margin-bottom: 3%;
+		color: white;
+	}
 }
 /* PC版制御 */
 @media screen and (width>900px) {
@@ -333,6 +339,15 @@ header ul li a:hover::after {
 	.top-news {
 		margin-top: 40px;
 	}
+	.top-news-h3 {
+		font-size: 2.5rem;
+	}
+	.sample_h_23 {
+		text-align: center;
+	}
+	.news-bt {
+		margin-bottom: 30px;
+	}
 }
 .theem {
 	text-align: center;
@@ -341,17 +356,15 @@ header ul li a:hover::after {
 
 .sample_h_23 {
 	font-size: 1.5em; /* フォントサイズ */
-	font-weight: bold; /* フォント太さ */
+	font-weight: 200; /* フォント太さ */
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	padding-left: 2em;
-	margin-bottom: 2em;
-	position: relative;
-	color: #168c6b; /* フォント色 */
+	/* margin-bottom: 2em; */
+	color: white; /* フォント色 */
 }
 
 .sample_h_23:before {
-	position: absolute;
 	font-family: "Font Awesome 5 Free";
 	content: "\f0a1";
 	font-weight: 900;
@@ -362,7 +375,7 @@ header ul li a:hover::after {
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-	color: #168c6b;
+	color: white;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	-webkit-animation: flash 2s ease infinite;
@@ -386,6 +399,7 @@ header ul li a:hover::after {
 	position: relative;
 	display: inline-block;
 	padding: 0 55px;
+	color: #ffffff;
 }
 
 .top-news-h3:before,
@@ -396,7 +410,7 @@ header ul li a:hover::after {
 	display: inline-block;
 	width: 45px;
 	height: 1px;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 }
 .top-news-h3:before {
 	left: 0;
@@ -406,5 +420,27 @@ header ul li a:hover::after {
 }
 
 .top-news {
-	background-color: var(--main-color);
+	background-color: #87aac3;
+}
+.news-m {
+	text-align: center;
+}
+.news-txt {
+	align-items: center;
+}
+.news-bt-wp {
+	text-align: center;
+}
+
+.bt-black {
+	border: 3px solid rgb(255, 254, 254) !important; /* ボーダーの色と太さ */
+}
+.bt-black span {
+	color: rgb(255, 255, 255) !important;
+}
+.bt-black:hover span {
+	color: var(--main-color) !important;
+}
+.bg-black::before {
+	background: var(--main-color) !important; /* 背景色 */
 }
