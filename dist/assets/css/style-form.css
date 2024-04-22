@@ -245,11 +245,6 @@
 	font-weight: bold;
 }
 
-h2,
-h1 {
-	text-align: center;
-}
-
 /* ラジオボタン装飾 */
 
 input[type="radio"] {
