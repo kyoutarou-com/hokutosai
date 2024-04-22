@@ -28,20 +28,6 @@
 }
 @charset "UTF-8";
 
-header {
-	display: flex; /* booksを使用し要素を並べる */
-	align-items: center;
-	justify-content: space-between; /* 水平方向 */
-	width: 100%; /* ヘッダー横幅100%に設定 */
-	max-width: 2100px; /* 横幅最大値 */
-	/* margin: 0 auto; */
-	/* padding: 0% 10%; */
-	height: 150px;
-	/* position: sticky; */
-	/* top: 0; 上部に固定 */
-	/* background-color:rgb(255, 255, 255); */
-}
-
 header ul {
 	display: flex;
 	align-items: center;
@@ -106,16 +92,6 @@ header ul li a::before {
 header ul li a:hover::before,
 header ul li a:hover::after {
 	width: 50%;
-}
-
-header {
-	/* position: fixed; ヘッダーを固定する */
-	top: 5%; /* 上部から配置の基準位置を決める */
-	/* left: 0; 左から配置の基準位置を決める */
-	width: 100%; /* ヘッダーの横幅を指定する */
-	padding: 10px; /* ヘッダー内側の余白を指定する(上下左右) */
-	padding-top: 3%; /* ヘッダーの高さを指定する */
-	background-color: white; /* ヘッダーの背景色を指定する */
 }
 
 .menu {
@@ -313,7 +289,17 @@ header {
 		grid-template-columns: 150px 150px;
 		margin: 10%;
 	}
+	.essay {
+		font-size: 1.6rem;
+		font-weight: 400;
+		text-align: center;
+	}
+	.top-news {
+		margin-top: 10%;
+		padding-top: 5%;
+	}
 }
+/* PC版制御 */
 @media screen and (width>900px) {
 	.top-bt {
 		grid-template-columns: 200px 200px 200px 200px 200px;
@@ -322,4 +308,103 @@ header {
 	.heading-31 {
 		font-size: 2rem;
 	}
+	.header-bg {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+	}
+	.theme-logo {
+		width: 30%;
+	}
+	.bt-theem {
+		margin: 0 auto;
+		display: block;
+	}
+	.essay {
+		font-size: 2.4rem;
+		text-align: center;
+	}
+	.sp-br {
+		display: none;
+	}
+	.logo-rap {
+		text-align: center;
+	}
+	.top-news {
+		margin-top: 40px;
+	}
+}
+.theem {
+	text-align: center;
+	margin-top: 3%;
+}
+
+.sample_h_23 {
+	font-size: 1.5em; /* フォントサイズ */
+	font-weight: bold; /* フォント太さ */
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 2em;
+	margin-bottom: 2em;
+	position: relative;
+	color: #168c6b; /* フォント色 */
+}
+
+.sample_h_23:before {
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f0a1";
+	font-weight: 900;
+	font-size: 20px;
+	top: 50%;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #168c6b;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-animation: flash 2s ease infinite;
+	animation: flash 4s ease infinite;
+	animation-name: my-animation;
+}
+
+@keyframes my-animation {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.top-news-h3 {
+	position: relative;
+	display: inline-block;
+	padding: 0 55px;
+}
+
+.top-news-h3:before,
+.top-news-h3:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 45px;
+	height: 1px;
+	background-color: black;
+}
+.top-news-h3:before {
+	left: 0;
+}
+.top-news-h3:after {
+	right: 0;
+}
+
+.top-news {
+	background-color: var(--main-color);
 }
