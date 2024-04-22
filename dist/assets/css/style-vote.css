@@ -1,7 +1,7 @@
 .item-box {
 	float: left;
 	text-align: center;
-	border: 8px solid #f8d9c4;
+	border: 8px solid var(--main-color);
 }
 
 .item-box-img {
