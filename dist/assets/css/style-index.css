@@ -304,6 +304,28 @@ header ul li a:hover::after {
 		margin-bottom: 3%;
 		color: white;
 	}
+	.kyousan {
+		margin: 8%;
+	}
+	.thanks {
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-weight: 200;
+		font-size: 1.2rem;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.head_test {
+		width: 300px; /* 幅指定 */
+	}
+	.sen {
+		margin-top: 10%;
+	}
+	.top-sp-bt {
+		margin-top: 8%;
+		margin-bottom: 8%;
+	}
 }
 /* PC版制御 */
 @media screen and (width>900px) {
@@ -347,6 +369,22 @@ header ul li a:hover::after {
 	}
 	.news-bt {
 		margin-bottom: 30px;
+	}
+	.kyousan {
+		margin: 3%;
+	}
+	.sen {
+		margin-top: 3%;
+	}
+	.thanks {
+		text-align: center;
+		margin-top: 3%;
+		margin-left: 30%;
+		margin-right: 30%;
+		font-size: 2rem;
+	}
+	.top-sp-bt {
+		margin-right: 4%;
 	}
 }
 .theem {
@@ -443,4 +481,22 @@ header ul li a:hover::after {
 }
 .bg-black::before {
 	background: var(--main-color) !important; /* 背景色 */
+}
+
+.head_test {
+	position: relative; /* 位置調整 */
+	font-weight: normal; /* 文字の太さ調整 */
+	font-size: 1.3rem; /* 文字サイズ指定 */
+	text-align: center; /* 文字位置指定 */
+	padding-top: 20px;
+	padding-bottom: 15px; /* 余白指定 */
+	margin-top: 30px;
+	border-top: solid 1px; /* 線指定 */
+	border-bottom: solid 1px; /* 線指定 */
+	max-width: 800px;
+	margin: auto;
+}
+.thanks {
+	background: linear-gradient(transparent 60%, var(--main-color) 50%);
+	padding: 0 0.1em;
 }
