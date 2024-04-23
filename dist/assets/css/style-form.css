@@ -24,7 +24,7 @@
 	font-size: 16px;
 	color: #fff;
 	text-align: center;
-	background: #5bc8ac;
+	background: var(--dark-color);
 	border-radius: 6px;
 }
 @media screen and (max-width: 450px) {
@@ -148,7 +148,7 @@
 	font-weight: bold;
 	color: #fff;
 	letter-spacing: 0.05em;
-	background: #5bc8ac;
+	background: var(--dark-color);
 	border-radius: 6px;
 }
 @media screen and (max-width: 450px) {
@@ -194,7 +194,7 @@
 }
 
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
-	background: rgb(39 250 162);
+	background: var(--dark-color);
 }
 
 .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
