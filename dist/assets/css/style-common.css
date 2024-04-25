@@ -746,7 +746,7 @@ h3 {
 	width: 1px;
 	height: 40px;
 	content: "";
-	background-color: var(--black-color);
+	background-color: var(--main-color);
 	transform: translate(-50%) rotate(30deg);
 }
 
