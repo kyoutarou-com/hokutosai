@@ -734,7 +734,7 @@ h3 {
 	top: -20px;
 	left: 50%;
 	font-size: 80px;
-	color: rgb(120 79 195 / 37.1%);
+	color: var(--dark-color);
 	content: attr(data-en);
 	transform: translateX(-50%);
 }
@@ -746,7 +746,7 @@ h3 {
 	width: 1px;
 	height: 40px;
 	content: "";
-	background-color: rgb(120 79 195 / 26.9%);
+	background-color: var(--black-color);
 	transform: translate(-50%) rotate(30deg);
 }
 
