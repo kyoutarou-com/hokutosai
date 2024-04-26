@@ -19,8 +19,14 @@
 	justify-content: center;
 }
 
+.flex-start {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding-top: 22vh;
+}
 .menu-text {
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
 .outer-menu {
@@ -149,7 +155,7 @@
 			transform: scale(0);
 			backface-visibility: hidden;
 			overflow: hidden;
-			.flex-center;
+			.flex-start;
 
 			> div {
 				max-width: 90vw;
@@ -174,10 +180,12 @@
 						display: block;
 
 						> details {
-							ul li {
-								padding-left: 1.2rem;
-								a {
-									font-size: 0.8rem;
+							ul {
+								li {
+									padding-left: 1.2rem;
+									a {
+										font-size: 0.8rem;
+									}
 								}
 							}
 						}
