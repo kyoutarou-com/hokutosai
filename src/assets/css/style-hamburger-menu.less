@@ -180,9 +180,25 @@
 						display: block;
 
 						> details {
+							position: relative;
+							summary::-webkit-details-marker {
+								display: none;
+							}
+							summary {
+								display: block;
+								&::before {
+									left: -1rem;
+									position: absolute;
+									top: 0.2rem;
+									font-family: "Font Awesome 5 Free";
+									font-weight: 900;
+									font-size: 0.8rem;
+									content: "\f105";
+									color: #ffffff;
+								}
+							}
 							ul {
 								li {
-									padding-left: 0.8rem;
 									position: relative;
 									&::after {
 										position: absolute;
