@@ -1,1 +1,10 @@
 @charset "UTF-8";
+
+.outdoor h2,
+.indoor h2 {
+	margin-bottom: 32px;
+}
+
+.maps {
+	display: grid;
+}
