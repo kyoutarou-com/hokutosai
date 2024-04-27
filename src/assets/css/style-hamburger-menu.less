@@ -181,6 +181,9 @@
 
 						> details {
 							position: relative;
+							&[open] summary::before {
+								transform: rotate(90deg);
+							}
 							summary::-webkit-details-marker {
 								display: none;
 							}
