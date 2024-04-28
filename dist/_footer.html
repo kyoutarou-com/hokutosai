@@ -13,7 +13,7 @@
 			<div>
 				<ul>
 					<li>
-						<details>
+						<details class="accordion">
 							<summary>「北斗祭」について</summary>
 							<ul>
 								<li><a href="./about.html">概要</a></li>
@@ -25,7 +25,7 @@
 						</details>
 					</li>
 					<li>
-						<details>
+						<details class="accordion">
 							<summary>企画情報</summary>
 							<ul>
 								<li><a href="./stage.html">ステージ企画</a></li>
@@ -37,7 +37,7 @@
 						</details>
 					</li>
 					<li>
-						<details>
+						<details class="accordion">
 							<summary>ご来場の皆様へ</summary>
 							<ul>
 								<li><a href="./please.html">お願い</a></li>
@@ -48,7 +48,7 @@
 						</details>
 					</li>
 					<li>
-						<details>
+						<details class="accordion">
 							<summary>ご協賛企業様</summary>
 							<ul>
 								<li><a href="./sponsors.html">協賛企業一覧</a></li>
@@ -58,7 +58,7 @@
 						</details>
 					</li>
 					<li>
-						<details>
+						<details class="accordion">
 							<summary>常設リンク</summary>
 							<ul>
 								<li><a href="./inquiry.html">お問い合わせ</a></li>
@@ -187,3 +187,20 @@
 		<p class="copyright">&copy; 2024 北斗祭実行委員会 All rights reserved.</p>
 	</section>
 </footer>
+
+<script>
+	const elements = document.querySelectorAll(".accordion");
+	let openElem = null;
+	for (elem of elements) {
+		elem.addEventListener("toggle", (event) => {
+			if (event.target.open) {
+				if (openElem !== null) openElem.open = false;
+				openElem = event.target;
+			} else {
+				if (openElem === event.target) {
+					openElem = null;
+				}
+			}
+		});
+	}
+</script>
