@@ -94,7 +94,7 @@ $(window).on("load", function () {
 }); // ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 // 動きのきっかけの起点となるアニメーションの名前を定義
-function BgFadeAnime() {
+function bgFadeAnime() {
 	// 背景色が伸びて出現（左から右）
 	$(".bgLRextendTrigger").each(function () {
 		//bgLRextendTriggerというクラス名が
@@ -124,10 +124,10 @@ function BgFadeAnime() {
 
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
-	BgFadeAnime(); /* アニメーション用の関数を呼ぶ*/
+	bgFadeAnime(); /* アニメーション用の関数を呼ぶ*/
 }); // ここまで画面をスクロールをしたら動かしたい場合の記述
 
 // 画面が読み込まれたらすぐに動かしたい場合の記述
 $(window).on("load", function () {
-	BgFadeAnime(); /* アニメーション用の関数を呼ぶ*/
+	bgFadeAnime(); /* アニメーション用の関数を呼ぶ*/
 }); // ここまで画面が読み込まれたらすぐに動かしたい場合の記述
