@@ -169,8 +169,20 @@
 	}
 
 	.stall-image {
-		width: 100%;
-		min-width: 100%;
-		height: calc(80vw); /* widthと同じ大きさ */
+		width: 40vw;
+		height: 40vw;
+		margin-top: 8px;
+	}
+
+	.stall-name {
+		font-size: 1.2rem;
+	}
+
+	.stall-info {
+		margin-top: 8px;
+	}
+
+	.stall-info ul {
+		margin-top: 0;
 	}
 }
