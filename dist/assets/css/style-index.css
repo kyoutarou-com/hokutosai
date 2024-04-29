@@ -271,7 +271,8 @@ header ul li a:hover::after {
 	margin-left: 10%;
 	margin-right: 10%;
 }
-.top-bt {
+.top-bt,
+.top-other {
 	display: grid;
 
 	/* 横方向の余白 */
@@ -284,7 +285,8 @@ header ul li a:hover::after {
 
 /* スマホ版制御 */
 @media screen and (width<450px) {
-	.top-bt {
+	.top-bt,
+	.top-other {
 		grid-template-columns: 150px 150px;
 		margin: 10%;
 	}
@@ -330,8 +332,9 @@ header ul li a:hover::after {
 /* PC版制御 */
 @media screen and (width>900px) {
 	.top-bt {
-		grid-template-columns: 200px 200px 200px 200px 200px;
+		grid-template-columns: 200px 200px 200px 200px 200px 200px;
 		margin-top: 4%;
+		margin-bottom: 3%;
 	}
 	.heading-31 {
 		font-size: 2rem;
@@ -385,6 +388,11 @@ header ul li a:hover::after {
 	}
 	.top-sp-bt {
 		margin-right: 4%;
+	}
+	.top-other {
+		grid-template-columns: 200px 200px;
+		margin-top: 4%;
+		margin-bottom: 3%;
 	}
 }
 .theem {
