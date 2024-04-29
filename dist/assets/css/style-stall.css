@@ -170,6 +170,7 @@
 
 	.stall-image {
 		width: 40vw;
+		min-width: auto;
 		height: 40vw;
 		margin-top: 8px;
 	}
