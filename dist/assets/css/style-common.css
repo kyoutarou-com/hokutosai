@@ -773,3 +773,9 @@ h3 {
 }
 
 /* ヘッダー文字装飾以上 */
+
+@media (max-width: 767px) {
+	.navi li a {
+		display: block;
+	}
+}
