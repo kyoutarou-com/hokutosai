@@ -10,8 +10,8 @@
 		"build": "./scripts/build.sh",
 		"clean-development": "ssh hokutofes rm -r hokutofes.com/public_html/*",
 		"deploy-development": "scp -r dist/* hokutofes:/home/hokutofes/hokutofes.com/public_html",
-		"clean-production": "ssh hokutofes rm -r hokutosai.net/public_html/dist/*",
-		"deploy-production": "scp -r dist/* hokutofes:/home/hokutofes/hokutosai.net/public_html/dist"
+		"clean-production": "ssh hokutofes rm -r hokutosai.net/public_html/*",
+		"deploy-production": "scp -r dist/* hokutofes:/home/hokutofes/hokutosai.net/public_html"
 	},
 	"keywords": [],
 	"author": "2024祭実行委員会",
