@@ -1,30 +1,30 @@
 .heading-31 {
 	position: relative;
 	padding: 0.3em 0 0.2em 1em;
+	color: #333;
 	border-bottom: 3px solid #4db5ff;
-	color: #333333;
 }
 
 .heading-31::before {
 	position: absolute;
 	top: 0;
 	left: 0.3em;
-	transform: rotate(55deg);
-	height: 11px;
 	width: 12px;
-	background: #4db5ff;
+	height: 11px;
 	content: "";
+	background: #4db5ff;
+	transform: rotate(55deg);
 }
 
 .heading-31::after {
 	position: absolute;
-	transform: rotate(15deg);
 	top: 0.6em;
 	left: 0;
-	height: 8px;
 	width: 8px;
-	background: #4db5ff;
+	height: 8px;
 	content: "";
+	background: #4db5ff;
+	transform: rotate(15deg);
 }
 @charset "UTF-8";
 
@@ -237,50 +237,50 @@ header ul li a:hover::after {
 .heading-31 {
 	position: relative;
 	padding: 0.3em 0 0.2em 1em;
-	border-bottom: 3px solid var(--main-color);
 	color: #4d4d4d;
+	border-bottom: 3px solid var(--main-color);
 }
 
 .heading-31::before {
 	position: absolute;
 	top: 0;
 	left: 0.3em;
-	transform: rotate(55deg);
-	height: 11px;
 	width: 12px;
-	background: var(--main-color);
+	height: 11px;
 	content: "";
+	background: var(--main-color);
+	transform: rotate(55deg);
 }
 
 .heading-31::after {
 	position: absolute;
-	transform: rotate(15deg);
 	top: 0.6em;
 	left: 0;
-	height: 8px;
 	width: 8px;
-	background: var(--main-color);
+	height: 8px;
 	content: "";
+	background: var(--main-color);
+	transform: rotate(15deg);
 }
 
 #menyu {
 	/* background-color: var(--sub-color); */
 	padding-top: 40px;
 }
+
 .heading-31 {
-	margin-left: 10%;
 	margin-right: 10%;
+	margin-left: 10%;
 }
+
 .top-bt,
 .top-other {
 	display: grid;
+	/* 縦方向の余白 */
+	gap: 30px 20px;
 
 	/* 横方向の余白 */
-	column-gap: 20px;
-	/* 縦方向の余白 */
-	row-gap: 30px;
-	align-content: center;
-	justify-content: center;
+	place-content: center center;
 }
 
 /* スマホ版制御 */
@@ -290,40 +290,46 @@ header ul li a:hover::after {
 		grid-template-columns: 150px 150px;
 		margin: 10%;
 	}
+
 	.essay {
 		font-size: 1.6rem;
 		font-weight: 400;
 		text-align: center;
 	}
+
 	.top-news {
-		margin-top: 10%;
 		padding-top: 5%;
+		margin-top: 10%;
 	}
+
 	.top-news-h3 {
 		font-size: 2rem;
 	}
+
 	.news-bt {
 		margin-bottom: 3%;
 		color: white;
 	}
+
 	.kyousan {
 		margin: 8%;
 	}
+
 	.thanks {
-		text-align: center;
-		margin-top: 5%;
-		margin-bottom: 5%;
-		font-weight: 200;
+		margin: 5% 10%;
 		font-size: 1.2rem;
-		margin-left: 10%;
-		margin-right: 10%;
+		font-weight: 200;
+		text-align: center;
 	}
+
 	.head_test {
 		width: 300px; /* 幅指定 */
 	}
+
 	.sen {
 		margin-top: 10%;
 	}
+
 	.top-sp-bt {
 		margin-top: 8%;
 		margin-bottom: 8%;
@@ -336,92 +342,109 @@ header ul li a:hover::after {
 		margin-top: 4%;
 		margin-bottom: 3%;
 	}
+
 	.heading-31 {
 		font-size: 2rem;
 	}
+
 	.header-bg {
+		display: block;
 		width: 60%;
 		margin: 0 auto;
-		display: block;
 	}
+
 	.theme-logo {
 		width: 30%;
 	}
+
 	.bt-theem {
-		margin: 0 auto;
 		display: block;
+		margin: 0 auto;
 	}
+
 	.essay {
 		font-size: 2.4rem;
 		text-align: center;
 	}
+
 	.sp-br {
 		display: none;
 	}
+
 	.logo-rap {
 		text-align: center;
 	}
+
 	.top-news {
 		margin-top: 40px;
 	}
+
 	.top-news-h3 {
 		font-size: 2.5rem;
 	}
+
 	.sample_h_23 {
 		text-align: center;
 	}
+
 	.news-bt {
 		margin-bottom: 30px;
 	}
+
 	.kyousan {
 		margin: 3%;
 	}
+
 	.sen {
 		margin-top: 3%;
 	}
+
 	.thanks {
-		text-align: center;
 		margin-top: 3%;
-		margin-left: 30%;
 		margin-right: 30%;
+		margin-left: 30%;
 		font-size: 2rem;
+		text-align: center;
 	}
+
 	.top-sp-bt {
 		margin-right: 4%;
 	}
+
 	.top-other {
 		grid-template-columns: 200px 200px;
 		margin-top: 4%;
 		margin-bottom: 3%;
 	}
 }
+
 .theem {
-	text-align: center;
 	margin-top: 3%;
+	text-align: center;
 }
 
 .sample_h_23 {
-	font-size: 1.5em; /* フォントサイズ */
-	font-weight: 200; /* フォント太さ */
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	padding-left: 2em;
+	font-size: 1.5em; /* フォントサイズ */
+	font-weight: 200; /* フォント太さ */
 	/* margin-bottom: 2em; */
 	color: white; /* フォント色 */
 }
 
-.sample_h_23:before {
-	font-family: "Font Awesome 5 Free";
-	content: "\f0a1";
-	font-weight: 900;
-	font-size: 20px;
+.sample_h_23::before {
 	top: 50%;
 	left: 0;
 	width: 40px;
 	height: 40px;
-	text-align: center;
+	font-family: "Font Awesome 5 Free";
+	font-size: 20px;
+	font-weight: 900;
 	line-height: 40px;
 	color: white;
+	text-align: center;
+	content: "\f0a1";
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	-webkit-animation: flash 2s ease infinite;
@@ -433,9 +456,11 @@ header ul li a:hover::after {
 	0% {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -445,79 +470,88 @@ header ul li a:hover::after {
 	position: relative;
 	display: inline-block;
 	padding: 0 55px;
-	color: #ffffff;
+	color: #fff;
 }
 
-.top-news-h3:before,
-.top-news-h3:after {
-	content: "";
+.top-news-h3::before,
+.top-news-h3::after {
 	position: absolute;
 	top: 50%;
 	display: inline-block;
 	width: 45px;
 	height: 1px;
-	background-color: rgb(255, 255, 255);
+	content: "";
+	background-color: rgb(255 255 255);
 }
-.top-news-h3:before {
+
+.top-news-h3::before {
 	left: 0;
 }
-.top-news-h3:after {
+
+.top-news-h3::after {
 	right: 0;
 }
 
 .top-news {
 	background-color: #87aac3;
 }
+
 .news-m {
 	text-align: center;
 }
+
 .news-txt {
 	align-items: center;
 }
+
 .news-bt-wp {
 	text-align: center;
 }
 
 .bt-black {
-	border: 3px solid rgb(255, 254, 254) !important; /* ボーダーの色と太さ */
+	border: 3px solid rgb(255 254 254) !important; /* ボーダーの色と太さ */
 }
+
 .bt-black span {
-	color: rgb(255, 255, 255) !important;
+	color: rgb(255 255 255) !important;
 }
+
 .bt-black:hover span {
 	color: var(--main-color) !important;
 }
+
 .bg-black::before {
 	background: var(--main-color) !important; /* 背景色 */
 }
 
 .head_test {
 	position: relative; /* 位置調整 */
-	font-weight: normal; /* 文字の太さ調整 */
-	font-size: 1.3rem; /* 文字サイズ指定 */
-	text-align: center; /* 文字位置指定 */
+	max-width: 800px;
 	padding-top: 20px;
 	padding-bottom: 15px; /* 余白指定 */
+	margin: auto;
 	margin-top: 30px;
+	font-size: 1.3rem; /* 文字サイズ指定 */
+	font-weight: normal; /* 文字の太さ調整 */
+	text-align: center; /* 文字位置指定 */
 	border-top: solid 1px; /* 線指定 */
 	border-bottom: solid 1px; /* 線指定 */
-	max-width: 800px;
-	margin: auto;
 }
+
 .thanks {
-	background: linear-gradient(transparent 60%, var(--main-color) 50%);
 	padding: 0 0.1em;
+	background: linear-gradient(transparent 60%, var(--main-color) 50%);
 }
 
 /* 文字出現 */
-/* *全共通*/
+/* *全共通 */
 .bgextend {
-	animation-name: bgextendAnimeBase;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
 	position: relative;
 	overflow: hidden; /*　はみ出た色要素を隠す　*/
 	opacity: 0;
+	animation-name: bgextendAnimeBase;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes bgextendAnimeBase {
@@ -530,50 +564,54 @@ header ul li a:hover::after {
 	}
 }
 
-/*中の要素*/
+/* 中の要素 */
 .bgappear {
+	opacity: 0;
 	animation-name: bgextendAnimeSecond;
 	animation-duration: 1s;
 	animation-delay: 0.6s;
 	animation-fill-mode: forwards;
-	opacity: 0;
 }
 
 @keyframes bgextendAnimeSecond {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
 
-/*左から右*/
+/* 左から右 */
 .bgLRextend::before {
-	animation-name: bgLRextendAnime;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	content: "";
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #666; /*伸びる背景色の設定*/
+	content: "";
+	background-color: #666; /* 伸びる背景色の設定 */
+	animation-name: bgLRextendAnime;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 @keyframes bgLRextendAnime {
 	0% {
-		transform-origin: left;
 		transform: scaleX(0);
-	}
-	50% {
 		transform-origin: left;
-		transform: scaleX(1);
 	}
+
+	50% {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+
 	50.001% {
 		transform-origin: right;
 	}
+
 	100% {
-		transform-origin: right;
 		transform: scaleX(0);
+		transform-origin: right;
 	}
 }
 
