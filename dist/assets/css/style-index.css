@@ -157,6 +157,10 @@ header ul li a:hover::after {
 /* 左から右へ出現　開始 */
 /* 全共通 */
 
+.bg-text {
+	text-align: center;
+}
+
 .bgextend {
 	position: relative;
 	overflow: hidden; /*　はみ出た色要素を隠す　*/
