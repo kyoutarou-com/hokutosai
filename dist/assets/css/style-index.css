@@ -338,6 +338,13 @@ header ul li a:hover::after {
 		margin-top: 8%;
 		margin-bottom: 8%;
 	}
+	.bg-text {
+		font-size: 2.5rem;
+		padding: 5px;
+		font-family: "Zen Kaku Gothic New", sans-serif;
+		font-weight: 900;
+		font-style: normal;
+	}
 }
 /* PC版制御 */
 @media screen and (width>900px) {
@@ -419,6 +426,14 @@ header ul li a:hover::after {
 		grid-template-columns: 200px 200px;
 		margin-top: 4%;
 		margin-bottom: 3%;
+	}
+	.bg-text {
+		font-size: 3rem;
+		margin: 10px;
+		font-weight: 600;
+	}
+	.br-sp {
+		display: none;
 	}
 }
 
