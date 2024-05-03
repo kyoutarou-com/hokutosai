@@ -339,11 +339,27 @@ header ul li a:hover::after {
 		margin-bottom: 8%;
 	}
 	.bg-text {
-		font-size: 2.5rem;
-		padding: 5px;
+		font-size: 2.3rem;
+
 		font-family: "Zen Kaku Gothic New", sans-serif;
 		font-weight: 900;
 		font-style: normal;
+	}
+	.top-map-icon {
+		position: absolute;
+		bottom: 15px;
+		left: -20px;
+	}
+	.bg-text-pd {
+		color: var(--dark-color);
+		font-weight: 900;
+	}
+	.bg-text-map {
+		font-size: 2rem;
+	}
+	.map-text {
+		padding-left: 20px;
+		line-height: 35px;
 	}
 }
 /* PC版制御 */
