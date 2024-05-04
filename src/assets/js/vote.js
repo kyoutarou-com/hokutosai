@@ -87,5 +87,9 @@ $("#vote-button").on("click", (event) => {
 		return;
 	}
 
+	if (!navigator.cookieEnabled) {
+		window.alert("Cookieを有効にしてください.");
+	}
+
 	vote(selectedVote);
 });
