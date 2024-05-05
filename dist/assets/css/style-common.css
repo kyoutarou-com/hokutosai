@@ -307,10 +307,12 @@ body {
 /* メニューをページ下部に固定 */
 #fixed-footer-menu {
 	position: fixed;
-	bottom: 0;
+	bottom: 1rem;
+	left: 50%;
 	z-index: 100;
-	width: 100%;
-	opacity: 1;
+	width: 92%;
+	opacity: 0.9;
+	transform: translate(-50%, 0);
 }
 
 /* メニューを横並びにする */
@@ -321,6 +323,7 @@ body {
 	margin: 0;
 	list-style: none;
 	background: #040404; /* 色編集 */
+	border-radius: 32px;
 }
 
 /* メニューの要素 */
@@ -364,7 +367,6 @@ body {
 #footer {
 	position: relative;
 	margin-top: 40px;
-	margin-bottom: 82.59px;
 	color: #fff;
 }
 
@@ -596,8 +598,8 @@ body {
 		display: none;
 	}
 
-	#footer {
-		margin-bottom: 0;
+	.adjustment {
+		display: none;
 	}
 }
 
@@ -778,4 +780,9 @@ h3 {
 	.navi li a {
 		display: block;
 	}
+}
+
+.adjustment {
+	height: 114px;
+	background-color: #222;
 }
