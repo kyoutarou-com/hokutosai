@@ -311,7 +311,7 @@ body {
 	left: 50%;
 	z-index: 100;
 	width: 92%;
-	opacity: 0.9;
+	opacity: 0.95;
 	transform: translate(-50%, 0);
 }
 
@@ -322,7 +322,7 @@ body {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	background: #040404; /* 色編集 */
+	background: var(--dark-color); /* 色編集 */
 	border-radius: 32px;
 }
 
@@ -357,7 +357,7 @@ body {
 .footer-icon {
 	padding-top: 10px;
 	padding-bottom: 6px;
-	font-size: 30px;
+	font-size: 1.5rem;
 }
 
 /* 　！メニューバー　終了！ */
