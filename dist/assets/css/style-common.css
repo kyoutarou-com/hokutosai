@@ -606,11 +606,9 @@ body {
 /* 　！フッター　終了！　 */
 
 /* スマホサイズのときのみアプリバーを表示 */
-@media screen and (width>450px) {
-	#fixed-footer-menu > ul {
-		display: none;
-	}
-
+@media screen and (min-width: 450px) {
+	#fixed-footer-menu > ul,
+	.adjustment-menu,
 	.adjustment {
 		display: none;
 	}
