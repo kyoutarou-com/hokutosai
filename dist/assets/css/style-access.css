@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-img {
-	margin: 5%;
-}
-
 .map {
 	position: relative;
 	height: 0;
@@ -319,4 +315,8 @@ h3 {
 	.map {
 		height: 350px;
 	}
+}
+
+.map-image {
+	margin: 5%;
 }
