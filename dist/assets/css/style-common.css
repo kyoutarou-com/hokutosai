@@ -310,7 +310,7 @@ body {
 	bottom: 1rem;
 	left: 50%;
 	z-index: 100;
-	width: 92%;
+	width: 84%;
 	opacity: 0.95;
 	transform: translate(-50%, 0);
 }
@@ -362,15 +362,15 @@ body {
 
 .adjustment-menu {
 	position: absolute;
-	top: -18px;
+	top: -20px;
 	right: 0;
 	left: 0;
 	z-index: -1;
-	width: 24vw;
-	aspect-ratio: 1 / 1;
+	width: 22vw;
+	aspect-ratio: 2 / 1;
 	margin: 0 auto;
 	background-color: var(--dark-color);
-	border-radius: 50%;
+	border-radius: 50% / 100% 100% 0 0;
 }
 
 /* 　！メニューバー　終了！ */
