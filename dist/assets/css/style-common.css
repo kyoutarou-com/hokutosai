@@ -363,7 +363,7 @@ body {
 #fixed-footer-menu ul li:nth-child(3) i {
 	position: absolute;
 	top: -7px;
-	left: calc(36vw);
+	left: calc(34vw);
 	font-size: 3rem;
 }
 
