@@ -357,16 +357,14 @@ body {
 .footer-icon {
 	padding-top: 10px;
 	padding-bottom: 6px;
-	font-size: 1.7rem;
-	/* font-size: 1.5rem; */
+	font-size: 2rem;
 }
 
-/* #fixed-footer-menu ul li:nth-child(3) i {
+#fixed-footer-menu ul li:nth-child(3) i {
 	position: absolute;
-	top: -5px;
-	right: 0;
-	left: 0;
-	font-size: 2.5rem;
+	top: -7px;
+	left: calc(36vw);
+	font-size: 3rem;
 }
 
 #fixed-footer-menu ul li:nth-child(3) p {
@@ -374,7 +372,7 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-} */
+}
 
 .adjustment-menu {
 	position: absolute;
