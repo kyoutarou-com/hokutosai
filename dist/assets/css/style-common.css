@@ -374,6 +374,16 @@ body {
 	left: 0;
 }
 
+#fixed-footer-menu ul li:nth-child(1) i,
+#fixed-footer-menu ul li:nth-child(1) p {
+	padding-left: 32%;
+}
+
+#fixed-footer-menu ul li:nth-child(5) i,
+#fixed-footer-menu ul li:nth-child(5) p {
+	padding-right: 32%;
+}
+
 .adjustment-menu {
 	position: absolute;
 	top: -20px;
