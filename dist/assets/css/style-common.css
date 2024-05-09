@@ -394,6 +394,10 @@ body {
 	#fixed-footer-menu ul li:nth-child(5) p {
 		padding-right: 16%;
 	}
+
+	#fixed-footer-menu ul li:nth-child(3) i {
+		left: calc(35vw);
+	}
 }
 
 .adjustment-menu {
