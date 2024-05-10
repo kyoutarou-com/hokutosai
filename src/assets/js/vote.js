@@ -62,7 +62,7 @@ const selectVote = () => {
 
 $(window).on("load", () => {
 	if (isVoted()) {
-		window.alert("投票は1回だけだぞ");
+		window.alert("投票は１回しか出来ません");
 		transitionToVoteCompletePage();
 		return;
 	}
