@@ -1,32 +1,32 @@
 .radio-3 {
-	border: none;
 	margin: 5% 0%;
+	border: none;
 }
 
 .radio-3 label {
-	display: flex;
-	align-items: center;
-	gap: 0 0.5em;
 	position: relative;
+	display: flex;
+	gap: 0 0.5em;
+	align-items: center;
 	max-width: 300px;
-	margin-bottom: 0.4em;
 	padding: 0.5em 0.7em;
+	margin-inline: auto;
+	margin-bottom: 0.4em;
+	cursor: pointer;
+	background-color: #2589d026;
 	border: 1px solid #2589d0;
 	border-radius: 3px;
-	background-color: #2589d026;
-	cursor: pointer;
-	margin-inline: auto;
 }
 
 .radio-3 label:has(:checked) {
-	background-color: #2589d0;
 	color: #fff;
+	background-color: #2589d0;
 }
 
 .radio-3 label::before,
 .radio-3 label:has(:checked)::after {
-	border-radius: 50%;
 	content: "";
+	border-radius: 50%;
 }
 
 .radio-3 label::before {
@@ -39,10 +39,10 @@
 	position: absolute;
 	top: 50%;
 	left: calc(7px + 0.7em);
-	transform: translate(-50%, -50%);
 	width: 7px;
 	height: 7px;
 	background-color: #2589d0;
+	transform: translate(-50%, -50%);
 }
 
 .radio-3 input {
@@ -52,35 +52,38 @@
 /* ボタン */
 a.btn_04 {
 	display: block;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
 	width: 200px;
-	margin-inline: auto;
 	padding: 0.5rem 2rem;
+	margin-inline: auto;
 	font-weight: bold;
 	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
 	border-radius: 100vh;
 	transition: 0.5s;
 }
+
 a.btn_04:hover {
 	color: #27acd9;
 	background: #fff;
 }
 /* 送信ボタン */
 .bt-sendding {
-	border: 2px solid #27acd9;
 	background: #27acd9;
+	border: 2px solid #27acd9;
 }
+
 a.bt-sendding:hover {
 	color: #27acd9;
 	background: #fff;
 }
 /* 戻るボタン */
 .bt-back {
-	border: 2px solid #e32abb;
 	background: #e32abb;
+	border: 2px solid #e32abb;
 }
+
 a.bt-back:hover {
 	color: #e32abb;
 	background: #fff;
@@ -90,6 +93,7 @@ a.bt-back:hover {
 	.bt-back {
 		margin-top: 20px;
 	}
+
 	.vote-direction {
 		margin: 3%;
 	}
@@ -98,6 +102,7 @@ a.bt-back:hover {
 	.bt-back {
 		margin-top: 40px;
 	}
+
 	.vote-direction {
 		margin-inline: auto;
 	}
@@ -107,31 +112,34 @@ a.bt-back:hover {
 p.caution {
 	display: flex;
 	justify-content: left;
-	text-align: left;
 	font-size: 0.8rem;
+	text-align: left;
 }
-p.caution:before {
-	content: "※"; /* 文頭に表示したい文字を""内に記述する */
-	left: 0;
+
+p.caution::before {
 	top: 0;
+	left: 0;
 	margin-right: 5px; /* ケースによって調整する */
+	content: "※"; /* 文頭に表示したい文字を""内に記述する */
 }
+
 .vote-direction {
-	border: 2px solid #f8d9c4;
-	background: #f6e8dd;
+	max-width: 800px;
 	padding: 15px;
 	margin-top: 3%;
 	margin-bottom: 3%;
-	max-width: 800px;
+	background: #f6e8dd;
+	border: 2px solid #f8d9c4;
 }
 /* 投票期間 */
 .term {
-	font-size: 0.8rem;
-	margin-left: 10%;
 	margin-top: 5px;
+	margin-left: 10%;
+	font-size: 0.8rem;
 }
+
 .limit {
-	font-size: 0.8rem;
-	margin-left: 10%;
 	margin-top: 5px;
+	margin-left: 10%;
+	font-size: 0.8rem;
 }
