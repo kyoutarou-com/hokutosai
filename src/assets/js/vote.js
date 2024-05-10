@@ -29,30 +29,19 @@ const vote = (selectedVote) => {
 };
 
 const isSmartphone = () => {
-	if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-		return true;
-	}
-	return false;
+	return !!navigator.userAgent.match(/iPhone|Android.+Mobile/);
 };
 
 const isVoteTime = () => {
 	const currentTime = new Date();
 	const firstTime = new Date(2024, 5 - 1, 25, 14);
 	const lastTime = new Date(2024, 5 - 1, 26, 10);
-
 	const isVoteTime = currentTime < firstTime || currentTime > lastTime;
-	if (isVoteTime) {
-		return true;
-	}
-
-	return false;
+	return isVoteTime;
 };
 
 const isVoted = () => {
-	if (Cookies.get("isVoted")) {
-		return true;
-	}
-	return false;
+	return !!Cookies.get("isVoted");
 };
 
 const selectVote = () => {
