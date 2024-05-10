@@ -18,7 +18,7 @@ const onVoteError = (error) => {
 
 const vote = (selectedVote) => {
 	$.ajax({
-		url: `https://hokutofes.com/api/vote/${selectedVote}`,
+		url: `https://hokutosai.net/api/vote/${selectedVote}`,
 		method: "PUT",
 		xhrFields: {
 			withCredentials: true,
