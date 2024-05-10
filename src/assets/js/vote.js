@@ -36,7 +36,7 @@ const isVoteTime = () => {
 	const currentTime = new Date();
 	const firstTime = new Date(2024, 5 - 1, 25, 14);
 	const lastTime = new Date(2024, 5 - 1, 26, 10);
-	const isVoteTime = currentTime < firstTime || currentTime > lastTime;
+	const isVoteTime = firstTime < currentTime && currentTime < lastTime;
 	return isVoteTime;
 };
 
