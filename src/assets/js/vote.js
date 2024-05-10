@@ -7,6 +7,10 @@ const transitionToVoteCompletePage = () => {
 	location.href = $("#vote-button").attr("href");
 };
 
+const transitionToVoteStillPage = () => {
+	location.href = "./vote-still.html";
+};
+
 const onVoteSuccess = () => {
 	Cookies.set("isVoted", true, { expires: 2 });
 	transitionToVoteCompletePage();
@@ -49,6 +53,10 @@ const selectVote = () => {
 };
 
 $(window).on("load", () => {
+	if (!isVoteTime()) {
+		transitionToVoteStillPage();
+	}
+
 	if (isVoted()) {
 		window.alert("投票は１回しか出来ません");
 		transitionToVoteCompletePage();
@@ -61,11 +69,6 @@ $("#vote-button").on("click", (event) => {
 
 	if (!isSmartphone()) {
 		window.alert("モバイル端末で投票してください．");
-		return;
-	}
-
-	if (!isVoteTime()) {
-		window.alert("投票可能時間をご確認ください．");
 		return;
 	}
 
