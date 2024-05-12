@@ -1,6 +1,16 @@
 @charset "UTF-8";
 
-/* 　！基本設定！　 */
+/* カスタムパロパティ */
+:root {
+	--main-color: #c0e4f2;
+	--sub-color: #fffcd7;
+	--accent-color: #ded3d6;
+	--dark-color: #87aac3;
+	--black-color: #4d4d4d;
+	--white-color: #fff;
+}
+
+/* 基本設定 */
 html {
 	font-family: "Sawarabi Gothic";
 	font-size: 100%;
@@ -8,11 +18,7 @@ html {
 }
 
 body {
-	color: #24292e;
-}
-
-a {
-	text-decoration: none;
+	color: var(--black-color);
 }
 
 p {
@@ -28,26 +34,15 @@ li {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 a:hover {
 	text-decoration: none;
 }
-/* 　！基本設定　終了！　 */
 
-/* ！カラー共通設定　開始！　 */
-
-:root {
-	--main-color: #c0e4f2;
-	--sub-color: #fffcd7;
-	--accent-color: #ded3d6;
-	--black-color: #4d4d4d;
-	--dark-color: #87aac3;
-}
-
-/* 　！カラー共通設定 終了！　 */
-
-/* ！ヘッダー　開始！ */
-
-/* FontAwesomeを使用しています。 */
+/* ヘッダー */
 .header {
 	box-sizing: border-box;
 	width: 100%;
@@ -59,7 +54,6 @@ a:hover {
 	box-sizing: border-box;
 }
 
-/* ========== header ========== */
 .box-logo {
 	display: flex;
 	align-items: center;
@@ -104,7 +98,7 @@ a:hover {
 	width: 1px;
 	height: 50%;
 	content: "";
-	background: #fff;
+	background: var(--white-color);
 }
 
 .header-menu:hover {
@@ -112,7 +106,7 @@ a:hover {
 }
 
 .header-menu a {
-	color: #fff;
+	color: var(--white-color);
 }
 
 /* ========== sp ========== */
@@ -193,8 +187,8 @@ header ul li a:hover::after {
 	z-index: 1;
 	padding: 1em 1.5em;
 	margin: 2em 0;
-	color: #000; /* 文字色 */
-	background-color: #fff; /* 背景色 */
+	color: var(--black-color);
+	background-color: var(--white-color);
 }
 
 .frame::before,
@@ -255,7 +249,7 @@ header ul li a:hover::after {
 }
 
 .btn:hover span {
-	color: #fff;
+	color: var(--white-color);
 }
 
 /* == 背景が流れる（左から右） */
@@ -350,7 +344,7 @@ body {
 #fixed-footer-menu li p {
 	padding-bottom: 14px;
 	font-size: 11px; /* メニュータイトルのフォントサイズ */
-	color: #fff;
+	color: var(--white-color);
 }
 
 /* アイコンのサイズを調整 */
@@ -420,11 +414,11 @@ body {
 #footer {
 	position: relative;
 	margin-top: 40px;
-	color: #fff;
+	color: var(--white-color);
 }
 
 #footer a {
-	color: #fff;
+	color: var(--white-color);
 	text-decoration: none;
 }
 
@@ -693,7 +687,7 @@ h3 {
 .side {
 	position: relative;
 	padding: 0.5em 0.75em 0.5em 2.5em;
-	background: #fff;
+	background: var(--white-color);
 }
 
 .side::before {
