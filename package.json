@@ -24,7 +24,8 @@
 		"csvtojson": "^2.0.10",
 		"jquery": "^3.7.1",
 		"js-cookie": "^3.0.5",
-		"leaflet": "^1.9.4"
+		"leaflet": "^1.9.4",
+		"vivus": "^0.4.6"
 	},
 	"devDependencies": {
 		"@types/jquery": "^3.5.29",

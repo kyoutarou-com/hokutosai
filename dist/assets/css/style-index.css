@@ -338,25 +338,29 @@ header ul li a:hover::after {
 		margin-top: 8%;
 		margin-bottom: 8%;
 	}
-	.bg-text {
-		font-size: 2.3rem;
 
+	.bg-text {
 		font-family: "Zen Kaku Gothic New", sans-serif;
-		font-weight: 900;
+		font-size: 2.3rem;
 		font-style: normal;
+		font-weight: 900;
 	}
+
 	.top-map-icon {
 		position: absolute;
 		bottom: 15px;
 		left: -20px;
 	}
+
 	.bg-text-pd {
-		color: var(--dark-color);
 		font-weight: 900;
+		color: var(--dark-color);
 	}
+
 	.bg-text-map {
 		font-size: 2rem;
 	}
+
 	.map-text {
 		padding-left: 20px;
 		line-height: 35px;
@@ -443,11 +447,13 @@ header ul li a:hover::after {
 		margin-top: 4%;
 		margin-bottom: 3%;
 	}
+
 	.bg-text {
-		font-size: 3rem;
 		margin: 10px;
+		font-size: 3rem;
 		font-weight: 600;
 	}
+
 	.br-sp {
 		display: none;
 	}
@@ -579,3 +585,47 @@ header ul li a:hover::after {
 }
 
 /* 文字出現 */
+
+/* ========= LoadingのためのCSS =============== */
+
+/* Loading背景画面設定　*/
+#splash {
+	/* fixedで全面に固定 */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	background: #eee;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo svg {
+	width: 300px;
+}
+
+/* =============== SVGアニメーション内の指定 ================= */
+
+/* アニメーション前の指定 */
+#mask path {
+	fill: none;
+	fill-opacity: 0;
+	stroke: #333;
+	transition: fill-opacity 0.5s; /* 最初は透過0で見えない状態 */ /* カラーがつく際のアニメーション0.5秒で変化 */ /* 塗りがない状態 */ /* 線の色 */
+}
+
+/* アニメーション後に.doneというクラス名がで付与された時の指定 */
+#mask.done path {
+	fill: #333; /* 塗りの色 */
+	fill-opacity: 1; /* 透過1で見える状態 */
+	stroke: none; /* 線の色なし */
+}
