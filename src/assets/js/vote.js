@@ -71,14 +71,14 @@ $("#vote-button").on("click", (event) => {
 		return;
 	}
 
+	if (!navigator.cookieEnabled) {
+		window.alert("Cookieを有効にしてください.");
+	}
+
 	const selectedVote = selectVote();
 	if (!selectedVote) {
 		window.alert("回答を選択してください.");
 		return;
-	}
-
-	if (!navigator.cookieEnabled) {
-		window.alert("Cookieを有効にしてください.");
 	}
 
 	vote(selectedVote);
