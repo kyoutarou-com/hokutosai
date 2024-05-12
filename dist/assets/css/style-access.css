@@ -28,6 +28,16 @@
 	margin-top: 30px;
 }
 
+.timedata {
+	font-size: 150%;
+	font-weight: 900;
+	margin-bottom: 3%;
+}
+
+.tablespace {
+	margin-bottom: 10%;
+}
+
 table {
 	width: 85%;
 	border-collapse: collapse;
