@@ -16,6 +16,32 @@ const onVoteSuccess = () => {
 	transitionToVoteCompletePage();
 };
 
+const insertVoteField = () => {
+	const voteType = $("#vote-field").data("vote");
+	const url = `https://hokutosai.net/api/vote/${voteType}`;
+	const success = (result) => {
+		for (const vote of result) {
+			const voteName = vote.name.replace(/（.*）/, "");
+			const htmlElement = `
+				<label>
+					<input type="radio" name="radio-3" />
+					${voteName}
+				</label>
+				`;
+			$("#vote-field").append(htmlElement);
+		}
+	};
+	const error = () => {
+		window.alert("データの取得に失敗しました。");
+	};
+
+	$.ajax({
+		url: url,
+		success: success,
+		error: error,
+	});
+};
+
 const onVoteError = (error) => {
 	throw error;
 };
@@ -61,6 +87,8 @@ $(window).on("load", () => {
 		transitionToVoteCompletePage();
 		return;
 	}
+
+	insertVoteField();
 });
 
 $("#vote-button").on("click", (event) => {
