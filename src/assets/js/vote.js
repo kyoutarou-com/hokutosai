@@ -4,7 +4,7 @@ import $ from "jquery";
 import Cookies from "js-cookie";
 
 const transitionToVoteCompletePage = () => {
-	location.href = $("#vote-button").attr("href");
+	location.href = "./vote-thanks.html";
 };
 
 const transitionToVoteStillPage = () => {
