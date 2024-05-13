@@ -4,7 +4,7 @@ import $ from "jquery";
 import Cookies from "js-cookie";
 
 const transitionToVoteCompletePage = () => {
-	location.href = $("#vote-button").attr("href");
+	location.href = "./vote-thanks.html";
 };
 
 const transitionToVoteStillPage = () => {
@@ -16,13 +16,43 @@ const onVoteSuccess = () => {
 	transitionToVoteCompletePage();
 };
 
+const getVoteType = () => $("#vote-field").data("vote");
+
+const insertVoteField = () => {
+	const voteType = getVoteType();
+	const url = `https://hokutosai.net/api/vote/${voteType}`;
+	const success = (result) => {
+		for (const vote of result) {
+			const voteName = vote.name.replace(/（.*）/, "");
+			const htmlElement = `
+				<label>
+					<input type="radio" name="radio-3" data-name="${vote.name}" />
+					${voteName}
+				</label>
+				`;
+			$("#vote-field").append(htmlElement);
+		}
+	};
+	const error = () => {
+		window.alert("データの取得に失敗しました。");
+	};
+
+	$.ajax({
+		url: url,
+		success: success,
+		error: error,
+	});
+};
+
 const onVoteError = (error) => {
 	throw error;
 };
 
 const vote = (selectedVote) => {
+	const voteType = getVoteType();
+	const url = `https://hokutosai.net/api/vote/${voteType}/${selectedVote}`;
 	$.ajax({
-		url: `https://hokutosai.net/api/vote/${selectedVote}`,
+		url: url,
 		method: "PUT",
 		xhrFields: {
 			withCredentials: true,
@@ -47,10 +77,7 @@ const isVoted = () => {
 	return !!Cookies.get("isVoted");
 };
 
-const selectVote = () => {
-	const selectedVote = $(":checked").data("vote");
-	return selectedVote;
-};
+const selectVote = () => $(":checked").data("name");
 
 $(window).on("load", () => {
 	if (!isVoteTime()) {
@@ -58,10 +85,11 @@ $(window).on("load", () => {
 	}
 
 	if (isVoted()) {
-		window.alert("投票は１回しか出来ません");
 		transitionToVoteCompletePage();
 		return;
 	}
+
+	insertVoteField();
 });
 
 $("#vote-button").on("click", (event) => {
@@ -72,14 +100,15 @@ $("#vote-button").on("click", (event) => {
 		return;
 	}
 
+	if (!navigator.cookieEnabled) {
+		window.alert("Cookieを有効にしてください.");
+	}
+
 	const selectedVote = selectVote();
+	console.log(selectVote());
 	if (!selectedVote) {
 		window.alert("回答を選択してください.");
 		return;
-	}
-
-	if (!navigator.cookieEnabled) {
-		window.alert("Cookieを有効にしてください.");
 	}
 
 	vote(selectedVote);
