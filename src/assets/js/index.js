@@ -3,7 +3,7 @@
 import $ from "jquery";
 import Vivus from "vivus";
 
-function BgFadeAnime() {
+const bgFadeAnime = () => {
 	$(".bgLRextendTrigger").each(function () {
 		const elemPos = $(this).offset().top - 50;
 		const scroll = $(window).scrollTop();
@@ -25,7 +25,7 @@ function BgFadeAnime() {
 			$(this).removeClass("bgappear");
 		}
 	});
-}
+};
 
 const stroke = new Vivus(
 	"mask",
@@ -41,13 +41,9 @@ const stroke = new Vivus(
 	}
 );
 
-$(window).scroll(() => {
-	BgFadeAnime(); /* アニメーション用の関数を呼ぶ*/
-});
-
 $(window).on("load", () => {
 	$("#splash").delay(3000).fadeOut("slow");
 	$("#splash_logo").delay(3000).fadeOut("slow");
 	stroke.play();
-	BgFadeAnime();
+	setTimeout(bgFadeAnime, 3000);
 });
