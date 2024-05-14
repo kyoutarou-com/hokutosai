@@ -355,17 +355,18 @@ body {
 }
 
 #fixed-footer-menu ul li:nth-child(3) i {
-	position: absolute;
-	top: -7px;
-	left: calc(34vw);
+	position: fixed;
+	top: 30%;
+	left: 50%;
 	font-size: 3rem;
+	transform: translate(-50%, -50%);
 }
 
 #fixed-footer-menu ul li:nth-child(3) p {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	position: fixed;
+	top: 70px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #fixed-footer-menu ul li:nth-child(1) i,
@@ -387,10 +388,6 @@ body {
 	#fixed-footer-menu ul li:nth-child(5) i,
 	#fixed-footer-menu ul li:nth-child(5) p {
 		padding-right: 16%;
-	}
-
-	#fixed-footer-menu ul li:nth-child(3) i {
-		left: calc(35vw);
 	}
 }
 
