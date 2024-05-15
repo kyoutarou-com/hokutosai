@@ -13,15 +13,18 @@
 	margin: 0 auto;
 	margin-top: 50px;
 	margin-bottom: 20px;
-	border: 2px solid #2589d0;
+	border: 2px solid var(--dark-color);
 	/* 丸み作成 */
 	border-radius: 10px;
 	padding-bottom: ;
+	display: inline-block;
+	overflow: scroll;
+	height: 280px;
+	background-color: var(--dark-color);
 }
 /* スマホ版制御 */
 @media screen and (width<450px) {
 	.company {
-		display: ;
 	}
 	.box {
 		margin-left: 3%;
@@ -34,10 +37,9 @@
 		display: inline-block;
 		width: 300px;
 		margin: 3%;
+		vertical-align: baseline;
 	}
-	.img {
-		width: 40%;
-	}
+
 	.box {
 		margin-left: 10%;
 		margin-right: 5%;
@@ -48,22 +50,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #2589d0;
+	background-color: #ffff;
+	border-radius: 10px 10px 0 0;
 	padding: 0.5em 0;
 	font-size: 1.25rem;
 	font-weight: 700;
-	color: #ffff;
+	color: #666;
 }
 
 .company img {
 	padding: 1em 0.5em 0.5rem 0.5rem;
 	text-align: center;
-	background-color: #ffff;
+	background-color: var(--dark-color);
 	margin-bottom: 0%;
 	border-radius: 0 0 10px 10px;
-	width: 95%;
 	align-items: flex-start;
-	display: flex;
 }
 
 .company span p {
