@@ -9,17 +9,12 @@
 }
 
 .company {
-	max-width: 400px;
-	margin: 0 auto;
-	margin-top: 50px;
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 	border: 2px solid var(--dark-color);
 	/* 丸み作成 */
 	border-radius: 10px;
 	padding-bottom: ;
-	display: inline-block;
-	overflow: scroll;
-	height: 280px;
 	background-color: var(--dark-color);
 }
 /* スマホ版制御 */
@@ -34,10 +29,13 @@
 /* PC版制御 */
 @media screen and (width>450px) {
 	.company {
-		display: inline-block;
+		display: flex;
 		width: 300px;
 		margin: 3%;
 		vertical-align: baseline;
+		display: inline-block;
+		overflow-y: visible;
+		max-width: 400px;
 	}
 
 	.box {
@@ -64,7 +62,7 @@
 	background-color: var(--dark-color);
 	margin-bottom: 0%;
 	border-radius: 0 0 10px 10px;
-	align-items: flex-start;
+	align-items: baseline;
 }
 
 .company span p {
