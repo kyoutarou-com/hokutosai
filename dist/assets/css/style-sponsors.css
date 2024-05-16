@@ -42,6 +42,9 @@
 		margin-left: 10%;
 		margin-right: 5%;
 	}
+	.small-tx {
+		font-size: 1rem !important;
+	}
 }
 
 .company span {
