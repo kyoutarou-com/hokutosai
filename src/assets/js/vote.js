@@ -6,7 +6,7 @@ import Cookies from "js-cookie";
 const getVoteType = () => $("#vote-field").data("vote");
 const getSelectedVote = () => $(":checked").data("name");
 const isSmartphone = () => !!navigator.userAgent.match(/iPhone|Android.+Mobile/);
-const isVoted = () => !!Cookies.get("isVoted");
+const isVoted = () => !!Cookies.get(`is_${getVoteType()}_voted`);
 
 const isVoteTime = () => {
 	const currentTime = new Date();
@@ -53,7 +53,7 @@ const vote = (selectedVote) => {
 	const voteType = getVoteType();
 	const url = `https://hokutosai.net/api/vote/${voteType}/${selectedVote}`;
 	const onSuccess = () => {
-		Cookies.set("isVoted", true, { expires: 2 });
+		Cookies.set(`is_${getVoteType()}_voted`, true, { expires: 2 });
 		transitionToVoteCompletePage();
 	};
 	const onError = () => {
