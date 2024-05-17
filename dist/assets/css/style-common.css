@@ -303,7 +303,7 @@ body {
 	position: fixed;
 	bottom: 1rem;
 	left: 50%;
-	z-index: 100;
+	z-index: 9999;
 	width: 84%;
 	opacity: 0.95;
 	transform: translate(-50%, 0);
