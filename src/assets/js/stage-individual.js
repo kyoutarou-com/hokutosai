@@ -24,6 +24,7 @@ const onSuccess = (json) => {
 
 	insertTextIntoElement("#stall-name-pan", json[stallIndex]["stall-name"]);
 	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
+	insertValueIntoElement("#stall-name-pan", "href", json[stallIndex]["stall-link"]);
 	insertValueIntoElement("#stall-image1", "src", json[stallIndex]["stall-image1"]);
 	insertValueIntoElement("#stall-image2", "src", json[stallIndex]["stall-image2"]);
 	insertValueIntoElement("#stall-image3", "src", json[stallIndex]["stall-image3"]);
