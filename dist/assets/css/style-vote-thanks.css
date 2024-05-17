@@ -1,50 +1,53 @@
 p {
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 3%;
-	margin-bottom: 5%;
+	margin: 3% 10% 5%;
 }
+
 /* ボタン */
 a.btn_04 {
 	display: block;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
 	width: 200px;
-	margin-inline: auto;
 	padding: 0.5rem 2rem;
+	margin-inline: auto;
 	font-weight: bold;
 	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
 	border-radius: 100vh;
 	transition: 0.5s;
 }
+
 a.btn_04:hover {
 	color: #27acd9;
 	background: #fff;
 }
 /* 送信ボタン */
 .bt-other {
-	border: 2px solid #b2d927;
 	background: #b2d927;
+	border: 2px solid #b2d927;
 }
+
 a.bt-other:hover {
 	color: #b2d927;
 	background: #fff;
 }
 /* 戻るボタン */
 .bt-back {
-	border: 2px solid #e32abb;
 	background: #e32abb;
+	border: 2px solid #e32abb;
 }
+
 a.bt-back:hover {
 	color: #e32abb;
 	background: #fff;
 }
+
 /* ボタン間の空白調整 */
 @media screen and (width<450px) {
 	.bt-back {
 		margin-top: 20px;
 	}
+
 	.vote-direction {
 		margin: 3%;
 	}
@@ -53,6 +56,7 @@ a.bt-back:hover {
 	.bt-back {
 		margin-top: 40px;
 	}
+
 	.vote-direction {
 		margin-inline: auto;
 	}
