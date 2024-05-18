@@ -167,7 +167,7 @@
 	.stall {
 		flex-wrap: nowrap;
 		justify-content: space-between;
-		width: 100%;
+		width: 80vw;
 		padding: 1rem;
 		font-weight: bold;
 		border: 2px solid var(--main-color);
@@ -184,7 +184,7 @@
 	.stall-name {
 		position: relative;
 		top: -1rem;
-		left: -6rem;
+		left: -5.3rem;
 		padding: 0 0.5em 0.5em 2em;
 		font-size: 0.8rem;
 		border-bottom: 1px solid var(--dark-color);
