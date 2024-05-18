@@ -111,7 +111,7 @@
 
 .menus li.active,
 .menus li:hover {
-	background-color: #c9e5ef;
+	background-color: var(--dark-color);
 }
 
 /* タブ・メニューの切り替え */
@@ -165,25 +165,51 @@
 
 @media (max-width: 450px) {
 	.stall {
-		padding: 0;
+		flex-wrap: nowrap;
+		width: 100%;
+		padding: 1rem;
+		font-weight: bold;
+		border: 2px solid var(--main-color);
+		box-shadow: 10px 10px 0 var(--main-color);
 	}
 
 	.stall-image {
-		width: 40vw;
+		width: 23vw;
 		min-width: auto;
-		height: 40vw;
-		margin-top: 8px;
+		height: 23vw;
+		margin-top: 2rem;
 	}
 
 	.stall-name {
-		font-size: 1.2rem;
+		position: absolute;
+		top: -1rem;
+		left: -7rem;
+		font-size: 1rem;
 	}
 
 	.stall-info {
-		margin-top: 8px;
+		position: relative;
+		min-width: auto;
+		margin-top: 1rem;
 	}
 
 	.stall-info ul {
+		width: 150px;
 		margin-top: 0;
+	}
+
+	.stall-organization,
+	.stall-category {
+		font-size: 0.7rem;
+	}
+
+	.angle-2-box {
+		width: 60vw !important;
+		padding: 0 2rem !important;
+	}
+
+	.angle-2-box::before,
+	.angle-2-box::after {
+		border: none !important;
 	}
 }
