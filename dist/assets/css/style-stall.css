@@ -242,3 +242,8 @@
 		border: none !important;
 	}
 }
+
+.stall-category i {
+	margin-right: 4px;
+	color: #9b9b9b;
+}
