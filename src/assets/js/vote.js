@@ -74,10 +74,12 @@ const vote = (selectedVote) => {
 $(window).on("load", () => {
 	if (!isVoteTime()) {
 		transitionToVoteStillPage();
+		process.exit();
 	}
 
 	if (isVoted()) {
 		transitionToVoteCompletePage();
+		process.exit();
 	}
 
 	insertVoteField();
