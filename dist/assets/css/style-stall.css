@@ -228,6 +228,7 @@
 	.stall-organization,
 	.stall-category {
 		font-size: 0.7rem;
+		font-weight: normal;
 	}
 
 	.angle-2-box {
