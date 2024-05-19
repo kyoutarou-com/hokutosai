@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<link rel="stylesheet" href="assets/css/vendor/lightbox.min.css" />
 		<link rel="stylesheet" href="assets/css/style-stall-indivisual.css" />
 		<link rel="icon" href="./assets/img/favicon/favicon16-16.ico" sizes="16x16" type="image/x-icon" />
 		<link rel="icon" href="./assets/img/favicon/favicon24-24.ico" sizes="24x24" type="image/x-icon" />
@@ -49,7 +50,9 @@
 					<li class="stall-location">
 						場所
 						<p id="stall-location">foo</p>
-						<a href="#map" class="btn bgleft btnplace"><span>マップ</span></a>
+						<a href="#" data-lightbox="map" data-title="地図" data-alt="地図" class="fas-image-expansioncircle btn bgleft btnplace" id="map-image">
+							<span>マップ</span>
+						</a>
 					</li>
 					<li class="stall-time">
 						販売期間
@@ -65,11 +68,6 @@
 			<div class="stall-comment angle-2-box">
 				<p id="stall-comment">foo</p>
 			</div>
-
-			<div id="map">
-				<h3>地図</h3>
-				<img src="#" alt="地図の写真" id="map-image" />
-			</div>
 		</div>
 
 		<div class="blank">
@@ -83,6 +81,7 @@
 		</div>
 
 		<div id="footer"></div>
+		<script src="assets/js/vendor/lightbox-plus-jquery.min.js"></script>
 		<script src="assets/js/common.js"></script>
 		<script src="assets/js/stall-individual.js"></script>
 	</body>
