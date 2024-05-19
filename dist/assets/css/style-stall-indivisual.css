@@ -161,3 +161,14 @@ section.menu-area {
 .frame::after {
 	background-color: var(--sub-color) !important;
 }
+
+.menu h3 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.attention {
+	padding: 2% 10%;
+	margin-top: 2.75rem;
+	font-size: 0.8rem;
+}

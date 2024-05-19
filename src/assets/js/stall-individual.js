@@ -61,6 +61,7 @@ const insertMenu = (data) => {
 				break;
 		}
 	}
+	menuHtml += '<p class="attention">※価格は予定価格であり、変更となる場合がございます。予めご了承ください。</p>';
 	$(".menu").append(menuHtml);
 };
 
