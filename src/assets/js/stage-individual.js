@@ -33,7 +33,6 @@ const onSuccess = (json) => {
 	insertTextIntoElement("#stall-location", json[stallIndex]["stall-location"]);
 	insertTextIntoElement("#stall-date", date);
 	insertTextIntoElement("#stall-time", json[stallIndex]["time"]);
-	insertTextIntoElement("#stall-attention", json[stallIndex]["attention"]);
 	insertTextIntoElement("#stall-comment", json[stallIndex]["stall-comment"]);
 
 	if (image2 === "null") {
