@@ -1,8 +1,69 @@
 "use strict";
 
+import $ from "jquery";
 import { loadJson, onError } from "./module/json.js";
 import { getPageIndex } from "./module/hash.js";
 import { insertTextIntoElement, insertValueIntoElement } from "./module/dom.js";
+
+const getMenuItemType = (menuItem) => {
+	switch (menuItem[0]) {
+		case "!":
+			return "attentionWriting";
+		case "*":
+			return "centering";
+		default:
+			return "normal";
+	}
+};
+
+const insertMenu = (data) => {
+	let menu = [];
+	data.split("/").map((item) => {
+		const [name, price] = item.split(":");
+		const type = getMenuItemType(name);
+		switch (type) {
+			case "attentionWriting":
+			case "centering":
+				menu.push({ name: name.substr(1), price, type });
+				break;
+			case "normal":
+				menu.push({ name, price, type });
+				break;
+		}
+	});
+
+	let menuHtml = "";
+	for (const item of menu) {
+		switch (item.type) {
+			case "attentionWriting":
+				menuHtml += `
+					<div>
+						<dt></dt>
+						<dd>※${item.name}</dd>
+					</div>
+					`;
+				break;
+			case "centering":
+				menuHtml += `
+					<div class="center">
+						<dt></dt>
+						<dd>${item.name}</dd>
+					</div>
+					`;
+				break;
+			case "normal":
+				menuHtml += `
+				<div class="normal">
+					<dt>${item.name}</dt>
+					<dd>${item.price}</dd>
+				</div>
+				`;
+				break;
+		}
+	}
+	menuHtml += '<p class="attention">※価格は予定価格であり、変更となる場合がございます。予めご了承ください。</p>';
+	$(".menu").append(menuHtml);
+};
 
 const onSuccess = (json) => {
 	const stallIndex = getPageIndex();
@@ -23,6 +84,8 @@ const onSuccess = (json) => {
 	insertTextIntoElement("#stall-time", json[stallIndex]["time"]);
 	insertTextIntoElement("#stall-attention", json[stallIndex]["attention"]);
 	insertTextIntoElement("#stall-comment", json[stallIndex]["stall-comment"]);
+
+	insertMenu(json[stallIndex]["stall-menu"]);
 
 	if (image2 === "null") {
 		$("#stall-image2").remove();
