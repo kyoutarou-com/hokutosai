@@ -104,3 +104,49 @@
 		height: 68vw !important;
 	}
 }
+
+dl.menu {
+	width: 100%;
+	font-size: 1rem;
+}
+
+dl.menu div {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+	margin: 5px 0;
+}
+
+dl.menu div::after {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	content: "";
+	border-bottom: dotted 1px var(--black-color);
+}
+
+dl.menu dt {
+	z-index: 2;
+	padding: 0 5px 0 0;
+	margin: 0;
+	text-align: left;
+	background-color: var(--sub-color);
+}
+
+dl.menu dd {
+	z-index: 2;
+	padding: 0 0 0 5px;
+	margin: 0;
+	text-align: right;
+	background-color: var(--sub-color);
+}
+
+section.menu-area {
+	max-width: 800px;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: var(--sub-color);
+}

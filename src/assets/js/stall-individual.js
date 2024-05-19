@@ -1,8 +1,28 @@
 "use strict";
 
+import $ from "jquery";
 import { loadJson, onError } from "./module/json.js";
 import { getPageIndex } from "./module/hash.js";
 import { insertTextIntoElement, insertValueIntoElement } from "./module/dom.js";
+
+const insertMenu = (data) => {
+	let menu = [];
+	data.split("/").map((item) => {
+		const [name, price] = item.split(":");
+		menu.push({ name, price });
+	});
+
+	let menuHtml = "";
+	for (const item of menu) {
+		menuHtml += `
+				<div>
+					<dt>${item.name}</dt>
+					<dd>${item.price}</dd>
+				</div>
+		`;
+	}
+	$(".menu").append(menuHtml);
+};
 
 const onSuccess = (json) => {
 	const stallIndex = getPageIndex();
@@ -23,6 +43,8 @@ const onSuccess = (json) => {
 	insertTextIntoElement("#stall-time", json[stallIndex]["time"]);
 	insertTextIntoElement("#stall-attention", json[stallIndex]["attention"]);
 	insertTextIntoElement("#stall-comment", json[stallIndex]["stall-comment"]);
+
+	insertMenu(json[stallIndex]["stall-menu"]);
 
 	if (image2 === "null") {
 		$("#stall-image2").remove();
