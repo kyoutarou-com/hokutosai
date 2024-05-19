@@ -81,8 +81,9 @@ const onSuccess = (json) => {
 	insertValueIntoElement("#stall-image4", "src", json[stallIndex]["stall-image4"]);
 	insertTextIntoElement("#stall-organization", json[stallIndex]["stall-organization"]);
 	insertTextIntoElement("#stall-location", json[stallIndex]["stall-location"]);
-	insertTextIntoElement("#stall-time", json[stallIndex]["time"]);
-	insertTextIntoElement("#stall-attention", json[stallIndex]["attention"]);
+	const [day1, day2] = json[stallIndex]["time"].split("/");
+	const time = `${day1}<br>${day2}`;
+	$("#stall-time").append(time);
 	insertTextIntoElement("#stall-comment", json[stallIndex]["stall-comment"]);
 
 	insertMenu(json[stallIndex]["stall-menu"]);
