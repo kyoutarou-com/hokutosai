@@ -5,21 +5,61 @@ import { loadJson, onError } from "./module/json.js";
 import { getPageIndex } from "./module/hash.js";
 import { insertTextIntoElement, insertValueIntoElement } from "./module/dom.js";
 
+const getMenuItemType = (menuItem) => {
+	switch (menuItem[0]) {
+		case "!":
+			return "attentionWriting";
+		case "*":
+			return "centering";
+		default:
+			return "normal";
+	}
+};
+
 const insertMenu = (data) => {
 	let menu = [];
 	data.split("/").map((item) => {
 		const [name, price] = item.split(":");
-		menu.push({ name, price });
+		const type = getMenuItemType(name);
+		switch (type) {
+			case "attentionWriting":
+			case "centering":
+				menu.push({ name: name.substr(1), price, type });
+				break;
+			case "normal":
+				menu.push({ name, price, type });
+				break;
+		}
 	});
 
 	let menuHtml = "";
 	for (const item of menu) {
-		menuHtml += `
-				<div>
+		switch (item.type) {
+			case "attentionWriting":
+				menuHtml += `
+					<div>
+						<dt></dt>
+						<dd>※${item.name}</dd>
+					</div>
+					`;
+				break;
+			case "centering":
+				menuHtml += `
+					<div class="center">
+						<dt></dt>
+						<dd>${item.name}</dd>
+					</div>
+					`;
+				break;
+			case "normal":
+				menuHtml += `
+				<div class="normal">
 					<dt>${item.name}</dt>
 					<dd>${item.price}</dd>
 				</div>
-		`;
+				`;
+				break;
+		}
 	}
 	$(".menu").append(menuHtml);
 };

@@ -118,7 +118,7 @@ dl.menu div {
 	margin: 5px 0;
 }
 
-dl.menu div::after {
+dl.menu div.normal::after {
 	position: absolute;
 	top: 50%;
 	z-index: 1;
@@ -144,9 +144,20 @@ dl.menu dd {
 	background-color: var(--sub-color);
 }
 
+div.center dd {
+	width: 100%;
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
 section.menu-area {
 	max-width: 800px;
-	padding: 20px;
 	margin: 0 auto;
 	background-color: var(--sub-color);
+}
+
+.frame::after {
+	background-color: var(--sub-color) !important;
 }
