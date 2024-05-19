@@ -11,6 +11,7 @@ const onSuccess = (json) => {
 	const image4 = json[stallIndex]["stall-image4"];
 	const image5 = json[stallIndex]["stall-image5"];
 	const image6 = json[stallIndex]["stall-image6"];
+	const attention = json[stallIndex]["attention"];
 
 	insertTextIntoElement("#stall-name-pan", json[stallIndex]["stall-name"]);
 	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
@@ -42,6 +43,9 @@ const onSuccess = (json) => {
 	}
 	if (image6 === "null") {
 		$("#stall-image6").remove();
+	}
+	if (attention === "") {
+		$(".stall-attention").remove();
 	}
 };
 
