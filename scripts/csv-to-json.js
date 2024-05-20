@@ -8,7 +8,7 @@
 const csvtojson = require("csvtojson/v2");
 const fs = require("fs-extra");
 
-const TARGET_FILENAMES = Object.freeze(["stall.csv", "exhibition.csv", "stage.csv"]);
+const TARGET_FILENAMES = Object.freeze(["stall.csv", "exhibition.csv", "stage.csv", "where.csv"]);
 const INPUT_DIRECTORY = "src/assets/config";
 const OUTPUT_DIRECTORY = "dist/assets/config";
 
