@@ -70,6 +70,7 @@ const onSuccess = (json) => {
 	const image2 = json[stallIndex]["stall-image2"];
 	const image3 = json[stallIndex]["stall-image3"];
 	const image4 = json[stallIndex]["stall-image4"];
+	const attention = json[stallIndex]["attention"];
 
 	insertTextIntoElement("#stall-name-pan", json[stallIndex]["stall-name"]);
 	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
@@ -84,6 +85,7 @@ const onSuccess = (json) => {
 	const [day1, time1, day2, time2] = json[stallIndex]["time"].split("/");
 	const time = `${day1}<br>&nbsp;${time1}<br>${day2[0] === "※" ? "&nbsp;" : ""}${day2}<br>&nbsp;${time2 ?? ""}`;
 	$("#stall-time").append(time);
+	insertTextIntoElement("#stall-attention", json[stallIndex]["attention"]);
 	insertTextIntoElement("#stall-comment", json[stallIndex]["stall-comment"]);
 
 	insertMenu(json[stallIndex]["stall-menu"]);
@@ -96,6 +98,9 @@ const onSuccess = (json) => {
 	}
 	if (image4 === "null") {
 		$("#stall-image4").remove();
+	}
+	if (attention === "") {
+		$(".stall-attention").remove();
 	}
 };
 
