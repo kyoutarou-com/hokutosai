@@ -1,4 +1,4 @@
-number,location,mapImg,floorStall,floorExhibition,nearExhibition
+urlHash,location,mapImg,sameFloorStall,sameFloorExhibition,closeExhibition
 11-1,第１専門棟１階,hoge.png,17-11,19-20-14,null
 11-2,第１専門棟１階,fuga.png,17-11,19-20-14,null
 11-3,第１専門棟１階,fuga.png,17-11,19-20-14,null
@@ -25,4 +25,3 @@ number,location,mapImg,floorStall,floorExhibition,nearExhibition
 24-1,第２専門棟４階,#,null,null,18-9-21-5
 34-1,第３専門棟４階,#,null,null,21-5-18-9
 34-2,第３専門棟４階,#,null,null,21-5-18-9
-
