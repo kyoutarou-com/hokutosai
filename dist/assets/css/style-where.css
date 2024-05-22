@@ -2,12 +2,13 @@
 
 .location {
 	margin: 3rem auto;
-	font-size: 3rem;
+	font-size: 1.5rem;
 	color: var(--black-color);
 	text-align: center;
 }
 
 .location span {
+	font-size: 2rem;
 	font-style: italic;
 	color: var(--dark-color);
 }
