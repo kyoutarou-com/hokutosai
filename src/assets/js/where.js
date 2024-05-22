@@ -32,9 +32,31 @@ const normalizeCurrentLocation = ([where, stall, exhibition]) => {
 	return currentLocation;
 };
 
-const currentLocation = normalizeCurrentLocation(await fetchCurrentLocation());
+const insertEventSection = (id, events) => {
+	let eventSection = "";
+	for (const event of events) {
+		eventSection += `
+			<a href="${event["stall-link"]}">
+				<section class="stall">
+					<img class="stall-image" src="${event["stall-image1"]}" alt="店の画像" />
+					<div class="stall-info">
+						<h3 class="stall-name angle-2-box">${event["stall-name"]}</h3>
+						<ul>
+							<li class="stall-organization">${event["stall-organization"]}</li>
+							<li class="stall-category"><i class="fa-solid fa-location-dot"></i>${event["stall-location"]}</li>
+						</ul>
+					</div>
+				</section>
+			</a>
+			`;
+	}
+	$(id).append(eventSection);
+};
 
-console.log(currentLocation);
+const currentLocation = normalizeCurrentLocation(await fetchCurrentLocation());
 
 $("#location").text(currentLocation.location);
 $("#mapImg").attr("src", currentLocation.mapImg);
+insertEventSection("#sameFloorStall", currentLocation.sameFloorStall);
+insertEventSection("#sameFloorExhibition", currentLocation.sameFloorExhibition);
+insertEventSection("#closeExhibition", currentLocation.closeExhibition);
