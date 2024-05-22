@@ -33,6 +33,11 @@ const normalizeCurrentLocation = ([where, stall, exhibition]) => {
 };
 
 const insertEventSection = (id, events) => {
+	if (!events.length) {
+		$(id).parent().remove();
+		return;
+	}
+
 	let eventSection = "";
 	for (const event of events) {
 		eventSection += `
