@@ -15,6 +15,7 @@ module.exports = {
 		"vote-thanks": "./src/assets/js/vote-thanks.js",
 		exhibition: "./src/assets/js/exhibition.js",
 		"exhibition-individual": "./src/assets/js/exhibition-individual.js",
+		where: "./src/assets/js/where.js",
 	},
 	output: {
 		filename: "assets/js/[name].js",
