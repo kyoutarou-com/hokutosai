@@ -12,6 +12,7 @@ const onSuccess = (json) => {
 	const image5 = json[stallIndex]["stall-image5"];
 	const image6 = json[stallIndex]["stall-image6"];
 	const attention = json[stallIndex]["attention"];
+	const stallFloor = json[stallIndex]["stall-floor"];
 
 	insertTextIntoElement("#stall-name-pan", json[stallIndex]["stall-name"]);
 	insertTextIntoElement("#stall-name", json[stallIndex]["stall-name"]);
@@ -24,6 +25,7 @@ const onSuccess = (json) => {
 	insertValueIntoElement("#stall-image5", "src", json[stallIndex]["stall-image5"]);
 	insertValueIntoElement("#stall-image6", "src", json[stallIndex]["stall-image6"]);
 	insertTextIntoElement("#stall-organization", json[stallIndex]["stall-organization"]);
+	insertTextIntoElement("#stall-floor", json[stallIndex]["stall-floor"]);
 	insertTextIntoElement("#stall-location", json[stallIndex]["stall-location"]);
 	insertTextIntoElement("#stall-time", json[stallIndex]["time"]);
 	insertTextIntoElement("#stall-attention", json[stallIndex]["attention"]);
@@ -46,6 +48,9 @@ const onSuccess = (json) => {
 	}
 	if (attention === "") {
 		$(".stall-attention").remove();
+	}
+	if (stallFloor === "null") {
+		$("#stall-floor").remove();
 	}
 };
 
