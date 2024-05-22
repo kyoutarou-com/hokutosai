@@ -11,7 +11,7 @@ const convertSeparatedStringToNumber = (str, separator) => {
 
 const fetchJson = (url) => fetch(url).then((result) => result.json());
 
-const fetchEventData = async () => {
+const fetchCurrentLocation = async () => {
 	const urls = ["./assets/config/where.json", "./assets/config/stall.json", "./assets/config/exhibition.json"];
 	const [where, stall, exhibition] = await Promise.all(urls.map((url) => fetchJson(url)));
 	const currentLocation = where.filter((element) => `#${element.urlHash}` === location.hash)[0];
@@ -33,9 +33,8 @@ const fetchEventData = async () => {
 	return currentLocation;
 };
 
-const eventData = await fetchEventData();
-console.log(eventData);
+const currentLocation = await fetchCurrentLocation();
+console.log(currentLocation);
 
-eventData.where[0].sameFloorStall.map((index) => {
-	console.log(eventData.stall[index]);
-});
+$("#location").text(currentLocation.location);
+$("#mapImg").attr("src", currentLocation.mapImg);
