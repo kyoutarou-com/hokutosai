@@ -13,7 +13,7 @@ const insertStallSection = (id, stallDescription) => {
 				<h3 class="stall-name angle-2-box">${stallDescription["stall-name"]}</h3>
 				<ul>
 					<li class="stall-organization">${stallDescription["stall-organization"]}</li>
-					<li class="stall-category">${stallDescription["stall-location"]}</li>
+					<li class="stall-category"><i class="fa-solid fa-location-dot"></i>${stallDescription["stall-location"]}</li>
 				</ul>
 			</div>
 		</section>
@@ -41,7 +41,6 @@ const onSuccess = (json) => {
 			default:
 				break;
 		}
-		console.log(tab1);
 		insertStallSection(tab1, iterator);
 
 		let tab2;
