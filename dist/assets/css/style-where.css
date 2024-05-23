@@ -2,15 +2,25 @@
 
 .location {
 	margin: 3rem auto;
-	font-size: 1.5rem;
-	color: var(--black-color);
 	text-align: center;
 }
 
-.location span {
-	font-size: 2rem;
+.location-center {
+	font-size: 2.4rem;
 	font-style: italic;
 	color: var(--dark-color);
+}
+
+.location-left {
+	margin: 1rem;
+	margin-right: 44vw;
+	font-size: 1.5rem;
+}
+
+.location-right {
+	margin: 1rem;
+	margin-left: 56vw;
+	font-size: 1.5rem;
 }
 
 .map-img {
