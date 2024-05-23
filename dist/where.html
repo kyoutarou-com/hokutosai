@@ -14,6 +14,7 @@
 		<link rel="icon" href="./assets/img/favicon/favicon64-64.ico" sizes="62x62" type="image/x-icon" />
 
 		<!-- css -->
+		<link rel="stylesheet" href="assets/css/vendor/lightbox.min.css" />
 		<link rel="stylesheet" href="assets/css/style-stall.css" />
 		<link rel="stylesheet" href="assets/css/style-where.css" />
 	</head>
@@ -33,7 +34,9 @@
 			<span id="location"></span> <br />
 			です。
 		</p>
-		<img id="mapImg" class="map-img" src="#" alt="地図" />
+		<a href="#" data-lightbox="mapImg" data-title="地図" data-alt="地図" class="fas-image-expansioncircle">
+			<img id="mapImg" class="map-img" src="#" alt="地図" />
+		</a>
 
 		<main class="introduction">
 			<section>
@@ -53,6 +56,7 @@
 		<div id="footer"></div>
 
 		<!-- js -->
+		<script src="assets/js/vendor/lightbox-plus-jquery.min.js"></script>
 		<script src="assets/js/common.js"></script>
 		<script src="assets/js/where.js"></script>
 	</body>

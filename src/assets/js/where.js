@@ -32,6 +32,15 @@ const normalizeCurrentLocation = ([where, stall, exhibition]) => {
 	return currentLocation;
 };
 
+const insertMapImg = (mapImg) => {
+	if (mapImg === "null") {
+		$("#mapImg").remove();
+		return;
+	}
+
+	$("#mapImg").attr("src", mapImg).parent().attr("href", mapImg);
+};
+
 const insertEventSection = (id, events) => {
 	if (!events.length) {
 		$(id).parent().remove();
@@ -61,7 +70,7 @@ const insertEventSection = (id, events) => {
 const currentLocation = normalizeCurrentLocation(await fetchCurrentLocation());
 
 $("#location").text(currentLocation.location);
-$("#mapImg").attr("src", currentLocation.mapImg);
+insertMapImg(currentLocation.mapImg);
 insertEventSection("#sameFloorStall", currentLocation.sameFloorStall);
 insertEventSection("#sameFloorExhibition", currentLocation.sameFloorExhibition);
 insertEventSection("#closeExhibition", currentLocation.closeExhibition);
