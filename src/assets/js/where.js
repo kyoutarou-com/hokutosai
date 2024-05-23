@@ -38,7 +38,7 @@ const insertMapImg = (mapImg) => {
 		return;
 	}
 
-	$("#mapImg").attr("src", mapImg);
+	$("#mapImg").attr("src", mapImg).parent().attr("href", mapImg);
 };
 
 const insertEventSection = (id, events) => {
