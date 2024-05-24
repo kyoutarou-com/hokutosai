@@ -3,7 +3,7 @@
 import $ from "jquery";
 
 export const onError = (error) => {
-	window.alert("データの取得に失敗しました。");
+	// window.alert("データの取得に失敗しました。");
 	console.log(error);
 };
 
