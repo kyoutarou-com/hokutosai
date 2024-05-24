@@ -16,6 +16,7 @@ module.exports = {
 		exhibition: "./src/assets/js/exhibition.js",
 		"exhibition-individual": "./src/assets/js/exhibition-individual.js",
 		where: "./src/assets/js/where.js",
+		"lost-property": "./src/assets/js/lost-property.js",
 	},
 	output: {
 		filename: "assets/js/[name].js",
