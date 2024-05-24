@@ -143,3 +143,10 @@ p.caution::before {
 	margin-left: 10%;
 	font-size: 0.8rem;
 }
+
+.karaoke-description {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 3rem;
+	text-align: left;
+}
