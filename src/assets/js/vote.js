@@ -73,13 +73,13 @@ const vote = (selectedVote) => {
 
 $(window).on("load", () => {
 	if (!isVoteTime()) {
-		transitionToVoteStillPage();
-		process.exit();
+		// transitionToVoteStillPage();
+		// process.exit();
 	}
 
 	if (isVoted()) {
-		transitionToVoteCompletePage();
-		process.exit();
+		// transitionToVoteCompletePage();
+		// process.exit();
 	}
 
 	insertVoteField();
