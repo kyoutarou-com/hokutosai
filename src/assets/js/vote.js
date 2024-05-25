@@ -11,7 +11,7 @@ const isVoted = () => !!Cookies.get(`is_${getVoteType()}_voted`);
 const isVoteTime = () => {
 	const currentTime = new Date();
 	const firstTime = new Date(2024, 5 - 1, 25, 10);
-	const lastTime = new Date(2024, 5 - 1, 26, 14);
+	const lastTime = new Date(2024, 5 - 1, 26, 13, 30);
 	return firstTime <= currentTime && currentTime <= lastTime;
 };
 
