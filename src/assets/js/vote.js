@@ -10,8 +10,8 @@ const isVoted = () => !!Cookies.get(`is_${getVoteType()}_voted`);
 
 const isVoteTime = () => {
 	const currentTime = new Date();
-	const firstTime = new Date(2024, 5 - 1, 25, 14);
-	const lastTime = new Date(2024, 5 - 1, 26, 10);
+	const firstTime = new Date(2024, 5 - 1, 25, 10);
+	const lastTime = new Date(2024, 5 - 1, 26, 14);
 	return firstTime <= currentTime && currentTime <= lastTime;
 };
 
@@ -73,13 +73,11 @@ const vote = (selectedVote) => {
 
 $(window).on("load", () => {
 	if (!isVoteTime()) {
-		// transitionToVoteStillPage();
-		// process.exit();
+		transitionToVoteStillPage();
 	}
 
 	if (isVoted()) {
-		// transitionToVoteCompletePage();
-		// process.exit();
+		transitionToVoteCompletePage();
 	}
 
 	insertVoteField();
