@@ -5,7 +5,7 @@ import $ from "jquery";
 const fetchJson = (url) => fetch(url).then((result) => result.json());
 
 const getLostProperties = async () => {
-	const url = "https://script.google.com/macros/s/AKfycbyej7WvTXm7Rs8_L9-ASwZhTskCacbMEpafTC8KwdAGEbooxbPPq5edt1nt8bEq0tNz2w/exec";
+	const url = "https://script.google.com/macros/s/AKfycbwG0946HjFu3mJEOLRvv3Ao303DbdjaeJVVFbaxIsG7gYkb26k9CEJnoq6hTimMsPy0jA/exec";
 	return await fetchJson(url);
 };
 
