@@ -828,3 +828,10 @@ h3 {
 	height: 114px;
 	background-color: #222;
 }
+
+.bg-center {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
