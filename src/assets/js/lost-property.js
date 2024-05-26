@@ -5,15 +5,16 @@ import $ from "jquery";
 const fetchJson = (url) => fetch(url).then((result) => result.json());
 
 const getLostProperties = async () => {
-	const url = "https://script.google.com/macros/s/AKfycbydHrnT3677w5tXKhLsdN8khVabijj1zMyJPv6BYHrWIiWobi6BBL8RtSJphCZ1PJPXcA/exec";
+	const url = "https://script.google.com/macros/s/AKfycbyej7WvTXm7Rs8_L9-ASwZhTskCacbMEpafTC8KwdAGEbooxbPPq5edt1nt8bEq0tNz2w/exec";
 	return await fetchJson(url);
 };
 
 const insertLostProperties = (lostProperties) => {
 	let htmlElement = "";
 	let count = 1;
-	for (const lostProperty of lostProperties) {
-		const { name, location, date, hours, minutes, img } = lostProperty;
+	const lostPropertiesNotFoundOwner = lostProperties.filter((lostProperty) => !lostProperty.isOwnerFound);
+	for (const lostPropertyNotFoundOwner of lostPropertiesNotFoundOwner) {
+		const { name, location, date, hours, minutes, img } = lostPropertyNotFoundOwner;
 		const dayOfTheWeek = date === 25 ? "土" : "日";
 		htmlElement += `
 			<div class="box-sub">
