@@ -17,7 +17,8 @@ const convertSeparatedStringToNumber = (str, separator) => {
 
 const normalizeCurrentLocation = ([where, stall, exhibition]) => {
 	const currentLocation = where.filter((element) => `#${element.urlHash}` === location.hash)[0];
-	["sameFloorStall", "sameFloorExhibition", "closeExhibition"].map((key) => {
+	const keys = ["sameFloorStall", "sameFloorExhibition", "closeExhibition"];
+	for (const key of keys) {
 		const closeEvents = convertSeparatedStringToNumber(currentLocation[key], "-");
 		switch (key) {
 			case "sameFloorStall":
@@ -28,7 +29,7 @@ const normalizeCurrentLocation = ([where, stall, exhibition]) => {
 				currentLocation[key] = closeEvents.map((index) => exhibition[index]);
 				break;
 		}
-	});
+	}
 	return currentLocation;
 };
 
