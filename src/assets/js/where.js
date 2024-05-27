@@ -6,7 +6,7 @@ const fetchJson = (url) => fetch(url).then((result) => result.json());
 
 const fetchCurrentLocation = async () => {
 	const urls = ["./assets/config/where.json", "./assets/config/stall.json", "./assets/config/exhibition.json"];
-	return await Promise.all(urls.map((url) => fetchJson(url)));
+	return await Promise.all(urls.map(fetchJson));
 };
 
 const convertSeparatedStringToNumber = (str, separator) => {
