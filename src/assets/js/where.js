@@ -12,7 +12,7 @@ const fetchCurrentLocation = async () => {
 const convertSeparatedStringToNumber = (str, separator) => {
 	if (str === "null") return [];
 
-	return str.split(separator).map((str) => Number(str));
+	return str.split(separator).map(Number);
 };
 
 const normalizeCurrentLocation = ([where, stall, exhibition]) => {
