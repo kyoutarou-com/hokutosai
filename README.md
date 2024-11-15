@@ -4,30 +4,35 @@
 
 このリポジトリは、第 16 回高専祭-北斗祭-のホームページのソースコードを管理するためのものです。ホームページでは、北斗祭に関する情報やタイムテーブル、展示・模擬店情報などを掲載しています。
 
-## 技術スタック
-
-[![技術スタック](https://skillicons.dev/icons?i=html,css,js,npm,webpack,python)](https://skillicons.dev)
-
 ## 特徴
 
 北斗祭に関する情報を提供し、来場者がスムーズにイベントを楽しめるように設計されています。ホームページはレスポンシブデザインを採用し、PC やスマートフォンからも快適にアクセスできます。
 
-## 使用言語
+## 技術スタック
+
+[![技術スタック](https://skillicons.dev/icons?i=html,css,js,npm,webpack,python)](https://skillicons.dev)
 
 **フロントエンド**
 
 -   HTML
 -   CSS
 -   JavaScript(jQuery)
+-   NPM
+-   webpack
 
 **バックエンド**
 
 -   JavaScript(Express)
 -   Node.js
+-   Google Apps Script
 
 **データベース**
 
 -   MySQL
+
+**その他**
+
+-   Python
 
 ## 機能一覧
 
