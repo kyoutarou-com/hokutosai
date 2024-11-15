@@ -2,9 +2,7 @@
 
 ![ロゴ](./dist/assets/img/hokutosai-logo.png)
 
-このリポジトリは、第16回高専祭-北斗祭-のホームページのソースコードを管理するためのものです。
-
-ホームページでは、北斗祭に関する情報やタイムテーブル、展示・模擬店情報などを掲載しています。
+このリポジトリは、第16回高専祭-北斗祭-のホームページのソースコードを管理するためのものです。ホームページでは、北斗祭に関する情報やタイムテーブル、展示・模擬店情報などを掲載しています。
 
 ## 技術スタック
 
@@ -51,10 +49,7 @@ npm ci
 | npm run deploy-development | 開発環境にデプロイ                                       |
 | npm run deploy-production  | 本番環境にデプロイ                                       |
 
-## リポジトリ構成
-
-[hokutosai](https://github.com/kyoutarou-com/hokutosai.git)
-フロントエンド
+## その他のリポジトリ
 
 [hokutosai-back-end](https://github.com/mako0523/hokutosai-back-end.git)
 投票APIを提供するバックエンド
