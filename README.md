@@ -1,4 +1,4 @@
-# 第 16 回 高専祭 -北斗祭-
+# 第 16 回 高専祭 -北斗祭- 特設 HP
 
 ![ロゴ](./dist/assets/img/hokutosai-logo.png)
 
