@@ -4,32 +4,79 @@
 
 このリポジトリは、第 16 回高専祭-北斗祭-のホームページのソースコードを管理するためのものです。ホームページでは、北斗祭に関する情報やタイムテーブル、展示・模擬店情報などを掲載しています。
 
-## 技術スタック
-
-[![技術スタック](https://skillicons.dev/icons?i=html,css,js,npm,webpack,python)](https://skillicons.dev)
-
 ## 特徴
 
 北斗祭に関する情報を提供し、来場者がスムーズにイベントを楽しめるように設計されています。ホームページはレスポンシブデザインを採用し、PC やスマートフォンからも快適にアクセスできます。
 
-## 使用言語
+## 技術スタック
+
+[![技術スタック](https://skillicons.dev/icons?i=html,css,js,npm,webpack,python)](https://skillicons.dev)
 
 **フロントエンド**
 
 -   HTML
 -   CSS
 -   JavaScript(jQuery)
+-   NPM
+-   webpack
 
 **バックエンド**
 
 -   JavaScript(Express)
 -   Node.js
+-   Google Apps Script
 
 **データベース**
 
 -   MySQL
 
-## 機能一覧
+**その他**
+
+-   Python
+
+## ページ一覧
+
+| ファイル名                      | ページ名                     |
+| ------------------------------- | ---------------------------- |
+| index.html                      | トップページ                 |
+| about.html                      | 北斗祭概要                   |
+| theme.html                      | テーマ                       |
+| greeting.html                   | 挨拶                         |
+| news.html                       | ニュース                     |
+| committee.html                  | 北斗祭実行委員会紹介         |
+| time-table.html                 | タイムテーブル               |
+| stage.html                      | 企画紹介                     |
+| stage-individual.html#{id}      | 企画個別紹介                 |
+| stall.html                      | 模擬店紹介                   |
+| stall-individual.html#{id}      | 模擬店個別紹介               |
+| exhibition.html                 | 展示紹介                     |
+| exhibition-individual.html#{id} | 展示個別紹介                 |
+| vote.html                       | 投票一覧                     |
+| vote-cosplay.html               | 仮装コンテスト投票           |
+| vote-exhibition.html            | 展示企画投票                 |
+| vote-karaoke.html               | カラオケ投票                 |
+| vote-muscle.html                | キン肉マンコンテスト投票     |
+| vote-stall.html                 | 模擬店企画投票               |
+| vote-voice.html                 | Nice Voice コンテスト投票    |
+| vote-still.html                 | 投票時間外                   |
+| vote-thanks.html                | 投票完了                     |
+| please.html                     | 来場者の方へのご案内         |
+| campus-map.html                 | キャンパスマップ             |
+| access.html                     | アクセス情報                 |
+| question.html                   | よくある質問                 |
+| recruit-sponsors.html           | 協賛のお願い                 |
+| sponsors.html                   | 協賛企業様一覧               |
+| special-thanks.html             | スペシャルサンクス一覧       |
+| inquiry.html                    | お問い合わせページ           |
+| form.html                       | お問い合わせフォーム         |
+| sending                         | お問い合わせフォーム送信完了 |
+| where.html                      | 現在地探索                   |
+| lost-property.html              | 落とし物一覧                 |
+| pamphlet.html                   | 公式パンフレット             |
+|                                 |                              |
+| site-map.html                   | サイトマップ                 |
+| site-policy.html                | サイトポリシー               |
+| privacy-policy.html             | プライバシーポリシー         |
 
 <div align="center">
     <img src="./dist/assets/img/screen.png" alt="">
