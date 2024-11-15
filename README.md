@@ -30,9 +30,19 @@
 
 -   MySQL
 
+**デザイン**
+
+-   Figma
+
+**環境設定**
+
+-   Docker
+
 **その他**
 
 -   Python
+-   Git
+-   GitHub
 
 ## ページ一覧
 
