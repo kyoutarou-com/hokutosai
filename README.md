@@ -27,7 +27,7 @@ npm ci
 
 ## ツリー構造
 
-.
+.</br>
 ├── dist・・・本番環境にデプロイするディレクトリ</br>
 │   └── assets・・・ビルド結果の出力先</br>
 │       ├── config・・・イベントや店舗情報の入力データをビルドした結果の出力先</br>
@@ -78,8 +78,8 @@ npm ci
 
 ## その他のリポジトリ
 
-[hokutosai-back-end](https://github.com/mako0523/hokutosai-back-end.git)
+[hokutosai-back-end](https://github.com/mako0523/hokutosai-back-end.git)</br>
 投票APIを提供するバックエンド
 
-[hokutosai-manager]( https://github.com/mako0523/hokutosai-manager.git)
+[hokutosai-manager]( https://github.com/mako0523/hokutosai-manager.git)</br>
 投票結果を閲覧するための管理者ページ
