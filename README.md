@@ -44,6 +44,15 @@
 -   Git
 -   GitHub
 
+## インストールとセットアップ
+
+```bash
+git clone https://github.com/kyoutarou-com/hokutosai.git
+npm ci
+```
+
+開発環境がVsCodeの場合は、**esbenp.prettier-vscode**を入れてください。
+
 ## ページ一覧
 
 ### 概要
@@ -119,13 +128,6 @@
     <img src="./dist/assets/img/screen.png" alt="">
 </div>
 
-## インストールとセットアップ
-
-```bash
-git clone https://github.com/kyoutarou-com/hokutosai.git
-npm ci
-```
-
 ## ツリー構造
 
 .</br>
@@ -164,7 +166,7 @@ npm ci
 | feature-enquete | 投票機能用ブランチ |
 | main            | 本番環境用ブランチ |
 
-`develop`ブランチを元に`feature-新しい機能名`という名前でブランチを作成し、作業を行います。バグが無いことを確認後、`develop`ブランチ、`main`ブランチにマージします。
+`develop`ブランチを元に`feature-新しい機能名`という名前でブランチを作成し、作業を行います。バグが無いことを確認後、`develop`ブランチにマージします。本番環境に反映させたいときは更に、`main`ブランチにマージします。
 
 ## コマンド一覧
 
