@@ -58,6 +58,7 @@
 | special-thanks.html   | スペシャルサンクス一覧 |
 | inquiry.html          | お問い合わせページ     |
 | form.html             | お問い合わせフォーム   |
+| site-map.html         | サイトマップ           |
 
 <div align="center">
     <img src="./dist/assets/img/screen.png" alt="">
