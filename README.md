@@ -15,16 +15,19 @@
 ## 使用言語
 
 **フロントエンド**
--HTML
--CSS
--JavaScript(jQuery)
+
+-   HTML
+-   CSS
+-   JavaScript(jQuery)
 
 **バックエンド**
--JavaScript(Express)
--Node.js
+
+-   JavaScript(Express)
+-   Node.js
 
 **データベース**
--MySQL
+
+-   MySQL
 
 ## 機能一覧
 
