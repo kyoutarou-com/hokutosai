@@ -12,6 +12,12 @@
 
 北斗祭に関する情報を提供し、来場者がスムーズにイベントを楽しめるように設計されています。ホームページはレスポンシブデザインを採用し、PCやスマートフォンからも快適にアクセスできます。
 
+## 機能一覧
+
+<div align="center">
+    <img src="./dist/assets/img/screen.png" alt="">
+</div>
+
 ## インストールとセットアップ
 
 ```bash
@@ -19,11 +25,42 @@ git clone https://github.com/kyoutarou-com/hokutosai.git
 npm ci
 ```
 
+## ツリー構造
+
+.
+├── dist    ・・・<sapn style =></sapn>
+│   └── assets
+│       ├── config
+│       ├── css
+│       │   └── vendor
+│       ├── img
+│       │   ├── ad
+│       │   ├── campus-map
+│       │   ├── exhibition
+│       │   ├── favicon
+│       │   ├── location
+│       │   ├── map
+│       │   ├── stage
+│       │   ├── stall
+│       │   └── vote
+│       └── js
+│           └── vendor
+├── hokutosai-manager
+├── qr-code
+├── scripts
+└── src
+    └── assets
+        ├── config
+        ├── css
+        └── js
+            └── module
+
 ## 各ディレクトリの説明
 
 | ディレクトリ名 | 説明                                 |
 | -------------- | ------------------------------------ |
-| dist           | 静的ファイル， ビルド結果の出力先    |
+| ./dist         | 静的ファイル， ビルド結果の出力先    |
+| ./dist         | 静的ファイル， ビルド結果の出力先    |
 | scripts        | シェルスクリプトなどのコマンド置き場 |
 | src            | ビルド前のファイル                   |
 
