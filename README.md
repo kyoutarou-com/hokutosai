@@ -36,26 +36,28 @@
 
 ## 機能一覧
 
-| ファイル名      | ページ名             |
-| --------------- | -------------------- |
-| index.html      | トップページ         |
-| theme.html      | テーマ               |
-| greeting.html   | 挨拶                 |
-| committee.html  | 北斗祭実行委員会紹介 |
-| time-table.html | タイムテーブル       |
-| stage.html      | 企画紹介             |
-| stall.html      | 模擬店紹介           |
-| exhibition.html | 展示紹介             |
-| vote.html       | 投票                 |
-| please.html     | 来場者の方へのご案内 |
-| campus-map.html | キャンパスマップ     |
-|                 |                      |
-|                 |                      |
-|                 |                      |
-|                 |                      |
-|                 |                      |
-|                 |                      |
-|                 |                      |
+| ファイル名            | ページ名               |
+| --------------------- | ---------------------- |
+| index.html            | トップページ           |
+| about.html            | 北斗祭概要             |
+| theme.html            | テーマ                 |
+| greeting.html         | 挨拶                   |
+| news.html             | ニュース               |
+| committee.html        | 北斗祭実行委員会紹介   |
+| time-table.html       | タイムテーブル         |
+| stage.html            | 企画紹介               |
+| stall.html            | 模擬店紹介             |
+| exhibition.html       | 展示紹介               |
+| vote.html             | 投票                   |
+| please.html           | 来場者の方へのご案内   |
+| campus-map.html       | キャンパスマップ       |
+| access.html           | アクセス情報           |
+| question.html         | よくある質問           |
+| recruit-sponsors.html | 協賛のお願い           |
+| sponsors.html         | 協賛企業様一覧         |
+| special-thanks.html   | スペシャルサンクス一覧 |
+| inquiry.html          | お問い合わせページ     |
+| form.html             | お問い合わせフォーム   |
 
 <div align="center">
     <img src="./dist/assets/img/screen.png" alt="">
