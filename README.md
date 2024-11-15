@@ -28,41 +28,32 @@ npm ci
 ## ツリー構造
 
 .
-├── dist    ・・・<sapn style =></sapn>
-│   └── assets
-│       ├── config
+├── dist    ・・・本番環境にデプロイするディレクトリ
+│   └── assets ・・・ビルド結果
+│       ├── config ・・・イベントや店舗情報
 │       ├── css
-│       │   └── vendor
+│       │   └── vendor ・・・外部ライブラリ
 │       ├── img
-│       │   ├── ad
-│       │   ├── campus-map
+│       │   ├── ad ・・・広告
+│       │   ├── campus-map ・・・構内画像
 │       │   ├── exhibition
-│       │   ├── favicon
-│       │   ├── location
+│       │   ├── favicon・・・ファビコン
+│       │   ├── location ・・・
 │       │   ├── map
 │       │   ├── stage
-│       │   ├── stall
-│       │   └── vote
+│       │   ├── stall ・・・模擬店画像
+│       │   └── vote・・・
 │       └── js
-│           └── vendor
+│           └── vendor・・・外部ライブラリ
 ├── hokutosai-manager
 ├── qr-code
 ├── scripts
 └── src
     └── assets
-        ├── config
+        ├── config ・・・イベントや店舗情報
         ├── css
         └── js
-            └── module
-
-## 各ディレクトリの説明
-
-| ディレクトリ名 | 説明                                 |
-| -------------- | ------------------------------------ |
-| ./dist         | 静的ファイル， ビルド結果の出力先    |
-| ./dist         | 静的ファイル， ビルド結果の出力先    |
-| scripts        | シェルスクリプトなどのコマンド置き場 |
-| src            | ビルド前のファイル                   |
+            └── module ・・・ユーティリティー関数
 
 ## ブランチ
 
