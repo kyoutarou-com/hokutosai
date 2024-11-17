@@ -157,31 +157,31 @@ npm ci
 ## ツリー構造
 
 .</br>
-├── dist&nbsp;&nbsp;・・・・・・・・・ ・・・・・・&nbsp;&nbsp;本番環境にデプロイするディレクトリ</br>
-│ └── assets&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;ビルド結果の出力先</br>
-│ ├── config&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;イベントや店舗情報の入力データをビルドした結果の出力先</br>
-│ ├── css&nbsp;&nbsp;・・・・・・・・・・・・・・&nbsp;&nbsp;CSS</br>
-│ │ └── vendor&nbsp;&nbsp;・・・・・・・・&nbsp;&nbsp;外部ライブラリ</br>
-│ ├── img&nbsp;&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;画像ファイル</br>
-│ │ ├── ad&nbsp;&nbsp;・・・・・・・・・・・・&nbsp;&nbsp;広告画像</br>
-│ │ ├── campus-map&nbsp;&nbsp;・・・&nbsp;&nbsp;構内地図</br>
-│ │ ├── exhibition&nbsp;&nbsp;&nbsp;・・・・・&nbsp;&nbsp;展示アイコン画像</br>
-│ │ ├── favicon&nbsp;&nbsp;・・・・・・・・&nbsp;&nbsp;ファビコン</br>
-│ │ ├── location&nbsp;&nbsp;&nbsp;・・・・・・・&nbsp;&nbsp;展示場所の画像</br>
-│ │ ├── map&nbsp;&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;模擬店の場所の画像</br>
-│ │ ├── stage&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;ステージ企画の画像</br>
-│ │ ├── stall&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;模擬店アイコン画像</br>
-│ │ └── vote&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;投票アイコンの画像</br>
-│ └── js&nbsp;&nbsp;・・・・・・・・・・・・・・・・&nbsp;&nbsp;JavaScript</br>
-│ └── vendor&nbsp;&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;外部ライブラリ</br>
-├── qr-code&nbsp;&nbsp;&nbsp;・・・・・・・・・・・・&nbsp;&nbsp;現在地探索ページの QR コード</br>
-├── scripts&nbsp;&nbsp;・・・・・・・・・・・・・・&nbsp;&nbsp;コマンド置き場</br>
-└── src&nbsp;&nbsp;・・・・・・・・・・・・・・・・・&nbsp;&nbsp;ソースコード</br>
-└── assets&nbsp;&nbsp;・・・・・・・・・・・・・・&nbsp;&nbsp;編集データ</br>
-├── config&nbsp;&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;イベントや店舗情報の入力データ</br>
-├── css&nbsp;&nbsp;・・・・・・・・・・・・・・・・・&nbsp;&nbsp;CSS</span></br>
-└── js&nbsp;&nbsp;&nbsp;・・・・・・・・・・・・・・・・・・&nbsp;&nbsp;JavaScript</br>
-└── module&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;ユーティリティー関数</br>
+├── dist&nbsp;&nbsp;･･･････････････････････････････&nbsp;&nbsp;本番環境にデプロイするディレクトリ</br>
+│ └── assets&nbsp;&nbsp;･･･････････････････････････&nbsp;&nbsp;ビルド結果の出力先</br>
+│ ├── config&nbsp;&nbsp;･･･････････････････････････&nbsp;&nbsp;イベントや店舗情報の入力データをビルドした結果の出力先</br>
+│ ├── css&nbsp;&nbsp;･･････････････････････････････&nbsp;&nbsp;CSS</br>
+│ │ └── vendor&nbsp;&nbsp;･････････････････････････&nbsp;&nbsp;外部ライブラリ</br>
+│ ├── img&nbsp;&nbsp;･･････････････････････････････&nbsp;&nbsp;画像ファイル</br>
+│ │ ├── ad&nbsp;&nbsp;･････････････････････････････&nbsp;&nbsp;広告画像</br>
+│ │ ├── campus-map&nbsp;&nbsp;････････････････････&nbsp;&nbsp;構内地図</br>
+│ │ ├── exhibition&nbsp;&nbsp;････････････････････&nbsp;&nbsp;展示アイコン画像</br>
+│ │ ├── favicon&nbsp;&nbsp;･･･････････････････････&nbsp;&nbsp;ファビコン</br>
+│ │ ├── location&nbsp;&nbsp;･･････････････････････&nbsp;&nbsp;展示場所の画像</br>
+│ │ ├── map&nbsp;&nbsp;････････････････････････････&nbsp;&nbsp;模擬店の場所の画像</br>
+│ │ ├── stage&nbsp;&nbsp;･･････････････････････････&nbsp;&nbsp;ステージ企画の画像</br>
+│ │ ├── stall&nbsp;&nbsp;･･････････････････････････&nbsp;&nbsp;模擬店アイコン画像</br>
+│ │ └── vote&nbsp;&nbsp;･･･････････････････････････&nbsp;&nbsp;投票アイコンの画像</br>
+│ └── js&nbsp;&nbsp;････････････････････････････････&nbsp;&nbsp;JavaScript</br>
+│ └── vendor&nbsp;&nbsp;･･･････････････････････････&nbsp;&nbsp;外部ライブラリ</br>
+├── qr-code&nbsp;&nbsp;････････････････････････････&nbsp;&nbsp;現在地探索ページの QR コード</br>
+├── scripts&nbsp;&nbsp;････････････････････････････&nbsp;&nbsp;コマンド置き場</br>
+└── src&nbsp;&nbsp･････････････････････････････････&nbsp;&nbsp;ソースコード</br>
+└── assets&nbsp;&nbsp;･････････････････････････････&nbsp;&nbsp;編集データ</br>
+├── config&nbsp;&nbsp;･････････････････････････････&nbsp;&nbsp;イベントや店舗情報の入力データ</br>
+├── css&nbsp;&nbsp;････････････････････････････････&nbsp;&nbsp;CSS</span></br>
+└── js&nbsp;&nbsp;･････････････････････････････････&nbsp;&nbsp;JavaScript</br>
+└── module&nbsp;&nbsp;･････････････････････････････&nbsp;&nbsp;ユーティリティー関数</br>
 
 ## ブランチ
 
