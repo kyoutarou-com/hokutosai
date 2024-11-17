@@ -8,6 +8,32 @@
 
 北斗祭に関する情報を提供し、来場者がスムーズにイベントを楽しめるように設計されています。ホームページはレスポンシブデザインを採用し、PC やスマートフォンからも快適にアクセスできます。
 
+### ユーザが抱える課題
+
+-   来場者
+    -   校内を回る際、どこに模擬店があるのか、どこで展示を行っているのかを把握するために、パンフレットを持ち歩く必要がある。
+    -   校内が複雑で同じ構造で複数階あるため、初めて本校に訪れた人などは校内で迷ってしまう。
+    -   パンフレットに掲載できる情報が限られてくるため、各展示や模擬店の詳細な情報を掲載することができない。
+    -   展示・模擬店投票やステージ企画における各コンテストの投票など、限られた場所でしか投票することができず、ステージを見ながら投票することができない。 -
+    -   学外の来場者へのパンフレット配布が当日の配布のみなっているため、学外からの来場者が事前に北斗祭についての詳細を確認することができない。
+-   運営（管理者）
+    -   パンフレットを一度入稿してしまうと情報修正をすることができず、情報修正等が容易でない。
+    -   投票の集計を紙で行う必要があり、当日の限られた時間の中で行う必要があり、大変手間のかかる作業であった。
+
+### 解決策
+
+**HP(web アプリ)とすることにより端末や OS の制限を受けずに閲覧することが可能に**
+
+-   来場者
+    -   投票機能を実装することで、模擬店・展示投票や各種コンテスト投票などをオンラインでできるようになった。
+    -   各模擬店や展示の個別ページの作成を行い、詳細な情報までアクセスを可能になった。
+    -   校内に QR コードを設置し、現在地の特定や近くの展示、模擬店情報を掲載し、学外からの来場者が迷うことがないようになった。
+    -   HP に全情報を掲載することで、パンフレットを持ち歩く必要をなくなった。
+-   運営（管理者）
+    -   HP としたため、情報修正が可能となり、当日のお知らせなど状況に合わせた情報を流すことができるようになった。
+    -   投票の管理者ページを作成し、運営側がリアルタイムに投票状況を確認できるようになった。
+    -   落とし物一覧ページを作成し、落とし物があれば受付担当者が Google フォームに情報を入力後、即時自動反映されるようになった。（技術スタッフがその場にいなくても更新できる仕組みを構築）
+
 ## 技術スタック
 
 [![技術スタック](https://skillicons.dev/icons?i=html,css,js,npm,webpack,python)](https://skillicons.dev)
@@ -51,7 +77,7 @@ git clone https://github.com/kyoutarou-com/hokutosai.git
 npm ci
 ```
 
-開発環境がVsCodeの場合は、**esbenp.prettier-vscode**を入れてください。
+開発環境が VsCode の場合は、**esbenp.prettier-vscode**を入れてください。
 
 ## ページ一覧
 
@@ -104,7 +130,7 @@ npm ci
 | campus-map.html                         | キャンパスマップ                     |
 | access.html                             | アクセス情報                         |
 | question.html                           | よくある質問                         |
-| where.html                              | 現在地探索                           |
+| where.html{id}                          | 現在地探索                           |
 | lost-property.html                      | 落とし物一覧                         |
 | pamphlet.html                           | 公式パンフレット                     |
 | enquete.html                            | 来場者アンケート                     |
@@ -131,31 +157,31 @@ npm ci
 ## ツリー構造
 
 .</br>
-├── dist&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;本番環境にデプロイするディレクトリ</br>
+├── dist&nbsp;&nbsp;・・・・・・・・・ ・・・・・・&nbsp;&nbsp;本番環境にデプロイするディレクトリ</br>
 │ └── assets&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;ビルド結果の出力先</br>
 │ ├── config&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;イベントや店舗情報の入力データをビルドした結果の出力先</br>
-│ ├── css&nbsp;&nbsp;・・・・・・・・・・・・&nbsp;&nbsp;CSS</br>
-│ │ └── vendor&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;外部ライブラリ</br>
-│ ├── img&nbsp;&nbsp;・・・・・・・・・・・・&nbsp;&nbsp;画像ファイル</br>
+│ ├── css&nbsp;&nbsp;・・・・・・・・・・・・・・&nbsp;&nbsp;CSS</br>
+│ │ └── vendor&nbsp;&nbsp;・・・・・・・・&nbsp;&nbsp;外部ライブラリ</br>
+│ ├── img&nbsp;&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;画像ファイル</br>
 │ │ ├── ad&nbsp;&nbsp;・・・・・・・・・・・・&nbsp;&nbsp;広告画像</br>
-│ │ ├── campus-map&nbsp;&nbsp;・・・・・・・&nbsp;&nbsp;構内地図</br>
-│ │ ├── exhibition&nbsp;&nbsp;・・・・・・・・・&nbsp;&nbsp;展示アイコン画像</br>
-│ │ ├── favicon&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;ファビコン</br>
-│ │ ├── location&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;展示場所の画像</br>
-│ │ ├── map&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;模擬店の場所の画像</br>
-│ │ ├── stage&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;ステージ企画の画像</br>
+│ │ ├── campus-map&nbsp;&nbsp;・・・&nbsp;&nbsp;構内地図</br>
+│ │ ├── exhibition&nbsp;&nbsp;&nbsp;・・・・・&nbsp;&nbsp;展示アイコン画像</br>
+│ │ ├── favicon&nbsp;&nbsp;・・・・・・・・&nbsp;&nbsp;ファビコン</br>
+│ │ ├── location&nbsp;&nbsp;&nbsp;・・・・・・・&nbsp;&nbsp;展示場所の画像</br>
+│ │ ├── map&nbsp;&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;模擬店の場所の画像</br>
+│ │ ├── stage&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;ステージ企画の画像</br>
 │ │ ├── stall&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;模擬店アイコン画像</br>
 │ │ └── vote&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;投票アイコンの画像</br>
-│ └── js&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;JavaScript</br>
-│ └── vendor&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;外部ライブラリ</br>
-├── qr-code&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;現在地探索ページの QR コード</br>
-├── scripts&nbsp;&nbsp;・・・・・・・・・・・・&nbsp;&nbsp;コマンド置き場</br>
-└── src&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;ソースコード</br>
-└── assets</br>
-├── config&nbsp;&nbsp;・・・・・・・・・・・&nbsp;&nbsp;イベントや店舗情報の入力データ</br>
-├── css&nbsp;&nbsp;・・・・・・・・・・・・&nbsp;&nbsp;CSS</span></br>
-└── js&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;JavaScript</br>
-└── module&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;ユーティリティー関数</br>
+│ └── js&nbsp;&nbsp;・・・・・・・・・・・・・・・・&nbsp;&nbsp;JavaScript</br>
+│ └── vendor&nbsp;&nbsp;&nbsp;・・・・・・・・・・&nbsp;&nbsp;外部ライブラリ</br>
+├── qr-code&nbsp;&nbsp;&nbsp;・・・・・・・・・・・・&nbsp;&nbsp;現在地探索ページの QR コード</br>
+├── scripts&nbsp;&nbsp;・・・・・・・・・・・・・・&nbsp;&nbsp;コマンド置き場</br>
+└── src&nbsp;&nbsp;・・・・・・・・・・・・・・・・・&nbsp;&nbsp;ソースコード</br>
+└── assets&nbsp;&nbsp;・・・・・・・・・・・・・・&nbsp;&nbsp;編集データ</br>
+├── config&nbsp;&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;イベントや店舗情報の入力データ</br>
+├── css&nbsp;&nbsp;・・・・・・・・・・・・・・・・・&nbsp;&nbsp;CSS</span></br>
+└── js&nbsp;&nbsp;&nbsp;・・・・・・・・・・・・・・・・・・&nbsp;&nbsp;JavaScript</br>
+└── module&nbsp;&nbsp;・・・・・・・・・・・・・&nbsp;&nbsp;ユーティリティー関数</br>
 
 ## ブランチ
 
@@ -186,3 +212,8 @@ npm ci
 
 [hokutosai-manager](https://github.com/mako0523/hokutosai-manager.git)
 投票結果を閲覧するための管理者ページ
+
+##　今後の課題
+
+-   タブレット端末（450px~700px）への対応が十分ではないため、タブレット端末へのレスポンシブ対応。
+-   投票制限が Cookie 制限で行っているため、シークレットモード（プライベートモード）で投票された場合には、複数回投票が可能になってしまう点を修正。
