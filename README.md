@@ -48,6 +48,17 @@
 | ![メニュー画面(スマホ)](https://github.com/user-attachments/assets/2a3dc251-bdbf-4c5d-9edf-c58b99f99e87) | ![展示一覧（スマホ）](https://github.com/user-attachments/assets/59718d58-9788-4af2-b248-9e5cd037d40f) |
 | 必要な情報に最短でアクセス可能、当日の使用頻度が高いメニューをトップ配置                                 | 展示の一覧を閲覧することができ、団体、場所、内容から簡単に絞り込みが可能                               |
 
+## 使用実績
+
+| 項目名                   | 実績値   |
+| ------------------------ | -------- |
+| ユーザ数[^1]             | 6300 人  |
+| 合計 PV 数[^1]           | 52000 回 |
+| 満足度（5 段階評価）[^2] | 4.23     |
+
+> ※[^1] Google Analytics 集計値
+> ※[^2] 学内　事後アンケート集計値
+
 ## 技術スタック
 
 [![技術スタック](https://skillicons.dev/icons?i=html,css,js,npm,webpack,python)](https://skillicons.dev)
